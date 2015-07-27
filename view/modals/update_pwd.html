@@ -1,8 +1,8 @@
-<!--==================================
-		Update User Information modal window
-======================================-->
+<!--=======================================================
+		Update password modal window
+===========================================================-->
 
-<div id="login_mw" class="modal_window">
+<div id="update_pwd_mw" class="modal_window">
 
 	<button class="close arcticmodal-close"></button>
 
@@ -10,33 +10,28 @@
 
 		<div class="left_side">
 
-			<h2>Update Account Information</h2>
+			<h2>Update New Password</h2>
 
 		</div>
 
 	</header><!--/ .on_the_sides-->
 
-	<form class="type_2" action="" method="post" id="loginForm">
+	<form class="type_2" action="" method="post" id="updatePwd">
 
 		<ul>
 
 			<li>
-				<label for="login_email">Email address</label>
-				<input type="email" name="" id="login_email">
+				<label for="pwd">New Password</label>
+				<input type="password" name="pwd" id="pwd">
 			</li>
 
 			<li>
-				<label for="login_password">Password</label>
-				<input type="password" name="" id="login_password">
-			</li>
-
-			<li>
-				<input type="checkbox" name="" id="checkbox_1">
-				<label for="checkbox_1">Remember me</label>
+				<label for="re-pwd">Retype New Password</label>
+				<input type="password" name="re-pwd" id="re-pwd">
 			</li>
 
 			<li class="v_centered">
-				<button class="button_blue middle_btn">Login</button>
+				<button class="button_blue middle_btn">Change Password</button>
 			</li>
 
 		</ul>
@@ -45,6 +40,6 @@
 
 </div>
 
-<!--==================================
-		End login modal window
-======================================-->
+<!--=======================================================
+		End of update password modal window
+===========================================================-->
