@@ -4261,11 +4261,28 @@ transition-duration:0.1s;
         padding-bottom: 25px;
     }
 
-    #register_mw{
-        width:500px;
+    #update_acc_mw {
+        width:450px;
         padding-top:40px;
         padding-bottom: 25px;
     }
+
+	#update_pwd_mw{
+        width:450px;
+        padding-top:40px;
+        padding-bottom: 25px;
+    }
+
+	#update_add_mw{
+		width:450px;
+		padding-top:40px;
+		padding-bottom: 25px;
+	}
+
+	#view_order_mw{
+		padding-top:40px;
+		padding-bottom: 25px;
+	}
 
     #test_mw{
         width:800px;
@@ -4295,6 +4312,18 @@ transition-duration:0.1s;
     #update_acc_mw header{ margin-bottom: 20px; }
 
     #update_acc_mw header h2{ color: #018bc8; }
+
+	#update_pwd_mw header{ margin-bottom: 20px; }
+
+    #update_pwd_mw header h2{ color: #018bc8; }
+
+	#update_add_mw header{ margin-bottom: 20px; }
+
+	#update_add_mw header h2{ color: #018bc8; }
+
+	#view_order_mw header{ margin-bottom: 20px; }
+
+	#view_order_mw header h2{ color: #018bc8; }
 
     #test_mw header{ margin-bottom: 20px; }
 

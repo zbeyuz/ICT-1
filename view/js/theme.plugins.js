@@ -141,7 +141,45 @@
 				End custom select
 		------------------------------------------------ */
 
+		/* ------------------------------------------------
+				Arctic modal
+		------------------------------------------------ */
 
+		if($.arcticmodal){
+			$.arcticmodal('setDefault',{
+				type : 'ajax',
+				ajax : {
+					cache : false
+				},
+				afterOpen : function(obj){
+
+					setTimeout(function(){
+
+       var mw = $('.modal_window');
+
+       mw.find('.custom_select').customSelect();
+
+       mw.find('.product_preview .owl_carousel').owlCarousel({
+        margin : 10,
+        themeClass : 'thumbnails_carousel',
+        nav : true,
+        navText : [],
+        rtl: window.ISRTL ? true : false
+       });
+
+       Core.events.productPreview();
+
+       addthis.toolbox('.addthis_toolbox');
+
+      }, 500);
+
+				}
+			});
+		}
+			
+		/* ------------------------------------------------
+				End arctic modal
+		------------------------------------------------ */
 
 		/* ------------------------------------------------
 				Accordion
