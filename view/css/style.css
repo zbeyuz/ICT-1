@@ -1791,7 +1791,7 @@
 
 		th.product_image_col, .row_title_col{ width: 132px; }
 		td.product_image_col{ text-align: center; }
-		.product_title_col{ width: 35.35%; }
+		.product_title_col{ width: 50.35%; }
 		.product_qty_col{ width: 130px; }
 		.product_actions_col{ width: 105px; }
 		.product_price_col{ width: 105px; }
