@@ -156,7 +156,7 @@
 					setTimeout(function(){
 
        var mw = $('.modal_window');
- 
+
        mw.find('.custom_select').customSelect();
 
        mw.find('.product_preview .owl_carousel').owlCarousel({
@@ -172,7 +172,7 @@
        addthis.toolbox('.addthis_toolbox');
 
       }, 500);
-					
+
 				}
 			});
 		}

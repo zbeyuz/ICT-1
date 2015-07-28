@@ -1791,7 +1791,7 @@
 
 		th.product_image_col, .row_title_col{ width: 132px; }
 		td.product_image_col{ text-align: center; }
-		.product_title_col{ width: 35.35%; }
+		.product_title_col{ width: 50.35%; }
 		.product_qty_col{ width: 130px; }
 		.product_actions_col{ width: 105px; }
 		.product_price_col{ width: 105px; }
@@ -4279,6 +4279,11 @@ transition-duration:0.1s;
 		padding-bottom: 25px;
 	}
 
+	#view_order_mw{
+		padding-top:40px;
+		padding-bottom: 25px;
+	}
+
     #test_mw{
         width:800px;
         padding-top:40px;
@@ -4315,6 +4320,10 @@ transition-duration:0.1s;
 	#update_add_mw header{ margin-bottom: 20px; }
 
 	#update_add_mw header h2{ color: #018bc8; }
+
+	#view_order_mw header{ margin-bottom: 20px; }
+
+	#view_order_mw header h2{ color: #018bc8; }
 
     #test_mw header{ margin-bottom: 20px; }
 
