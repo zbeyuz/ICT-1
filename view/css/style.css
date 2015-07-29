@@ -3336,11 +3336,11 @@ transition-duration:0.1s;
 
 			.description_section{ margin-bottom:14px; }
 
-			.description_section_2:not(:last-child){ margin-bottom:10px; }
+			.description_section_2:not(:last-child){ margin-bottom:15px; padding-bottom: 150px}
 
 			.single_product_description hr{ margin:0 0 15px; }
 
-			.single_product_description .buttons_row{ margin-top:30px; }
+			.single_product_description .buttons_row{ margin-top:20px; }
 
 			.single_product .product_preview{ margin-bottom:20px; }
 
