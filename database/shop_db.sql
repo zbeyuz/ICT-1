@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 31, 2015 at 07:28 AM
+-- Generation Time: Jul 31, 2015 at 08:34 AM
 -- Server version: 5.5.39
 -- PHP Version: 5.4.31
 
@@ -105,6 +105,8 @@ CREATE TABLE IF NOT EXISTS `item_list` (
   `item_name` text COLLATE utf8_bin NOT NULL,
   `item_price` int(11) NOT NULL,
   `item_discount` int(11) NOT NULL,
+  `item_gender` text COLLATE utf8_bin NOT NULL,
+  `item_type` text COLLATE utf8_bin NOT NULL,
   `item_manufacture` text COLLATE utf8_bin NOT NULL,
   `item_info` text COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -113,9 +115,9 @@ CREATE TABLE IF NOT EXISTS `item_list` (
 -- Dumping data for table `item_list`
 --
 
-INSERT INTO `item_list` (`item_id`, `item_name`, `item_price`, `item_discount`, `item_manufacture`, `item_info`) VALUES
-(123, 'asd', 12, 1, 'asda', 'aasdasd'),
-(122, 'asd', 12, 0, 'qwe', 'asdad');
+INSERT INTO `item_list` (`item_id`, `item_name`, `item_price`, `item_discount`, `item_gender`, `item_type`, `item_manufacture`, `item_info`) VALUES
+(123, 'asd', 12, 1, '', '', 'asda', 'aasdasd'),
+(122, 'asd', 12, 0, '', '', 'qwe', 'asdad');
 
 -- --------------------------------------------------------
 
@@ -191,7 +193,8 @@ CREATE TABLE IF NOT EXISTS `user_list` (
 
 INSERT INTO `user_list` (`user_id`, `user_email`, `user_password`, `user_fname`, `user_lname`) VALUES
 (1, 's@s', '123', '', ''),
-(2, 'u@u', '123', '', '');
+(2, 'u@u', '123', '', ''),
+(3, 'g@g', '123', 'qwe', 'qwe');
 
 -- --------------------------------------------------------
 
