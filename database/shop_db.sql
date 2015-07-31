@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 31, 2015 at 06:52 AM
+-- Generation Time: Jul 31, 2015 at 07:28 AM
 -- Server version: 5.5.39
 -- PHP Version: 5.4.31
 
@@ -114,7 +114,8 @@ CREATE TABLE IF NOT EXISTS `item_list` (
 --
 
 INSERT INTO `item_list` (`item_id`, `item_name`, `item_price`, `item_discount`, `item_manufacture`, `item_info`) VALUES
-(123, 'asd', 12, 1, 'asda', 'aasdasd');
+(123, 'asd', 12, 1, 'asda', 'aasdasd'),
+(122, 'asd', 12, 0, 'qwe', 'asdad');
 
 -- --------------------------------------------------------
 
@@ -160,8 +161,6 @@ CREATE TABLE IF NOT EXISTS `item_review` (
 
 CREATE TABLE IF NOT EXISTS `user_info` (
   `user_id` int(11) NOT NULL,
-  `user_fname` text COLLATE utf8_bin NOT NULL,
-  `user_lname` text COLLATE utf8_bin NOT NULL,
   `user_address` text COLLATE utf8_bin NOT NULL,
   `user_road` text COLLATE utf8_bin NOT NULL,
   `user_city` text COLLATE utf8_bin NOT NULL,
@@ -181,16 +180,18 @@ CREATE TABLE IF NOT EXISTS `user_info` (
 CREATE TABLE IF NOT EXISTS `user_list` (
   `user_id` int(11) NOT NULL,
   `user_email` text COLLATE utf8_bin NOT NULL,
-  `user_password` text COLLATE utf8_bin NOT NULL
+  `user_password` text COLLATE utf8_bin NOT NULL,
+  `user_fname` text COLLATE utf8_bin NOT NULL,
+  `user_lname` text COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `user_list`
 --
 
-INSERT INTO `user_list` (`user_id`, `user_email`, `user_password`) VALUES
-(1, 's@s', '123'),
-(2, 'u@u', '123');
+INSERT INTO `user_list` (`user_id`, `user_email`, `user_password`, `user_fname`, `user_lname`) VALUES
+(1, 's@s', '123', '', ''),
+(2, 'u@u', '123', '', '');
 
 -- --------------------------------------------------------
 
