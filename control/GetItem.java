@@ -43,8 +43,8 @@ public class GetItem extends HttpServlet {
             String s="";
             for (Product i:items){
                 out.print(s);
-                out.printf("\u007B\"id\":%d, \"name\":\"%s\", \"price\":%d, \"discount\":%d, \"gender\":\"%s\", \"category\":\"%s\", \"manufacture\":\"%s\", \"info\":\"%s\"\u007D",
-                        i.id,i.name,i.price,i.discount,i.gender,i.category,i.manufacture,i.info);
+                out.printf("\u005B%d,\"%s\",%d,\"%s\"\u005D",
+                        i.id,i.name,i.price,"images/product_img_24.jpg");
                 s=",";
             }
             out.print("\u005D");
