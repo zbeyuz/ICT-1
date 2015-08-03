@@ -26,19 +26,18 @@ public class ItemFac {
         Connection conn = null;
         conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db", "root", "");
         PreparedStatement pstmt = null;
-        
-        pstmt = conn.prepareStatement("insert into item_list values(?,?,?,?,?,?,?,?)");
         ResultSet rs = null;
-        Statement st = null;
 
-        st = (Statement) conn.createStatement();
-        rs = st.executeQuery("SELECT * FROM `item_list` where `item_id` = " + item_id);
         
+        pstmt = conn.prepareStatement("SELECT * FROM `item_list` where `item_id` = ?");
+        pstmt.setInt(1, item_id);
+        rs = pstmt.executeQuery();
         int cg = 0; //use to check did item_id already have or not
         while (rs.next()) {
             cg++;
         }
-
+        
+        pstmt = conn.prepareStatement("insert into item_list values(?,?,?,?,?,?,?,?)");
         if (cg == 0) {
             pstmt.setInt(1, item_id);
             pstmt.setString(2, item_name);
@@ -110,31 +109,31 @@ public class ItemFac {
     }
     
     public static ArrayList<Product> getitem() throws SQLException, Exception {
+        
         Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = null;
-            conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db","root", "");
+        Connection conn = null;
+        conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db","root", "");
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;    
+        pstmt = conn.prepareStatement("SELECT * FROM `item_list`");
+        rs = pstmt.executeQuery();
             
-            ResultSet rs = null;
-            Statement st = null;      
-            st = (Statement) conn.createStatement();
-            rs = st.executeQuery("SELECT * FROM `item_list` ");
-            
-            ArrayList<Product> res= new ArrayList<Product>();
+        ArrayList<Product> res= new ArrayList<Product>();
 
-            while (rs.next()) {
-                Product i=new Product();
-                i.id = rs.getInt("item_id");
-                i.name = rs.getString("item_name");
-                i.price = rs.getInt("item_price");
-                i.discount = rs.getInt("item_discount");
-                i.gender = rs.getString("item_gender");
-                i.category = rs.getString("item_type");
-                i.manufacture = rs.getString("item_manufacture");
-                i.info = rs.getString("item_info");
-                res.add(i);
-            }
-            conn.close();
-            return res;
+        while (rs.next()) {
+            Product i=new Product();
+            i.id = rs.getInt("item_id");
+            i.name = rs.getString("item_name");
+            i.price = rs.getInt("item_price");
+            i.discount = rs.getInt("item_discount");
+            i.gender = rs.getString("item_gender");
+            i.category = rs.getString("item_type");
+            i.manufacture = rs.getString("item_manufacture");
+            i.info = rs.getString("item_info");
+            res.add(i);
+        }
+        conn.close();
+        return res;
     }
     
     
