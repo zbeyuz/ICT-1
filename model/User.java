@@ -134,7 +134,7 @@ public class User {
         }
     }
     
-        public static ArrayList<Review> getitem() throws SQLException, Exception {
+        public static ArrayList<Review> get_review() throws SQLException, Exception {
         
         Class.forName("com.mysql.jdbc.Driver");
         Connection conn = null;
