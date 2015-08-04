@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 31, 2015 at 08:34 AM
+-- Generation Time: Aug 03, 2015 at 04:52 AM
 -- Server version: 5.5.39
 -- PHP Version: 5.4.31
 
@@ -84,6 +84,7 @@ CREATE TABLE IF NOT EXISTS `item_info` (
   `item_material` text COLLATE utf8_bin NOT NULL,
   `item_color` text COLLATE utf8_bin NOT NULL,
   `item_size` text COLLATE utf8_bin NOT NULL,
+  `item_sample_pic` text COLLATE utf8_bin NOT NULL,
   `item_quantity` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
@@ -91,8 +92,8 @@ CREATE TABLE IF NOT EXISTS `item_info` (
 -- Dumping data for table `item_info`
 --
 
-INSERT INTO `item_info` (`item_id`, `item_material`, `item_color`, `item_size`, `item_quantity`) VALUES
-(123, 'gg', 'red', 'xxl', 12);
+INSERT INTO `item_info` (`item_id`, `item_material`, `item_color`, `item_size`, `item_sample_pic`, `item_quantity`) VALUES
+(123, 'gg', 'red', 'xxl', '', 12);
 
 -- --------------------------------------------------------
 
@@ -108,16 +109,19 @@ CREATE TABLE IF NOT EXISTS `item_list` (
   `item_gender` text COLLATE utf8_bin NOT NULL,
   `item_type` text COLLATE utf8_bin NOT NULL,
   `item_manufacture` text COLLATE utf8_bin NOT NULL,
-  `item_info` text COLLATE utf8_bin NOT NULL
+  `item_info` text COLLATE utf8_bin NOT NULL,
+  `item_profile_pic` text COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `item_list`
 --
 
-INSERT INTO `item_list` (`item_id`, `item_name`, `item_price`, `item_discount`, `item_gender`, `item_type`, `item_manufacture`, `item_info`) VALUES
-(123, 'asd', 12, 1, '', '', 'asda', 'aasdasd'),
-(122, 'asd', 12, 0, '', '', 'qwe', 'asdad');
+INSERT INTO `item_list` (`item_id`, `item_name`, `item_price`, `item_discount`, `item_gender`, `item_type`, `item_manufacture`, `item_info`, `item_profile_pic`) VALUES
+(123, 'asd', 12, 1, '', '', 'asda', 'aasdasd', ''),
+(122, 'asd', 12, 0, '', '', 'qwe', 'asdad', ''),
+(121, '123', 112, 0, 'm', 'wallet', 'asd', 'qwe', ''),
+(111, 'qwe', 13, 0, 'm', 'wallet', 'asd', 'qwe', '');
 
 -- --------------------------------------------------------
 
@@ -136,7 +140,10 @@ CREATE TABLE IF NOT EXISTS `item_pic` (
 --
 
 INSERT INTO `item_pic` (`item_id`, `pic_num`, `pic_location`) VALUES
-(123, 1, 'asdasd');
+(123, 1, 'asdasd'),
+(123, 2, 'asdff'),
+(121, 1, 'asdff'),
+(121, 2, 'asdfdf');
 
 -- --------------------------------------------------------
 
@@ -194,7 +201,8 @@ CREATE TABLE IF NOT EXISTS `user_list` (
 INSERT INTO `user_list` (`user_id`, `user_email`, `user_password`, `user_fname`, `user_lname`) VALUES
 (1, 's@s', '123', '', ''),
 (2, 'u@u', '123', '', ''),
-(3, 'g@g', '123', 'qwe', 'qwe');
+(3, 'g@g', '123', 'qwe', 'qwe'),
+(4, 'a@a', '123', 'qwe', 'qwe');
 
 -- --------------------------------------------------------
 

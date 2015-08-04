@@ -27,7 +27,7 @@ public class ItemFac {
         conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db", "root", "");
         PreparedStatement pstmt = null;
         ResultSet rs = null;
-
+        String item_profile_pic = null;
         
         pstmt = conn.prepareStatement("SELECT * FROM `item_list` where `item_id` = ?");
         pstmt.setInt(1, item_id);
@@ -37,7 +37,7 @@ public class ItemFac {
             cg++;
         }
         
-        pstmt = conn.prepareStatement("insert into item_list values(?,?,?,?,?,?,?,?)");
+        pstmt = conn.prepareStatement("insert into item_list values(?,?,?,?,?,?,?,?,?)");
         if (cg == 0) {
             pstmt.setInt(1, item_id);
             pstmt.setString(2, item_name);
@@ -47,6 +47,7 @@ public class ItemFac {
             pstmt.setString(6, item_category);
             pstmt.setString(7, item_manufacture);
             pstmt.setString(8, item_info);
+            pstmt.setString(9, item_profile_pic);
             pstmt.executeUpdate();
             //add done
         } else {
@@ -67,33 +68,32 @@ public class ItemFac {
         Connection conn = null;
         conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db", "root", "");
         PreparedStatement pstmt = null;
-        
-        pstmt = conn.prepareStatement("insert into item_pic values(?,?,?)");
         ResultSet rs = null;
-        Statement st = null;
-        st = (Statement) conn.createStatement();
-        String ch = "can not found this item id"; //use to check that have item_id and location
         
-
-        rs = st.executeQuery("SELECT * FROM `item_list` where `item_id` = " + item_id); 
+        
+        pstmt = conn.prepareStatement("SELECT * FROM `item_list` where `item_id` = ?");
+        pstmt.setInt(1, item_id);
+        rs = pstmt.executeQuery();
+        String ch = "can not found this item id"; //use to check that have item_id and location
         while (rs.next()) {
             ch = "ok";  //change to ok if find item in item_list
         }
         
-        
-        rs = st.executeQuery("SELECT * FROM `item_pic` where `item_id` = " + item_id); 
+        pstmt = conn.prepareStatement("SELECT * FROM `item_pic` where `item_id` = ?");
+        pstmt.setInt(1, item_id);
+        rs = pstmt.executeQuery();
         int cg = 0; //use to check how many picture that item_id have
-
         String location = "0";
- 
         while (rs.next()) {
             cg++;     
             location =  rs.getString("pic_location");
             if( pic_location.equals(location)){
-                            ch = "Can not add picture in same location";    //chang to state if location already been use
+                ch = "Can not add picture in same location";    //chang to state if location already been use
             }   
         }
-
+        
+        
+        pstmt = conn.prepareStatement("insert into item_pic values(?,?,?)");
         if (ch .equals("ok")) {
             cg++;
             pstmt.setInt(1, item_id);
@@ -130,6 +130,7 @@ public class ItemFac {
             i.category = rs.getString("item_type");
             i.manufacture = rs.getString("item_manufacture");
             i.info = rs.getString("item_info");
+            i.profile_pic = rs.getString("item_profile_pic");
             res.add(i);
         }
         conn.close();
@@ -138,31 +139,29 @@ public class ItemFac {
     
     
     
-        public static String[] getpic(int item_id) throws SQLException, Exception {
+    public static String[] getpic(int item_id) throws SQLException, Exception {
+        
         Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = null;
-            conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db","root", "");
-
-            ResultSet rs = null;
-            Statement st = null;            
-            st = (Statement) conn.createStatement();
-            rs = st.executeQuery("SELECT * FROM `item_pic` where `item_id` = " + item_id);
+        Connection conn = null;
+        conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db", "root", "");
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        
+        pstmt = conn.prepareStatement("SELECT * FROM `item_pic` where `item_id` = ?");
+        pstmt.setInt(1, item_id);
+        rs = pstmt.executeQuery();
+        
+        String[] pic = new String[15];//arrey that use to store picture location
+        int n ;//use to locate picture in order
             
             
-            String[] pic = new String[15];//arrey that use to store picture location
-            int n ;//use to locate picture in order
             
-            
-            
-            while (rs.next()) {
-                n = rs.getInt("pic_num"); //get picture number alway start from 1
-                pic[n] = rs.getString("pic_location");
-            }
-            
-
-            conn.close();
-            
-           return  pic ;       
+        while (rs.next()) {
+            n = rs.getInt("pic_num"); //get picture number alway start from 1
+            pic[n] = rs.getString("pic_location");
+        }
+        conn.close();
+        return  pic ;       
     }
         
         
