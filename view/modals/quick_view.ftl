@@ -50,7 +50,7 @@
 
 		<div class="single_product_description">
 
-			<h3><a href="#">Ivory Body Wash, Original 24 fl oz</a></h3>
+			<h3><a href="#">${name}</a></h3>
 
 			<div class="description_section v_centered">
 
@@ -89,7 +89,7 @@
 						<tr>
 
 							<td><b>Manufacturer: </b></td>
-							<td><p>Chanel</p></td>
+							<td><p>${manufacture}</p></td>
 
 						</tr>
 
@@ -103,7 +103,7 @@
 						<tr>
 
 							<td><b>Product Code:</b></td>
-							<td>PS06</td>
+							<td>${id}</td>
 
 						</tr>
 
@@ -123,7 +123,7 @@
 
 			<hr>
 
-			<p class="product_price"><s>$9.99</s> <b class="theme_color">$5.99</b></p>
+			<p class="product_price">${price}</p>
 
 			<!-- - - - - - - - - - - - - - Product size - - - - - - - - - - - - - - - - -->
 
