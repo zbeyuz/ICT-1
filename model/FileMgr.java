@@ -9,11 +9,12 @@ import java.io.File;
 import java.util.Iterator;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
+/*
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileItemFactory;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
-
+*/
 /**
  *
  * @author hy
@@ -21,7 +22,7 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
 public class FileMgr {
 
     public static void upload(HttpServletRequest request, File path) throws Exception {
-
+/*
         boolean isMultipart = ServletFileUpload.isMultipartContent(request);
 
         if (isMultipart) {
@@ -46,7 +47,7 @@ public class FileMgr {
                 }
             }
 
-        }
+        }*/
     }
 
 }

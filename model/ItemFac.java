@@ -137,6 +137,34 @@ public class ItemFac {
         return res;
     }
     
+    public static Product getitemById(int item_id) throws SQLException, Exception {
+        
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection conn = null;
+        conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db","root", "");
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;    
+        pstmt = conn.prepareStatement("SELECT * FROM `item_list` where item_id = ?");
+        pstmt.setInt(1, item_id);
+        rs = pstmt.executeQuery();
+            
+        Product i=new Product();
+
+        
+        while (rs.next()) {
+            i.id = rs.getInt("item_id");
+            i.name = rs.getString("item_name");
+            i.price = rs.getInt("item_price");
+            i.discount = rs.getInt("item_discount");
+            i.gender = rs.getString("item_gender");
+            i.category = rs.getString("item_type");
+            i.manufacture = rs.getString("item_manufacture");
+            i.info = rs.getString("item_info");
+            i.profile_pic = rs.getString("item_profile_pic");
+        }
+        conn.close();
+        return i;// get arreylist like get item but there are onty 1 item in list
+    }
     
     
     public static String[] getpic(int item_id) throws SQLException, Exception {
