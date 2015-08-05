@@ -5,7 +5,6 @@
  */
 package control;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.logging.Level;
@@ -44,12 +43,13 @@ public class AddPic extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String root = getServletContext().getRealPath("/");
-        File path = new File(root + "/uploads");
+
         PrintWriter out = response.getWriter();
         try {
-            FileMgr.upload(request, path);
+            FileMgr upload=new FileMgr(root + "/uploads");
+            upload.upload(request);
             
-            out.println("success");
+            
         } catch (Exception ex) {
             Logger.getLogger(AddPic.class.getName()).log(Level.SEVERE, null, ex);
             out.print("Error:" + ex);

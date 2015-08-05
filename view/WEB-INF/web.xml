@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <welcome-file-list>
+        <welcome-file>index.shtml</welcome-file>
+    </welcome-file-list>
     <servlet>
         <servlet-name>get_item</servlet-name>
         <servlet-class>control.GetItem</servlet-class>
@@ -78,10 +81,6 @@
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
-    <servlet-mapping>
-        <servlet-name>freemarker</servlet-name>
-        <url-pattern>*.ftl</url-pattern>
-    </servlet-mapping>
     <!--
       Prevent the visiting of MVC Views from outside the servlet container.
       RequestDispatcher.forward/include should, and will still work.
@@ -100,9 +99,15 @@
         <servlet-name>view</servlet-name>
         <url-pattern>/view</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>freemarker</servlet-name>
+        <url-pattern>*.shtml</url-pattern>
+        <url-pattern>*.ftl</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
 </web-app>
+
