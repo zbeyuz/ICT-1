@@ -7,10 +7,12 @@ package control;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import model.Review;
 
 /**
  *
@@ -27,11 +29,31 @@ public class ReviewHandler extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-
+    
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            ArrayList<Review> items;
+            try {
+                items = model.ItemFac.getReview(Integer.parseInt(request.getParameter("item")));
+            out.print("\u005B");
+            String s="";
+            for (Review i:items){
+                out.print(s);
+                out.printf("\u005B%d,%d,\"%s\",\"%s\",%d,%d,%d,\"%s\"\u005D",
+                        i.item_id,i.user_id,i.review_title,i.review_date.toString(),
+                        i.review_price,i.review_value,i.review_quality,
+                        i.review_text);
+                s=",";
+            }
+            out.print("\u005D");
+            } catch (Exception ex) {
+                out.println(ex);
+            }
+        }
     }
 
     /**

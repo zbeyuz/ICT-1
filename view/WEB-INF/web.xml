@@ -106,7 +106,7 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>view</servlet-name>
-        <url-pattern>/viewItem</url-pattern>
+        <url-pattern>/product</url-pattern>
         <url-pattern>/view</url-pattern>
     </servlet-mapping>
     <servlet-mapping>

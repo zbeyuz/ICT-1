@@ -228,7 +228,7 @@ public class ItemFac {
         }
     }
 
-    public static ArrayList<Review> get_review(int item_id) throws SQLException, Exception {
+    public static ArrayList<Review> getReview(int item_id) throws SQLException, Exception {
 
         Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
