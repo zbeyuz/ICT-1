@@ -64,7 +64,7 @@
 						<li><a href="#">Man</a></li>
 						<li><a href="#">Accessories</a></li>
 						<li><a href="#">Bags</a></li>
-						<li>Metus nulla facilisi</li>
+						<li>${name}</li>
 
 					</ul>
 
@@ -136,7 +136,7 @@
 
 							<div class="single_product_description">
 
-								<h3 class="offset_title">Metus nulla facilisi</h3>
+								<h3 class="offset_title">${name}</h3>
 
 								<div class="description_section v_centered">
 
@@ -175,7 +175,7 @@
 											<tr>
 
 												<td>Manufacturer: </td>
-												<td><a href="#">Chanel</a></td>
+												<td><a href="#">${manufacture}</a></td>
 
 											</tr>
 
@@ -189,7 +189,7 @@
 											<tr>
 
 												<td>Product ID: </td>
-												<td>PS06</td>
+												<td>${id}</td>
 
 											</tr>
 
@@ -203,13 +203,13 @@
 
 								<div class="description_section">
 
-									<p>Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus.</p>
+									<p>${info}</p>
 
 								</div>
 
 								<hr>
 
-								<p class="product_price"><s>$9.99</s> <b class="theme_color">$5.99</b></p>
+								<p class="product_price">${price}</p>
 
 								<!-- - - - - - - - - - - - - - Product size - - - - - - - - - - - - - - - - -->
 

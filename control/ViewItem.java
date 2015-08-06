@@ -43,7 +43,12 @@ public class ViewItem extends HttpServlet {
             }
             request.setAttribute("manufacture", p.manufacture);
             request.setAttribute("name", p.name);
-            request.getRequestDispatcher("/modals/quick_view.ftl").forward(request, response);
+            if(request.getServletPath().equals("/view")){
+                request.getRequestDispatcher("/modals/quick_view.ftl").forward(request, response);
+            }else{
+                request.setAttribute("info", p.info);
+                request.getRequestDispatcher("/product.shtml").forward(request, response);
+            }
         } catch (Exception ex) {
             Logger.getLogger(ViewItem.class.getName()).log(Level.SEVERE, null, ex);
         }
