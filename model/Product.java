@@ -18,6 +18,6 @@ public class Product {
     public String category="";
     public String manufacture="";
     public String info="";
-    public String profile_pic = "";
+    public String profile_pic = "images/product_img_27.jpg";
 
 }

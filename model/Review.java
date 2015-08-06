@@ -14,7 +14,7 @@ import java.sql.Date;
 public class Review {
     public int item_id = -1;
     public int user_id = -1;
-    public String review_title;
+    public String review_title="";
     public Date review_date;
     public int review_value = -1;
     public int review_price = -1;
