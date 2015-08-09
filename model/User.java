@@ -29,7 +29,7 @@ public class User {
         conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db","root", "");
         PreparedStatement pstmt = null;
         ResultSet rs = null;    
-        pstmt = conn.prepareStatement("SELECT * FROM `item_list`");
+        pstmt = conn.prepareStatement("SELECT * FROM `user_list`");
         rs = pstmt.executeQuery();
         
         String email = "0"; //use to get user_email from database
@@ -59,7 +59,7 @@ public class User {
         conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db","root", "");
         PreparedStatement pstmt = null;
         ResultSet rs = null;    
-        pstmt = conn.prepareStatement("SELECT * FROM `item_list`");
+        pstmt = conn.prepareStatement("SELECT * FROM `user_list`");
         rs = pstmt.executeQuery(); 
         
         String email = "0"; //use to store email from database
@@ -106,14 +106,14 @@ public class User {
         
         
         
-        pstmt = conn.prepareStatement("SELECT * FROM `item_review` where `item_id` = ? ");
+        pstmt = conn.prepareStatement("SELECT * FROM `item_review` where `user_id` = ? ");
         pstmt.setInt(1, user_id);
         rs = pstmt.executeQuery(); 
         while (rs.next()) {
             ch = "user already review this item"; //change state if user already review
         }
         
-        pstmt = conn.prepareStatement("insert into user_list values(?,?,?,?,?,?,?,?)");
+        pstmt = conn.prepareStatement("insert into item_review values(?,?,?,?,?,?,?,?)");
         if (ch.equals("ok")) {
             pstmt.setInt(1, item_id);
             pstmt.setInt(2, user_id);
