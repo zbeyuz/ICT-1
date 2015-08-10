@@ -38,7 +38,7 @@ public class GetItem extends HttpServlet {
             /* TODO output your page here. You may use following sample code. */
             ArrayList<Product> items;
             try {
-                items = model.ItemFac.getitem();
+                items = model.ProductMgr.getProduct();
             out.print("\u005B");
             String s="";
             for (Product i:items){

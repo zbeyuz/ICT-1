@@ -1,50 +1,53 @@
 <!--==================================
-		Login modal window
+                Login modal window
 ======================================-->
 
 <div id="login_mw" class="modal_window">
 
-	<button class="close arcticmodal-close"></button>
+    <button id="closeLogin" class="close arcticmodal-close"></button>
 
-	<header class="on_the_sides">
+    <header class="on_the_sides">
 
-		<div class="left_side">
+        <div class="left_side">
 
-			<h2>Log In</h2>
+            <h2>Log In</h2>
 
-		</div>
+        </div>
 
-	</header><!--/ .on_the_sides-->
+    </header><!--/ .on_the_sides-->
 
-	<form class="type_2" action="login" method="post" id="loginForm">
+    <div class="type_2">
+        <span id="logWarn" style="color: red"></span>
+        <ul>
 
-		<ul>
+            <li>
+                <label for="user_email">Email address</label>
+                <input id="user_email" type="email" name="user_email">
+            </li>
 
-			<li>
-				<label for="email">Email address</label>
-				<input type="email" name="user_email" id="email">
-			</li>
+            <li>
+                <label for="user_password">Password</label>
+                <input id="user_password" type="password" name="user_password">
+            </li>
 
-			<li>
-				<label for="pwd">Password</label>
-				<input type="password" name="user_password" id="pwd">
-			</li>
+            <li>
+                <br />
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Remember me</label>
+                <br />
+            </li>
 
-			<li>
-				<input type="checkbox" name="remember" id="remember">
-				<label for="remember">Remember me</label>
-			</li>
+            <li class="v_centered">
+                <br />
+                <button onclick="icp.login()" class="button_blue middle_btn">Login</button>
+            </li>
 
-			<li class="v_centered">
-				<button class="button_blue middle_btn">Login</button>
-			</li>
+        </ul>
 
-		</ul>
-
-	</form>
+    </div>
 
 </div>
 
 <!--==================================
-		End login modal window
+                End login modal window
 ======================================-->

@@ -16,10 +16,10 @@ import java.sql.SQLException;
  *
  * @author Evilill
  */
-public class User {
+public class UserMgr {
 
     //login functon
-    public static boolean login(String user_email, String user_password) throws SQLException, Exception {
+    public static User login(String user_email, String user_password) throws SQLException, Exception {
 
         Class.forName("com.mysql.jdbc.Driver");
         Connection conn = null;
@@ -30,10 +30,15 @@ public class User {
         pstmt.setString(1, user_email);
         pstmt.setString(2, user_password);
         rs = pstmt.executeQuery();
-        boolean res = rs.next();
+        User user=new User();
+        if(rs.next()){
+            user.email=user_email;
+            user.id=rs.getInt("user_id");
+            user.fName=rs.getString("user_fname");
+            user.lName=rs.getString("user_lname");
+        }
         conn.close();
-        return res;
-
+        return user;
     }
 
     //register    
