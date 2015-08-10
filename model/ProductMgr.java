@@ -17,10 +17,10 @@ import java.util.Date;
  *
  * @author Evilill
  */
-public class ItemFac {
+public class ProductMgr {
     
     //add new item
-    public static void add_newitem(int item_id, String item_name, int item_price, int item_discount, String item_gender, String item_category, String item_manufacture, String item_info) throws SQLException, Exception {
+    public static void addProduct(int item_id, String item_name, int item_price, int item_discount, String item_gender, String item_category, String item_manufacture, String item_info) throws SQLException, Exception {
         
         Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
@@ -61,7 +61,7 @@ public class ItemFac {
     
     
     //add picture
-    public static void add_newpic(int item_id, String pic_location) throws SQLException, Exception {
+    public static void addPic(int item_id, String pic_location) throws SQLException, Exception {
         Class.forName("com.mysql.jdbc.Driver");
         Connection conn = null;
         conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db", "root", "");
@@ -106,7 +106,7 @@ public class ItemFac {
         conn.close();
     }
     
-    public static ArrayList<Product> getitem() throws SQLException, Exception {
+    public static ArrayList<Product> getProduct() throws SQLException, Exception {
         
         Class.forName("com.mysql.jdbc.Driver");
         Connection conn = null;
@@ -135,7 +135,7 @@ public class ItemFac {
         return res;
     }
     
-    public static Product getitemById(int item_id) throws SQLException, Exception {
+    public static Product getProductById(int item_id) throws SQLException, Exception {
         
         Class.forName("com.mysql.jdbc.Driver");
         Connection conn = null;
@@ -159,13 +159,16 @@ public class ItemFac {
             i.manufacture = rs.getString("item_manufacture");
             i.info = rs.getString("item_info");
             i.profile_pic = rs.getString("item_profile_pic");
+            if(i.profile_pic.replace(" ","").equals("")){
+                i.profile_pic="images/product_img_27.jpg";
+            }
         }
         conn.close();
         return i;// get arreylist like get item but there are onty 1 item in list
     }
     
     
-    public static String[] getpic(int item_id) throws SQLException, Exception {
+    public static String[] getPic(int item_id) throws SQLException, Exception {
         
         Class.forName("com.mysql.jdbc.Driver");
         Connection conn = null;
@@ -191,7 +194,7 @@ public class ItemFac {
     }
     
     
-    public static boolean add_review(int item_id, int user_id, String review_title, Date review_date, int review_value, int review_price, int review_quality, String review_text) throws SQLException, Exception {
+    public static boolean addReview(int item_id, int user_id, String review_title, Date review_date, int review_value, int review_price, int review_quality, String review_text) throws SQLException, Exception {
 
         Class.forName("com.mysql.jdbc.Driver");
         Connection conn = null;
@@ -233,7 +236,8 @@ public class ItemFac {
         Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
         ResultSet rs = null;
-        pstmt = conn.prepareStatement("SELECT * FROM `item_review` WHERE item_id=?");
+        pstmt = conn.prepareStatement("SELECT * FROM `item_review`,`user_list`"+
+                " WHERE `item_review`.`item_id`=? and `item_review`.`user_id`=`user_list`.`user_id`");
         pstmt.setInt(1,item_id);
         rs = pstmt.executeQuery();
 
@@ -243,6 +247,7 @@ public class ItemFac {
             Review i = new Review();
             i.item_id = rs.getInt("item_id");
             i.user_id = rs.getInt("user_id");
+            i.user_mail = rs.getString("user_email");
             i.review_date = rs.getDate("review_date");
             i.review_title = rs.getString("review_title");
             i.review_value = rs.getInt("review_value");

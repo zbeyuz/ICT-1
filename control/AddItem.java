@@ -14,7 +14,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.ItemFac;
+import model.ProductMgr;
 
 /**
  *
@@ -49,7 +49,7 @@ public class AddItem extends HttpServlet {
         int item_discount = 0;
         
         try {
-            ItemFac.add_newitem(item_id, item_name, item_price, item_discount, 
+            ProductMgr.addProduct(item_id, item_name, item_price, item_discount, 
                     item_gender, item_category, item_manufacture, item_info);
             out.println("success");
         } catch (Exception ex) {

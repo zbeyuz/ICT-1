@@ -38,7 +38,7 @@ public class ReviewHandler extends HttpServlet {
             /* TODO output your page here. You may use following sample code. */
             ArrayList<Review> items;
             try {
-                items = model.ItemFac.getReview(Integer.parseInt(request.getParameter("item")));
+                items = model.ProductMgr.getReview(Integer.parseInt(request.getParameter("item")));
             out.print("\u005B");
             String s="";
             for (Review i:items){

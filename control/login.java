@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import model.User;
+import model.UserMgr;
 
 /**
  *
@@ -32,20 +33,22 @@ public class Login extends HttpServlet {
     protected void doPost(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
 
-        String user_email = request.getParameter("user_email");
-        String user_password = request.getParameter("user_password");
-
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
+        String user_email = request.getParameter("user_email");
+        String user_password = request.getParameter("user_password");
+
         try {
-            if (User.login(user_email, user_password)) {
-                out.println("Welcome!");
+            User user = UserMgr.login(user_email, user_password);
+            if (user.isValid()) {
+                out.printf("\u005B\"OK\",\"%s %s\"\u005D",user.fName,user.lName);
                 HttpSession session = request.getSession();
-                session.setAttribute("email", user_email);
+                session.setAttribute("user", user);
                 //out.println(session.getAttribute("email"));
+                //response.sendRedirect(request.getHeader("Referer"));
             } else {
-                out.println("fail");
+                out.printf("\u005B\"ERR\"\u005D");
             }
 
         } catch (Exception e) {
@@ -57,17 +60,20 @@ public class Login extends HttpServlet {
             throws ServletException, IOException {
         PrintWriter out = response.getWriter();
         HttpSession session = request.getSession();
-        out.println(session.getAttribute("email"));
+        User user = (User) session.getAttribute("user");
         String act = request.getParameter("act");
-        if (act != null) {
-            if (act.equals("logout")) {
-                request.getSession().invalidate();
+        if (user != null) {
+            if (act != null && act.equals("logout")) {
+                session.invalidate();
+                //response.sendRedirect(request.getHeader("Referer"));
+            } else {
+                out.print(user.fName + " " + user.lName);
             }
         }
     }
 
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
+    }
 
 }
