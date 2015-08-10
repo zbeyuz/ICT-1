@@ -44,7 +44,7 @@ public class GetItem extends HttpServlet {
             for (Product i:items){
                 out.print(s);
                 out.printf("\u005B%d,\"%s\",%d,\"%s\"\u005D",
-                        i.id,i.name,i.price,"images/product_img_24.jpg");
+                        i.id,i.name,i.price,i.profile_pic);
                 s=",";
             }
             out.print("\u005D");

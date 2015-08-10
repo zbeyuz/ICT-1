@@ -17,7 +17,7 @@ import model.User;
  *
  * @author Evilill
  */
-public class register extends HttpServlet {
+public class Register extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -37,16 +37,16 @@ public class register extends HttpServlet {
         String user_fname = request.getParameter("user_fname");
         String user_lname = request.getParameter("user_lname");
         response.setContentType("text/html");
-        PrintWriter writer = response.getWriter();
+        PrintWriter out = response.getWriter();
 
         try {
             User.register(user_email, user_password, user_fname, user_lname);
 
         } catch (Exception e) {
-            writer.print("Do not connect to DB - Error:" + e);
+            out.print("Do not connect to DB - Error:" + e);
         }
 
-        writer.close();
+        out.close();
     }
 
     @Override

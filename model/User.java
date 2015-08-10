@@ -5,14 +5,12 @@
  */
 package model;
 
-import com.mysql.jdbc.Statement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Date;
+
 
 /**
  *
@@ -23,45 +21,44 @@ public class User {
     //login functon
     public static boolean login(String user_email, String user_password) throws SQLException, Exception {
 
-
         Class.forName("com.mysql.jdbc.Driver");
         Connection conn = null;
-        conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db","root", "");
+        conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db", "root", "");
         PreparedStatement pstmt = null;
+<<<<<<< HEAD
         ResultSet rs = null;    
         pstmt = conn.prepareStatement("SELECT * FROM `user_list`");
+=======
+        ResultSet rs = null;
+        pstmt = conn.prepareStatement("SELECT * FROM `user_list` WHERE `user_email`=? AND `user_password`=?");
+        pstmt.setString(1, user_email);
+        pstmt.setString(2, user_password);
+>>>>>>> zbeyuz/master
         rs = pstmt.executeQuery();
-        
-        String email = "0"; //use to get user_email from database
-        String password = "0"; //use to get password from data base
-        //String ch = "User or password are incorect"; //use t check that user and password are right ot not
-
-        while (rs.next()) {
-            email = rs.getString("user_email");
-            password = rs.getString("user_password");
-
-            if (email.equals(user_email) && password.equals(user_password)) {
-                conn.close();
-                return true;
-            }
-
-        }
+        boolean res = rs.next();
         conn.close();
-        return false;
+        return res;
 
     }
 
     //register    
     public static boolean register(String user_email, String user_password, String user_fname, String user_lname) throws SQLException, Exception {
-        
+
         Class.forName("com.mysql.jdbc.Driver");
         Connection conn = null;
-        conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db","root", "");
+        conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db", "root", "");
         PreparedStatement pstmt = null;
+<<<<<<< HEAD
         ResultSet rs = null;    
         pstmt = conn.prepareStatement("SELECT * FROM `user_list`");
         rs = pstmt.executeQuery(); 
         
+=======
+        ResultSet rs = null;
+        pstmt = conn.prepareStatement("SELECT * FROM `item_list`");
+        rs = pstmt.executeQuery();
+
+>>>>>>> zbeyuz/master
         String email = "0"; //use to store email from database
         String ch = "ok"; //user for check that email already been use or not
         int id = 0; //use to store lastest user id
@@ -73,8 +70,7 @@ public class User {
                 ch = "This email already been used"; //change state if email already been used
             }
         }
-        
-        
+
         pstmt = conn.prepareStatement("insert into user_list values(?,?,?,?,?)");
         if (ch.equals("ok")) {
             id++;
@@ -93,6 +89,7 @@ public class User {
             //register fail
         }
     }
+<<<<<<< HEAD
     
     
     public static boolean add_review(int item_id, int user_id, String review_title, Date review_date, int review_value, int review_price, int review_quality, String review_text) throws SQLException, Exception {
@@ -162,4 +159,6 @@ public class User {
         return res;
     }
 
+=======
+>>>>>>> zbeyuz/master
 }

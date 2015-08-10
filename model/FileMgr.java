@@ -20,7 +20,17 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
  */
 public class FileMgr {
 
-    public static void upload(HttpServletRequest request, File path) throws Exception {
+    File path;
+
+    public FileMgr(File path) {
+        this.path = path;
+    }
+
+    public FileMgr(String path) {
+        this(new File(path));
+    }
+
+    public void upload(HttpServletRequest request) throws Exception {
 
         boolean isMultipart = ServletFileUpload.isMultipartContent(request);
 
@@ -39,10 +49,16 @@ public class FileMgr {
                     if (!path.exists()) {
                         boolean status = path.mkdirs();
                     }
+                    String dir = path + "/" + fileName;
 
-                    File uploadedFile = new File(path + "/" + fileName);
-                    System.out.println(uploadedFile.getAbsolutePath());
-                    item.write(uploadedFile);
+                    File uploadedFile = new File(dir);
+                    if (!(uploadedFile.exists() && !uploadedFile.isDirectory())) {
+
+                        //System.out.println(uploadedFile.getAbsolutePath());
+                        item.write(uploadedFile);
+                    } else {
+                        throw new Exception("File exist");
+                    }
                 }
             }
 

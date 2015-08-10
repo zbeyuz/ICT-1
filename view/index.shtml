@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype shtml>
 <html lang="en">
     <head>
         <!-- Basic
@@ -43,621 +43,7 @@
 
 
         <div class="wide_layout">
-
-            <!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->
-
-            <header id="header" class="type_4">
-
-                <!-- - - - - - - - - - - - - - Bottom part - - - - - - - - - - - - - - - - -->
-
-                <div class="bottom_part">
-
-                    <div class="container">
-
-                        <div class="row">
-
-                            <div class="main_header_row">
-
-                                <div class="col-sm-6">
-
-                                    <!-- - - - - - - - - - - - - - Logo - - - - - - - - - - - - - - - - -->
-
-                                    <a href="index.html" class="logo">
-
-                                        <img src="images/logo.png" alt="">
-
-                                    </a>
-
-                                    <!-- - - - - - - - - - - - - - End of logo - - - - - - - - - - - - - - - - -->
-
-                                </div><!--/ [col]-->
-
-
-
-                                <div class="col-lg-6 col-sm-5">
-
-                                    <div class="clearfix">
-
-                                        <!-- - - - - - - - - - - - - - Language change (Add more in the future) - - - - - - - - - - - - - - - - -->
-
-                                        <div class="alignright site_settings">
-
-                                            <span><img src="images/flag_en.png" alt="">English</span>
-
-                                        </div><!--/ .alignright.site_settings-->
-
-                                        <!-- - - - - - - - - - - - - - End of language change - - - - - - - - - - - - - - - - -->
-
-
-
-                                    </div><!--/ .clearfix-->
-
-                                    <!-- - - - - - - - - - - - - - Navigation - - - - - - - - - - - - - - - - -->
-
-                                    <nav class="align_right">
-
-                                        <ul class="topbar">
-
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="my_account.html">My Account</a></li>
-                                            <li><a href="cart.html">Shopping Cart</a></li>
-                                            <li><a href="checkout.html">Checkout</a></li>
-                                            <li><a href="contact.html">Contact us</a></li>
-
-                                        </ul>
-
-                                    </nav>
-
-                                    <!-- - - - - - - - - - - - - - End navigation - - - - - - - - - - - - - - - - -->
-
-                                </div><!--/ [col]-->
-
-                            </div><!--/ .main_header_row-->
-
-                        </div><!--/ .row-->
-
-                    </div><!--/ .container-->
-
-                </div><!--/ .bottom_part -->
-
-                <!-- - - - - - - - - - - - - - End of bottom part - - - - - - - - - - - - - - - - -->
-
-                <!-- - - - - - - - - - - - - - Main navigation wrapper - - - - - - - - - - - - - - - - -->
-
-                <div id="main_navigation_wrap">
-
-                    <div class="container">
-
-                        <div class="row">
-
-                            <div class="col-xs-12">
-
-                                <div class="sticky_inner">
-
-                                    <!-- - - - - - - - - - - - - - Navigation item - - - - - - - - - - - - - - - - -->
-
-                                    <div class="nav_item size_1">
-
-                                        <button class="open_menu"></button>
-
-                                        <!-- - - - - - - - - - - - - - Main navigation - - - - - - - - - - - - - - - - -->
-
-                                        <ul class="theme_menu cats dropdown">
-
-                                            <li class="has_megamenu animated_item">
-
-                                                <a href="#">MEN</a>
-
-                                                <!-- - - - - - - - - - - - - - Mega menu - - - - - - - - - - - - - - - - -->
-
-                                                <div class="mega_menu type_2 clearfix">
-
-                                                    <!-- - - - - - - - - - - - - - Mega menu item - - - - - - - - - - - - - - - - -->
-
-                                                    <div class="mega_menu_item">
-
-                                                        <h6><b>CLOTHING</b></h6>
-
-                                                        <ul class="list_of_links">
-
-                                                            <li><a href="#">T-Shirts &amp; Singlets</a></li>
-                                                            <li><a href="#">Shirts &amp; Polos</a></li>
-                                                            <li><a href="#">Coats &amp; Jackets</a></li>
-                                                            <li><a href="#">Sweats &amp; Hoodies</a></li>
-                                                            <li><a href="#" class="all">View All Categories</a></li>
-
-                                                        </ul>
-
-                                                    </div><!--/ .mega_menu_item-->
-
-                                                    <!-- - - - - - - - - - - - - - End of mega menu item - - - - - - - - - - - - - - - - -->
-
-                                                    <!-- - - - - - - - - - - - - - Mega menu item - - - - - - - - - - - - - - - - -->
-
-                                                    <div class="mega_menu_item">
-
-                                                        <h6><b>ACCESSORIES</b></h6>
-
-                                                        <ul class="list_of_links">
-
-                                                            <li><a href="#">Scarves &amp; Gloves</a></li>
-                                                            <li><a href="#">Sunglasses</a></li>
-                                                            <li><a href="#">Bags</a></li>
-                                                            <li><a href="#">Wallets</a></li>
-                                                            <li><a href="#" class="all">View All Categories</a></li>
-
-                                                        </ul>
-
-                                                    </div><!--/ .mega_menu_item-->
-
-                                                    <!-- - - - - - - - - - - - - - End of mega menu item - - - - - - - - - - - - - - - - -->
-
-                                                    <!-- - - - - - - - - - - - - - Mega menu item - - - - - - - - - - - - - - - - -->
-
-                                                    <div class="mega_menu_item">
-
-                                                        <a href="#">
-                                                            <img src="images/mega_menu_img_1.jpg" alt="">
-                                                        </a>
-
-                                                    </div><!--/ .mega_menu_item-->
-
-                                                    <!-- - - - - - - - - - - - - - End of mega menu item - - - - - - - - - - - - - - - - -->
-
-                                                </div><!--/ .mega_menu-->
-
-                                                <!-- - - - - - - - - - - - - - End of mega menu - - - - - - - - - - - - - - - - -->
-
-                                            </li>
-
-                                            <li class="has_megamenu animated_item">
-
-                                                <a href="#">WOMEN</a>
-
-                                                <!-- - - - - - - - - - - - - - Mega menu - - - - - - - - - - - - - - - - -->
-
-                                                <div class="mega_menu type_4 clearfix">
-
-                                                    <!-- - - - - - - - - - - - - - Mega menu item - - - - - - - - - - - - - - - - -->
-
-                                                    <div class="mega_menu_item">
-
-                                                        <h6><b>CLOTHING</b></h6>
-
-                                                        <ul class="list_of_links">
-
-                                                            <li><a href="#">Dresses</a></li>
-                                                            <li><a href="#">Tops</a></li>
-                                                            <li><a href="#">Skirts</a></li>
-                                                            <li><a href="#">Coats &amp; Jackets</a></li>
-                                                            <li><a href="#" class="all">View All Categories</a></li>
-
-                                                        </ul>
-
-                                                    </div><!--/ .mega_menu_item-->
-
-                                                    <!-- - - - - - - - - - - - - - End of mega menu item - - - - - - - - - - - - - - - - -->
-
-                                                    <!-- - - - - - - - - - - - - - Mega menu item - - - - - - - - - - - - - - - - -->
-
-                                                    <div class="mega_menu_item">
-
-                                                        <h6><b>ACCESSORIES</b></h6>
-
-                                                        <ul class="list_of_links">
-
-                                                            <li><a href="#">Jewellery</a></li>
-                                                            <li><a href="#">Sunglasses</a></li>
-                                                            <li><a href="#">Bags</a></li>
-                                                            <li><a href="#">Wallets</a></li>
-                                                            <li><a href="#" class="all">View All Categories</a></li>
-
-                                                        </ul>
-
-                                                    </div><!--/ .mega_menu_item-->
-
-                                                    <!-- - - - - - - - - - - - - - End of mega menu item - - - - - - - - - - - - - - - - -->
-
-                                                    <!-- - - - - - - - - - - - - - Mega menu item - - - - - - - - - - - - - - - - -->
-
-                                                    <div class="mega_menu_item">
-
-                                                        <h6><b>BEAUTY</b></h6>
-
-                                                        <ul class="list_of_links">
-
-                                                            <li><a href="#">Perfumes</a></li>
-                                                            <li><a href="#">Make-up</a></li>
-                                                            <li><a href="#">Hands &amp; Feet</a></li>
-                                                            <li><a href="#" class="all">View All Categories</a></li>
-
-                                                        </ul>
-
-                                                    </div><!--/ .mega_menu_item-->
-
-                                                    <!-- - - - - - - - - - - - - - End of mega menu item - - - - - - - - - - - - - - - - -->
-
-                                                    <!-- - - - - - - - - - - - - - Banner - - - - - - - - - - - - - - - - -->
-
-                                                    <div class="mega_menu_banner">
-
-                                                        <a href="#">
-                                                            <img src="images/mega_menu_img_2.jpg" alt="">
-                                                        </a>
-
-                                                    </div><!--/ .mega_menu_banner-->
-
-                                                    <!-- - - - - - - - - - - - - - End of banner - - - - - - - - - - - - - - - - -->
-
-                                                </div><!--/ .mega_menu-->
-
-                                                <!-- - - - - - - - - - - - - - End of mega menu - - - - - - - - - - - - - - - - -->
-
-                                            </li>
-
-                                            <li class="has_megamenu animated_item">
-
-                                                <a href="#" class="all"><b>OTHER CATEGORIES</b></a>
-
-                                                <!-- - - - - - - - - - - - - - Mega menu - - - - - - - - - - - - - - - - -->
-
-                                                <div class="mega_menu type_3 clearfix">
-
-                                                    <!-- - - - - - - - - - - - - - Mega menu item - - - - - - - - - - - - - - - - -->
-
-                                                    <div class="mega_menu_item">
-
-                                                        <ul class="list_of_links">
-
-                                                            <li><a href="#">Featured Items</a></li>
-                                                            <li><a href="#">New Arrivals</a></li>
-                                                            <li><a href="#">Bestsellers</a></li>
-                                                            <li><a href="#" class="all">View All Categories</a></li>
-
-                                                        </ul>
-
-                                                    </div><!--/ .mega_menu_item -->
-
-                                                    <!-- - - - - - - - - - - - - - End of mega menu item - - - - - - - - - - - - - - - - -->
-
-                                                    <!-- - - - - - - - - - - - - - Mega menu item - - - - - - - - - - - - - - - - -->
-
-                                                    <div class="mega_menu_item products_in_mega_menu">
-
-                                                        <h6 class="widget_title"><b>Today's Deals</b></h6>
-
-                                                        <div class="row">
-
-                                                            <div class="col-sm-4">
-
-                                                                <!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
-
-                                                                <div class="product_item">
-
-                                                                    <!-- - - - - - - - - - - - - - Thumbnail - - - - - - - - - - - - - - - - -->
-
-                                                                    <div class="image_wrap">
-
-                                                                        <img src="images/product_img_11.jpg" alt="">
-
-                                                                    </div><!--/. image_wrap-->
-
-                                                                    <!-- - - - - - - - - - - - - - End thumbnail - - - - - - - - - - - - - - - - -->
-
-                                                                    <!-- - - - - - - - - - - - - - Label - - - - - - - - - - - - - - - - -->
-
-                                                                    <div class="label_offer percentage">
-
-                                                                        <div>30%</div>OFF
-
-                                                                    </div>
-
-                                                                    <!-- - - - - - - - - - - - - - End label - - - - - - - - - - - - - - - - -->
-
-                                                                    <!-- - - - - - - - - - - - - - Product description - - - - - - - - - - - - - - - - -->
-
-                                                                    <div class="description">
-
-                                                                        <p>Ivory Body Wash, Original 24
-                                                                            fl oz</p>
-
-                                                                        <div class="clearfix product_info">
-
-                                                                            <p class="product_price alignleft"><s>$9.99</s> <b>$5.99</b></p>
-
-                                                                        </div><!--/ .clearfix.product_info-->
-
-                                                                    </div>
-
-                                                                    <!-- - - - - - - - - - - - - - End of product description - - - - - - - - - - - - - - - - -->
-
-                                                                </div><!--/ .product_item-->
-
-                                                                <!-- - - - - - - - - - - - - - End of product - - - - - - - - - - - - - - - - -->
-
-                                                            </div><!--/ [col]-->
-
-                                                            <div class="col-sm-4">
-
-                                                                <!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
-
-                                                                <div class="product_item">
-
-                                                                    <!-- - - - - - - - - - - - - - Thumbnail - - - - - - - - - - - - - - - - -->
-
-                                                                    <div class="image_wrap">
-
-                                                                        <img src="images/product_img_12.jpg" alt="">
-
-                                                                    </div><!--/. image_wrap-->
-
-                                                                    <!-- - - - - - - - - - - - - - End thumbnail - - - - - - - - - - - - - - - - -->
-
-                                                                    <!-- - - - - - - - - - - - - - Label - - - - - - - - - - - - - - - - -->
-
-                                                                    <div class="label_offer percentage">
-
-                                                                        <div>25%</div>OFF
-
-                                                                    </div>
-
-                                                                    <!-- - - - - - - - - - - - - - End label - - - - - - - - - - - - - - - - -->
-
-                                                                    <!-- - - - - - - - - - - - - - Product description - - - - - - - - - - - - - - - - -->
-
-                                                                    <div class="description">
-
-                                                                        <p>Luvs with Leakguards, Size 4 Diapers 29 ea</p>
-
-                                                                        <div class="clearfix product_info">
-
-                                                                            <p class="product_price alignleft"><s>$16.99</s> <b>$14.99</b></p>
-
-                                                                        </div><!--/ .clearfix.product_info-->
-
-                                                                    </div>
-
-                                                                    <!-- - - - - - - - - - - - - - End of product description - - - - - - - - - - - - - - - - -->
-
-                                                                </div><!--/ .product_item-->
-
-                                                                <!-- - - - - - - - - - - - - - End of product - - - - - - - - - - - - - - - - -->
-
-                                                            </div><!--/ [col]-->
-
-                                                            <div class="col-sm-4">
-
-                                                                <!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
-
-                                                                <div class="product_item">
-
-                                                                    <!-- - - - - - - - - - - - - - Thumbnail - - - - - - - - - - - - - - - - -->
-
-                                                                    <div class="image_wrap">
-
-                                                                        <img src="images/product_img_13.jpg" alt="">
-
-                                                                    </div><!--/. image_wrap-->
-
-                                                                    <!-- - - - - - - - - - - - - - End thumbnail - - - - - - - - - - - - - - - - -->
-
-                                                                    <!-- - - - - - - - - - - - - - Label - - - - - - - - - - - - - - - - -->
-
-                                                                    <div class="label_offer percentage">
-
-                                                                        <div>40%</div>OFF
-
-                                                                    </div>
-
-                                                                    <!-- - - - - - - - - - - - - - End label - - - - - - - - - - - - - - - - -->
-
-                                                                    <!-- - - - - - - - - - - - - - Product description - - - - - - - - - - - - - - - - -->
-
-                                                                    <div class="description">
-
-                                                                        <p>Doctor's Best Curcumin C3 Complex with...</p>
-
-                                                                        <div class="clearfix product_info">
-
-                                                                            <p class="product_price alignleft"><s>$103.99</s> <b>$73.99</b></p>
-
-                                                                        </div><!--/ .clearfix.product_info-->
-
-                                                                    </div>
-
-                                                                    <!-- - - - - - - - - - - - - - End of product description - - - - - - - - - - - - - - - - -->
-
-                                                                </div><!--/ .product_item-->
-
-                                                                <!-- - - - - - - - - - - - - - End of product - - - - - - - - - - - - - - - - -->
-
-                                                            </div><!--/ [col]-->
-
-                                                        </div><!--/ .row-->
-
-                                                        <hr>
-
-                                                        <a href="#todayDeal" class="button_grey">View All Deals</a>
-
-                                                    </div><!--/ .mega_menu_item-->
-
-                                                    <!-- - - - - - - - - - - - - - End of mega menu item - - - - - - - - - - - - - - - - -->
-
-                                                </div><!--/ .mega_menu-->
-
-                                                <!-- - - - - - - - - - - - - - End of mega menu - - - - - - - - - - - - - - - - -->
-
-                                            </li>
-
-                                        </ul>
-
-                                        <!-- - - - - - - - - - - - - - End of main navigation - - - - - - - - - - - - - - - - -->
-
-                                    </div><!--/ .nav_item-->
-
-                                    <!-- - - - - - - - - - - - - - End of navigation item - - - - - - - - - - - - - - - - -->
-
-                                    <!-- - - - - - - - - - - - - - Navigation item - - - - - - - - - - - - - - - - -->
-
-                                    <div class="nav_item inner_offset">
-
-                                        <!-- - - - - - - - - - - - - - Search form - - - - - - - - - - - - - - - - -->
-
-                                        <form class="clearfix search">
-
-                                            <input type="text" name="" tabindex="1" placeholder="Search..." class="alignleft">
-
-                                            <!-- - - - - - - - - - - - - - Categories - - - - - - - - - - - - - - - - -->
-
-                                            <div class="search_category alignleft">
-
-                                                <div class="open_categories">All Categories</div>
-
-                                                <ul class="categories_list dropdown">
-
-                                                    <li class="animated_item"><a href="#">Men</a></li>
-                                                    <li class="animated_item"><a href="#">Women</a></li>
-
-                                                </ul>
-
-                                            </div><!--/ .search_category.alignleft-->
-
-                                            <!-- - - - - - - - - - - - - - End of categories - - - - - - - - - - - - - - - - -->
-
-                                            <button class="button_blue def_icon_btn alignleft"></button>
-
-                                        </form><!--/ #search-->
-
-                                        <!-- - - - - - - - - - - - - - End search form - - - - - - - - - - - - - - - - -->
-
-                                    </div><!--/ .nav_item-->
-
-                                    <!-- - - - - - - - - - - - - - End of main navigation - - - - - - - - - - - - - - - - -->
-
-                                    <!-- - - - - - - - - - - - - - Navigation item - - - - - - - - - - - - - - - - -->
-
-                                    <div class="nav_item size_1">
-
-                                        <a href="wishlist.html" class="wishlist_button" data-amount="7"></a>
-
-                                    </div><!--/ .nav_item-->
-
-                                    <!-- - - - - - - - - - - - - - End of main navigation - - - - - - - - - - - - - - - - -->
-
-
-
-                                    <!-- - - - - - - - - - - - - - Navigation item - - - - - - - - - - - - - - - - -->
-
-                                    <div class="nav_item size_2">
-
-                                        <div class="login_box"><div class="login_box_inner">Welcome visitor <a href="#" data-modal-url="modals/login.html">Login</a> or <a href="#" data-modal-url="modals/register.html">Register</a></div></div>
-
-                                    </div><!--/ .nav_item-->
-
-                                    <!-- - - - - - - - - - - - - - End of main navigation - - - - - - - - - - - - - - - - -->
-
-                                    <!-- - - - - - - - - - - - - - Navigation item - - - - - - - - - - - - - - - - -->
-
-                                    <div class="nav_item size_2">
-
-                                        <button id="open_shopping_cart" class="open_button" data-amount="3">
-                                            <b class="title">My Cart</b>
-                                            <b class="total_price">$999.00</b>
-                                        </button>
-
-                                        <!-- - - - - - - - - - - - - - Products list - - - - - - - - - - - - - - - - -->
-
-                                        <div class="shopping_cart dropdown">
-
-                                            <div class="animated_item">
-
-                                                <p class="title">Recently added item(s)</p>
-
-                                                <!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
-
-                                                <div class="clearfix sc_product">
-
-                                                    <a href="#" class="product_thumb"><img src="images/sc_img_1.jpg" alt=""></a>
-
-                                                    <a href="#" class="product_name">Natural Factors PGX Daily Ultra Matrix...</a>
-
-                                                    <p>1 x $499.00</p>
-
-                                                    <button class="close"></button>
-
-                                                </div><!--/ .clearfix.sc_product-->
-
-                                                <!-- - - - - - - - - - - - - - End of product - - - - - - - - - - - - - - - - -->
-
-                                            </div><!--/ .animated_item-->
-
-                                            <div class="animated_item">
-
-                                                <!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
-
-                                                <div class="clearfix sc_product">
-
-                                                    <a href="#" class="product_thumb"><img src="images/sc_img_2.jpg" alt=""></a>
-
-                                                    <a href="#" class="product_name">Oral-B Glide Pro-Health Floss...</a>
-
-                                                    <p>1 x $499.00</p>
-
-                                                    <button class="close"></button>
-
-                                                </div><!--/ .clearfix.sc_product-->
-
-                                                <!-- - - - - - - - - - - - - - End of product - - - - - - - - - - - - - - - - -->
-
-                                            </div><!--/ .animated_item-->
-
-                                            <div class="animated_item">
-
-                                                <!-- - - - - - - - - - - - - - Total info - - - - - - - - - - - - - - - - -->
-
-                                                <ul class="total_info">
-
-                                                    <li><span class="price">Discount:</span> $37.00</li>
-
-                                                    <li class="total"><b><span class="price">Total:</span> $999.00</b></li>
-
-                                                </ul>
-
-                                                <!-- - - - - - - - - - - - - - End of total info - - - - - - - - - - - - - - - - -->
-
-                                            </div><!--/ .animated_item-->
-
-                                            <div class="animated_item">
-
-                                                <a href="cart.html" class="button_grey">View Cart</a>
-
-                                                <a href="checkout.html" class="button_blue">Checkout</a>
-
-                                            </div><!--/ .animated_item-->
-
-                                        </div><!--/ .shopping_cart.dropdown-->
-
-                                        <!-- - - - - - - - - - - - - - End of products list - - - - - - - - - - - - - - - - -->
-
-                                    </div><!--/ .nav_item-->
-
-                                    <!-- - - - - - - - - - - - - - End of main navigation - - - - - - - - - - - - - - - - -->
-
-                                </div><!--/ .main_navigation-->
-
-                            </div><!--/ [col]-->
-
-                        </div><!--/ .row-->
-
-                    </div><!--/ .container-->
-
-                </div><!--/ .main_navigation_wrap-->
-
-                <!-- - - - - - - - - - - - - - End of main navigation wrapper - - - - - - - - - - - - - - - - -->
-
-            </header>
-
-            <!-- - - - - - - - - - - - - - End Header - - - - - - - - - - - - - - - - -->
+            <#include "header.shtml">
 
             <!-- - - - - - - - - - - - - - Layer slider - - - - - - - - - - - - - - - - -->
 
@@ -690,7 +76,7 @@
                         <small>Our</small> Support Team<br><small>Are</small> Ready <small>to</small> Help You!
                     </div>
 
-                    <a href="contact.html" class="ls-l button_blue huge_btn" style="left: 50%; top: 347px;" data-ls="offsetxin: -60; durationin: 650; easingin: easeOutBack; delayin: 450; ">Contact Us Now!</a>
+                    <a href="contact.shtml" class="ls-l button_blue huge_btn" style="left: 50%; top: 347px;" data-ls="offsetxin: -60; durationin: 650; easingin: easeOutBack; delayin: 450; ">Contact Us Now!</a>
 
                 </div>
 
@@ -790,7 +176,7 @@
 
                                         <button class="button_dark_grey def_icon_btn add_to_wishlist tooltip_container alignleft"><span class="tooltip right">Add to Wishlist</span></button>
 
-                                        <button class="button_black def_icon_btn quick_view_product tooltip_container align_center" data-modal-url="modals/quick_view.html"><span class="tooltip top">Quick View</span></button>
+                                        <button class="button_black def_icon_btn quick_view_product tooltip_container align_center" data-modal-url="modals/quick_view.shtml"><span class="tooltip top">Quick View</span></button>
 
                                         <button class="button_blue def_icon_btn add_to_cart tooltip_container alignright"><span class="tooltip left">Add to Cart</span></button>
 
@@ -822,7 +208,7 @@
 
                                 <div class="description">
 
-                                    <p><a href="product.html">Tellus Dolor Dapibus Eget 24 fl oz</a></p>
+                                    <p><a href="product.shtml">Tellus Dolor Dapibus Eget 24 fl oz</a></p>
 
                                     <div class="clearfix product_info">
 
@@ -854,7 +240,7 @@
 
                                         <button class="button_dark_grey def_icon_btn add_to_wishlist tooltip_container alignleft"><span class="tooltip right">Add to Wishlist</span></button>
 
-                                        <button class="button_black def_icon_btn quick_view_product tooltip_container align_center" data-modal-url="modals/quick_view.html"><span class="tooltip top">Quick View</span></button>
+                                        <button class="button_black def_icon_btn quick_view_product tooltip_container align_center" data-modal-url="modals/quick_view.shtml"><span class="tooltip top">Quick View</span></button>
 
                                         <button class="button_blue def_icon_btn add_to_cart tooltip_container alignright"><span class="tooltip left">Add to Cart</span></button>
 
@@ -886,7 +272,7 @@
 
                                 <div class="description">
 
-                                    <p><a href="product.html">Nam Elit Agna Enrerit Sit Amet Dolor Ipsum Amet, Deep Cleansing 1 each</a></p>
+                                    <p><a href="product.shtml">Nam Elit Agna Enrerit Sit Amet Dolor Ipsum Amet, Deep Cleansing 1 each</a></p>
 
                                     <div class="clearfix product_info">
 
@@ -918,7 +304,7 @@
 
                                         <button class="button_dark_grey def_icon_btn add_to_wishlist tooltip_container alignleft"><span class="tooltip right">Add to Wishlist</span></button>
 
-                                        <button class="button_black def_icon_btn quick_view_product tooltip_container align_center" data-modal-url="modals/quick_view.html"><span class="tooltip top">Quick View</span></button>
+                                        <button class="button_black def_icon_btn quick_view_product tooltip_container align_center" data-modal-url="modals/quick_view.shtml"><span class="tooltip top">Quick View</span></button>
 
                                         <button class="button_blue def_icon_btn add_to_cart tooltip_container alignright"><span class="tooltip left">Add to Cart</span></button>
 
@@ -950,7 +336,7 @@
 
                                 <div class="description">
 
-                                    <p><a href="product.html">Nemo Enim Ipsam Voluptaem Quia Lorem, 1000mg, Tablets, 120 ea</a></p>
+                                    <p><a href="product.shtml">Nemo Enim Ipsam Voluptaem Quia Lorem, 1000mg, Tablets, 120 ea</a></p>
 
                                     <div class="clearfix product_info">
 
@@ -1001,7 +387,7 @@
 
                                         <button class="button_dark_grey def_icon_btn middle_btn add_to_wishlist tooltip_container alignleft"><span class="tooltip right">Add to Wishlist</span></button>
 
-                                        <button class="button_black def_icon_btn middle_btn quick_view_product tooltip_container align_center" data-modal-url="modals/quick_view.html"><span class="tooltip top">Quick View</span></button>
+                                        <button class="button_black def_icon_btn middle_btn quick_view_product tooltip_container align_center" data-modal-url="modals/quick_view.shtml"><span class="tooltip top">Quick View</span></button>
 
                                         <button class="button_blue def_icon_btn middle_btn add_to_cart tooltip_container alignright"><span class="tooltip left">Add to Cart</span></button>
 
@@ -1023,7 +409,7 @@
 
                                 <div class="description">
 
-                                    <a href="product.html">Aenean Auctor Wisi Et Urna Ipsum 750mg, Softgels 120 ea</a>
+                                    <a href="product.shtml">Aenean Auctor Wisi Et Urna Ipsum 750mg, Softgels 120 ea</a>
 
                                     <div class="clearfix product_info">
 
@@ -1057,7 +443,7 @@
 
                                         <button class="button_dark_grey def_icon_btn middle_btn add_to_wishlist tooltip_container alignleft"><span class="tooltip right">Add to Wishlist</span></button>
 
-                                        <button class="button_black def_icon_btn middle_btn quick_view_product tooltip_container align_center" data-modal-url="modals/quick_view.html"><span class="tooltip top">Quick View</span></button>
+                                        <button class="button_black def_icon_btn middle_btn quick_view_product tooltip_container align_center" data-modal-url="modals/quick_view.shtml"><span class="tooltip top">Quick View</span></button>
 
                                         <button class="button_blue def_icon_btn middle_btn add_to_cart tooltip_container alignright"><span class="tooltip left">Add to Cart</span></button>
 
@@ -1079,7 +465,7 @@
 
                                 <div class="description">
 
-                                    <a href="product.html">Lorem Ipsum Dolor Sit Amet Con Sectetuer Adipiscing, 2.5 fl oz (75ml)</a>
+                                    <a href="product.shtml">Lorem Ipsum Dolor Sit Amet Con Sectetuer Adipiscing, 2.5 fl oz (75ml)</a>
 
                                     <div class="clearfix product_info">
 
@@ -1111,7 +497,7 @@
 
                                         <button class="button_dark_grey def_icon_btn middle_btn add_to_wishlist tooltip_container alignleft"><span class="tooltip right">Add to Wishlist</span></button>
 
-                                        <button class="button_black def_icon_btn middle_btn quick_view_product tooltip_container align_center" data-modal-url="modals/quick_view.html"><span class="tooltip top">Quick View</span></button>
+                                        <button class="button_black def_icon_btn middle_btn quick_view_product tooltip_container align_center" data-modal-url="modals/quick_view.shtml"><span class="tooltip top">Quick View</span></button>
 
                                         <button class="button_blue def_icon_btn middle_btn add_to_cart tooltip_container alignright"><span class="tooltip left">Add to Cart</span></button>
 
@@ -1127,7 +513,7 @@
 
                                 <div class="description">
 
-                                    <a href="product.html">Ipsum Dolor Sit Amet Adipiscing, Capsules 60 ea</a>
+                                    <a href="product.shtml">Ipsum Dolor Sit Amet Adipiscing, Capsules 60 ea</a>
 
                                     <div class="clearfix product_info">
 
@@ -1233,7 +619,7 @@
 
                         <footer class="bottom_box">
 
-                            <a href="#" class="button_grey middle_btn" data-modal-url="modals/testimonials.html">View All Testimonials</a>
+                            <a href="#" class="button_grey middle_btn" data-modal-url="modals/testimonials.shtml">View All Testimonials</a>
 
                         </footer>
 
@@ -1289,7 +675,7 @@
 
                                         <button class="button_dark_grey def_icon_btn middle_btn add_to_wishlist tooltip_container alignleft"><span class="tooltip right">Add to Wishlist</span></button>
 
-                                        <button class="button_black def_icon_btn middle_btn quick_view_product tooltip_container align_center" data-modal-url="modals/quick_view.html"><span class="tooltip top">Quick View</span></button>
+                                        <button class="button_black def_icon_btn middle_btn quick_view_product tooltip_container align_center" data-modal-url="modals/quick_view.shtml"><span class="tooltip top">Quick View</span></button>
 
                                         <button class="button_blue def_icon_btn middle_btn add_to_cart tooltip_container alignright"><span class="tooltip left">Add to Cart</span></button>
 
@@ -1311,7 +697,7 @@
 
                                 <div class="description">
 
-                                    <a href="product.html">Aenean Auctor Wisi Et Urna Amet, Liqui-gels 24 capsules</a>
+                                    <a href="product.shtml">Aenean Auctor Wisi Et Urna Amet, Liqui-gels 24 capsules</a>
 
                                     <div class="clearfix product_info">
 
@@ -1343,7 +729,7 @@
 
                                         <button class="button_dark_grey def_icon_btn middle_btn add_to_wishlist tooltip_container alignleft"><span class="tooltip right">Add to Wishlist</span></button>
 
-                                        <button class="button_black def_icon_btn middle_btn quick_view_product tooltip_container align_center" data-modal-url="modals/quick_view.html"><span class="tooltip top">Quick View</span></button>
+                                        <button class="button_black def_icon_btn middle_btn quick_view_product tooltip_container align_center" data-modal-url="modals/quick_view.shtml"><span class="tooltip top">Quick View</span></button>
 
                                         <button class="button_blue def_icon_btn middle_btn add_to_cart tooltip_container alignright"><span class="tooltip left">Add to Cart</span></button>
 
@@ -1365,7 +751,7 @@
 
                                 <div class="description">
 
-                                    <a href="product.html">Ipsum Dolor Sit Amet Adipiscing Elit, Allergy &amp; Sinus 4.25 fl oz(126 ml)</a>
+                                    <a href="product.shtml">Ipsum Dolor Sit Amet Adipiscing Elit, Allergy &amp; Sinus 4.25 fl oz(126 ml)</a>
 
                                     <div class="clearfix product_info">
 
@@ -1411,7 +797,7 @@
 
                                         <button class="button_dark_grey def_icon_btn middle_btn add_to_wishlist tooltip_container alignleft"><span class="tooltip right">Add to Wishlist</span></button>
 
-                                        <button class="button_black def_icon_btn middle_btn quick_view_product tooltip_container align_center" data-modal-url="modals/quick_view.html"><span class="tooltip top">Quick View</span></button>
+                                        <button class="button_black def_icon_btn middle_btn quick_view_product tooltip_container align_center" data-modal-url="modals/quick_view.shtml"><span class="tooltip top">Quick View</span></button>
 
                                         <button class="button_blue def_icon_btn middle_btn add_to_cart tooltip_container alignright"><span class="tooltip left">Add to Cart</span></button>
 
@@ -1433,7 +819,7 @@
 
                                 <div class="description">
 
-                                    <a href="product.html">Dolor Sit Amet Lorem, 2mg, White Ice Mint 160 ea</a>
+                                    <a href="product.shtml">Dolor Sit Amet Lorem, 2mg, White Ice Mint 160 ea</a>
 
                                     <div class="clearfix product_info">
 
@@ -1592,9 +978,9 @@
 
                                     <ul class="list_of_links">
 
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="about.shtml">About Us</a></li>
+                                        <li><a href="contact.shtml">Contact Us</a></li>
+                                        <li><a href="faq.shtml">FAQ</a></li>
 
                                     </ul>
 
@@ -1614,9 +1000,9 @@
 
                                     <ul class="list_of_links">
 
-                                        <li><a href="my_account.html">Account Dashboard</a></li>
-                                        <li><a href="my_order.html">Order History</a></li>
-                                        <li><a href="wishlist.html">Wish List</a></li>
+                                        <li><a href="my_account.shtml">Account Dashboard</a></li>
+                                        <li><a href="my_order.shtml">Order History</a></li>
+                                        <li><a href="wishlist.shtml">Wish List</a></li>
 
                                     </ul>
 
@@ -1719,7 +1105,7 @@
 
                         <!-- - - - - - - - - - - - - - End of footer navigation - - - - - - - - - - - - - - - - -->
 
-                        <p class="copyright">&copy; 2015 <a href="index.html">ICPress</a>. All Rights Reserved.</p>
+                        <p class="copyright">&copy; 2015 <a href="index.shtml">ICPress</a>. All Rights Reserved.</p>
 
                     </div><!--/ .container -->
 
@@ -1886,18 +1272,33 @@
         <script src="js/theme.plugins.js"></script>
         <script src="js/theme.core.js"></script>
         <script>
-            $.post("getitem", function (data) {
+            $.get("getitem", function (data) {
                 var items = JSON.parse(data);
-                console.log(items)
                 for (i = 0; i < items.length; i++) {
-                    $("#arrival").append('<div class="product_item type_3"> <div class="image_wrap"> <img src="' +
-                            items[i][3] +
-                            '" alt=""> <div class="actions_wrap"> <button class="button_dark_grey def_icon_btn middle_btn add_to_wishlist tooltip_container alignleft"><span class="tooltip right">Add to Wishlist</span></button> <button class="button_black def_icon_btn middle_btn quick_view_product tooltip_container align_center" data-modal-url="modals/quick_view.html"><span class="tooltip top">Quick View</span></button><button class="button_blue def_icon_btn middle_btn add_to_cart tooltip_container alignright"><span class="tooltip left">Add to Cart</span></button></div></div><div class="label_new">New</div><div class="description">' +
-                            ' <a href="product.html">' +
-                            items[i][1] +
-                            '</a> <div class="clearfix product_info"><p class="product_price alignleft"><b>' +
-                            items[i][2] +
-                            '</b></p> </div> </div>   </div>');
+                    $("#arrival").append('\
+<div class="product_item type_3">\
+  <div class="image_wrap">\
+    <img src="images/product_img_24.jpg" alt="">\
+    <div class="actions_wrap">\
+      <button class="button_dark_grey def_icon_btn middle_btn add_to_wishlist tooltip_container alignleft">\
+        <span class="tooltip right">Add to Wishlist</span>\
+      </button>\
+      <button class="button_black def_icon_btn middle_btn quick_view_product tooltip_container align_center" data-modal-url="view?id='+items[i][0]+'">\
+        <span class="tooltip top">Quick View</span>\
+      </button>\
+      <button class="button_blue def_icon_btn middle_btn add_to_cart tooltip_container alignright">\
+        <span class="tooltip left">Add to Cart</span>\
+      </button>\
+    </div>\
+  </div>\
+  <div class="label_new">New</div>\
+  <div class="description">\
+    <a href="product?id='+items[i][0]+'">' + items[i][1] + '</a>\
+    <div class="clearfix product_info">\
+      <p class="product_price alignleft"><b>' + items[i][2] + '</b></p>\
+    </div>\
+  </div>\
+</div>');
                 }
 
             });
