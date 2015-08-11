@@ -18,6 +18,7 @@ public class Product {
     public String category="";
     public String manufacture="";
     public String info="";
+    public String description="";
     public String profile_pic = "";
 
 }
