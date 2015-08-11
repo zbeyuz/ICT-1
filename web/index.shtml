@@ -1,4 +1,4 @@
-<!doctype shtml>
+<!doctype html>
 <html lang="en">
     <head>
         <!-- Basic
@@ -6,8 +6,8 @@
         <title>Best Style Forever | Home</title>
         <meta charset="utf-8">
         <meta name="author" content="GOTG">
-        <meta name="description" content="Fashion, clothing online shopping">
-        <meta name="keywords" content="Fashion, clothing online shopping">
+        <meta name="description" content="Fashion, clothing, online shopping">
+        <meta name="keywords" content="Fashion, clothing, online shopping">
 
         <!-- Mobile metas
         ============================================ -->
@@ -35,14 +35,14 @@
         ============================================ -->
         <script src="js/modernizr.js"></script>
 
+        <!-- Old IE stylesheet
+	============================================ -->
         <!--[if lte IE 9]>
                 <link rel="stylesheet" type="text/css" href="css/oldie.css">
         <![endif]-->
     </head>
     <body class="front_page">
-
-
-        <div class="wide_layout">
+        
             <#include "header.shtml">
 
             <!-- - - - - - - - - - - - - - Layer slider - - - - - - - - - - - - - - - - -->
@@ -929,7 +929,6 @@
         <script src="js/jquery.countdown.min.js"></script>
         <script src="js/arcticmodal/jquery.arcticmodal.js"></script>
         <script src="twitter/jquery.tweet.min.js"></script>
-        <script src="js/colorpicker/colorpicker.js"></script>
         <script src="js/retina.min.js"></script>
         <script src="js/theme.plugins.js"></script>
         <script src="js/theme.core.js"></script>
