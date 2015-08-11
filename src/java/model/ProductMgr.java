@@ -158,9 +158,6 @@ public class ProductMgr {
             i.info = rs.getString("item_info");
             i.description = rs.getString("item_description");
             i.profile_pic = rs.getString("item_profile_pic");
-            if(i.profile_pic.replace(" ","").equals("")){
-                i.profile_pic="images/product_img_27.jpg";
-            }
         }
         conn.close();
         return i;// get arreylist like get item but there are onty 1 item in list
