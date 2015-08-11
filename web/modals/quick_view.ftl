@@ -135,9 +135,10 @@
 
 					<select>
 
-						<option value="Small">Small</option>
-						<option value="Middle">Medium</option>
-						<option value="Big">Large</option>
+						<option value="XL">XL</option>
+                                                <option value="L">L</option>
+                                                <option value="M">M</option>
+                                                <option value="S">S</option>
 
 					</select>
 
@@ -147,11 +148,11 @@
 
 			<!-- - - - - - - - - - - - - - End of product size - - - - - - - - - - - - - - - - -->
 
-			<!-- - - - - - - - - - - - - - Quantity - - - - - - - - - - - - - - - - -->
+                        <!-- - - - - - - - - - - - - - Quantity - - - - - - - - - - - - - - - - -->
 
-			<div class="description_section_2 v_centered">
-				
-				<span class="title">Qty:</span>
+                                <div class="description_section_3 v_centered">
+
+                                <span class="title">Qty:</span>
 
 				<div class="qty min clearfix">
 
@@ -161,9 +162,9 @@
 
 				</div>
 
-			</div>
+                                </div>
 
-			<!-- - - - - - - - - - - - - - End of quantity - - - - - - - - - - - - - - - - -->
+                        <!-- - - - - - - - - - - - - - End of quantity - - - - - - - - - - - - - - - - -->
 
 			<!-- - - - - - - - - - - - - - Product actions - - - - - - - - - - - - - - - - -->
 

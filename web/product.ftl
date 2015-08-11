@@ -234,17 +234,17 @@
 
                                 <!-- - - - - - - - - - - - - - Quantity - - - - - - - - - - - - - - - - -->
 
-                                <div class="description_section_2 v_centered">
+                                <div class="description_section_3 v_centered">
 
-                                    <span class="title">Qty:</span>
+                                <span class="title">Qty:</span>
 
-                                    <div class="qty min clearfix">
+				<div class="qty min clearfix">
 
-                                        <button class="theme_button" data-direction="minus">&#45;</button>
-                                        <input type="text" name="" value="1">
-                                        <button class="theme_button" data-direction="plus">&#43;</button>
+					<button class="theme_button" data-direction="minus">&#45;</button>
+					<input type="text" name="" value="1">
+					<button class="theme_button" data-direction="plus">&#43;</button>
 
-                                    </div>
+				</div>
 
                                 </div>
 
