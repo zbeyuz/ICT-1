@@ -21,9 +21,7 @@ public class UserMgr {
     //login functon
     public static User login(String user_email, String user_password) throws SQLException, Exception {
 
-        Class.forName("com.mysql.jdbc.Driver");
-        Connection conn = null;
-        conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db", "root", "");
+        Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         pstmt = conn.prepareStatement("SELECT * FROM `user_list` WHERE `user_email`=? AND `user_password`=?");
@@ -44,13 +42,14 @@ public class UserMgr {
     //register    
     public static boolean register(String user_email, String user_password, String user_fname, String user_lname) throws SQLException, Exception {
 
-        Class.forName("com.mysql.jdbc.Driver");
-        Connection conn = null;
-        conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db", "root", "");
+        Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
-        ResultSet rs = null;
-        pstmt = conn.prepareStatement("SELECT * FROM `item_list`");
-        rs = pstmt.executeQuery();
+        PreparedStatement pstmt2 = null;
+
+        ResultSet rs = null;    
+        pstmt = conn.prepareStatement("SELECT * FROM `user_list`");
+        rs = pstmt.executeQuery(); 
+        
 
         String email = "0"; //use to store email from database
         String ch = "ok"; //user for check that email already been use or not
@@ -65,6 +64,7 @@ public class UserMgr {
         }
 
         pstmt = conn.prepareStatement("insert into user_list values(?,?,?,?,?)");
+        pstmt2 = conn.prepareStatement("insert into user_info values(?,?,?,?,?,?,?,?,?)");
         if (ch.equals("ok")) {
             id++;
             pstmt.setInt(1, id);
@@ -73,6 +73,18 @@ public class UserMgr {
             pstmt.setString(4, user_fname);
             pstmt.setString(5, user_lname);
             pstmt.executeUpdate();
+            
+            pstmt2.setInt(1, id);
+            pstmt2.setString(2, "null");
+            pstmt2.setString(3, "null");
+            pstmt2.setString(4, "null");
+            pstmt2.setString(5, "null");
+            pstmt2.setString(6, "null");
+            pstmt2.setInt(7, 0);
+            pstmt2.setInt(8, 0);
+            pstmt2.setString(9, "null");
+            pstmt2.executeUpdate();
+            
             conn.close();
             return true;
             //register done
