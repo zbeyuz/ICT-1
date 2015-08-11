@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -62,9 +63,8 @@ public class ProductMgr {
     
     //add picture
     public static void addPic(int item_id, String pic_location) throws SQLException, Exception {
-        Class.forName("com.mysql.jdbc.Driver");
-        Connection conn = null;
-        conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db", "root", "");
+        
+        Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         
@@ -108,9 +108,7 @@ public class ProductMgr {
     
     public static ArrayList<Product> getProduct() throws SQLException, Exception {
         
-        Class.forName("com.mysql.jdbc.Driver");
-        Connection conn = null;
-        conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db","root", "");
+        Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
         ResultSet rs = null;    
         pstmt = conn.prepareStatement("SELECT * FROM `item_list`");
@@ -137,9 +135,7 @@ public class ProductMgr {
     
     public static Product getProductById(int item_id) throws SQLException, Exception {
         
-        Class.forName("com.mysql.jdbc.Driver");
-        Connection conn = null;
-        conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db","root", "");
+        Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
         ResultSet rs = null;    
         pstmt = conn.prepareStatement("SELECT * FROM `item_list` where item_id = ?");
@@ -170,9 +166,7 @@ public class ProductMgr {
     
     public static String[] getPic(int item_id) throws SQLException, Exception {
         
-        Class.forName("com.mysql.jdbc.Driver");
-        Connection conn = null;
-        conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db", "root", "");
+        Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         
@@ -196,9 +190,7 @@ public class ProductMgr {
     
     public static boolean addReview(int item_id, int user_id, String review_title, Date review_date, int review_value, int review_price, int review_quality, String review_text) throws SQLException, Exception {
 
-        Class.forName("com.mysql.jdbc.Driver");
-        Connection conn = null;
-        conn = DriverManager.getConnection("jdbc:mysql://localhost/shop_db", "root", "");
+        Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         String ch = "ok"; //user for check state of process        
