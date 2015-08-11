@@ -31,6 +31,10 @@
         <servlet-name>ReviewHandler</servlet-name>
         <servlet-class>control.ReviewHandler</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>WishListHandler</servlet-name>
+        <servlet-class>control.WishListHandler</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>get_item</servlet-name>
         <url-pattern>/getitem</url-pattern>
@@ -112,6 +116,10 @@
     <servlet-mapping>
         <servlet-name>ReviewHandler</servlet-name>
         <url-pattern>/review</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>WishListHandler</servlet-name>
+        <url-pattern>/wish</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

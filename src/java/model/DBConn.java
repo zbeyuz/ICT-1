@@ -17,7 +17,6 @@ public class DBConn {
 
     public static Connection getConn() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.jdbc.Driver");
-        Connection conn = null;
         return DriverManager.getConnection("jdbc:mysql://localhost/shop_db", "root", "");
     }
     

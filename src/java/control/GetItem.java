@@ -8,8 +8,6 @@ package control;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -39,15 +37,18 @@ public class GetItem extends HttpServlet {
             ArrayList<Product> items;
             try {
                 items = model.ProductMgr.getProduct();
-            out.print("\u005B");
-            String s="";
-            for (Product i:items){
-                out.print(s);
-                out.printf("\u005B%d,\"%s\",%d,\"%s\"\u005D",
-                        i.id,i.name,i.price,i.profile_pic);
-                s=",";
-            }
-            out.print("\u005D");
+                out.print("\u005B");
+                String s = "";
+                for (Product i : items) {
+                    out.print(s);
+                    if (i.profile_pic.replace(" ", "").equals("")) {
+                        i.profile_pic = "images/product_img_27.jpg";
+                    }
+                    out.printf("\u005B%d,\"%s\",%d,\"%s\"\u005D",
+                            i.id, i.name, i.price, i.profile_pic);
+                    s = ",";
+                }
+                out.print("\u005D");
             } catch (Exception e) {
                 out.println(e);
             }
