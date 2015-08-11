@@ -12,7 +12,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.ItemFac;
+import model.ProductMgr;
 import model.Product;
 
 /**
@@ -34,7 +34,7 @@ public class ViewItem extends HttpServlet {
             throws ServletException, IOException {
         try {
             response.setContentType("text/html;charset=UTF-8");
-            Product p=ItemFac.getitemById(Integer.parseInt(request.getParameter("id")));
+            Product p=ProductMgr.getProductById(Integer.parseInt(request.getParameter("id")));
             request.setAttribute("id", p.id);
             if(p.discount==0){
                 request.setAttribute("price", String.format("<b class=\"theme_color\">$%d</b>",p.price));

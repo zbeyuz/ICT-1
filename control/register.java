@@ -11,7 +11,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.User;
+import model.UserMgr;
 
 /**
  *
@@ -40,7 +40,7 @@ public class Register extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         try {
-            User.register(user_email, user_password, user_fname, user_lname);
+            UserMgr.register(user_email, user_password, user_fname, user_lname);
 
         } catch (Exception e) {
             out.print("Do not connect to DB - Error:" + e);

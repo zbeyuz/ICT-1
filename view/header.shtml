@@ -505,7 +505,7 @@
 
                                     <div class="nav_item size_2">
 
-                                        <div class="login_box"><div class="login_box_inner">Welcome visitor <a href="#" data-modal-url="modals/login.html">Login</a> or <a href="#" data-modal-url="modals/register.html">Register</a></div></div>
+                                        <div class="login_box"><div id="account" class="login_box_inner">Welcome visitor <a href="#" data-modal-url="modals/login.html">Login</a> or <a href="#" data-modal-url="modals/register.html">Register</a></div></div>
 
                                     </div><!--/ .nav_item-->
 
