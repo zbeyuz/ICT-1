@@ -1,0 +1,1824 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="364896bf-6e54-4b68-8909-83e6850cbaec" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/.netbeans_automatic_build" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/.netbeans_update_resources" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/control/AddItem.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/control/AddPic.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/model/DBConn.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/model/FileMgr.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/control/GetItem.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/ICT.war" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/control/Login.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/test/NewClass.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/model/Product.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/model/ProductMgr.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/control/Register.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/model/Review.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/control/ReviewHandler.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/test/TestItemFac.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/model/User.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/model/UserMgr.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/control/ViewItem.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/about_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/about_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/arrivals_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/arrivals_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/arrivals_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/arrivals_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/arrivals_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/arrivals_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/arrivals_img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/arrivals_img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/arrivals_img_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/arrivals_img_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/arrivals_img_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/arrivals_img_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/arrivals_img_7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/arrivals_img_7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/arrow_large_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/arrow_large_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/arrow_large_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/arrow_large_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/arrow_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/arrow_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/arrow_left2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/arrow_left2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/arrow_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/arrow_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/arrow_right2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/arrow_right2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/arrowleft.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/arrowleft.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/arrowright.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/arrowright.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/arrows.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/arrows.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/banner_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/banner_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/banner_img_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/banner_img_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/banner_img_10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/banner_img_10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/banner_img_11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/banner_img_11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/banner_img_12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/banner_img_12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/banner_img_13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/banner_img_13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/banner_img_14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/banner_img_14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/banner_img_15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/banner_img_15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/banner_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/banner_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/banner_img_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/banner_img_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/banner_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/banner_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/banner_img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/banner_img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/banner_img_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/banner_img_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/banner_img_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/banner_img_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/banner_img_7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/banner_img_7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/banner_img_8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/banner_img_8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/banner_img_9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/banner_img_9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/black50.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/black50.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/fancybox/source/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/css/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/fancybox/source/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/css/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/blog_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/blog_img_10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog_img_10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/blog_img_11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog_img_11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/blog_img_12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog_img_12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/blog_img_13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog_img_13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/blog_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/blog_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/blog_img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog_img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/blog_img_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog_img_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/blog_img_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog_img_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/blog_img_7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog_img_7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/blog_img_8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog_img_8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/blog_img_9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog_img_9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/blog_thumb_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog_thumb_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/blog_thumb_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog_thumb_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/blog_thumb_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog_thumb_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/boxed_bgtile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/boxed_bgtile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/brands_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/brands_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/brands_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/brands_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/brands_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/brands_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/brands_img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/brands_img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/brands_img_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/brands_img_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/brands_img_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/brands_img_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/brands_img_7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/brands_img_7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/brands_img_8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/brands_img_8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/bullet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/bullet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/bullet_boxed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/bullet_boxed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/bullets.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/bullets.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/bullets.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/bullets.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/bullets2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/bullets2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/category_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/category_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/coloredbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/coloredbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/colorpicker_background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/colorpicker_background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/colorpicker_hex.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/colorpicker_hex.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/colorpicker_hsb_b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/colorpicker_hsb_b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/colorpicker_hsb_h.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/colorpicker_hsb_h.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/colorpicker_hsb_s.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/colorpicker_hsb_s.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/colorpicker_indic.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/colorpicker_indic.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/colorpicker_overlay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/colorpicker_overlay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/colorpicker_rgb_b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/colorpicker_rgb_b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/colorpicker_rgb_g.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/colorpicker_rgb_g.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/colorpicker_rgb_r.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/colorpicker_rgb_r.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/colorpicker_select.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/colorpicker_select.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/colorpicker_submit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/colorpicker_submit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/comment_author_photo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/comment_author_photo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/lib/commons-fileupload-1.3.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/lib/commons-io-2.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/custom_background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/custom_background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/custom_hex.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/custom_hex.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/custom_hsb_b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/custom_hsb_b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/custom_hsb_h.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/custom_hsb_h.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/custom_hsb_s.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/custom_hsb_s.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/custom_indic.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/custom_indic.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/custom_rgb_b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/custom_rgb_b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/custom_rgb_g.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/custom_rgb_g.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/custom_rgb_r.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/custom_rgb_r.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/custom_submit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/custom_submit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/deals_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/deals_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/deals_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/deals_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/deals_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/deals_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/deals_img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/deals_img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/deals_img_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/deals_img_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/images/decor_inside.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/images/decor_inside.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/images/decor_inside_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/images/decor_inside_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/images/decor_testimonial.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/images/decor_testimonial.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/elements_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/elements_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/elements_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/elements_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/elements_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/elements_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/fancybox/source/helpers/fancybox_buttons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/fancybox/source/helpers/fancybox_buttons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/fancybox/source/fancybox_loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/fancybox/source/fancybox_loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/fancybox/source/fancybox_loading@2x.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/fancybox/source/fancybox_loading@2x.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/fancybox/source/fancybox_overlay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/fancybox/source/fancybox_overlay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/fancybox/source/fancybox_sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/fancybox/source/fancybox_sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/fancybox/source/fancybox_sprite@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/fancybox/source/fancybox_sprite@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/fav_icon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/fav_icon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/flag_en.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/flag_en.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/flag_ne.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/flag_ne.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/fonts/fontello.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/fonts/fontello.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/fonts/fontello.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/fonts/fontello.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/fonts/fontello.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/fonts/fontello.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/lib/freemarker.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/images/gradient/g30.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/images/gradient/g30.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/images/gradient/g40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/images/gradient/g40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/gfv3ee6.dpf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/grab.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/grab.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/grabbing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/grabbing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/grain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/grain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/gridtile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/gridtile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/gridtile_3x3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/gridtile_3x3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/gridtile_3x3_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/gridtile_3x3_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/gridtile_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/gridtile_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/home_slide_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/home_slide_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/home_slide_10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/home_slide_10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/home_slide_11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/home_slide_11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/home_slide_12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/home_slide_12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/home_slide_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/home_slide_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/home_slide_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/home_slide_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/home_slide_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/home_slide_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/home_slide_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/home_slide_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/home_slide_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/home_slide_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/home_slide_7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/home_slide_7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/home_slide_8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/home_slide_8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/home_slide_9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/home_slide_9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/image_bg_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/image_bg_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/image_bg_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/image_bg_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/large_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/large_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/large_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/large_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/latest_news_thumb_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/latest_news_thumb_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/latest_news_thumb_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/latest_news_thumb_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/latest_news_thumb_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/latest_news_thumb_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/lightbox_overlay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/lightbox_overlay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/lightbox_thumb_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/lightbox_thumb_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/lightbox_thumb_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/lightbox_thumb_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/lightbox_thumb_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/lightbox_thumb_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/lightbox_thumb_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/lightbox_thumb_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/lightbox_thumb_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/lightbox_thumb_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/lightbox_view_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/lightbox_view_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/loader2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/loader2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/arcticmodal/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/borderlessdark/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/borderlessdark3d/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/borderlesslight/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/borderlesslight3d/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/carousel/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/darkskin/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/defaultskin/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/fullwidth/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/fullwidthdark/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/glass/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/lightskin/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/minimal/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/noskin/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/v5/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/arcticmodal/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/borderlessdark/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/borderlessdark3d/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/borderlesslight/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/borderlesslight3d/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/carousel/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/darkskin/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/defaultskin/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/fullwidth/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/fullwidthdark/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/glass/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/lightskin/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/minimal/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/noskin/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/v5/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/logo@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/logo@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/manufacturer_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/manufacturer_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/mega_menu_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/mega_menu_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/mega_menu_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/mega_menu_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/lib/mysql-connector-java-5.1.36-bin.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/navigdots.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/navigdots.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/navigdots_bgtile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/navigdots_bgtile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/news_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/news_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/news_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/news_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/news_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/news_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/news_img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/news_img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/borderlessdark/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/borderlessdark3d/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/borderlesslight/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/borderlesslight3d/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/carousel/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/darkskin/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/defaultskin/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/fullwidth/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/fullwidthdark/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/glass/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/lightskin/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/minimal/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/noskin/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/v5/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/borderlessdark/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/borderlessdark3d/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/borderlesslight/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/borderlesslight3d/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/carousel/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/darkskin/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/defaultskin/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/fullwidth/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/fullwidthdark/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/glass/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/lightskin/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/minimal/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/noskin/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/v5/nothumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/payment_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/payment_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/payment_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/payment_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/skins/preloaders/preloader-white.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/skins/preloaders/preloader-white.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/skins/preloaders/preloader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/skins/preloaders/preloader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_18.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_18.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_19.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_19.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_20.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_20.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_21.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_21.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_22.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_22.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_23.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_23.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_24.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_24.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_25.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_25.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_26.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_26.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_27.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_27.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_28.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_28.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_29.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_29.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_30.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_30.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_31.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_31.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_32.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_32.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_33.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_33.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_img_9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_img_9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_thumb_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_thumb_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_thumb_10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_thumb_10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_thumb_11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_thumb_11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_thumb_12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_thumb_12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_thumb_13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_thumb_13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_thumb_14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_thumb_14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_thumb_15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_thumb_15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_thumb_16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_thumb_16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_thumb_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_thumb_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_thumb_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_thumb_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_thumb_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_thumb_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_thumb_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_thumb_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_thumb_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_thumb_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_thumb_7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_thumb_7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_thumb_8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_thumb_8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/product_thumb_9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/product_thumb_9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/promo_img.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/promo_img.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/quotes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/quotes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/quotes@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/quotes@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/qv_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/qv_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/qv_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/qv_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/qv_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/qv_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/qv_img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/qv_img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/qv_large_1.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/qv_large_1.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/qv_large_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/qv_large_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/qv_large_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/qv_large_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/qv_large_4.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/qv_large_4.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/qv_thumb_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/qv_thumb_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/qv_thumb_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/qv_thumb_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/qv_thumb_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/qv_thumb_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/qv_thumb_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/qv_thumb_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/font/revicons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/font/revicons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/font/revicons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/font/revicons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/font/revicons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/font/revicons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/skins/default-inverted/rs-default-inverted.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/skins/default-inverted/rs-default-inverted.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/skins/default/rs-default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/skins/default/rs-default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/skins/minimal-white/rs-minimal-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/skins/minimal-white/rs-minimal-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/skins/universal/rs-universal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/skins/universal/rs-universal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/sc_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/sc_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/sc_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/sc_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/sc_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/sc_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/select.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/select.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/select2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/select2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/seller_photo_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/seller_photo_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/seller_photo_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/seller_photo_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/seller_photo_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/seller_photo_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/sellers_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/sellers_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/sellers_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/sellers_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/sellers_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/sellers_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/borderlessdark/shadow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/borderlessdark3d/shadow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/borderlesslight/shadow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/borderlesslight3d/shadow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/glass/shadow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/borderlessdark/shadow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/borderlessdark3d/shadow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/borderlesslight/shadow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/borderlesslight3d/shadow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/glass/shadow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/shadow1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/shadow1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/shadow2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/shadow2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/shadow3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/shadow3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/shopping_cart_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shopping_cart_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/shopping_cart_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shopping_cart_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/shopping_cart_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shopping_cart_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/borderlessdark/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/borderlessdark3d/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/borderlesslight/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/borderlesslight3d/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/carousel/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/darkskin/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/defaultskin/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/fullwidth/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/fullwidthdark/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/glass/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/lightskin/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/minimal/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/noskin/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/v5/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/borderlessdark/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/borderlessdark3d/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/borderlesslight/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/borderlesslight3d/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/carousel/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/darkskin/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/defaultskin/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/fullwidth/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/fullwidthdark/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/glass/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/lightskin/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/minimal/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/noskin/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/v5/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker/slider.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker/slider.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/small_arrows.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/small_arrows.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/small_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/small_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/small_left_boxed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/small_left_boxed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/small_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/small_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/small_right_boxed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/small_right_boxed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/subcategory_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/subcategory_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/subcategory_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/subcategory_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/subcategory_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/subcategory_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/subcategory_img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/subcategory_img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/subcategory_img_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/subcategory_img_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/tabs_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/tabs_img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/tabs_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/tabs_img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/tabs_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/tabs_img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/images/tabs_img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/tabs_img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/timer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/timer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/timerdot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/timerdot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/transparent.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/transparent.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/assets/white50.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/assets/white50.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/twitter/162f88009c69dfe439b73801a4f1ae8b.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/twitter/162f88009c69dfe439b73801a4f1ae8b.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/control/AddItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/control/AddPic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/model/DBConn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/model/FileMgr.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/control/GetItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/control/Login.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/conf/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/test/NewClass.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/model/Product.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/model/ProductMgr.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/control/Register.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/model/Review.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/control/ReviewHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/test/TestItemFac.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/model/User.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/model/UserMgr.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/control/ViewItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/about.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/about.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/admin/add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/admin/add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/admin/addpic.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/admin/addpic.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/css/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nbproject/ant-deploy.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nbproject/build-impl.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/cart.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/cart.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/category.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/category.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/checkout.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/checkout.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/colorpicker/colorpicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/colorpicker/colorpicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/php/contact-send.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/php/contact-send.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/contact.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/contact.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/arcticmodal/themes/dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/arcticmodal/themes/dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/faq.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/faq.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/css/fontello.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/fontello.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/fonts/fontello.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/fonts/fontello.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/footer.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/footer.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nbproject/genfiles.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/glassfish-web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/js/greensock.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/js/greensock.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/header.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/header.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/twitter/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/twitter/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/index.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/index.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/jquery-1.8.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/jquery-1.8.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/jquery-2.1.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery-2.1.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/css/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/jquery.appear.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.appear.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/arcticmodal/jquery.arcticmodal.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/arcticmodal/jquery.arcticmodal.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/arcticmodal/jquery.arcticmodal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/arcticmodal/jquery.arcticmodal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/jquery.countdown.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.countdown.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/jquery.countdown.plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.countdown.plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/jquery.easing-1.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/jquery.easing-1.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/jquery.elevateZoom-3.0.8.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.elevateZoom-3.0.8.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/fancybox/source/helpers/jquery.fancybox-buttons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/fancybox/source/helpers/jquery.fancybox-buttons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/fancybox/source/helpers/jquery.fancybox-buttons.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/fancybox/source/helpers/jquery.fancybox-buttons.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/fancybox/source/helpers/jquery.fancybox-media.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/fancybox/source/helpers/jquery.fancybox-media.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/fancybox/source/helpers/jquery.fancybox-thumbs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/fancybox/source/helpers/jquery.fancybox-thumbs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/fancybox/source/helpers/jquery.fancybox-thumbs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/fancybox/source/helpers/jquery.fancybox-thumbs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/fancybox/source/jquery.fancybox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/fancybox/source/jquery.fancybox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/fancybox/source/jquery.fancybox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/fancybox/source/jquery.fancybox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/fancybox/source/jquery.fancybox.pack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/fancybox/source/jquery.fancybox.pack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/dev/jquery.royalslider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/dev/jquery.royalslider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/jquery.royalslider.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/jquery.royalslider.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/dev/modules/jquery.rs.active-class.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/dev/modules/jquery.rs.active-class.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/dev/modules/jquery.rs.animated-blocks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/dev/modules/jquery.rs.animated-blocks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/dev/modules/jquery.rs.auto-height.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/dev/modules/jquery.rs.auto-height.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/dev/modules/jquery.rs.autoplay.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/dev/modules/jquery.rs.autoplay.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/dev/modules/jquery.rs.bullets.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/dev/modules/jquery.rs.bullets.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/dev/modules/jquery.rs.deeplinking.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/dev/modules/jquery.rs.deeplinking.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/dev/modules/jquery.rs.fullscreen.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/dev/modules/jquery.rs.fullscreen.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/dev/modules/jquery.rs.global-caption.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/dev/modules/jquery.rs.global-caption.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/dev/modules/jquery.rs.nav-auto-hide.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/dev/modules/jquery.rs.nav-auto-hide.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/dev/modules/jquery.rs.tabs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/dev/modules/jquery.rs.tabs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/dev/modules/jquery.rs.thumbnails.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/dev/modules/jquery.rs.thumbnails.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/dev/modules/jquery.rs.video.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/dev/modules/jquery.rs.video.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/dev/modules/jquery.rs.visible-nearby.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/dev/modules/jquery.rs.visible-nearby.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/js/jquery.themepunch.enablelog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/js/jquery.themepunch.enablelog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/js/jquery.themepunch.revolution.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/js/jquery.themepunch.revolution.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/js/jquery.themepunch.revolution.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/js/jquery.themepunch.revolution.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/js/jquery.themepunch.tools.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/js/jquery.themepunch.tools.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/jquery.tweet.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/twitter/jquery.tweet.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.tweet.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/twitter/jquery.tweet.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/css/layerslider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/css/layerslider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/js/layerslider.kreaturamedia.jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/js/layerslider.kreaturamedia.jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/js/layerslider.transitions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/js/layerslider.transitions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/admin/log.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/admin/log.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/modals/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modals/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/modernizr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/modernizr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/my_account.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/my_account.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/my_order.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/my_order.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/css/oldie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/oldie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/owlcarousel/owl.carousel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/owlcarousel/owl.carousel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/owlcarousel/owl.carousel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/owlcarousel/owl.carousel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/product.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/product.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/product.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/product.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nbproject/project.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nbproject/project.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/modals/promo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modals/promo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/queryloader2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/queryloader2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/modals/quick_view.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modals/quick_view.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/admin/reg.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/admin/reg.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/modals/register.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modals/register.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/css/reset.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/reset.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/retina.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/retina.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/font/revicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/font/revicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/royalslider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/royalslider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/skins/default-inverted/rs-default-inverted.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/skins/default-inverted/rs-default-inverted.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/skins/default/rs-default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/skins/default/rs-default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/skins/minimal-white/rs-minimal-white.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/skins/minimal-white/rs-minimal-white.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/royalslider/skins/universal/rs-universal.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/royalslider/skins/universal/rs-universal.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/css/settings-ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/css/settings-ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/rs-plugin/css/settings.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/rs-plugin/css/settings.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/arcticmodal/themes/simple.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/arcticmodal/themes/simple.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/borderlessdark/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/borderlessdark3d/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/borderlesslight/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/borderlesslight3d/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/carousel/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/darkskin/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/defaultskin/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/fullwidth/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/fullwidthdark/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/glass/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/lightskin/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/minimal/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/noskin/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/layerslider/skins/v5/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/borderlessdark/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/borderlessdark3d/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/borderlesslight/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/borderlesslight3d/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/carousel/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/darkskin/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/defaultskin/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/fullwidth/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/fullwidthdark/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/glass/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/lightskin/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/minimal/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/noskin/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/layerslider/skins/v5/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/php/subscribe.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/php/subscribe.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/modals/testimonials.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modals/testimonials.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/theme.core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/theme.core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/js/theme.plugins.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/theme.plugins.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/twitter/lib/tmhOAuth.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/twitter/lib/tmhOAuth.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/twitter/lib/tmhUtilities.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/twitter/lib/tmhUtilities.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/modals/update_acc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modals/update_acc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/modals/update_pwd.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modals/update_pwd.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/modals/update_ship_add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modals/update_ship_add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/modals/view_order.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modals/view_order.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/wishlist.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/wishlist.shtml" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\.idea\ICT-1.iml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\.idea\codeStyleSettings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\.idea\compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\.idea\copyright\profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\.idea\dictionaries\Le_Anh_Tuan.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\control\AddItem.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\control\AddPic.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\control\GetItem.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\control\ReviewHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\control\ViewItem.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\control\login.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\control\register.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\model\DBConn.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\model\FileMgr.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\model\Product.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\model\ProductMgr.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\model\Review.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\model\UserMgr.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\model\Wishlist.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\model\WishlistMgr.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\test\TestItemFac.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\WEB-INF\web.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\about.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\admin\add.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\admin\addpic.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\admin\log.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\admin\reg.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\cart.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\category.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\checkout.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\contact.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\css\animate.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\css\fontello.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\css\jquery-ui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\css\oldie.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\css\reset.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\css\style.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\faq.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\fonts\fontello.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\fonts\fontello.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\fonts\fontello.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\fonts\fontello.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\header.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\about_img_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\arrivals_img_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\arrivals_img_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\arrivals_img_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\arrivals_img_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\arrivals_img_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\arrivals_img_6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\arrivals_img_7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\banner_img_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\banner_img_1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\banner_img_10.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\banner_img_11.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\banner_img_12.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\banner_img_13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\banner_img_14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\banner_img_15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\banner_img_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\banner_img_2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\banner_img_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\banner_img_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\banner_img_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\banner_img_6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\banner_img_7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\banner_img_8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\banner_img_9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\blog_img_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\blog_img_10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\blog_img_11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\blog_img_12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\blog_img_13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\blog_img_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\blog_img_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\blog_img_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\blog_img_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\blog_img_6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\blog_img_7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\blog_img_8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\blog_img_9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\blog_thumb_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\blog_thumb_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\blog_thumb_6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\brands_img_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\brands_img_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\brands_img_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\brands_img_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\brands_img_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\brands_img_6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\brands_img_7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\brands_img_8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\category_img_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\comment_author_photo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\deals_img_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\deals_img_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\deals_img_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\deals_img_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\deals_img_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\elements_img_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\elements_img_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\elements_img_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\fav_icon.ico" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\flag_en.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\flag_ne.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\home_slide_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\home_slide_10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\home_slide_11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\home_slide_12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\home_slide_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\home_slide_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\home_slide_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\home_slide_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\home_slide_6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\home_slide_7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\home_slide_8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\home_slide_9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\image_bg_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\image_bg_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\latest_news_thumb_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\latest_news_thumb_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\latest_news_thumb_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\lightbox_overlay.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\lightbox_thumb_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\lightbox_thumb_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\lightbox_thumb_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\lightbox_thumb_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\lightbox_thumb_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\lightbox_view_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\logo@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\manufacturer_img_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\mega_menu_img_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\mega_menu_img_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\news_img_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\news_img_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\news_img_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\news_img_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\payment_1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\payment_2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_18.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_19.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_21.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_22.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_23.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_24.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_25.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_26.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_27.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_28.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_29.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_31.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_32.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_33.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_img_9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_thumb_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_thumb_10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_thumb_11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_thumb_12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_thumb_13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_thumb_14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_thumb_15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_thumb_16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_thumb_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_thumb_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_thumb_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_thumb_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_thumb_6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_thumb_7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_thumb_8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\product_thumb_9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\promo_img.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\quotes.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\quotes@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\qv_img_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\qv_img_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\qv_img_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\qv_img_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\qv_large_1.JPG" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\qv_large_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\qv_large_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\qv_large_4.JPG" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\qv_thumb_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\qv_thumb_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\qv_thumb_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\qv_thumb_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\sc_img_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\sc_img_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\sc_img_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\seller_photo_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\seller_photo_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\seller_photo_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\sellers_img_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\sellers_img_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\sellers_img_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\shopping_cart_img_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\shopping_cart_img_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\shopping_cart_img_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\subcategory_img_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\subcategory_img_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\subcategory_img_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\subcategory_img_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\subcategory_img_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\tabs_img_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\tabs_img_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\tabs_img_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\images\tabs_img_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\index.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\arcticmodal\jquery.arcticmodal.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\arcticmodal\jquery.arcticmodal.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\arcticmodal\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\arcticmodal\themes\dark.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\arcticmodal\themes\simple.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\colorpicker_background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\colorpicker_hex.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\colorpicker_hsb_b.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\colorpicker_hsb_h.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\colorpicker_hsb_s.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\colorpicker_indic.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\colorpicker_overlay.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\colorpicker_rgb_b.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\colorpicker_rgb_g.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\colorpicker_rgb_r.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\colorpicker_select.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\colorpicker_submit.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\custom_background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\custom_hex.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\custom_hsb_b.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\custom_hsb_h.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\custom_hsb_s.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\custom_indic.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\custom_rgb_b.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\custom_rgb_g.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\custom_rgb_r.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\custom_submit.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\select.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\select2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\colorpicker\colorpicker\slider.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\fancybox\source\blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\fancybox\source\fancybox_loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\fancybox\source\fancybox_loading@2x.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\fancybox\source\fancybox_overlay.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\fancybox\source\fancybox_sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\fancybox\source\fancybox_sprite@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\fancybox\source\helpers\fancybox_buttons.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\fancybox\source\helpers\jquery.fancybox-buttons.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\fancybox\source\helpers\jquery.fancybox-buttons.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\fancybox\source\helpers\jquery.fancybox-media.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\fancybox\source\helpers\jquery.fancybox-thumbs.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\fancybox\source\helpers\jquery.fancybox-thumbs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\fancybox\source\jquery.fancybox.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\fancybox\source\jquery.fancybox.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\fancybox\source\jquery.fancybox.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\jquery-2.1.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\jquery-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\jquery.appear.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\jquery.countdown.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\jquery.countdown.plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\jquery.elevateZoom-3.0.8.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\jquery.tweet.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\css\blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\css\layerslider.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\js\greensock.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\js\layerslider.kreaturamedia.jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\js\layerslider.transitions.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\borderlessdark3d\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\borderlessdark3d\nothumb.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\borderlessdark3d\shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\borderlessdark3d\skin.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\borderlessdark3d\skin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\borderlessdark\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\borderlessdark\nothumb.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\borderlessdark\shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\borderlessdark\skin.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\borderlessdark\skin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\borderlesslight3d\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\borderlesslight3d\nothumb.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\borderlesslight3d\shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\borderlesslight3d\skin.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\borderlesslight3d\skin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\borderlesslight\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\borderlesslight\nothumb.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\borderlesslight\shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\borderlesslight\skin.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\borderlesslight\skin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\carousel\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\carousel\nothumb.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\carousel\skin.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\carousel\skin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\darkskin\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\darkskin\nothumb.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\darkskin\skin.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\darkskin\skin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\defaultskin\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\defaultskin\nothumb.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\defaultskin\skin.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\defaultskin\skin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\fullwidth\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\fullwidth\nothumb.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\fullwidth\skin.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\fullwidth\skin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\fullwidthdark\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\fullwidthdark\nothumb.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\fullwidthdark\skin.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\fullwidthdark\skin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\glass\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\glass\nothumb.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\glass\shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\glass\skin.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\glass\skin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\lightskin\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\lightskin\nothumb.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\lightskin\skin.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\lightskin\skin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\minimal\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\minimal\nothumb.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\minimal\skin.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\minimal\skin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\noskin\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\noskin\nothumb.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\noskin\skin.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\noskin\skin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\v5\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\v5\nothumb.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\v5\skin.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\layerslider\skins\v5\skin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\modernizr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\owlcarousel\owl.carousel.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\owlcarousel\owl.carousel.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\queryloader2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\retina.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\dev\jquery.royalslider.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\dev\modules\jquery.rs.active-class.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\dev\modules\jquery.rs.animated-blocks.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\dev\modules\jquery.rs.auto-height.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\dev\modules\jquery.rs.autoplay.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\dev\modules\jquery.rs.bullets.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\dev\modules\jquery.rs.deeplinking.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\dev\modules\jquery.rs.fullscreen.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\dev\modules\jquery.rs.global-caption.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\dev\modules\jquery.rs.nav-auto-hide.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\dev\modules\jquery.rs.tabs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\dev\modules\jquery.rs.thumbnails.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\dev\modules\jquery.rs.video.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\dev\modules\jquery.rs.visible-nearby.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\grab.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\grabbing.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\jquery-1.8.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\jquery.easing-1.3.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\jquery.royalslider.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\royalslider.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\skins\default-inverted\rs-default-inverted.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\skins\default-inverted\rs-default-inverted.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\skins\default\rs-default.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\skins\default\rs-default.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\skins\minimal-white\rs-minimal-white.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\skins\minimal-white\rs-minimal-white.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\skins\preloaders\preloader-white.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\skins\preloaders\preloader.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\skins\universal\rs-universal.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\royalslider\skins\universal\rs-universal.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\arrow_large_left.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\arrow_large_right.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\arrow_left.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\arrow_left2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\arrow_right.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\arrow_right2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\arrowleft.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\arrowright.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\arrows.psd" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\black50.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\boxed_bgtile.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\bullet.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\bullet_boxed.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\bullets.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\bullets.psd" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\bullets2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\coloredbg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\grain.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\gridtile.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\gridtile_3x3.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\gridtile_3x3_white.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\gridtile_white.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\large_left.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\large_right.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\loader2.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\navigdots.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\navigdots_bgtile.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\shadow1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\shadow2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\shadow3.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\small_arrows.psd" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\small_left.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\small_left_boxed.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\small_right.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\small_right_boxed.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\timer.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\timerdot.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\transparent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\assets\white50.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\css\settings-ie8.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\css\settings.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\font\revicons.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\font\revicons.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\font\revicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\font\revicons.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\images\decor_inside.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\images\decor_inside_white.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\images\decor_testimonial.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\images\gradient\g30.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\images\gradient\g40.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\js\jquery.themepunch.enablelog.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\js\jquery.themepunch.revolution.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\js\jquery.themepunch.revolution.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\rs-plugin\js\jquery.themepunch.tools.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\script.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\theme.core.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\js\theme.plugins.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\modals\login.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\modals\promo.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\modals\quick_view.ftl" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\modals\quick_view.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\modals\register.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\modals\testimonials.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\modals\update_acc.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\modals\update_pwd.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\modals\update_ship_add.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\modals\view_order.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\my_account.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\my_order.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\php\contact-send.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\php\subscribe.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\product.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\twitter\162f88009c69dfe439b73801a4f1ae8b.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\twitter\index.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\twitter\jquery.tweet.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\twitter\lib\tmhOAuth.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\twitter\lib\tmhUtilities.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\ICT-1\view\wishlist.shtml" afterPath="" />
+    </list>
+    <ignored path="ICT-1.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ICT-1" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/view/css/style.css" />
+        <option value="$PROJECT_DIR$/view/product.html" />
+        <option value="$PROJECT_DIR$/view/index.shtml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBowerSettings">
+    <exe-path />
+    <config-path />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpellCheckingInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICT-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICT-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICT-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.null" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="js.eslint.eslintPackage" value="" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Le Anh Tuan\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="364896bf-6e54-4b68-8909-83e6850cbaec" name="Default" comment="" />
+      <created>1438274486681</created>
+      <option name="number" value="Default" />
+      <updated>1438274486681</updated>
+      <workItem from="1438274486942" duration="82000" />
+      <workItem from="1438274672321" duration="48000" />
+      <workItem from="1438274735933" duration="1052000" />
+      <workItem from="1438275818720" duration="51000" />
+      <workItem from="1438313133339" duration="3227000" />
+      <workItem from="1438504463965" duration="794000" />
+      <workItem from="1438505284411" duration="378000" />
+      <workItem from="1438835391249" duration="253000" />
+      <workItem from="1439283914584" duration="322000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update product.html &amp; style.css">
+      <created>1438321378057</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1438321378057</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update project structure to MVC model">
+      <created>1438505077728</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1438505077728</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update project structure to MVC model">
+      <created>1438505161090</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1438505161090</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update project structure to MVC model">
+      <created>1439283996556</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1439283996556</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6207000" />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17864583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="Update product.html &amp; style.css" />
+    <MESSAGE value="Update project structure to MVC model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update project structure to MVC model" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/view/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3338" column="62" selection-start-line="3338" selection-start-column="62" selection-end-line="3338" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3338" column="62" selection-start-line="3338" selection-start-column="62" selection-end-line="3338" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3338" column="62" selection-start-line="3338" selection-start-column="62" selection-end-line="3338" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/my_account.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/header.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.651686">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
