@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 03, 2015 at 04:52 AM
+-- Generation Time: Aug 11, 2015 at 10:34 AM
 -- Server version: 5.5.39
 -- PHP Version: 5.4.31
 
@@ -76,6 +76,39 @@ CREATE TABLE IF NOT EXISTS `bill_on` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `item_best`
+--
+
+CREATE TABLE IF NOT EXISTS `item_best` (
+  `item_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `item_deal`
+--
+
+CREATE TABLE IF NOT EXISTS `item_deal` (
+  `item_id` int(11) NOT NULL,
+  `date_start` date NOT NULL,
+  `date_end` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `item_feature`
+--
+
+CREATE TABLE IF NOT EXISTS `item_feature` (
+  `item_id` int(11) NOT NULL,
+  `item_state` text COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `item_info`
 --
 
@@ -110,6 +143,7 @@ CREATE TABLE IF NOT EXISTS `item_list` (
   `item_type` text COLLATE utf8_bin NOT NULL,
   `item_manufacture` text COLLATE utf8_bin NOT NULL,
   `item_info` text COLLATE utf8_bin NOT NULL,
+  `item_description` text COLLATE utf8_bin NOT NULL,
   `item_profile_pic` text COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
@@ -117,11 +151,21 @@ CREATE TABLE IF NOT EXISTS `item_list` (
 -- Dumping data for table `item_list`
 --
 
-INSERT INTO `item_list` (`item_id`, `item_name`, `item_price`, `item_discount`, `item_gender`, `item_type`, `item_manufacture`, `item_info`, `item_profile_pic`) VALUES
-(123, 'asd', 12, 1, '', '', 'asda', 'aasdasd', ''),
-(122, 'asd', 12, 0, '', '', 'qwe', 'asdad', ''),
-(121, '123', 112, 0, 'm', 'wallet', 'asd', 'qwe', ''),
-(111, 'qwe', 13, 0, 'm', 'wallet', 'asd', 'qwe', '');
+INSERT INTO `item_list` (`item_id`, `item_name`, `item_price`, `item_discount`, `item_gender`, `item_type`, `item_manufacture`, `item_info`, `item_description`, `item_profile_pic`) VALUES
+(123, 'asd', 12, 1, '', '', 'asda', 'aasdasd', '', ''),
+(122, 'asd', 12, 0, '', '', 'qwe', 'asdad', '', ''),
+(121, '123', 112, 0, 'm', 'wallet', 'asd', 'qwe', '', ''),
+(111, 'qwe', 13, 0, 'm', 'wallet', 'asd', 'qwe', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `item_new`
+--
+
+CREATE TABLE IF NOT EXISTS `item_new` (
+  `item_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
 

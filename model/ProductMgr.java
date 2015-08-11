@@ -21,7 +21,7 @@ import java.util.Date;
 public class ProductMgr {
     
     //add new item
-    public static void addProduct(int item_id, String item_name, int item_price, int item_discount, String item_gender, String item_category, String item_manufacture, String item_info) throws SQLException, Exception {
+    public static void addProduct(int item_id, String item_name, int item_price, int item_discount, String item_gender, String item_category, String item_manufacture, String item_info, String item_description) throws SQLException, Exception {
         
         Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
@@ -36,7 +36,7 @@ public class ProductMgr {
             cg++;
         }
         
-        pstmt = conn.prepareStatement("insert into item_list values(?,?,?,?,?,?,?,?,?)");
+        pstmt = conn.prepareStatement("insert into item_list values(?,?,?,?,?,?,?,?,?,?)");
         if (cg == 0) {
             pstmt.setInt(1, item_id);
             pstmt.setString(2, item_name);
@@ -46,7 +46,8 @@ public class ProductMgr {
             pstmt.setString(6, item_category);
             pstmt.setString(7, item_manufacture);
             pstmt.setString(8, item_info);
-            pstmt.setString(9, item_profile_pic);
+            pstmt.setString(9, item_description);
+            pstmt.setString(10, item_profile_pic);
             pstmt.executeUpdate();
             //add done
         } else {
@@ -126,6 +127,7 @@ public class ProductMgr {
             i.category = rs.getString("item_type");
             i.manufacture = rs.getString("item_manufacture");
             i.info = rs.getString("item_info");
+            i.description = rs.getString("item_description");
             i.profile_pic = rs.getString("item_profile_pic");
             res.add(i);
         }
@@ -154,6 +156,7 @@ public class ProductMgr {
             i.category = rs.getString("item_type");
             i.manufacture = rs.getString("item_manufacture");
             i.info = rs.getString("item_info");
+            i.description = rs.getString("item_description");
             i.profile_pic = rs.getString("item_profile_pic");
             if(i.profile_pic.replace(" ","").equals("")){
                 i.profile_pic="images/product_img_27.jpg";
