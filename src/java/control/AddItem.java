@@ -45,12 +45,13 @@ public class AddItem extends HttpServlet {
         String item_category = request.getParameter("item_category");
         String item_manufacture = request.getParameter("item_manufacture");
         String item_info = request.getParameter("item_info");
+        String item_description = request.getParameter("item_description");
         
         int item_discount = 0;
         
         try {
             ProductMgr.addProduct(item_id, item_name, item_price, item_discount, 
-                    item_gender, item_category, item_manufacture, item_info);
+                    item_gender, item_category, item_manufacture, item_info, item_description);
             out.println("success");
         } catch (Exception ex) {
             Logger.getLogger(AddPic.class.getName()).log(Level.SEVERE, null, ex);
