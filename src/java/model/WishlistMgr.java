@@ -15,7 +15,7 @@ import java.util.ArrayList;
  *
  * @author hy
  */
-public class WishListMgr {
+public class WishlistMgr {
 
     public static boolean add_item(int user_id, int item_id) throws SQLException, Exception {
         Connection conn=DBConn.getConn();
