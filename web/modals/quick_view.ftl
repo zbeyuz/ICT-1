@@ -1,194 +1,191 @@
 <!--==================================
-		Quick view modal window
+                Quick view modal window
 ======================================-->
 
 <div id="quick_view" class="modal_window">
 
-	<button class="close arcticmodal-close"></button>
+    <button class="close arcticmodal-close"></button>
 
-	<div class="clearfix">
+    <div class="clearfix">
 
-		<!-- - - - - - - - - - - - - - Product image column - - - - - - - - - - - - - - - - -->
+        <!-- - - - - - - - - - - - - - Product image column - - - - - - - - - - - - - - - - -->
 
-		<div class="single_product">
+        <div class="single_product">
 
-			<!-- - - - - - - - - - - - - - Image preview container - - - - - - - - - - - - - - - - -->
+            <!-- - - - - - - - - - - - - - Image preview container - - - - - - - - - - - - - - - - -->
 
-			<div class="image_preview_container" id="qv_preview">
+            <div class="image_preview_container" id="qv_preview">
 
-				<img id="img_zoom" data-zoom-image="images/qv_large_1.JPG" src="images/qv_img_1.jpg" alt="">
+                <img id="img_zoom" data-zoom-image="images/qv_large_1.JPG" src="images/qv_img_1.jpg" alt="">
 
-			</div><!--/ .image_preview_container-->
+            </div><!--/ .image_preview_container-->
 
-			<!-- - - - - - - - - - - - - - End of image preview container - - - - - - - - - - - - - - - - -->
+            <!-- - - - - - - - - - - - - - End of image preview container - - - - - - - - - - - - - - - - -->
 
-			<!-- - - - - - - - - - - - - - Prodcut thumbs carousel - - - - - - - - - - - - - - - - -->
-			
-			<div class="product_preview" data-output="#qv_preview">
+            <!-- - - - - - - - - - - - - - Prodcut thumbs carousel - - - - - - - - - - - - - - - - -->
 
-				<div class="owl_carousel" id="thumbnails">
-				
-					<img src="images/qv_thumb_1.jpg" data-large-image="images/qv_img_1.jpg" alt="">
+            <div class="product_preview" data-output="#qv_preview">
 
-					<img src="images/qv_thumb_2.jpg" data-large-image="images/qv_img_2.jpg" alt="">
+                <div class="owl_carousel" id="thumbnails">
 
-					<img src="images/qv_thumb_3.jpg" data-large-image="images/qv_img_3.jpg" alt="">
+                    <img src="images/qv_thumb_1.jpg" data-large-image="images/qv_img_1.jpg" alt="">
 
-					<img src="images/qv_thumb_4.jpg" data-large-image="images/qv_img_4.jpg" alt="">
+                    <img src="images/qv_thumb_2.jpg" data-large-image="images/qv_img_2.jpg" alt="">
 
-				</div><!--/ .owl-carousel-->
+                    <img src="images/qv_thumb_3.jpg" data-large-image="images/qv_img_3.jpg" alt="">
 
-			</div><!--/ .product_preview-->
-			
-			<!-- - - - - - - - - - - - - - End of prodcut thumbs carousel - - - - - - - - - - - - - - - - -->
+                    <img src="images/qv_thumb_4.jpg" data-large-image="images/qv_img_4.jpg" alt="">
 
-		</div>
+                </div><!--/ .owl-carousel-->
 
-		<!-- - - - - - - - - - - - - - End of product image column - - - - - - - - - - - - - - - - -->
+            </div><!--/ .product_preview-->
 
-		<!-- - - - - - - - - - - - - - Product description column - - - - - - - - - - - - - - - - -->
+            <!-- - - - - - - - - - - - - - End of prodcut thumbs carousel - - - - - - - - - - - - - - - - -->
 
-		<div class="single_product_description">
+        </div>
 
-			<h3><a href="#">${name}</a></h3>
+        <!-- - - - - - - - - - - - - - End of product image column - - - - - - - - - - - - - - - - -->
 
-			<div class="description_section v_centered">
+        <!-- - - - - - - - - - - - - - Product description column - - - - - - - - - - - - - - - - -->
 
-				<!-- - - - - - - - - - - - - - Product rating - - - - - - - - - - - - - - - - -->
-			
-				<ul class="rating">
+        <div class="single_product_description">
 
-					<li class="active"></li>
-					<li class="active"></li>
-					<li class="active"></li>
-					<li></li>
-					<li></li>
+            <h3><a href="#">${name}</a></h3>
 
-				</ul>
-					
-				<!-- - - - - - - - - - - - - - End of product rating - - - - - - - - - - - - - - - - -->
+            <div class="description_section v_centered">
 
-				<!-- - - - - - - - - - - - - - Reviews menu - - - - - - - - - - - - - - - - -->
+                <!-- - - - - - - - - - - - - - Product rating - - - - - - - - - - - - - - - - -->
 
-				<ul class="topbar">
+                <ul class="rating">
 
-					<li><p><b>5 Review(s)</b></p></li>
+                    <li class="active"></li>
+                    <li class="active"></li>
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
 
-				</ul>
+                </ul>
 
-				<!-- - - - - - - - - - - - - - End of reviews menu - - - - - - - - - - - - - - - - -->
+                <!-- - - - - - - - - - - - - - End of product rating - - - - - - - - - - - - - - - - -->
 
-			</div>
+                <!-- - - - - - - - - - - - - - Reviews menu - - - - - - - - - - - - - - - - -->
 
-			<div class="description_section">
+                <ul class="topbar">
 
-				<table class="product_info">
+                    <li><p><b>5 Review(s)</b></p></li>
 
-					<tbody>
+                </ul>
 
-						<tr>
+                <!-- - - - - - - - - - - - - - End of reviews menu - - - - - - - - - - - - - - - - -->
 
-							<td><b>Manufacturer: </b></td>
-							<td><p>${manufacture}</p></td>
+            </div>
 
-						</tr>
+            <div class="description_section">
 
-						<tr>
+                <table class="product_info">
 
-							<td><b>Availability: </b></td>
-							<td><span class="in_stock">In stock: </span>20 item(s)</td>
+                    <tbody>
 
-						</tr>
+                        <tr>
 
-						<tr>
+                            <td><b>Manufacturer: </b></td>
+                            <td><p>${manufacture}</p></td>
 
-							<td><b>Product Code:</b></td>
-							<td>${id}</td>
+                        </tr>
 
-						</tr>
+                        <tr>
 
-					</tbody>
+                            <td><b>Availability: </b></td>
+                            <td><span class="in_stock">In stock: </span>20 item(s)</td>
 
-				</table>
+                        </tr>
 
-			</div>
+                        <tr>
 
-			<hr>
+                            <td><b>Product Code:</b></td>
+                            <td>${id}</td>
 
-			<div class="description_section">
+                        </tr>
 
-				<p>Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna.</p>
+                    </tbody>
 
-			</div>
+                </table>
 
-			<hr>
+            </div>
 
-			<p class="product_price">${price}</p>
+            <hr>
 
-			<!-- - - - - - - - - - - - - - Product size - - - - - - - - - - - - - - - - -->
+            <div class="description_section">
 
-			<div class="description_section_2 v_centered">
-				
-				<span class="title">Size:</span>
+                <p>Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna.</p>
 
-				<div class="custom_select min">
+            </div>
 
-					<select>
+            <hr>
 
-						<option value="XL">XL</option>
-                                                <option value="L">L</option>
-                                                <option value="M">M</option>
-                                                <option value="S">S</option>
+            <p class="product_price">${price}</p>
 
-					</select>
+            <!-- - - - - - - - - - - - - - Product size - - - - - - - - - - - - - - - - -->
 
-				</div>
+            <div class="description_section_2 v_centered">
 
-			</div>
+                <span class="title">Size:</span>
 
-			<!-- - - - - - - - - - - - - - End of product size - - - - - - - - - - - - - - - - -->
+                <div class="custom_select min">
 
-                        <!-- - - - - - - - - - - - - - Quantity - - - - - - - - - - - - - - - - -->
+                    <select>
 
-                                <div class="description_section_3 v_centered">
+                        <option value="XL">XL</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="S">S</option>
 
-                                <span class="title">Qty:</span>
+                    </select>
 
-				<div class="qty min clearfix">
+                </div>
 
-					<button class="theme_button" data-direction="minus">&#45;</button>
-					<input type="text" name="" value="1">
-					<button class="theme_button" data-direction="plus">&#43;</button>
+            </div>
 
-				</div>
+            <!-- - - - - - - - - - - - - - End of product size - - - - - - - - - - - - - - - - -->
 
-                                </div>
+            <!-- - - - - - - - - - - - - - Quantity - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - End of quantity - - - - - - - - - - - - - - - - -->
+            <div class="description_section_3 v_centered">
 
-			<!-- - - - - - - - - - - - - - Product actions - - - - - - - - - - - - - - - - -->
+                <span class="title">Qty:</span>
 
-			<div class="buttons_row">
+                <div class="qty min clearfix">
 
-				<button class="button_blue middle_btn">Add to Cart</button>
+                    <button class="theme_button" data-direction="minus">&#45;</button>
+                    <input type="text" name="" value="1">
+                    <button class="theme_button" data-direction="plus">&#43;</button>
 
-				<a href="../view/product.html" class="button_dark_grey def_icon_btn middle_btn add_to_compare tooltip_container"><span
-						class="tooltip top">More Details</span></a>
+                </div>
 
-				<button class="button_dark_grey def_icon_btn middle_btn add_to_wishlist tooltip_container"><span class="tooltip top">Add to Wishlist</span></button>
+            </div>
 
-			</div>
+            <!-- - - - - - - - - - - - - - End of quantity - - - - - - - - - - - - - - - - -->
 
-			<!-- - - - - - - - - - - - - - End of product actions - - - - - - - - - - - - - - - - -->
+            <!-- - - - - - - - - - - - - - Product actions - - - - - - - - - - - - - - - - -->
 
-		</div>
+            <div class="buttons_row">
 
-		<!-- - - - - - - - - - - - - - End of product description column - - - - - - - - - - - - - - - - -->
+                <button class="button_blue middle_btn">Add to Cart</button>
 
-	</div>
+                <button class="button_dark_grey def_icon_btn middle_btn add_to_wishlist tooltip_container"><span class="tooltip top">Add to Wishlist</span></button>
+
+            </div>
+
+            <!-- - - - - - - - - - - - - - End of product actions - - - - - - - - - - - - - - - - -->
+
+        </div>
+
+        <!-- - - - - - - - - - - - - - End of product description column - - - - - - - - - - - - - - - - -->
+
+    </div>
 
 </div>
 
 <!--==================================
-		End quick view modal window
+                End quick view modal window
 ====================================== -->
