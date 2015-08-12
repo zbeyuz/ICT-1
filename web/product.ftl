@@ -46,300 +46,300 @@
 
         <!-- - - - - - - - - - - - - - Main Wrapper - - - - - - - - - - - - - - - - -->
 
-            <#include "header.shtml">
+        <#include "header.shtml">
 
-            <!-- - - - - - - - - - - - - - Page Wrapper - - - - - - - - - - - - - - - - -->
+        <!-- - - - - - - - - - - - - - Page Wrapper - - - - - - - - - - - - - - - - -->
 
-            <div class="secondary_page_wrapper">
+        <div class="secondary_page_wrapper">
 
-                <div class="container">
+            <div class="container">
 
-                    <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
+                <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
 
-                    <ul class="breadcrumbs">
+                <ul class="breadcrumbs">
 
-                        <li><a href="index.shtml">Home</a></li>
-                        <li><a href="#">Man</a></li>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Bags</a></li>
-                        <li>${name}</li>
+                    <li><a href="index.shtml">Home</a></li>
+                    <li><a href="#">Man</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li>${name}</li>
 
-                    </ul>
+                </ul>
 
-                    <!-- - - - - - - - - - - - - - End of breadcrumbs - - - - - - - - - - - - - - - - -->
+                <!-- - - - - - - - - - - - - - End of breadcrumbs - - - - - - - - - - - - - - - - -->
 
-                    <!-- - - - - - - - - - - - - - Product images & description - - - - - - - - - - - - - - - - -->
+                <!-- - - - - - - - - - - - - - Product images & description - - - - - - - - - - - - - - - - -->
 
-                    <section class="section_offset">
+                <section class="section_offset">
 
-                        <div class="clearfix">
+                    <div class="clearfix">
 
-                            <!-- - - - - - - - - - - - - - Product image column - - - - - - - - - - - - - - - - -->
+                        <!-- - - - - - - - - - - - - - Product image column - - - - - - - - - - - - - - - - -->
 
-                            <div class="single_product">
+                        <div class="single_product">
 
-                                <!-- - - - - - - - - - - - - - Image preview container - - - - - - - - - - - - - - - - -->
+                            <!-- - - - - - - - - - - - - - Image preview container - - - - - - - - - - - - - - - - -->
 
-                                <div class="image_preview_container">
+                            <div class="image_preview_container">
 
-                                    <img id="img_zoom" data-zoom-image="images/qv_large_1.JPG" src="images/qv_img_1.jpg" alt="">
+                                <img id="img_zoom" data-zoom-image="images/qv_large_1.JPG" src="images/qv_img_1.jpg" alt="">
 
-                                    <button class="button_grey_2 icon_btn middle_btn open_qv"><i class="icon-resize-full-6"></i></button>
+                                <button class="button_grey_2 icon_btn middle_btn open_qv"><i class="icon-resize-full-6"></i></button>
 
-                                </div><!--/ .image_preview_container-->
+                            </div><!--/ .image_preview_container-->
 
-                                <!-- - - - - - - - - - - - - - End of image preview container - - - - - - - - - - - - - - - - -->
+                            <!-- - - - - - - - - - - - - - End of image preview container - - - - - - - - - - - - - - - - -->
 
-                                <!-- - - - - - - - - - - - - - Product thumbs carousel - - - - - - - - - - - - - - - - -->
+                            <!-- - - - - - - - - - - - - - Product thumbs carousel - - - - - - - - - - - - - - - - -->
 
-                                <div class="product_preview">
+                            <div class="product_preview">
 
-                                    <div class="owl_carousel" id="thumbnails">
+                                <div class="owl_carousel" id="thumbnails">
 
-                                        <a href="#" data-image="images/qv_img_1.jpg" data-zoom-image="images/qv_large_1.JPG">
+                                    <a href="#" data-image="images/qv_img_1.jpg" data-zoom-image="images/qv_large_1.JPG">
 
-                                            <img src="images/qv_thumb_1.jpg" data-large-image="images/qv_img_1.jpg" alt="">
+                                        <img src="images/qv_thumb_1.jpg" data-large-image="images/qv_img_1.jpg" alt="">
 
-                                        </a>
+                                    </a>
 
-                                        <a href="#" data-image="images/qv_img_2.jpg" data-zoom-image="images/qv_large_2.jpg">
+                                    <a href="#" data-image="images/qv_img_2.jpg" data-zoom-image="images/qv_large_2.jpg">
 
-                                            <img src="images/qv_thumb_2.jpg" data-large-image="images/qv_img_2.jpg" alt="">
+                                        <img src="images/qv_thumb_2.jpg" data-large-image="images/qv_img_2.jpg" alt="">
 
-                                        </a>
+                                    </a>
 
-                                        <a href="#" data-image="images/qv_img_3.jpg" data-zoom-image="images/qv_large_3.jpg">
+                                    <a href="#" data-image="images/qv_img_3.jpg" data-zoom-image="images/qv_large_3.jpg">
 
-                                            <img src="images/qv_thumb_3.jpg" data-large-image="images/qv_img_3.jpg" alt="">
+                                        <img src="images/qv_thumb_3.jpg" data-large-image="images/qv_img_3.jpg" alt="">
 
-                                        </a>
+                                    </a>
 
-                                        <a href="#" data-image="images/qv_img_4.jpg" data-zoom-image="images/qv_large_4.JPG">
+                                    <a href="#" data-image="images/qv_img_4.jpg" data-zoom-image="images/qv_large_4.JPG">
 
-                                            <img src="images/qv_thumb_4.jpg" data-large-image="images/qv_img_4.jpg" alt="">
+                                        <img src="images/qv_thumb_4.jpg" data-large-image="images/qv_img_4.jpg" alt="">
 
-                                        </a>
+                                    </a>
 
-                                    </div><!--/ .owl-carousel-->
+                                </div><!--/ .owl-carousel-->
 
-                                </div><!--/ .product_preview-->
+                            </div><!--/ .product_preview-->
 
-                                <!-- - - - - - - - - - - - - - End of prodcut thumbs carousel - - - - - - - - - - - - - - - - -->
-
-                            </div>
-
-                            <!-- - - - - - - - - - - - - - End of product image column - - - - - - - - - - - - - - - - -->
-
-                            <!-- - - - - - - - - - - - - - Product description column - - - - - - - - - - - - - - - - -->
-
-                            <div class="single_product_description">
-
-                                <h3 class="offset_title">${name}</h3>
-
-                                <div class="description_section v_centered">
-
-                                    <!-- - - - - - - - - - - - - - Product rating - - - - - - - - - - - - - - - - -->
-
-                                    <ul class="rating">
-
-                                        <li class="active"></li>
-                                        <li class="active"></li>
-                                        <li class="active"></li>
-                                        <li></li>
-                                        <li></li>
-
-                                    </ul>
-
-                                    <!-- - - - - - - - - - - - - - End of product rating - - - - - - - - - - - - - - - - -->
-
-                                    <!-- - - - - - - - - - - - - - Reviews menu - - - - - - - - - - - - - - - - -->
-
-                                    <ul class="topbar">
-
-                                        <li><strong>3 Review(s)</strong></li>
-
-                                    </ul>
-
-                                    <!-- - - - - - - - - - - - - - End of reviews menu - - - - - - - - - - - - - - - - -->
-
-                                </div>
-
-                                <div class="description_section">
-
-                                    <table class="product_info">
-
-                                        <tbody>
-
-                                            <tr>
-
-                                                <td>Manufacturer: </td>
-                                                <td><a href="#">${manufacture}</a></td>
-
-                                            </tr>
-
-                                            <tr>
-
-                                                <td>Availability: </td>
-                                                <td><span class="in_stock">In stock: </span>10 item(s)</td>
-
-                                            </tr>
-
-                                            <tr>
-
-                                                <td>Product ID: </td>
-                                                <td>${id}</td>
-
-                                            </tr>
-
-                                        </tbody>
-
-                                    </table>
-
-                                </div>
-
-                                <hr>
-
-                                <div class="description_section">
-
-                                    <p>${info}</p>
-
-                                </div>
-
-                                <hr>
-
-                                <p class="product_price">${price}</p>
-
-                                <!-- - - - - - - - - - - - - - Product size - - - - - - - - - - - - - - - - -->
-
-                                <div class="description_section_2 v_centered">
-
-                                    <span class="title">Size:</span>
-
-                                    <div class="custom_select min">
-
-                                        <select>
-
-                                            <option value="XL">XL</option>
-                                            <option value="L">L</option>
-                                            <option value="M">M</option>
-                                            <option value="S">S</option>
-
-                                        </select>
-
-                                    </div>
-
-                                </div>
-
-                                <!-- - - - - - - - - - - - - - End of product size - - - - - - - - - - - - - - - - -->
-
-                                <!-- - - - - - - - - - - - - - Quantity - - - - - - - - - - - - - - - - -->
-
-                                <div class="description_section_3 v_centered">
-
-                                <span class="title">Qty:</span>
-
-				<div class="qty min clearfix">
-
-					<button class="theme_button" data-direction="minus">&#45;</button>
-					<input type="text" name="" value="1">
-					<button class="theme_button" data-direction="plus">&#43;</button>
-
-				</div>
-
-                                </div>
-
-                                <!-- - - - - - - - - - - - - - End of quantity - - - - - - - - - - - - - - - - -->
-
-                                <!-- - - - - - - - - - - - - - Product actions - - - - - - - - - - - - - - - - -->
-
-                                <div class="description_section_2 v_centered">
-
-                                    <div class="buttons_row">
-
-                                        <button class="button_blue middle_btn">Add to Cart</button>
-
-                                        <button class="button_dark_grey def_icon_btn middle_btn add_to_wishlist tooltip_container">
-                                            <span class="tooltip top">Add to Wishlist</span></button>
-
-                                    </div>
-
-                                </div>
-
-                                <!-- - - - - - - - - - - - - - End of product actions - - - - - - - - - - - - - - - - -->
-
-                            </div>
-
-                            <!-- - - - - - - - - - - - - - End of product description column - - - - - - - - - - - - - - - - -->
+                            <!-- - - - - - - - - - - - - - End of prodcut thumbs carousel - - - - - - - - - - - - - - - - -->
 
                         </div>
 
-                    </section><!--/ .section_offset -->
+                        <!-- - - - - - - - - - - - - - End of product image column - - - - - - - - - - - - - - - - -->
 
-                    <!-- - - - - - - - - - - - - - End of product images & description - - - - - - - - - - - - - - - - -->
+                        <!-- - - - - - - - - - - - - - Product description column - - - - - - - - - - - - - - - - -->
 
-                    <!-- - - - - - - - - - - - - - Tabs - - - - - - - - - - - - - - - - -->
+                        <div class="single_product_description">
 
-                    <div class="section_offset">
+                            <h3 class="offset_title">${name}</h3>
 
-                        <div class="tabs type_2">
+                            <div class="description_section v_centered">
 
-                            <!-- - - - - - - - - - - - - - Navigation of tabs - - - - - - - - - - - - - - - - -->
+                                <!-- - - - - - - - - - - - - - Product rating - - - - - - - - - - - - - - - - -->
 
-                            <ul class="tabs_nav clearfix">
+                                <ul class="rating">
 
-                                <li><a href="#tab-1">Description</a></li>
-                                <li><a href="#tab-2">Reviews</a></li>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li></li>
+                                    <li></li>
 
-                            </ul>
+                                </ul>
 
-                            <!-- - - - - - - - - - - - - - End navigation of tabs - - - - - - - - - - - - - - - - -->
+                                <!-- - - - - - - - - - - - - - End of product rating - - - - - - - - - - - - - - - - -->
 
-                            <!-- - - - - - - - - - - - - - Tabs container - - - - - - - - - - - - - - - - -->
+                                <!-- - - - - - - - - - - - - - Reviews menu - - - - - - - - - - - - - - - - -->
 
-                            <div class="tab_containers_wrap">
+                                <ul class="topbar">
 
-                                <!-- - - - - - - - - - - - - - Tab - - - - - - - - - - - - - - - - -->
+                                    <li><strong>3 Review(s)</strong></li>
 
-                                <div id="tab-1" class="tab_container">
+                                </ul>
 
-                                    ${info}
+                                <!-- - - - - - - - - - - - - - End of reviews menu - - - - - - - - - - - - - - - - -->
 
-                                </div><!--/ #tab-1-->
+                            </div>
 
-                                <!-- - - - - - - - - - - - - - End tab - - - - - - - - - - - - - - - - -->
+                            <div class="description_section">
 
-                                <!-- - - - - - - - - - - - - - Tab - - - - - - - - - - - - - - - - -->
+                                <table class="product_info">
 
-                                <div id="tab-2" class="tab_container">
+                                    <tbody>
 
-                                    <section class="section_offset">
+                                        <tr>
 
-                                        <h3>Customer Reviews</h3>
+                                            <td>Manufacturer: </td>
+                                            <td><a href="#">${manufacture}</a></td>
 
-                                        <ul class="reviews">
+                                        </tr>
+
+                                        <tr>
+
+                                            <td>Availability: </td>
+                                            <td><span class="in_stock">In stock: </span>10 item(s)</td>
+
+                                        </tr>
+
+                                        <tr>
+
+                                            <td>Product ID: </td>
+                                            <td>${id}</td>
+
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+
+                            <hr>
+
+                            <div class="description_section">
+
+                                <p>${info}</p>
+
+                            </div>
+
+                            <hr>
+
+                            <p class="product_price">${price}</p>
+
+                            <!-- - - - - - - - - - - - - - Product size - - - - - - - - - - - - - - - - -->
+
+                            <div class="description_section_2 v_centered">
+
+                                <span class="title">Size:</span>
+
+                                <div class="custom_select min">
+
+                                    <select>
+
+                                        <option value="XL">XL</option>
+                                        <option value="L">L</option>
+                                        <option value="M">M</option>
+                                        <option value="S">S</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <!-- - - - - - - - - - - - - - End of product size - - - - - - - - - - - - - - - - -->
+
+                            <!-- - - - - - - - - - - - - - Quantity - - - - - - - - - - - - - - - - -->
+
+                            <div class="description_section_3 v_centered">
+
+                                <span class="title">Qty:</span>
+
+                                <div class="qty min clearfix">
+
+                                    <button class="theme_button" data-direction="minus">&#45;</button>
+                                    <input type="text" name="" value="1">
+                                    <button class="theme_button" data-direction="plus">&#43;</button>
+
+                                </div>
+
+                            </div>
+
+                            <!-- - - - - - - - - - - - - - End of quantity - - - - - - - - - - - - - - - - -->
+
+                            <!-- - - - - - - - - - - - - - Product actions - - - - - - - - - - - - - - - - -->
+
+                            <div class="description_section_2 v_centered">
+
+                                <div class="buttons_row">
+
+                                    <button class="button_blue middle_btn">Add to Cart</button>
+
+                                    <button class="button_dark_grey def_icon_btn middle_btn add_to_wishlist tooltip_container">
+                                        <span class="tooltip top">Add to Wishlist</span></button>
+
+                                </div>
+
+                            </div>
+
+                            <!-- - - - - - - - - - - - - - End of product actions - - - - - - - - - - - - - - - - -->
+
+                        </div>
+
+                        <!-- - - - - - - - - - - - - - End of product description column - - - - - - - - - - - - - - - - -->
+
+                    </div>
+
+                </section><!--/ .section_offset -->
+
+                <!-- - - - - - - - - - - - - - End of product images & description - - - - - - - - - - - - - - - - -->
+
+                <!-- - - - - - - - - - - - - - Tabs - - - - - - - - - - - - - - - - -->
+
+                <div class="section_offset">
+
+                    <div class="tabs type_2">
+
+                        <!-- - - - - - - - - - - - - - Navigation of tabs - - - - - - - - - - - - - - - - -->
+
+                        <ul class="tabs_nav clearfix">
+
+                            <li><a href="#tab-1">Description</a></li>
+                            <li><a href="#tab-2">Reviews</a></li>
+
+                        </ul>
+
+                        <!-- - - - - - - - - - - - - - End navigation of tabs - - - - - - - - - - - - - - - - -->
+
+                        <!-- - - - - - - - - - - - - - Tabs container - - - - - - - - - - - - - - - - -->
+
+                        <div class="tab_containers_wrap">
+
+                            <!-- - - - - - - - - - - - - - Tab - - - - - - - - - - - - - - - - -->
+
+                            <div id="tab-1" class="tab_container">
+
+                                ${info}
+
+                            </div><!--/ #tab-1-->
+
+                            <!-- - - - - - - - - - - - - - End tab - - - - - - - - - - - - - - - - -->
+
+                            <!-- - - - - - - - - - - - - - Tab - - - - - - - - - - - - - - - - -->
+
+                            <div id="tab-2" class="tab_container">
+
+                                <section class="section_offset">
+
+                                    <h3>Customer Reviews</h3>
+
+                                    <ul class="reviews">
 
 
 
-                                        </ul>
+                                    </ul>
 
-                                        <a href="#" class="button_grey middle_btn">Show More</a>
+                                    <a href="#" class="button_grey middle_btn">Show More</a>
 
-                                    </section><!--/ .section_offset -->
+                                </section><!--/ .section_offset -->
 
-                                    <section class="section_offset">
+                                <section class="section_offset">
 
-                                        <h3>Write Your Own Review</h3>
+                                    <h3>Write Your Own Review</h3>
 
-                                        <div class="row">
+                                    <div class="row">
 
-                                            <div class="col-lg-5 col-md-6">
+                                        <div class="col-lg-5 col-md-6">
 
-                                                <p>How do you rate this product? *</p>
+                                            <p>How do you rate this product? *</p>
 
-                                                <!-- - - - - - - - - - - - - - Rate the - - - - - - - - - - - - - - - - -->
+                                            <!-- - - - - - - - - - - - - - Rate the - - - - - - - - - - - - - - - - -->
 
-                                                <div class="table_wrap rate_table">
-
+                                            <div class="table_wrap rate_table">
+                                                <form id="rating">
                                                     <table>
 
                                                         <thead>
@@ -365,35 +365,35 @@
 
                                                                 <td>
 
-                                                                    <input checked type="radio" name="price_rate" id="rate_1">
+                                                                    <input checked type="radio" name="price_rate" id="rate_1" value="1">
                                                                     <label for="rate_1"></label>
 
                                                                 </td>
 
                                                                 <td>
 
-                                                                    <input type="radio" name="price_rate" id="rate_2">
+                                                                    <input type="radio" name="price_rate" id="rate_2" value="2">
                                                                     <label for="rate_2"></label>
 
                                                                 </td>
 
                                                                 <td>
 
-                                                                    <input type="radio" name="price_rate" id="rate_3">
+                                                                    <input type="radio" name="price_rate" id="rate_3" value="3">
                                                                     <label for="rate_3"></label>
 
                                                                 </td>
 
                                                                 <td>
 
-                                                                    <input type="radio" name="price_rate" id="rate_4">
+                                                                    <input type="radio" name="price_rate" id="rate_4" value="4">
                                                                     <label for="rate_4"></label>
 
                                                                 </td>
 
                                                                 <td>
 
-                                                                    <input type="radio" name="price_rate" id="rate_5">
+                                                                    <input type="radio" name="price_rate" id="rate_5" value="5">
                                                                     <label for="rate_5"></label>
 
                                                                 </td>
@@ -406,35 +406,35 @@
 
                                                                 <td>
 
-                                                                    <input checked type="radio" name="value_rate" id="rate_6">
+                                                                    <input checked type="radio" name="value_rate" id="rate_6" value="1">
                                                                     <label for="rate_6"></label>
 
                                                                 </td>
 
                                                                 <td>
 
-                                                                    <input type="radio" name="value_rate" id="rate_7">
+                                                                    <input type="radio" name="value_rate" id="rate_7" value="2">
                                                                     <label for="rate_7"></label>
 
                                                                 </td>
 
                                                                 <td>
 
-                                                                    <input type="radio" name="value_rate" id="rate_8">
+                                                                    <input type="radio" name="value_rate" id="rate_8" value="3">
                                                                     <label for="rate_8"></label>
 
                                                                 </td>
 
                                                                 <td>
 
-                                                                    <input type="radio" name="value_rate" id="rate_9">
+                                                                    <input type="radio" name="value_rate" id="rate_9" value="4">
                                                                     <label for="rate_9"></label>
 
                                                                 </td>
 
                                                                 <td>
 
-                                                                    <input type="radio" name="value_rate" id="rate_10">
+                                                                    <input type="radio" name="value_rate" id="rate_10" value="5">
                                                                     <label for="rate_10"></label>
 
                                                                 </td>
@@ -447,35 +447,35 @@
 
                                                                 <td>
 
-                                                                    <input checked type="radio" name="quality_rate" id="rate_11">
+                                                                    <input checked type="radio" name="quality_rate" id="rate_11" value="1">
                                                                     <label for="rate_11"></label>
 
                                                                 </td>
 
                                                                 <td>
 
-                                                                    <input type="radio" name="quality_rate" id="rate_12">
+                                                                    <input type="radio" name="quality_rate" id="rate_12" value="2">
                                                                     <label for="rate_12"></label>
 
                                                                 </td>
 
                                                                 <td>
 
-                                                                    <input type="radio" name="quality_rate" id="rate_13">
+                                                                    <input type="radio" name="quality_rate" id="rate_13" value="3">
                                                                     <label for="rate_13"></label>
 
                                                                 </td>
 
                                                                 <td>
 
-                                                                    <input type="radio" name="quality_rate" id="rate_14">
+                                                                    <input type="radio" name="quality_rate" id="rate_14" value="4">
                                                                     <label for="rate_14"></label>
 
                                                                 </td>
 
                                                                 <td>
 
-                                                                    <input type="radio" name="quality_rate" id="rate_15">
+                                                                    <input type="radio" name="quality_rate" id="rate_15" value="5">
                                                                     <label for="rate_15"></label>
 
                                                                 </td>
@@ -483,22 +483,22 @@
                                                             </tr>
 
                                                         </tbody>
-
                                                     </table>
+                                                </form>
+                                            </div>
 
-                                                </div>
+                                            <!-- - - - - - - - - - - - - - End of rate the - - - - - - - - - - - - - - - - -->
 
-                                                <!-- - - - - - - - - - - - - - End of rate the - - - - - - - - - - - - - - - - -->
+                                        </div><!--/ [col]-->
 
-                                            </div><!--/ [col]-->
+                                        <div class="col-lg-7 col-md-6">
 
-                                            <div class="col-lg-7 col-md-6">
+                                            <p class="subcaption">All fields are required.</p>
 
-                                                <p class="subcaption">All fields are required.</p>
+                                            <!-- - - - - - - - - - - - - - Review div - - - - - - - - - - - - - - - - -->
 
-                                                <!-- - - - - - - - - - - - - - Review div - - - - - - - - - - - - - - - - -->
-
-                                                <div class="type_2">
+                                            <div class="type_2">
+                                                <form id="revForm">
 
                                                     <ul>
 
@@ -507,7 +507,7 @@
                                                             <div class="col-sm-6">
 
                                                                 <label for="summary">Summary of Your Review</label>
-                                                                <input type="text" id="summary">
+                                                                <input type="text" name="title">
 
                                                             </div>
 
@@ -519,262 +519,276 @@
 
                                                                 <label for="review_message">Review</label>
 
-                                                                <textarea rows="5" id="review_message"></textarea>
+                                                                <textarea rows="5" name="content"></textarea>
 
                                                             </div>
 
                                                         </li>
-                                                        <br>
+                                                        <br />
                                                         <li class="row">
 
                                                             <div class="col-xs-12">
 
-                                                                <button id="sendRev" class="button_dark_grey middle_btn">Submit Review</button>
+                                                                <a id="sendRev" class="button_dark_grey middle_btn">Submit Review</a>
 
                                                             </div>
 
                                                         </li>
 
                                                     </ul>
-
-                                                </div>
-
-                                                <!-- - - - - - - - - - - - - - End of review div - - - - - - - - - - - - - - - - -->
-
+                                                </form>
                                             </div>
 
-                                        </div><!--/ .row -->
+                                            <!-- - - - - - - - - - - - - - End of review div - - - - - - - - - - - - - - - - -->
 
-                                    </section><!--/ .section_offset -->
+                                        </div>
 
-                                </div><!--/ #tab-2-->
+                                    </div><!--/ .row -->
 
-                                <!-- - - - - - - - - - - - - - End tab - - - - - - - - - - - - - - - - -->
+                                </section><!--/ .section_offset -->
 
-                            </div><!--/ .tab_containers_wrap -->
+                            </div><!--/ #tab-2-->
 
-                            <!-- - - - - - - - - - - - - - End of tabs containers - - - - - - - - - - - - - - - - -->
+                            <!-- - - - - - - - - - - - - - End tab - - - - - - - - - - - - - - - - -->
 
-                        </div><!--/ .tabs-->
+                        </div><!--/ .tab_containers_wrap -->
 
-                    </div><!--/ .section_offset -->
+                        <!-- - - - - - - - - - - - - - End of tabs containers - - - - - - - - - - - - - - - - -->
 
-                    <!-- - - - - - - - - - - - - - End of tabs - - - - - - - - - - - - - - - - -->
+                    </div><!--/ .tabs-->
 
-                    <!-- - - - - - - - - - - - - - Other Bestselling Products - - - - - - - - - - - - - - - - -->
+                </div><!--/ .section_offset -->
 
-                    <section class="section_offset">
+                <!-- - - - - - - - - - - - - - End of tabs - - - - - - - - - - - - - - - - -->
 
-                        <h3 class="offset_title">Other Bestselling Products</h3>
+                <!-- - - - - - - - - - - - - - Other Bestselling Products - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - Carousel of other bestselling products - - - - - - - - - - - - - - - - -->
+                <section class="section_offset">
 
-                        <div class="owl_carousel five_items">
+                    <h3 class="offset_title">Other Bestselling Products</h3>
 
-                            <!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
+                    <!-- - - - - - - - - - - - - - Carousel of other bestselling products - - - - - - - - - - - - - - - - -->
 
-                            <div class="product_item">
+                    <div class="owl_carousel five_items">
 
-                                <!-- - - - - - - - - - - - - - Thumbmnail - - - - - - - - - - - - - - - - -->
+                        <!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
 
-                                <div class="image_wrap">
+                        <div class="product_item">
 
-                                    <img src="images/product_img_24.jpg" alt="">
+                            <!-- - - - - - - - - - - - - - Thumbmnail - - - - - - - - - - - - - - - - -->
 
-                                    <!-- - - - - - - - - - - - - - Product actions - - - - - - - - - - - - - - - - -->
+                            <div class="image_wrap">
 
-                                    <div class="actions_wrap">
+                                <img src="images/product_img_24.jpg" alt="">
 
-                                        <div class="centered_buttons">
+                                <!-- - - - - - - - - - - - - - Product actions - - - - - - - - - - - - - - - - -->
 
-                                            <a href="#" class="button_dark_grey middle_btn quick_view" data-modal-url="modals/quick_view.html">Quick View</a>
+                                <div class="actions_wrap">
 
-                                            <a href="#" class="button_blue middle_btn add_to_cart">Add to Cart</a>
+                                    <div class="centered_buttons">
 
-                                        </div><!--/ .centered_buttons -->
+                                        <a href="#" class="button_dark_grey middle_btn quick_view" data-modal-url="modals/quick_view.html">Quick View</a>
 
-                                    </div><!--/ .actions_wrap-->
+                                        <a href="#" class="button_blue middle_btn add_to_cart">Add to Cart</a>
 
-                                    <!-- - - - - - - - - - - - - - End of product actions - - - - - - - - - - - - - - - - -->
+                                    </div><!--/ .centered_buttons -->
 
-                                </div><!--/. image_wrap-->
+                                </div><!--/ .actions_wrap-->
 
-                                <!-- - - - - - - - - - - - - - End thumbmnail - - - - - - - - - - - - - - - - -->
+                                <!-- - - - - - - - - - - - - - End of product actions - - - - - - - - - - - - - - - - -->
 
-                                <!-- - - - - - - - - - - - - - Label - - - - - - - - - - - - - - - - -->
+                            </div><!--/. image_wrap-->
 
-                                <div class="label_new">New</div>
+                            <!-- - - - - - - - - - - - - - End thumbmnail - - - - - - - - - - - - - - - - -->
 
-                                <!-- - - - - - - - - - - - - - End label - - - - - - - - - - - - - - - - -->
+                            <!-- - - - - - - - - - - - - - Label - - - - - - - - - - - - - - - - -->
 
-                                <!-- - - - - - - - - - - - - - Product title & price - - - - - - - - - - - - - - - - -->
+                            <div class="label_new">New</div>
 
-                                <div class="description">
+                            <!-- - - - - - - - - - - - - - End label - - - - - - - - - - - - - - - - -->
 
-                                    <a href="#">Leo vel metus nulla facilisi etiam cursus 750mg, Softgels 120 ea</a>
+                            <!-- - - - - - - - - - - - - - Product title & price - - - - - - - - - - - - - - - - -->
 
-                                    <div class="clearfix product_info">
+                            <div class="description">
 
-                                        <p class="product_price alignleft"><b>$44.99</b></p>
+                                <a href="#">Leo vel metus nulla facilisi etiam cursus 750mg, Softgels 120 ea</a>
 
-                                    </div>
+                                <div class="clearfix product_info">
+
+                                    <p class="product_price alignleft"><b>$44.99</b></p>
 
                                 </div>
 
-                                <!-- - - - - - - - - - - - - - End of product title & price - - - - - - - - - - - - - - - - -->
+                            </div>
 
-                            </div><!--/ .product_item-->
+                            <!-- - - - - - - - - - - - - - End of product title & price - - - - - - - - - - - - - - - - -->
 
-                            <!-- - - - - - - - - - - - - - End product - - - - - - - - - - - - - - - - -->
+                        </div><!--/ .product_item-->
 
-                            <!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
+                        <!-- - - - - - - - - - - - - - End product - - - - - - - - - - - - - - - - -->
 
-                            <div class="product_item">
+                        <!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
 
-                                <!-- - - - - - - - - - - - - - Thumbmnail - - - - - - - - - - - - - - - - -->
+                        <div class="product_item">
 
-                                <div class="image_wrap">
+                            <!-- - - - - - - - - - - - - - Thumbmnail - - - - - - - - - - - - - - - - -->
 
-                                    <img src="images/product_img_25.jpg" alt="">
+                            <div class="image_wrap">
 
-                                    <!-- - - - - - - - - - - - - - Product actions - - - - - - - - - - - - - - - - -->
+                                <img src="images/product_img_25.jpg" alt="">
 
-                                    <div class="actions_wrap">
+                                <!-- - - - - - - - - - - - - - Product actions - - - - - - - - - - - - - - - - -->
 
-                                        <div class="centered_buttons">
+                                <div class="actions_wrap">
 
-                                            <a href="#" class="button_dark_grey middle_btn quick_view" data-modal-url="modals/quick_view.html">Quick View</a>
+                                    <div class="centered_buttons">
 
-                                            <a href="#" class="button_blue middle_btn add_to_cart">Add to Cart</a>
+                                        <a href="#" class="button_dark_grey middle_btn quick_view" data-modal-url="modals/quick_view.html">Quick View</a>
 
-                                        </div><!--/ .centered_buttons -->
+                                        <a href="#" class="button_blue middle_btn add_to_cart">Add to Cart</a>
 
-                                    </div><!--/ .actions_wrap-->
+                                    </div><!--/ .centered_buttons -->
 
-                                    <!-- - - - - - - - - - - - - - End of product actions - - - - - - - - - - - - - - - - -->
+                                </div><!--/ .actions_wrap-->
 
-                                </div><!--/. image_wrap-->
+                                <!-- - - - - - - - - - - - - - End of product actions - - - - - - - - - - - - - - - - -->
 
-                                <!-- - - - - - - - - - - - - - End thumbmnail - - - - - - - - - - - - - - - - -->
+                            </div><!--/. image_wrap-->
 
-                                <!-- - - - - - - - - - - - - - Product title & price - - - - - - - - - - - - - - - - -->
+                            <!-- - - - - - - - - - - - - - End thumbmnail - - - - - - - - - - - - - - - - -->
 
-                                <div class="description">
+                            <!-- - - - - - - - - - - - - - Product title & price - - - - - - - - - - - - - - - - -->
 
-                                    <a href="#">Vestibulum libero nisl, porta vel 30</a>
+                            <div class="description">
 
-                                    <div class="clearfix product_info">
+                                <a href="#">Vestibulum libero nisl, porta vel 30</a>
 
-                                        <p class="product_price alignleft"><b>$39.99</b></p>
+                                <div class="clearfix product_info">
 
-                                        <!-- - - - - - - - - - - - - - Product rating - - - - - - - - - - - - - - - - -->
+                                    <p class="product_price alignleft"><b>$39.99</b></p>
 
-                                        <ul class="rating alignright">
+                                    <!-- - - - - - - - - - - - - - Product rating - - - - - - - - - - - - - - - - -->
 
-                                            <li class="active"></li>
-                                            <li class="active"></li>
-                                            <li class="active"></li>
-                                            <li class="active"></li>
-                                            <li></li>
+                                    <ul class="rating alignright">
 
-                                        </ul>
+                                        <li class="active"></li>
+                                        <li class="active"></li>
+                                        <li class="active"></li>
+                                        <li class="active"></li>
+                                        <li></li>
 
-                                        <!-- - - - - - - - - - - - - - End of product rating - - - - - - - - - - - - - - - - -->
+                                    </ul>
 
-                                    </div>
+                                    <!-- - - - - - - - - - - - - - End of product rating - - - - - - - - - - - - - - - - -->
 
                                 </div>
 
-                                <!-- - - - - - - - - - - - - - End of product title & price - - - - - - - - - - - - - - - - -->
+                            </div>
 
-                            </div><!--/ .product_item-->
+                            <!-- - - - - - - - - - - - - - End of product title & price - - - - - - - - - - - - - - - - -->
 
-                            <!-- - - - - - - - - - - - - - End product - - - - - - - - - - - - - - - - -->
+                        </div><!--/ .product_item-->
 
-                        </div><!--/ .owl_carousel.five_items-->
+                        <!-- - - - - - - - - - - - - - End product - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - End of featured products - - - - - - - - - - - - - - - - -->
+                    </div><!--/ .owl_carousel.five_items-->
 
-                    </section><!--/ .section_offset-->
+                    <!-- - - - - - - - - - - - - - End of featured products - - - - - - - - - - - - - - - - -->
 
-                    <!-- - - - - - - - - - - - - - End of related products - - - - - - - - - - - - - - - - -->
+                </section><!--/ .section_offset-->
 
-                    <#include "footer.shtml">
+                <!-- - - - - - - - - - - - - - End of related products - - - - - - - - - - - - - - - - -->
 
-        <!-- Include Plugins
-        ============================================ -->
-        <script src="js/jquery-2.1.1.min.js"></script>
-        <script src="js/queryloader2.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.elevateZoom-3.0.8.min.js"></script>
-        <script src="js/fancybox/source/jquery.fancybox.pack.js"></script>
-        <script src="js/fancybox/source/helpers/jquery.fancybox-media.js"></script>
-        <script src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
-        <script src="js/jquery.appear.js"></script>
-        <script src="js/jquery.countdown.plugin.min.js"></script>
-        <script src="js/jquery.countdown.min.js"></script>
-        <script src="js/owlcarousel/owl.carousel.min.js"></script>
-        <script src="twitter/jquery.tweet.min.js"></script>
-        <script src="js/arcticmodal/jquery.arcticmodal.js"></script>
-        <script src="js/retina.min.js"></script>
-        <script src="js/theme.plugins.js"></script>
-        <script src="js/theme.core.js"></script>
-        <script src="js/script.js" type="text/javascript"></script>
-        <script>
-            icp.sendRev = function (){
-                
-            }
-            String.prototype.repeat = function( num ){
-                return new Array( num + 1 ).join( this );
-            }
-            //var icp = {};
-            icp.rate = function (rate){
-                return "<li class=\"active\"></li>".repeat(rate)+"<li></li>".repeat(5-rate);
-            }
-            $.get("review?item="+${id}, function (data){
-                console.log(data);
-                var items=JSON.parse(data);
-                for (i = 0; i < items.length; i++){
+                <#include "footer.shtml">
+
+                <!-- Include Plugins
+                ============================================ -->
+                <script src="js/jquery-2.1.1.min.js"></script>
+                <script src="js/queryloader2.min.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                <script src="js/jquery.elevateZoom-3.0.8.min.js"></script>
+                <script src="js/fancybox/source/jquery.fancybox.pack.js"></script>
+                <script src="js/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+                <script src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+                <script src="js/jquery.appear.js"></script>
+                <script src="js/jquery.countdown.plugin.min.js"></script>
+                <script src="js/jquery.countdown.min.js"></script>
+                <script src="js/owlcarousel/owl.carousel.min.js"></script>
+                <script src="twitter/jquery.tweet.min.js"></script>
+                <script src="js/arcticmodal/jquery.arcticmodal.js"></script>
+                <script src="js/retina.min.js"></script>
+                <script src="js/theme.plugins.js"></script>
+                <script src="js/theme.core.js"></script>
+                <script src="js/script.js" type="text/javascript"></script>
+                <script>
+                    icp.revArray = function () {
+                        return $("#rating").serializeArray().concat($("#revForm").serializeArray());
+                    }
+                    icp.revObj = function () {
+                        var res = {};
+                        var ra = icp.revArray();
+                        var i;
+                        for (i = 0;i < ra.length; i += 1){
+                            res[ra[i].name]=ra[i].value;
+                        }
+                        res["item"]="${id}";
+                        return res;
+                    }
+                    icp.sendRev = function () {
+                        
+                    }
+                    String.prototype.repeat = function (num) {
+                        return new Array(num + 1).join(this);
+                    }
+                    //var icp = {};
+                    icp.rate = function (rate){
+                    return "<li class=\"active\"></li>".repeat(rate) + "<li></li>".repeat(5 - rate);
+                    }
+                    $.get("review?item=" + ${id}, function (data){
+                    console.log(data);
+                            var items = JSON.parse(data);
+                            for (i = 0; i < items.length; i++){
                     console.log(items[i]);
-                    var price=items[i][4];
-                    var value=items[i][5];
-                    var quality=items[i][6];
-                    $(".reviews").append("\
-<li>\
-    <article class=\"review\">\
-        <ul class=\"review-rates\">\
-            <li class=\"v_centered\">\
-                <span class=\"name\">Price</span>\
-                <ul class=\"rating\">"
-            +icp.rate(price)+
-                "</ul>\
-            </li>\
-            <li class=\"v_centered\">\
-                <span class=\"name\">Value</span>\
-                <ul class=\"rating\">"
-            +icp.rate(value)+
-                "</ul>\
-            </li>\
-            <li class=\"v_centered\">\
-                <span class=\"name\">Quality</span>\
-                <ul class=\"rating\">"
-            +icp.rate(quality)+
-                "</ul>\
-            </li>\
-        </ul>\
-        <div class=\"review-body\">\
-            <div class=\"review-meta\">\
-                <h5 class=\"bold\">"+items[i][2]+"</h5>\
-                Review by <a href=\"#\" class=\"bold\">"+items[i][1]+"</a> on "+items[i][3]+"\
-            </div>\
-            <p>"+items[i][7]+"</p>\
-        </div>\
-    </article>\
-</li>"
+                            var price = items[i][4];
+                            var value = items[i][5];
+                            var quality = items[i][6];
+                            $(".reviews").append("\
+        <li>\
+            <article class=\"review\">\
+                <ul class=\"review-rates\">\
+                    <li class=\"v_centered\">\
+                        <span class=\"name\">Price</span>\
+                        <ul class=\"rating\">"
+                            + icp.rate(price) +
+                            "</ul>\
+                    </li>\
+                    <li class=\"v_centered\">\
+                        <span class=\"name\">Value</span>\
+                        <ul class=\"rating\">"
+                            + icp.rate(value) +
+                            "</ul>\
+                    </li>\
+                    <li class=\"v_centered\">\
+                        <span class=\"name\">Quality</span>\
+                        <ul class=\"rating\">"
+                            + icp.rate(quality) +
+                            "</ul>\
+                    </li>\
+                </ul>\
+                <div class=\"review-body\">\
+                    <div class=\"review-meta\">\
+                        <h5 class=\"bold\">" + items[i][2] + "</h5>\
+                        Review by <a href=\"#\" class=\"bold\">" + items[i][1] + "</a> on " + items[i][3] + "\
+                    </div>\
+                    <p>" + items[i][7] + "</p>\
+                </div>\
+            </article>\
+        </li>"
 
                             );
-                }
-            });
-        </script>
-    </body>
-</html>
+                    }
+                    });
+
+                </script>
+                </body>
+                </html>

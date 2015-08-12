@@ -957,7 +957,7 @@
   <div class="description">\
     <a href="product?id='+items[i][0]+'">' + items[i][1] + '</a>\
     <div class="clearfix product_info">\
-      <p class="product_price alignleft"><b>' + items[i][2] + '</b></p>\
+      <p class="product_price alignleft"><b>$' + items[i][2] + '</b></p>\
     </div>\
   </div>\
 </div>');

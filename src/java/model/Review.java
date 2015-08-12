@@ -16,7 +16,7 @@ public class Review {
     public int user_id = -1;
     public String user_mail = "";
     public String review_title="";
-    public Date review_date;
+    public long review_time;
     public int review_value = -1;
     public int review_price = -1;
     public int review_quality = -1;

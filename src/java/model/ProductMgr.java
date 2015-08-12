@@ -11,6 +11,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 
 
@@ -188,26 +189,24 @@ public class ProductMgr {
     }
     
     
-    public static boolean addReview(int item_id, int user_id, String review_title, Date review_date, int review_value, int review_price, int review_quality, String review_text) throws SQLException, Exception {
+    public static boolean addReview(int item_id, int user_id, String review_title, long review_time, int review_value, int review_price, int review_quality, String review_text) throws SQLException, Exception {
 
         Connection conn=DBConn.getConn();
-        PreparedStatement pstmt = null;
-        ResultSet rs = null;
         String ch = "ok"; //user for check state of process        
-
+        /* user may change their idea :)
         pstmt = conn.prepareStatement("SELECT * FROM `item_review` where `item_id` = ? ");
         pstmt.setInt(1, user_id);
         rs = pstmt.executeQuery();
         while (rs.next()) {
             ch = "user already review this item"; //change state if user already review
         }
-
-        pstmt = conn.prepareStatement("INSERT INTO `item_review` (`item_id`, `user_id`, `review_title`, `review_date`, `review_value`, `review_price`, `review_quality`, `review_text`) VALUES (?,?,?,?,?,?,?,?)");
+        */
+        PreparedStatement pstmt = conn.prepareStatement("INSERT INTO `item_review` (`item_id`, `user_id`, `review_title`, `review_date`, `review_value`, `review_price`, `review_quality`, `review_text`) VALUES (?,?,?,FROM_UNIXTIME(?),?,?,?,?)");
         if (ch.equals("ok")) {
             pstmt.setInt(1, item_id);
             pstmt.setInt(2, user_id);
             pstmt.setString(3, review_title);
-            pstmt.setDate(4, (java.sql.Date) review_date);
+            pstmt.setLong(4, review_time); 
             pstmt.setInt(5, review_value);
             pstmt.setInt(6, review_price);
             pstmt.setInt(7, review_quality);
@@ -240,7 +239,7 @@ public class ProductMgr {
             i.item_id = rs.getInt("item_id");
             i.user_id = rs.getInt("user_id");
             i.user_mail = rs.getString("user_email");
-            i.review_date = rs.getDate("review_date");
+            i.review_time = rs.getTimestamp("review_date").getTime();
             i.review_title = rs.getString("review_title");
             i.review_value = rs.getInt("review_value");
             i.review_price = rs.getInt("review_price");
