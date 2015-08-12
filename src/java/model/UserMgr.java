@@ -10,6 +10,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 
 /**
@@ -93,5 +94,69 @@ public class UserMgr {
             return false;
             //register fail
         }
+    }
+    
+     public static void userUpdateMain(int user_id,String user_var ,String user_update) throws SQLException, Exception {
+
+        Connection conn=DBConn.getConn();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        
+        pstmt = conn.prepareStatement("UPDATE `user_list` SET ?=? WHERE = `user_id`=?");
+        pstmt.setString(1, user_var);
+        pstmt.setString(2, user_update);
+        pstmt.setInt(3, user_id);
+        rs = pstmt.executeQuery();
+        
+        conn.close();
+    }
+     
+    public static void userUpdateInfo(int user_id,String user_address ,String user_road ,String user_city ,String user_province ,String user_country ,int user_postcode ,int user_tel ,String user_pic) throws SQLException, Exception {
+
+        Connection conn=DBConn.getConn();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        
+        pstmt = conn.prepareStatement("UPDATE `user_info` SET `user_address`=?,`user_road`=?,`user_city`=?,`user_province`=?,`user_country`=?,`user_postcode`=?,`user_tel`=?,`user_pic`=? WHERE `user_id`=?");
+        pstmt.setString(1, user_address);
+        pstmt.setString(2, user_road);
+        pstmt.setString(3, user_city);
+        pstmt.setString(4, user_province);
+        pstmt.setString(5, user_country);
+        pstmt.setInt(6, user_postcode);
+        pstmt.setInt(7, user_tel);
+        pstmt.setString(8, user_pic);
+        pstmt.setInt(9, user_id);
+        rs = pstmt.executeQuery();
+        
+        conn.close();
+    }
+    
+    public static ArrayList<UserInfo> getUserInfo(int user_id) throws SQLException, Exception {
+
+        Connection conn=DBConn.getConn();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        pstmt = conn.prepareStatement("SELECT * FROM `user_info` WHERE ``user_id`=?");
+        pstmt.setInt(1,user_id);
+        rs = pstmt.executeQuery();
+
+        ArrayList<UserInfo> res = new ArrayList();
+
+        while (rs.next()) {
+            UserInfo i = new UserInfo();
+            i.id = rs.getInt("user_id");
+            i.address = rs.getString("user_address");
+            i.road= rs.getString("user_road");
+            i.city = rs.getString("user_city");
+            i.province= rs.getString("user_province");
+            i.country= rs.getString("user_country");
+            i.postcode= rs.getInt("user_postcode");
+            i.tel = rs.getInt("user_tel");
+            i.pic= rs.getString("user_pic");
+            res.add(i);
+        }
+        conn.close();
+        return res;
     }
 }
