@@ -8,22 +8,20 @@ package control;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import model.Product;
 import model.User;
-import model.WishListMgr;
+import model.WishlistMgr;
 
 
 /**
  *
  * @author hy
  */
-public class WishListHandler extends HttpServlet {
+public class WishlistHandler extends HttpServlet {
 
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -45,11 +43,14 @@ public class WishListHandler extends HttpServlet {
         }
         try {
             
-            ArrayList<Product> wishList=WishListMgr.getWishlist(user.id);
+            ArrayList<Product> wishList=WishlistMgr.getWishlist(user.id);
             out.print("\u005B");
             String s="";
             for (Product i:wishList){
                 out.print(s);
+                if (i.profile_pic.replace(" ", "").equals("")) {
+                        i.profile_pic = "images/product_img_27.jpg";
+                    }
                 out.printf("\u005B%d,\"%s\",%d,\"%s\"\u005D",
                         i.id,i.name,i.price,i.profile_pic);
                 s=",";
@@ -80,8 +81,8 @@ public class WishListHandler extends HttpServlet {
         }
         try{
             int item_id=Integer.parseInt(request.getParameter("item"));
-            if(!WishListMgr.add_item(user.id, item_id)){
-                WishListMgr.delete_item(user.id, item_id);
+            if(!WishlistMgr.add_item(user.id, item_id)){
+                WishlistMgr.delete_item(user.id, item_id);
             }
         }catch(Exception e){
             out.print("err");

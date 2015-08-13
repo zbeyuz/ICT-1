@@ -33,7 +33,7 @@
     </servlet>
     <servlet>
         <servlet-name>WishListHandler</servlet-name>
-        <servlet-class>control.WishListHandler</servlet-class>
+        <servlet-class>control.WishlistHandler</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>get_item</servlet-name>
