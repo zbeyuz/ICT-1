@@ -7,6 +7,7 @@ package control;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -37,10 +38,10 @@ public class ReviewHandler extends HttpServlet {
                 String s = "";
                 for (Review i : items) {
                     out.print(s);
-                    out.printf("\u005B%d,%d,\"%s\",\"%d\",%d,%d,%d,\"%s\"\u005D",
-                            i.item_id, i.user_id, i.review_title, i.review_time,
+                    out.printf("\u005B%d,\"%s\",\"%s\",\"%s\",%d,%d,%d,\"%s\"\u005D",
+                            i.item_id, i.user_mail, i.review_title, new SimpleDateFormat("yyyy-MM-dd HH:mm").format(new Date(i.review_time)),
                             i.review_price, i.review_value, i.review_quality,
-                            i.review_text);
+                            i.review_text.replace("\r", "").replace("\n", "<br />"));
                     s = ",";
                 }
                 out.print("\u005D");
@@ -70,10 +71,26 @@ public class ReviewHandler extends HttpServlet {
             int user_id = user.id;
             String review_title = request.getParameter("title");
             long review_time = Calendar.getInstance().getTime().getTime();
-            int review_value = Integer.parseInt(request.getParameter("value_rate"));
-            int review_price = Integer.parseInt(request.getParameter("price_rate"));
-            int review_quality = Integer.parseInt(request.getParameter("quality_rate"));
+            int review_value = 0;
+            int review_price = 0;
+            int review_quality = 0;
+            try{
+                review_value = Integer.parseInt(request.getParameter("value_rate"));
+                review_price = Integer.parseInt(request.getParameter("price_rate"));
+                review_quality = Integer.parseInt(request.getParameter("quality_rate"));
+            }catch(NumberFormatException e){
+                out.print("invrate");
+                return;
+            }
             String review_text = request.getParameter("content");
+            if (review_text == null || review_text.replaceAll("[\n\t ]","").equals("")){
+                out.print("invtext");
+                return;
+            }
+            if (review_title == null || review_title.replaceAll("[\n\t ]","").equals("")){
+                out.print("invtitle");
+                return;
+            }
             model.ProductMgr.addReview(item_id, user_id, review_title, review_time, review_value, review_price, review_quality, review_text);
         } catch (Exception ex) {
             Logger.getLogger(ReviewHandler.class.getName()).log(Level.SEVERE, null, ex);

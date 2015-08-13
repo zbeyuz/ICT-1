@@ -365,7 +365,7 @@
 
                                                                 <td>
 
-                                                                    <input checked type="radio" name="price_rate" id="rate_1" value="1">
+                                                                    <input type="radio" name="price_rate" id="rate_1" value="1">
                                                                     <label for="rate_1"></label>
 
                                                                 </td>
@@ -406,7 +406,7 @@
 
                                                                 <td>
 
-                                                                    <input checked type="radio" name="value_rate" id="rate_6" value="1">
+                                                                    <input type="radio" name="value_rate" id="rate_6" value="1">
                                                                     <label for="rate_6"></label>
 
                                                                 </td>
@@ -447,7 +447,7 @@
 
                                                                 <td>
 
-                                                                    <input checked type="radio" name="quality_rate" id="rate_11" value="1">
+                                                                    <input type="radio" name="quality_rate" id="rate_11" value="1">
                                                                     <label for="rate_11"></label>
 
                                                                 </td>
@@ -524,12 +524,12 @@
                                                             </div>
 
                                                         </li>
-                                                        <br />
+
                                                         <li class="row">
 
                                                             <div class="col-xs-12">
 
-                                                                <a id="sendRev" class="button_dark_grey middle_btn">Submit Review</a>
+                                                                <a id="sendRev" class="button_dark_grey middle_btn" href="javascript:;" onclick="icp.sendRev()">Submit Review</a>
 
                                                             </div>
 
@@ -735,7 +735,21 @@
                         return res;
                     }
                     icp.sendRev = function () {
-                        
+                        $.post("review",icp.revObj(),function (data) {
+                            if(data === "invuser") {
+                                alert("Please login or register to review.");
+                            }
+                            if(data === "invrate") {
+                                alert("Please rate the product :)");
+                            }
+                            if(data === "invtext") {
+                                alert("Please tell us your feedback :)");
+                            }
+                            if(data === "invtitle") {
+                                alert("Please write a title.");
+                            }
+                            icp.getReview();
+                        });
                     }
                     String.prototype.repeat = function (num) {
                         return new Array(num + 1).join(this);
@@ -744,51 +758,56 @@
                     icp.rate = function (rate){
                     return "<li class=\"active\"></li>".repeat(rate) + "<li></li>".repeat(5 - rate);
                     }
-                    $.get("review?item=" + ${id}, function (data){
-                    console.log(data);
-                            var items = JSON.parse(data);
-                            for (i = 0; i < items.length; i++){
-                    console.log(items[i]);
+                    icp.getReview = function () {
+                        $.get("review?item=" + ${id}, function (data){
+                        //console.log(data);
+                        var items = JSON.parse(data);
+                        $(".reviews").html("");
+                        for (i = 0; i < items.length; i++){
+                            //console.log(items[i]);
                             var price = items[i][4];
                             var value = items[i][5];
                             var quality = items[i][6];
                             $(".reviews").append("\
-        <li>\
-            <article class=\"review\">\
-                <ul class=\"review-rates\">\
-                    <li class=\"v_centered\">\
-                        <span class=\"name\">Price</span>\
-                        <ul class=\"rating\">"
-                            + icp.rate(price) +
-                            "</ul>\
-                    </li>\
-                    <li class=\"v_centered\">\
-                        <span class=\"name\">Value</span>\
-                        <ul class=\"rating\">"
-                            + icp.rate(value) +
-                            "</ul>\
-                    </li>\
-                    <li class=\"v_centered\">\
-                        <span class=\"name\">Quality</span>\
-                        <ul class=\"rating\">"
-                            + icp.rate(quality) +
-                            "</ul>\
-                    </li>\
-                </ul>\
-                <div class=\"review-body\">\
-                    <div class=\"review-meta\">\
-                        <h5 class=\"bold\">" + items[i][2] + "</h5>\
-                        Review by <a href=\"#\" class=\"bold\">" + items[i][1] + "</a> on " + items[i][3] + "\
+            <li>\
+                <article class=\"review\">\
+                    <ul class=\"review-rates\">\
+                        <li class=\"v_centered\">\
+                            <span class=\"name\">Price</span>\
+                            <ul class=\"rating\">"
+                                + icp.rate(price) +
+                                "</ul>\
+                        </li>\
+                        <li class=\"v_centered\">\
+                            <span class=\"name\">Value</span>\
+                            <ul class=\"rating\">"
+                                + icp.rate(value) +
+                                "</ul>\
+                        </li>\
+                        <li class=\"v_centered\">\
+                            <span class=\"name\">Quality</span>\
+                            <ul class=\"rating\">"
+                                + icp.rate(quality) +
+                                "</ul>\
+                        </li>\
+                    </ul>\
+                    <div class=\"review-body\">\
+                        <div class=\"review-meta\">\
+                            <h5 class=\"bold\">" + items[i][2] + "</h5>\
+                            Review by <a href=\"#\" class=\"bold\">" + items[i][1] + "</a> on " + items[i][3] + "\
+                        </div>\
+                        <p>" + items[i][7] + "</p>\
                     </div>\
-                    <p>" + items[i][7] + "</p>\
-                </div>\
-            </article>\
-        </li>"
+                </article>\
+            </li>"
 
                             );
-                    }
+                        }
                     });
-
+                }
+                icp.getReview();
                 </script>
-                </body>
-                </html>
+            </div>
+        </div>
+    </body>
+</html>
