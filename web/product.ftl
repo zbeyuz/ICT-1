@@ -25,6 +25,7 @@
         ============================================ -->
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/fontello.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css">
         <link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-thumbs.css">
@@ -156,7 +157,7 @@
 
                                 <ul class="topbar">
 
-                                    <li><strong>3 Review(s)</strong></li>
+                                    <li><b>3 Review(s)</b></li>
 
                                 </ul>
 
@@ -172,21 +173,21 @@
 
                                         <tr>
 
-                                            <td>Manufacturer: </td>
+                                            <td><b>Manufacturer:</b> </td>
                                             <td><a href="#">${manufacture}</a></td>
 
                                         </tr>
 
                                         <tr>
 
-                                            <td>Availability: </td>
+                                            <td><b>Availability:</b> </td>
                                             <td><span class="in_stock">In stock: </span>10 item(s)</td>
 
                                         </tr>
 
                                         <tr>
 
-                                            <td>Product ID: </td>
+                                            <td><b>Product ID:</b> </td>
                                             <td>${id}</td>
 
                                         </tr>
@@ -499,7 +500,6 @@
 
                                             <div class="type_2">
                                                 <form id="revForm">
-
                                                     <ul>
 
                                                         <li class="row">
@@ -507,7 +507,7 @@
                                                             <div class="col-sm-6">
 
                                                                 <label for="summary">Summary of Your Review</label>
-                                                                <input type="text" name="title">
+                                                                <input type="text" name="title" id="summary">
 
                                                             </div>
 
@@ -519,10 +519,14 @@
 
                                                                 <label for="review_message">Review</label>
 
-                                                                <textarea rows="5" name="content"></textarea>
+                                                                <textarea rows="5" name="content" id="review_message"></textarea>
 
                                                             </div>
 
+                                                        </li>
+
+                                                        <li>
+                                                            <br>
                                                         </li>
 
                                                         <li class="row">

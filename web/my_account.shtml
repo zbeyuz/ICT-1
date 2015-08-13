@@ -1,221 +1,226 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<!-- Basic page
-		============================================ -->
-		<title>Best Style Forever | My Account</title>
-		<meta charset="utf-8">
-		<meta name="author" content="GOTG">
-		<meta name="description" content="Fashion, clothing, online shopping">
-		<meta name="keywords" content="Fashion, clothing, online shopping">
+    <head>
+        <!-- Basic page
+        ============================================ -->
+        <title>Best Style Forever | My Account</title>
+        <meta charset="utf-8">
+        <meta name="author" content="GOTG">
+        <meta name="description" content="Fashion, clothing, online shopping">
+        <meta name="keywords" content="Fashion, clothing, online shopping">
 
-		<!-- Mobile metas
-		============================================ -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- Mobile metas
+        ============================================ -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<!-- Favicon
-		============================================ -->
-		<link rel="shortcut icon" type="image/x-icon" href="images/fav_icon.ico">
+        <!-- Favicon
+        ============================================ -->
+        <link rel="shortcut icon" type="image/x-icon" href="images/fav_icon.ico">
 
-		<!-- Google web fonts
-		============================================ -->
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <!-- Google web fonts
+        ============================================ -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-		<!-- Main CSS
-		============================================ -->
-		<link rel="stylesheet" href="css/animate.css">
-		<link rel="stylesheet" href="css/fontello.css">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="js/arcticmodal/jquery.arcticmodal.css">
-		<link rel="stylesheet" href="js/owlcarousel/owl.carousel.css">
-		<link rel="stylesheet" href="css/style.css">
+        <!-- Main CSS
+        ============================================ -->
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="js/arcticmodal/jquery.arcticmodal.css">
+        <link rel="stylesheet" href="js/owlcarousel/owl.carousel.css">
+        <link rel="stylesheet" href="css/style.css">
 
-		<!-- JS Libs
-		============================================ -->
-		<script src="js/modernizr.js"></script>
+        <!-- JS Libs
+        ============================================ -->
+        <script src="js/modernizr.js"></script>
 
-		<!-- JS for IE
-		============================================ -->
-		<!--[if lte IE 9]>
-			<link rel="stylesheet" type="text/css" href="css/oldie.css">
-		<![endif]-->
-	</head>
-	<body>
+        <!-- JS for IE
+        ============================================ -->
+        <!--[if lte IE 9]>
+                <link rel="stylesheet" type="text/css" href="css/oldie.css">
+        <![endif]-->
+    </head>
+    <body>
 
-		<!-- - - - - - - - - - - - - - Main Wrapper - - - - - - - - - - - - - - - - -->
+        <!-- - - - - - - - - - - - - - Main Wrapper - - - - - - - - - - - - - - - - -->
 
-			<#include "header.shtml">
+        <#include "header.shtml">
 
-			<!-- - - - - - - - - - - - - - Page Wrapper - - - - - - - - - - - - - - - - -->
+        <!-- - - - - - - - - - - - - - Page Wrapper - - - - - - - - - - - - - - - - -->
 
-			<div class="secondary_page_wrapper">
+        <div class="secondary_page_wrapper">
 
-				<div class="container">
+            <div class="container">
 
-					<!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
+                <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
 
-					<ul class="breadcrumbs">
+                <ul class="breadcrumbs">
 
-						<li><a href="index.shtml">Home</a></li>
-						<li>My Account</li>
+                    <li><a href="index.shtml">Home</a></li>
+                    <li>My Account</li>
 
-					</ul>
+                </ul>
 
-					<!-- - - - - - - - - - - - - - End of breadcrumbs - - - - - - - - - - - - - - - - -->
+                <!-- - - - - - - - - - - - - - End of breadcrumbs - - - - - - - - - - - - - - - - -->
 
-					<div class="row">
+                <div class="row">
 
-						<aside class="col-md-3 col-sm-4">
+                    <aside class="col-md-3 col-sm-4">
 
-							<!-- - - - - - - - - - - - - - Information - - - - - - - - - - - - - - - - -->
+                        <!-- - - - - - - - - - - - - - Information - - - - - - - - - - - - - - - - -->
 
-							<section class="section_offset">
+                        <section class="section_offset">
 
-								<h3>My Account</h3>
+                            <h3>My Account</h3>
 
-								<ul class="theme_menu">
+                            <ul class="theme_menu">
 
-									<li class="active current"><a href="#">Account Dashboard</a></li>
-									<li><a href="my_order.shtml">Order History</a></li>
-									<li><a href="wishlist.shtml">Wish List</a></li>
+                                <li class="active current"><a href="#">Account Dashboard</a></li>
+                                <li><a href="my_order.shtml">Order History</a></li>
+                                <li><a href="wishlist.shtml">Wish List</a></li>
 
-								</ul>
+                            </ul>
 
-							</section><!--/ .section_offset -->
+                        </section><!--/ .section_offset -->
 
-							<!-- - - - - - - - - - - - - - End of information - - - - - - - - - - - - - - - - -->
+                        <!-- - - - - - - - - - - - - - End of information - - - - - - - - - - - - - - - - -->
 
-							<!-- - - - - - - - - - - - - - Banner - - - - - - - - - - - - - - - - -->
+                        <!-- - - - - - - - - - - - - - Banner - - - - - - - - - - - - - - - - -->
 
-							<div class="section_offset">
+                        <div class="section_offset">
 
-								<a href="#" class="banner">
-									
-									<img src="images/banner_img_10.png" alt="">
+                            <a href="#" class="banner">
 
-								</a>
+                                <img src="images/banner_img_10.png" alt="">
 
-							</div>
+                            </a>
 
-							<!-- - - - - - - - - - - - - - End of banner - - - - - - - - - - - - - - - - -->
+                        </div>
 
-						</aside><!--/ [col]-->
+                        <!-- - - - - - - - - - - - - - End of banner - - - - - - - - - - - - - - - - -->
 
-						<main class="col-md-9 col-sm-8">
+                    </aside><!--/ [col]-->
 
-							<h1>My Dashboard</h1>
+                    <main class="col-md-9 col-sm-8">
 
-							<section class="theme_box">
+                        <h1>My Dashboard</h1>
 
-								<h4>Hello, John Doe!</h4>
+                        <section class="theme_box">
 
-								<p>From your My Account Dashboard you have the ability to view a snapshot of your recent account activity and update your account information. Select a link below to view or edit information.</p>
+                            <h4>Hello, John Doe!</h4>
 
-							</section><!--/ .theme_box -->
+                            <p>From your My Account Dashboard you have the ability to view a snapshot of your recent account activity and update your account information. Select a link below to view or edit information.</p>
 
-							<!-- - - - - - - - - - - - - - Contact information - - - - - - - - - - - - - - - - -->
+                        </section><!--/ .theme_box -->
 
-							<section class="theme_box">
+                        <!-- - - - - - - - - - - - - - Contact information - - - - - - - - - - - - - - - - -->
 
-								<h4>Contact Information</h4>
+                        <section class="theme_box">
 
-								<p><b>First Name:</b><br>
-									John
-								</p>
+                            <h4>Contact Information</h4>
 
-								<p><b>Last Name:</b><br>
-									Doe
-								</p>
+                            <p><b>First Name:</b><br>
+                                John
+                            </p>
 
-								<p><b>Email Address:</b><br>
-									<a href="#" class="mail_to">john.doe@gmail.com</a>
-								</p>
+                            <p><b>Last Name:</b><br>
+                                Doe
+                            </p>
 
-								<div class="buttons_row">
+                            <p><b>Email Address:</b><br>
+                                <a href="#" class="mail_to">john.doe@gmail.com</a>
+                            </p>
 
-									<a href="#" class="button_grey middle_btn" data-modal-url="modals/update_acc.html">Edit Account Information</a>
+                            <p><b>Contact Number:</b><br>
+                                91224784
+                            </p>
+                            <br>
+                            <div class="buttons_row">
 
-									<a href="#" class="button_grey middle_btn" data-modal-url="modals/update_pwd.html">Change Password</a>
+                                <a href="#" class="button_grey middle_btn" data-modal-url="modals/update_acc.html">Edit Account Information</a>
 
-								</div>
+                                <a href="#" class="button_grey middle_btn" data-modal-url="modals/update_pwd.html">Change Password</a>
 
-							</section><!--/ .theme_box -->
+                            </div>
 
-							<!-- - - - - - - - - - - - - - End of contact information - - - - - - - - - - - - - - - - -->
+                        </section><!--/ .theme_box -->
 
-							<div class="table_layout">
+                        <!-- - - - - - - - - - - - - - End of contact information - - - - - - - - - - - - - - - - -->
 
-								<div class="table_row">
-									
-									<div class="table_cell">
+                        <div class="table_layout">
 
-										<!-- - - - - - - - - - - - - - Default shipping address - - - - - - - - - - - - - - - - -->
+                            <div class="table_row">
 
-										<section>
+                                <div class="table_cell">
 
-											<h4>Default Shipping Address</h4>
+                                    <!-- - - - - - - - - - - - - - Default shipping address - - - - - - - - - - - - - - - - -->
 
-											<p><b>Street:</b><br>
-												Ang Mo Kio Avenue 10
-											</p>
+                                    <section>
 
-											<p><b>Block/House No:</b><br>
-												462
-											</p>
+                                        <h4>Default Shipping Address</h4>
 
-											<p><b>Floor:</b><br>
-												10
-											</p>
+                                        <p><b>Street:</b><br>
+                                            Ang Mo Kio Avenue 10
+                                        </p>
 
-											<p><b>Unit:</b><br>
-												123
-											</p>
+                                        <p><b>Block/House No:</b><br>
+                                            462
+                                        </p>
 
-											<p><b>Postal Code:</b><br>
-												398752
-											</p>
+                                        <p><b>Floor:</b><br>
+                                            10
+                                        </p>
 
-											<p><b>City:</b><br>
-												Singapore
-											</p>
+                                        <p><b>Unit:</b><br>
+                                            123
+                                        </p>
 
-											<a href="#" class="button_grey middle_btn" data-modal-url="modals/update_ship_add.html">Edit Address</a>
+                                        <p><b>Zip/Postal Code:</b><br>
+                                            398752
+                                        </p>
 
-										</section>
+                                        <p><b>Country:</b><br>
+                                            Singapore
+                                        </p>
 
-										<!-- - - - - - - - - - - - - - End of default shipping address - - - - - - - - - - - - - - - - -->
+                                        <a href="#" class="button_grey middle_btn" data-modal-url="modals/update_ship_add.html">Edit Address</a>
 
-									</div><!--/ .table_cell -->
+                                    </section>
 
-								</div><!--/ .table_row -->
+                                    <!-- - - - - - - - - - - - - - End of default shipping address - - - - - - - - - - - - - - - - -->
 
-							</div><!--/ .table_layout -->
+                                </div><!--/ .table_cell -->
 
-						</main><!--/ [col]-->
+                            </div><!--/ .table_row -->
 
-					</div><!--/ .row-->
+                        </div><!--/ .table_layout -->
 
-				</div><!--/ .container-->
+                    </main><!--/ [col]-->
 
-			</div><!--/ .page_wrapper-->
-			
-			<!-- - - - - - - - - - - - - - End Page Wrapper - - - - - - - - - - - - - - - - -->
+                </div><!--/ .row-->
 
-			<#include "footer.shtml">
-		
-		<!-- Include Plugins
-		============================================ -->
-		<script src="js/jquery-2.1.1.min.js"></script>
-		<script src="js/queryloader2.min.js"></script>
-		<script src="js/jquery.appear.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/owlcarousel/owl.carousel.min.js"></script>
-		<script src="twitter/jquery.tweet.min.js"></script>
-		<script src="js/arcticmodal/jquery.arcticmodal.js"></script>
-		<script src="js/retina.min.js"></script>
-		<script src="js/theme.plugins.js"></script>
-		<script src="js/theme.core.js"></script>
-                <script src="js/header.js" type="text/javascript"></script>
-		
-	</body>
+            </div><!--/ .container-->
+
+        </div><!--/ .page_wrapper-->
+
+        <!-- - - - - - - - - - - - - - End Page Wrapper - - - - - - - - - - - - - - - - -->
+
+        <#include "footer.shtml">
+
+        <!-- Include Plugins
+        ============================================ -->
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/queryloader2.min.js"></script>
+        <script src="js/jquery.appear.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owlcarousel/owl.carousel.min.js"></script>
+        <script src="twitter/jquery.tweet.min.js"></script>
+        <script src="js/arcticmodal/jquery.arcticmodal.js"></script>
+        <script src="js/retina.min.js"></script>
+        <script src="js/theme.plugins.js"></script>
+        <script src="js/theme.core.js"></script>
+        <script src="js/header.js" type="text/javascript"></script>
+
+    </body>
 </html>

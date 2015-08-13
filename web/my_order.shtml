@@ -1,214 +1,214 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<!-- Basic
-		============================================ -->
-		<title>Best Style Forever | My Orders</title>
-		<meta charset="utf-8">
-		<meta name="author" content="GOTG">
-		<meta name="description" content="Fashion, clothing, online shopping">
-		<meta name="keywords" content="Fashion, clothing, online shopping">
+    <head>
+        <!-- Basic
+        ============================================ -->
+        <title>Best Style Forever | My Orders</title>
+        <meta charset="utf-8">
+        <meta name="author" content="GOTG">
+        <meta name="description" content="Fashion, clothing, online shopping">
+        <meta name="keywords" content="Fashion, clothing, online shopping">
 
-		<!-- Mobile metas
-		============================================ -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- Mobile metas
+        ============================================ -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<!-- Favicon
-		============================================ -->
-		<link rel="shortcut icon" type="image/x-icon" href="images/fav_icon.ico">
+        <!-- Favicon
+        ============================================ -->
+        <link rel="shortcut icon" type="image/x-icon" href="images/fav_icon.ico">
 
-		<!-- Google web fonts
-		============================================ -->
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <!-- Google web fonts
+        ============================================ -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-		<!-- Main CSS
-		============================================ -->
-		<link rel="stylesheet" href="css/animate.css">
-		<link rel="stylesheet" href="css/fontello.css">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="js/arcticmodal/jquery.arcticmodal.css">
-		<link rel="stylesheet" href="js/owlcarousel/owl.carousel.css">
-		<link rel="stylesheet" href="css/style.css">
+        <!-- Main CSS
+        ============================================ -->
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="js/arcticmodal/jquery.arcticmodal.css">
+        <link rel="stylesheet" href="js/owlcarousel/owl.carousel.css">
+        <link rel="stylesheet" href="css/style.css">
 
-		<!-- JS Libs
-		============================================ -->
-		<script src="js/modernizr.js"></script>
+        <!-- JS Libs
+        ============================================ -->
+        <script src="js/modernizr.js"></script>
 
-		<!-- JS for IE
-		============================================ -->
-		<!--[if lte IE 9]>
-			<link rel="stylesheet" type="text/css" href="css/oldie.css">
-		<![endif]-->
-	</head>
-	<body>
+        <!-- JS for IE
+        ============================================ -->
+        <!--[if lte IE 9]>
+                <link rel="stylesheet" type="text/css" href="css/oldie.css">
+        <![endif]-->
+    </head>
+    <body>
 
-		<!-- - - - - - - - - - - - - - Main Wrapper - - - - - - - - - - - - - - - - -->
+        <!-- - - - - - - - - - - - - - Main Wrapper - - - - - - - - - - - - - - - - -->
 
-			<#include "header.shtml">
+        <#include "header.shtml">
 
-			<!-- - - - - - - - - - - - - - Page Wrapper - - - - - - - - - - - - - - - - -->
+        <!-- - - - - - - - - - - - - - Page Wrapper - - - - - - - - - - - - - - - - -->
 
-			<div class="secondary_page_wrapper">
+        <div class="secondary_page_wrapper">
 
-				<div class="container">
+            <div class="container">
 
-					<!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
+                <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
 
-					<ul class="breadcrumbs">
+                <ul class="breadcrumbs">
 
-						<li><a href="index.shtml">Home</a></li>
-						<li>Order History</li>
+                    <li><a href="index.shtml">Home</a></li>
+                    <li>Order History</li>
 
-					</ul>
+                </ul>
 
-					<!-- - - - - - - - - - - - - - End of breadcrumbs - - - - - - - - - - - - - - - - -->
+                <!-- - - - - - - - - - - - - - End of breadcrumbs - - - - - - - - - - - - - - - - -->
 
-					<div class="row">
+                <div class="row">
 
-						<aside class="col-md-3 col-sm-4">
+                    <aside class="col-md-3 col-sm-4">
 
-							<!-- - - - - - - - - - - - - - Information - - - - - - - - - - - - - - - - -->
+                        <!-- - - - - - - - - - - - - - Information - - - - - - - - - - - - - - - - -->
 
-							<section class="section_offset">
+                        <section class="section_offset">
 
-								<h3>Order History</h3>
+                            <h3>Order History</h3>
 
-								<ul class="theme_menu">
+                            <ul class="theme_menu">
 
-									<li><a href="my_account.shtml">Account Dashboard</a></li>
-									<li class="active current"><a href="#">Order History</a></li>
-									<li><a href="wishlist.shtml">Wish List</a></li>
+                                <li><a href="my_account.shtml">Account Dashboard</a></li>
+                                <li class="active current"><a href="#">Order History</a></li>
+                                <li><a href="wishlist.shtml">Wish List</a></li>
 
-								</ul>
+                            </ul>
 
-							</section><!--/ .section_offset -->
+                        </section><!--/ .section_offset -->
 
-							<!-- - - - - - - - - - - - - - End of information - - - - - - - - - - - - - - - - -->
+                        <!-- - - - - - - - - - - - - - End of information - - - - - - - - - - - - - - - - -->
 
-							<!-- - - - - - - - - - - - - - Banner - - - - - - - - - - - - - - - - -->
+                        <!-- - - - - - - - - - - - - - Banner - - - - - - - - - - - - - - - - -->
 
-							<div class="section_offset">
+                        <div class="section_offset">
 
-								<a href="#" class="banner">
-									
-									<img src="images/banner_img_10.png" alt="">
+                            <a href="#" class="banner">
 
-								</a>
+                                <img src="images/banner_img_10.png" alt="">
 
-							</div>
+                            </a>
 
-							<!-- - - - - - - - - - - - - - End of banner - - - - - - - - - - - - - - - - -->
+                        </div>
 
-						</aside><!--/ [col]-->
+                        <!-- - - - - - - - - - - - - - End of banner - - - - - - - - - - - - - - - - -->
 
-						<main class="col-md-9 col-sm-8">
+                    </aside><!--/ [col]-->
 
-							<h1>My Orders</h1>
+                    <main class="col-md-9 col-sm-8">
 
-							<div class="table_wrap">
+                        <h1>My Orders</h1>
 
-								<table class="table_type_1 orders_table">
+                        <div class="table_wrap">
 
-									<thead>
+                            <table class="table_type_1 orders_table">
 
-										<tr>
-											
-											<th class="order_number_col">Order Number</th>
-											<th>Order Date</th>
-											<th class="ship_col">Ship To</th>
-											<th class="order_total_col">Total</th>
-											<th class="product_action_col">Action</th>
+                                <thead>
 
-										</tr>
+                                    <tr>
 
-									</thead>
+                                        <th class="order_number_col">Order Number</th>
+                                        <th>Order Date</th>
+                                        <th class="ship_col">Ship To</th>
+                                        <th class="order_total_col">Total</th>
+                                        <th class="product_action_col">Action</th>
 
-									<tbody>
+                                    </tr>
 
-										<tr>
-											
-											<td data-title="Order Number">145000007</td>
+                                </thead>
 
-											<td data-title="Order Date">9/5/2014</td>
+                                <tbody>
 
-											<td data-title="Ship To">John Doe</td>
+                                    <tr>
 
-											<td data-title="Total" class="total">$5.99</td>
+                                        <td data-title="Order Number">145000007</td>
 
-											<td data-title="Action">
-												
-												<ul class="buttons_col">
+                                        <td data-title="Order Date">9/5/2014</td>
 
-													<li>
-														
-														<a href="#" class="button_blue"
-														   data-modal-url="modals/view_order.html">View Order</a>
+                                        <td data-title="Ship To">John Doe</td>
 
-													</li>
+                                        <td data-title="Total" class="total">$5.99</td>
 
-												</ul>
+                                        <td data-title="Action">
 
-											</td>
+                                            <ul class="buttons_col">
 
-										</tr>
+                                                <li>
 
-										<tr>
-											
-											<td data-title="Order Number">145000007</td>
+                                                    <a href="#" class="button_blue"
+                                                       data-modal-url="modals/view_order.html">View Order</a>
 
-											<td data-title="Order Date">9/5/2014</td>
+                                                </li>
 
-											<td data-title="Ship To">John Doe</td>
+                                            </ul>
 
-											<td data-title="Total" class="total">$5.99</td>
+                                        </td>
 
-											<td data-title="Action">
-												
-												<ul class="buttons_col">
+                                    </tr>
 
-													<li>
-														
-														<a href="#" class="button_blue" data-modal-url="modals/view_order.html">View Order</a>
+                                    <tr>
 
-													</li>
+                                        <td data-title="Order Number">145000007</td>
 
-												</ul>
+                                        <td data-title="Order Date">9/5/2014</td>
 
-											</td>
+                                        <td data-title="Ship To">John Doe</td>
 
-										</tr>
+                                        <td data-title="Total" class="total">$5.99</td>
 
-									</tbody>
+                                        <td data-title="Action">
 
-								</table>
+                                            <ul class="buttons_col">
 
-							</div>
+                                                <li>
 
-						</main><!--/ [col]-->
+                                                    <a href="#" class="button_blue" data-modal-url="modals/view_order.html">View Order</a>
 
-					</div><!--/ .row-->
+                                                </li>
 
-				</div><!--/ .container-->
+                                            </ul>
 
-			</div><!--/ .page_wrapper-->
-			
-			<!-- - - - - - - - - - - - - - End Page Wrapper - - - - - - - - - - - - - - - - -->			
+                                        </td>
 
-				<#include "footer.shtml">
-		
-		<!-- Include Plugins
-		============================================ -->
-		<script src="js/jquery-2.1.1.min.js"></script>
-		<script src="js/queryloader2.min.js"></script>
-		<script src="js/jquery.appear.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/owlcarousel/owl.carousel.min.js"></script>
-		<script src="twitter/jquery.tweet.min.js"></script>
-		<script src="js/arcticmodal/jquery.arcticmodal.js"></script>
-		<script src="js/colorpicker/colorpicker.js"></script>
-		<script src="js/retina.min.js"></script>
-		<script src="js/theme.plugins.js"></script>
-		<script src="js/theme.core.js"></script>
-		<script src="js/header.js" type="text/javascript"></script>
-	</body>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </main><!--/ [col]-->
+
+                </div><!--/ .row-->
+
+            </div><!--/ .container-->
+
+        </div><!--/ .page_wrapper-->
+
+        <!-- - - - - - - - - - - - - - End Page Wrapper - - - - - - - - - - - - - - - - -->			
+
+        <#include "footer.shtml">
+
+        <!-- Include Plugins
+        ============================================ -->
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/queryloader2.min.js"></script>
+        <script src="js/jquery.appear.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owlcarousel/owl.carousel.min.js"></script>
+        <script src="twitter/jquery.tweet.min.js"></script>
+        <script src="js/arcticmodal/jquery.arcticmodal.js"></script>
+        <script src="js/retina.min.js"></script>
+        <script src="js/theme.plugins.js"></script>
+        <script src="js/theme.core.js"></script>
+        <script src="js/header.js" type="text/javascript"></script>
+    </body>
 </html>
