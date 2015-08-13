@@ -15,6 +15,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import model.Product;
+import model.User;
+import model.WishListMgr;
 
 
 /**
@@ -36,9 +38,14 @@ public class WishListHandler extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
+        User user=(User) request.getSession().getAttribute("user");
+        if (user==null){
+            out.println("invuser");
+            return;
+        }
         try {
-            int userId=Integer.parseInt(request.getParameter("user"));
-            ArrayList<Product> wishList=model.WishListMgr.getWishlist(userId);
+            
+            ArrayList<Product> wishList=WishListMgr.getWishlist(user.id);
             out.print("\u005B");
             String s="";
             for (Product i:wishList){
@@ -64,7 +71,22 @@ public class WishListHandler extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+        response.setContentType("text/html;charset=UTF-8");
+        PrintWriter out = response.getWriter();
+        User user=(User) request.getSession().getAttribute("user");
+        if (user==null){
+            out.println("invuser");
+            return;
+        }
+        try{
+            int item_id=Integer.parseInt(request.getParameter("item"));
+            if(!WishListMgr.add_item(user.id, item_id)){
+                WishListMgr.delete_item(user.id, item_id);
+            }
+        }catch(Exception e){
+            out.print("err");
+            out.println(e);
+        }
     }
 
     /**
