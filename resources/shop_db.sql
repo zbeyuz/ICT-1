@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.7.1
+-- version 4.4.12
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Aug 11, 2015 at 10:34 AM
--- Server version: 5.5.39
--- PHP Version: 5.4.31
+-- Host: localhost
+-- Generation Time: 2015-08-12 17:25:25
+-- 服务器版本： 5.6.25
+-- PHP Version: 5.6.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,7 +14,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `shop_db`
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin_list`
+-- 表的结构 `admin_list`
 --
 
 CREATE TABLE IF NOT EXISTS `admin_list` (
@@ -33,10 +33,15 @@ CREATE TABLE IF NOT EXISTS `admin_list` (
   `admin_pic` text COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
+--
+-- 插入之前先把表清空（truncate） `admin_list`
+--
+
+TRUNCATE TABLE `admin_list`;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bill_done`
+-- 表的结构 `bill_done`
 --
 
 CREATE TABLE IF NOT EXISTS `bill_done` (
@@ -53,10 +58,15 @@ CREATE TABLE IF NOT EXISTS `bill_done` (
   `bill_tel` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
+--
+-- 插入之前先把表清空（truncate） `bill_done`
+--
+
+TRUNCATE TABLE `bill_done`;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bill_on`
+-- 表的结构 `bill_on`
 --
 
 CREATE TABLE IF NOT EXISTS `bill_on` (
@@ -73,20 +83,30 @@ CREATE TABLE IF NOT EXISTS `bill_on` (
   `bill_tel` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
+--
+-- 插入之前先把表清空（truncate） `bill_on`
+--
+
+TRUNCATE TABLE `bill_on`;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `item_best`
+-- 表的结构 `item_best`
 --
 
 CREATE TABLE IF NOT EXISTS `item_best` (
   `item_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
+--
+-- 插入之前先把表清空（truncate） `item_best`
+--
+
+TRUNCATE TABLE `item_best`;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `item_deal`
+-- 表的结构 `item_deal`
 --
 
 CREATE TABLE IF NOT EXISTS `item_deal` (
@@ -95,10 +115,15 @@ CREATE TABLE IF NOT EXISTS `item_deal` (
   `date_end` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
+--
+-- 插入之前先把表清空（truncate） `item_deal`
+--
+
+TRUNCATE TABLE `item_deal`;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `item_feature`
+-- 表的结构 `item_feature`
 --
 
 CREATE TABLE IF NOT EXISTS `item_feature` (
@@ -106,10 +131,15 @@ CREATE TABLE IF NOT EXISTS `item_feature` (
   `item_state` text COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
+--
+-- 插入之前先把表清空（truncate） `item_feature`
+--
+
+TRUNCATE TABLE `item_feature`;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `item_info`
+-- 表的结构 `item_info`
 --
 
 CREATE TABLE IF NOT EXISTS `item_info` (
@@ -122,7 +152,12 @@ CREATE TABLE IF NOT EXISTS `item_info` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- Dumping data for table `item_info`
+-- 插入之前先把表清空（truncate） `item_info`
+--
+
+TRUNCATE TABLE `item_info`;
+--
+-- 转存表中的数据 `item_info`
 --
 
 INSERT INTO `item_info` (`item_id`, `item_material`, `item_color`, `item_size`, `item_sample_pic`, `item_quantity`) VALUES
@@ -131,7 +166,7 @@ INSERT INTO `item_info` (`item_id`, `item_material`, `item_color`, `item_size`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `item_list`
+-- 表的结构 `item_list`
 --
 
 CREATE TABLE IF NOT EXISTS `item_list` (
@@ -148,7 +183,12 @@ CREATE TABLE IF NOT EXISTS `item_list` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- Dumping data for table `item_list`
+-- 插入之前先把表清空（truncate） `item_list`
+--
+
+TRUNCATE TABLE `item_list`;
+--
+-- 转存表中的数据 `item_list`
 --
 
 INSERT INTO `item_list` (`item_id`, `item_name`, `item_price`, `item_discount`, `item_gender`, `item_type`, `item_manufacture`, `item_info`, `item_description`, `item_profile_pic`) VALUES
@@ -160,17 +200,22 @@ INSERT INTO `item_list` (`item_id`, `item_name`, `item_price`, `item_discount`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `item_new`
+-- 表的结构 `item_new`
 --
 
 CREATE TABLE IF NOT EXISTS `item_new` (
   `item_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
+--
+-- 插入之前先把表清空（truncate） `item_new`
+--
+
+TRUNCATE TABLE `item_new`;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `item_pic`
+-- 表的结构 `item_pic`
 --
 
 CREATE TABLE IF NOT EXISTS `item_pic` (
@@ -180,7 +225,12 @@ CREATE TABLE IF NOT EXISTS `item_pic` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- Dumping data for table `item_pic`
+-- 插入之前先把表清空（truncate） `item_pic`
+--
+
+TRUNCATE TABLE `item_pic`;
+--
+-- 转存表中的数据 `item_pic`
 --
 
 INSERT INTO `item_pic` (`item_id`, `pic_num`, `pic_location`) VALUES
@@ -192,24 +242,40 @@ INSERT INTO `item_pic` (`item_id`, `pic_num`, `pic_location`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `item_review`
+-- 表的结构 `item_review`
 --
 
 CREATE TABLE IF NOT EXISTS `item_review` (
+  `review_id` int(11) NOT NULL,
   `item_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `review_title` text COLLATE utf8_bin NOT NULL,
-  `review_date` date NOT NULL,
+  `review_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `review_value` int(11) NOT NULL,
   `review_price` int(11) NOT NULL,
   `review_quality` int(11) NOT NULL,
   `review_text` text COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- 插入之前先把表清空（truncate） `item_review`
+--
+
+TRUNCATE TABLE `item_review`;
+--
+-- 转存表中的数据 `item_review`
+--
+
+INSERT INTO `item_review` (`review_id`, `item_id`, `user_id`, `review_title`, `review_date`, `review_value`, `review_price`, `review_quality`, `review_text`) VALUES
+(1, 123, 123, '123', '2015-08-12 15:06:53', 1, 1, 1, '123'),
+(2, 123, 123, '123', '2015-08-12 15:07:17', 1, 1, 1, '123'),
+(3, 123, 123, '123', '0000-00-00 00:00:00', 1, 1, 1, '123'),
+(4, 0, 0, 'title', '2015-08-12 15:15:18', 1, 2, 3, 'content');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user_info`
+-- 表的结构 `user_info`
 --
 
 CREATE TABLE IF NOT EXISTS `user_info` (
@@ -224,10 +290,15 @@ CREATE TABLE IF NOT EXISTS `user_info` (
   `user_pic` text COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
+--
+-- 插入之前先把表清空（truncate） `user_info`
+--
+
+TRUNCATE TABLE `user_info`;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user_list`
+-- 表的结构 `user_list`
 --
 
 CREATE TABLE IF NOT EXISTS `user_list` (
@@ -239,7 +310,12 @@ CREATE TABLE IF NOT EXISTS `user_list` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- Dumping data for table `user_list`
+-- 插入之前先把表清空（truncate） `user_list`
+--
+
+TRUNCATE TABLE `user_list`;
+--
+-- 转存表中的数据 `user_list`
 --
 
 INSERT INTO `user_list` (`user_id`, `user_email`, `user_password`, `user_fname`, `user_lname`) VALUES
@@ -251,7 +327,7 @@ INSERT INTO `user_list` (`user_id`, `user_email`, `user_password`, `user_fname`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `wishlist`
+-- 表的结构 `wishlist`
 --
 
 CREATE TABLE IF NOT EXISTS `wishlist` (
@@ -259,6 +335,30 @@ CREATE TABLE IF NOT EXISTS `wishlist` (
   `item_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
+--
+-- 插入之前先把表清空（truncate） `wishlist`
+--
+
+TRUNCATE TABLE `wishlist`;
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `item_review`
+--
+ALTER TABLE `item_review`
+  ADD PRIMARY KEY (`review_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `item_review`
+--
+ALTER TABLE `item_review`
+  MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
