@@ -132,9 +132,6 @@
                                 john.doe@gmail.com
                             </p>
 
-                            <p><b>Contact Number:</b><br>
-                                91224784
-                            </p>
                             <br>
                             <div class="buttons_row">
 
@@ -178,6 +175,10 @@
 
                                         <p><b>Zip/Postal Code:</b><br>
                                             398752
+                                        </p>
+
+                                        <p><b>Contact Number:</b><br>
+                                            91224784
                                         </p>
 
                                         <p><b>Country:</b><br>
