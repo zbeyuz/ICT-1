@@ -32,4 +32,9 @@ icp.login = function () {
     });
 };
 
+icp.wish = function (item){
+    var i={};
+    i.item=item;
+    $.post("wish",i);
+}
 $.get("login", icp.account);

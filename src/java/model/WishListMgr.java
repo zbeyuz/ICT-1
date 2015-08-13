@@ -15,7 +15,7 @@ import java.util.ArrayList;
  *
  * @author hy
  */
-public class WishListMgr {
+public class WishlistMgr {
 
     public static boolean add_item(int user_id, int item_id) throws SQLException, Exception {
         Connection conn=DBConn.getConn();
@@ -24,14 +24,14 @@ public class WishListMgr {
         pstmt.setInt(1, user_id);
         ResultSet rs = pstmt.executeQuery();
         
-        String ch = "ok"; 
+        boolean isexist=false;
         while (rs.next()) {
             if( rs.getInt("item_id") == item_id){
-                ch = "already add this item";
+                isexist=true;
             }
         }
         
-        if(ch.equals("ok")){
+        if(!isexist){
             
             pstmt = conn.prepareStatement("insert into wishlist (`user_id`, `item_id`) values(?,?)");
             pstmt.setInt(1, user_id);
