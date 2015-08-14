@@ -12,9 +12,9 @@ package model;
 public class UserInfo {
     public int id=-1;
     public String address="";
+    public String floor="";
+    public String unit="";
     public String road="";
-    public String city="";
-    public String province="";
     public String country="";
     public int postcode=-1;
     public int tel=-1;

@@ -27,7 +27,7 @@ public class ProductMgr {
         Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
         ResultSet rs = null;
-        String item_profile_pic = null;
+        String item_profile_pic = "";
         
         pstmt = conn.prepareStatement("SELECT * FROM `item_list` where `item_id` = ?");
         pstmt.setInt(1, item_id);
@@ -58,11 +58,7 @@ public class ProductMgr {
         conn.close();
     }
     
-    
-        
-    
-    
-    
+ 
     //add picture
     public static void addPic(int item_id, String pic_location) throws SQLException, Exception {
         
@@ -105,6 +101,27 @@ public class ProductMgr {
             throw new Exception(ch);
             //add fail
         }
+        conn.close();
+    }
+    
+    public static void itemUpdate(int item_id, String item_name , int item_price, int item_discount, String item_gender, String item_type, String item_manufacture, String item_info, String item_description, String item_profile_pic) throws SQLException, Exception{
+        Connection conn=DBConn.getConn();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        
+        pstmt = conn.prepareStatement("UPDATE `item_list` SET `item_name`=?, `item_price`=?, `item_discount`=?, `item_gender`=?, `item_type`=?, `item_manufacture`=?, `item_info`=?, `item_description`=?, `item_profile_pic`=? WHERE = `item_id`=?");
+        pstmt.setString(1, item_name);
+        pstmt.setInt(2, item_price);
+        pstmt.setInt(3, item_discount);
+        pstmt.setString(4, item_gender);
+        pstmt.setString(5, item_type);
+        pstmt.setString(6, item_manufacture);
+        pstmt.setString(7, item_info);
+        pstmt.setString(8, item_description);
+        pstmt.setString(9, item_profile_pic);
+        pstmt.setInt(10, item_id);
+        rs = pstmt.executeQuery();
+        
         conn.close();
     }
     

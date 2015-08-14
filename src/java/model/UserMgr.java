@@ -111,17 +111,17 @@ public class UserMgr {
         conn.close();
     }
      
-    public static void userUpdateInfo(int user_id,String user_address ,String user_road ,String user_city ,String user_province ,String user_country ,int user_postcode ,int user_tel ,String user_pic) throws SQLException, Exception {
+    public static void userUpdateInfo(int user_id,String user_address ,String user_floor ,String user_unit ,String user_road ,String user_country ,int user_postcode ,int user_tel ,String user_pic) throws SQLException, Exception {
 
         Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         
-        pstmt = conn.prepareStatement("UPDATE `user_info` SET `user_address`=?,`user_road`=?,`user_city`=?,`user_province`=?,`user_country`=?,`user_postcode`=?,`user_tel`=?,`user_pic`=? WHERE `user_id`=?");
+        pstmt = conn.prepareStatement("UPDATE `user_info` SET `user_address`=?,`user_road`=?,`user_floor`=?,`user_unit`=?,`user_country`=?,`user_postcode`=?,`user_tel`=?,`user_pic`=? WHERE `user_id`=?");
         pstmt.setString(1, user_address);
         pstmt.setString(2, user_road);
-        pstmt.setString(3, user_city);
-        pstmt.setString(4, user_province);
+        pstmt.setString(3, user_floor);
+        pstmt.setString(4, user_unit);
         pstmt.setString(5, user_country);
         pstmt.setInt(6, user_postcode);
         pstmt.setInt(7, user_tel);
@@ -147,9 +147,9 @@ public class UserMgr {
             UserInfo i = new UserInfo();
             i.id = rs.getInt("user_id");
             i.address = rs.getString("user_address");
+            i.floor = rs.getString("user_floor");
+            i.unit= rs.getString("user_unit");
             i.road= rs.getString("user_road");
-            i.city = rs.getString("user_city");
-            i.province= rs.getString("user_province");
             i.country= rs.getString("user_country");
             i.postcode= rs.getInt("user_postcode");
             i.tel = rs.getInt("user_tel");
