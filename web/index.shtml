@@ -949,7 +949,7 @@
       <button class="button_black def_icon_btn middle_btn quick_view_product tooltip_container align_center" data-modal-url="view?id=' + items[i][0] + '">\
         <span class="tooltip top">Quick View</span>\
       </button>\
-      <button onclick="icp.cart('+items[i][0]+')" class="button_blue def_icon_btn middle_btn add_to_cart tooltip_container alignright">\
+      <button onclick="icp.cart.add('+items[i][0]+')" class="button_blue def_icon_btn middle_btn add_to_cart tooltip_container alignright">\
         <span class="tooltip left">Add to Cart</span>\
       </button>\
     </div>\

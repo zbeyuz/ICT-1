@@ -72,7 +72,13 @@ public class CartHandler extends HttpServlet {
         if (cart != null) {
             String act = request.getParameter("act");
             if (act != null && act.equals("rm")) {
-
+                try {
+                    int itemId = Integer.parseInt(request.getParameter("item"));
+                    cart.remove(itemId);
+                } catch (Exception ex) {
+                    Logger.getLogger(CartHandler.class.getName()).log(Level.SEVERE, null, ex);
+                    out.println("invparam");
+                }
             } else {
                 try {
                     int itemId = Integer.parseInt(request.getParameter("item"));

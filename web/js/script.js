@@ -32,30 +32,43 @@ icp.login = function () {
     });
 };
 
-icp.cart = function (item) {
+icp.cart = {};
+
+icp.cart.add = function (item) {
     $.post("cart", {"item": item}, function (data) {
         console.log(data);
+        if(data==="invuser"){
+            alert("Please login or register!");
+        }
+        $("#cart").html("");
+        icp.cart.get();
     });
 };
 
 
 
-icp.getCart = function () {
+icp.cart.get = function () {
     $.get("cart", function (data) {
         var items = JSON.parse(data);
         var i = 0;
         for (i = 0; i < items.length; i++) {
         $("#cart").append(' \
             <div class="animated_item"><p class="title">Recently added item(s)</p><div class="clearfix sc_product"> \
-              <a href="product?id=' + items[i][0] + '" class="product_thumb"><img height="10" width="10" src="' + items[i][3] + '" alt=""></a> \
+              <a href="product?id=' + items[i][0] + '" class="product_thumb"><img height="50" width="50" src="' + items[i][3] + '" alt=""></a> \
               <a href="product?id=' + items[i][0] + '" class="product_name">' + items[i][1] + '</a> \
               <p>'+items[i][2]+'</p>\
-              <button onclick="icp.cart(' + items[i][0] + ')" class="close"></button> \
+              <button onclick="icp.cart.rm(' + items[i][0] + ')" class="close"></button> \
             </div></div>\
             ');
     
         }
     });
+};
+
+icp.cart.rm = function (item) {
+    var req={"act":"rm"};
+    req["item"]=item;
+    $.post("cart",req);
 };
 
 icp.wish = function (item) {
@@ -64,3 +77,4 @@ icp.wish = function (item) {
     $.post("wish", i);
 }
 $.get("login", icp.account);
+icp.cart.get();

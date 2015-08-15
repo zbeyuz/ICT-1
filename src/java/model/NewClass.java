@@ -21,5 +21,6 @@ public class NewClass {
         
         System.out.println(map.get(1));
         System.out.println(map.get(3));
+        map.remove(2);
     }
 }
