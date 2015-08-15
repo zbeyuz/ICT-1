@@ -12,5 +12,8 @@ package model;
 public class BillInfo {
     public int bill_id=-1;
     public int item_id=-1;
+    public String item_name="";
+    public int item_price=-1;
+    public int item_discount=-1;
     public int bill_quantity=-1;
 }

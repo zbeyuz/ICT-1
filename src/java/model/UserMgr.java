@@ -115,7 +115,6 @@ public class UserMgr {
 
         Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
-        ResultSet rs = null;
         
         pstmt = conn.prepareStatement("UPDATE `user_info` SET `user_address`=?,`user_road`=?,`user_floor`=?,`user_unit`=?,`user_country`=?,`user_postcode`=?,`user_tel`=?,`user_pic`=? WHERE `user_id`=?");
         pstmt.setString(1, user_address);
@@ -127,7 +126,7 @@ public class UserMgr {
         pstmt.setInt(7, user_tel);
         pstmt.setString(8, user_pic);
         pstmt.setInt(9, user_id);
-        rs = pstmt.executeQuery();
+        pstmt.executeQuery();
         
         conn.close();
     }

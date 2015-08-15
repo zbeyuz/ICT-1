@@ -14,7 +14,7 @@ public class Bill {
     public int user_id=-1;
     public int bill_state=-1;
     public long bill_done_date;
-    public String bill_shipping="";
-    public int bill_shipping_price=-1;
+    public String bill_shipping_type=""; //type of shipping
+    public int bill_shipping_price=-1; 
 
 }
