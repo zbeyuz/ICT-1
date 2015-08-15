@@ -8,6 +8,8 @@ package control;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -38,7 +40,7 @@ public class WishlistHandler extends HttpServlet {
         PrintWriter out = response.getWriter();
         User user=(User) request.getSession().getAttribute("user");
         if (user==null){
-            out.println("invuser");
+            out.println("\u005B\u005D");
             return;
         }
         try {
@@ -57,7 +59,7 @@ public class WishlistHandler extends HttpServlet {
             }
             out.print("\u005D");
         } catch (Exception e) {
-            out.println(e);
+            Logger.getLogger(AddPic.class.getName()).log(Level.SEVERE, null, e);
         }
     }
 
@@ -86,7 +88,7 @@ public class WishlistHandler extends HttpServlet {
             }
         }catch(Exception e){
             out.print("err");
-            out.println(e);
+            Logger.getLogger(AddPic.class.getName()).log(Level.SEVERE, null, e);
         }
     }
 

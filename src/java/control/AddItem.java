@@ -55,7 +55,7 @@ public class AddItem extends HttpServlet {
             out.println("success");
         } catch (Exception ex) {
             Logger.getLogger(AddPic.class.getName()).log(Level.SEVERE, null, ex);
-            out.print("Error:" + ex);
+            out.print("Error");
         }
     }
 
