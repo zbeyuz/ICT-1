@@ -8,6 +8,8 @@ package control;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -50,7 +52,8 @@ public class GetItem extends HttpServlet {
                 }
                 out.print("\u005D");
             } catch (Exception e) {
-                out.println(e);
+                Logger.getLogger(AddPic.class.getName()).log(Level.SEVERE, null, e);
+                out.println("\u005B\u005D");
             }
         }
     }

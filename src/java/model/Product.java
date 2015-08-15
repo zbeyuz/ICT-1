@@ -20,5 +20,9 @@ public class Product {
     public String info="";
     public String description="";
     public String profile_pic = "";
+    
+    public boolean equals(Product i){
+        return this.id==i.id;
+    }
 
 }

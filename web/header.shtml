@@ -328,73 +328,7 @@
 
                                 <!-- - - - - - - - - - - - - - Products list - - - - - - - - - - - - - - - - -->
 
-                                <div class="shopping_cart dropdown">
-
-                                    <div class="animated_item">
-
-                                        <p class="title">Recently added item(s)</p>
-
-                                        <!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
-
-                                        <div class="clearfix sc_product">
-
-                                            <a href="#" class="product_thumb"><img src="images/sc_img_1.jpg" alt=""></a>
-
-                                            <a href="#" class="product_name">Natural Factors PGX Daily Ultra Matrix...</a>
-
-                                            <p>1 x $499.00</p>
-
-                                            <button class="close"></button>
-
-                                        </div><!--/ .clearfix.sc_product-->
-
-                                        <!-- - - - - - - - - - - - - - End of product - - - - - - - - - - - - - - - - -->
-
-                                    </div><!--/ .animated_item-->
-
-                                    <div class="animated_item">
-
-                                        <!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
-
-                                        <div class="clearfix sc_product">
-
-                                            <a href="#" class="product_thumb"><img src="images/sc_img_2.jpg" alt=""></a>
-
-                                            <a href="#" class="product_name">Oral-B Glide Pro-Health Floss...</a>
-
-                                            <p>1 x $499.00</p>
-
-                                            <button class="close"></button>
-
-                                        </div><!--/ .clearfix.sc_product-->
-
-                                        <!-- - - - - - - - - - - - - - End of product - - - - - - - - - - - - - - - - -->
-
-                                    </div><!--/ .animated_item-->
-
-                                    <div class="animated_item">
-
-                                        <!-- - - - - - - - - - - - - - Total info - - - - - - - - - - - - - - - - -->
-
-                                        <ul class="total_info">
-
-                                            <li><span class="price">Discount:</span> $37.00</li>
-
-                                            <li class="total"><b><span class="price">Total:</span> $999.00</b></li>
-
-                                        </ul>
-
-                                        <!-- - - - - - - - - - - - - - End of total info - - - - - - - - - - - - - - - - -->
-
-                                    </div><!--/ .animated_item-->
-
-                                    <div class="animated_item">
-
-                                        <a href="cart.shtml" class="btn btn-primary">View Cart</a>
-
-                                        <a href="checkout.shtml" class="btn btn-info">Checkout</a>
-
-                                    </div><!--/ .animated_item-->
+                                <div id="cart" class="shopping_cart dropdown">
 
                                 </div><!--/ .shopping_cart.dropdown-->
 
@@ -419,3 +353,4 @@
     </header>
 
     <!-- - - - - - - - - - - - - - End Header - - - - - - - - - - - - - - - - -->
+</div>

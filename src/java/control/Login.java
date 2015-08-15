@@ -7,6 +7,8 @@ package control;
  */
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.HashMap;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -45,6 +47,7 @@ public class Login extends HttpServlet {
                 out.printf("\u005B\"OK\",\"%s %s\"\u005D",user.fName,user.lName);
                 HttpSession session = request.getSession();
                 session.setAttribute("user", user);
+                session.setAttribute("cart", new HashMap());
                 //out.println(session.getAttribute("email"));
                 //response.sendRedirect(request.getHeader("Referer"));
             } else {
