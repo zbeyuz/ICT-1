@@ -7,8 +7,14 @@ package model;
 
 /**
  *
- * @author hy
+ * @author Fu
  */
-class Item {
-    
+public class Item {
+    public int product_id=-1;
+    public int item_id=-1;
+    public String item_material="";
+    public String item_color="";
+    public String item_size="";
+    public String item_sample_pic="";
+    public int item_quantity=-1;
 }

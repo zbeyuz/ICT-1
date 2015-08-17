@@ -83,8 +83,8 @@ public class WishlistHandler extends HttpServlet {
         }
         try{
             int item_id=Integer.parseInt(request.getParameter("item"));
-            if(!WishlistMgr.add_item(user.id, item_id)){
-                WishlistMgr.delete_item(user.id, item_id);
+            if(!WishlistMgr.addProduct(user.id, item_id)){
+                WishlistMgr.deleteProduct(user.id, item_id);
             }
         }catch(Exception e){
             out.print("err");

@@ -28,8 +28,8 @@ public class Cart {
     }
     
     public void add(Item item, Product product){
-        items.put(item.id, item);
-        products.put(item.id, product);
+        items.put(item.item_id, item);
+        products.put(item.item_id, product);
     }
     
     public void remove(int id){
@@ -38,6 +38,6 @@ public class Cart {
     }
     
     public void remove(Item item){
-        remove(item.id);
+        remove(item.item_id);
     }
 }
