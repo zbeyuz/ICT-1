@@ -18,13 +18,13 @@ import java.util.Calendar;
  */
 public class BillMgr {
     
-    public static void newBill(int user_id, int bill_shipping_price, String bill_shipping_type, ArrayList<Product> items, BillInfo info) throws Exception {
+    public static void newBill(int user_id, int bill_shipping_price, String bill_shipping_type, ArrayList<Product> items, BillAddress info) throws Exception {
         int billId=addBill(user_id,bill_shipping_price,bill_shipping_type);
         for(Product i:items){
             addBillItem(billId,i.id,1);
         }
         
-        addBillAddress(billId,info.fname,info.lname,info.email,info.address,info.floor, info.unit, info.road, info.country, info.postcode, info.tel);
+        addBillAddress(billId,info.bill_fname,info.bill_lname,info.bill_email,info.bill_address,info.bill_floor, info.bill_unit, info.bill_road, info.bill_country, info.bill_postcode, info.bill_tel);
     }
     
     
