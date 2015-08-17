@@ -141,13 +141,7 @@
 
                                     <!-- - - - - - - - - - - - - - Product rating - - - - - - - - - - - - - - - - -->
 
-                                    <ul class="rating">
-
-                                        <li class="active"></li>
-                                        <li class="active"></li>
-                                        <li class="active"></li>
-                                        <li></li>
-                                        <li></li>
+                                    <ul id="avgRate" class="rating">
 
                                     </ul>
 
@@ -157,7 +151,7 @@
 
                                     <ul class="topbar">
 
-                                        <li><b>3 Review(s)</b></li>
+                                        <li><b><span class="reviewNum"></span> Review(s)</b></li>
 
                                     </ul>
 
@@ -289,7 +283,7 @@
                             <ul class="tabs_nav clearfix">
 
                                 <li><a href="#tab-1">Description</a></li>
-                                <li><a href="#tab-2">Reviews</a></li>
+                                <li><a href="#tab-2">(<span class="reviewNum"></span>) Reviews</a></li>
 
                             </ul>
 
@@ -323,8 +317,6 @@
 
                                         </ul>
 
-                                        <a href="#" class="button_grey middle_btn">Show More</a>
-
                                     </section><!--/ .section_offset -->
 
                                     <section class="section_offset">
@@ -339,154 +331,154 @@
 
                                                 <!-- - - - - - - - - - - - - - Rate the - - - - - - - - - - - - - - - - -->
 
-                                                <div class="table_wrap rate_table">
+                                                <div class="table_wrap_reviews">
+                                                    <form id="rating">
+                                                        <table>
 
-                                                    <table>
+                                                            <thead>
 
-                                                        <thead>
+                                                                <tr>
 
-                                                            <tr>
+                                                                    <th></th>
+                                                                    <th>1 Star</th>
+                                                                    <th>2 Stars</th>
+                                                                    <th>3 Stars</th>
+                                                                    <th>4 Stars</th>
+                                                                    <th>5 Stars</th>
 
-                                                                <th></th>
-                                                                <th>1 Star</th>
-                                                                <th>2 Stars</th>
-                                                                <th>3 Stars</th>
-                                                                <th>4 Stars</th>
-                                                                <th>5 Stars</th>
+                                                                </tr>
 
-                                                            </tr>
+                                                            </thead>
 
-                                                        </thead>
+                                                            <tbody>
 
-                                                        <tbody>
+                                                                <tr>
 
-                                                            <tr>
+                                                                    <td>Price</td>
 
-                                                                <td>Price</td>
+                                                                    <td>
 
-                                                                <td>
+                                                                        <input type="radio" name="price_rate" id="rate_1" value="1">
+                                                                        <label for="rate_1"></label>
 
-                                                                    <input checked type="radio" name="price_rate" id="rate_1">
-                                                                    <label for="rate_1"></label>
+                                                                    </td>
 
-                                                                </td>
+                                                                    <td>
 
-                                                                <td>
+                                                                        <input type="radio" name="price_rate" id="rate_2" value="2">
+                                                                        <label for="rate_2"></label>
 
-                                                                    <input type="radio" name="price_rate" id="rate_2">
-                                                                    <label for="rate_2"></label>
+                                                                    </td>
 
-                                                                </td>
+                                                                    <td>
 
-                                                                <td>
+                                                                        <input type="radio" name="price_rate" id="rate_3" value="3">
+                                                                        <label for="rate_3"></label>
 
-                                                                    <input type="radio" name="price_rate" id="rate_3">
-                                                                    <label for="rate_3"></label>
+                                                                    </td>
 
-                                                                </td>
+                                                                    <td>
 
-                                                                <td>
+                                                                        <input type="radio" name="price_rate" id="rate_4" value="4">
+                                                                        <label for="rate_4"></label>
 
-                                                                    <input type="radio" name="price_rate" id="rate_4">
-                                                                    <label for="rate_4"></label>
+                                                                    </td>
 
-                                                                </td>
+                                                                    <td>
 
-                                                                <td>
+                                                                        <input type="radio" name="price_rate" id="rate_5" value="5">
+                                                                        <label for="rate_5"></label>
 
-                                                                    <input type="radio" name="price_rate" id="rate_5">
-                                                                    <label for="rate_5"></label>
+                                                                    </td>
 
-                                                                </td>
+                                                                </tr>
 
-                                                            </tr>
+                                                                <tr>
 
-                                                            <tr>
+                                                                    <td>Value</td>
 
-                                                                <td>Value</td>
+                                                                    <td>
 
-                                                                <td>
+                                                                        <input type="radio" name="value_rate" id="rate_6" value="1">
+                                                                        <label for="rate_6"></label>
 
-                                                                    <input checked type="radio" name="value_rate" id="rate_6">
-                                                                    <label for="rate_6"></label>
+                                                                    </td>
 
-                                                                </td>
+                                                                    <td>
 
-                                                                <td>
+                                                                        <input type="radio" name="value_rate" id="rate_7" value="2">
+                                                                        <label for="rate_7"></label>
 
-                                                                    <input type="radio" name="value_rate" id="rate_7">
-                                                                    <label for="rate_7"></label>
+                                                                    </td>
 
-                                                                </td>
+                                                                    <td>
 
-                                                                <td>
+                                                                        <input type="radio" name="value_rate" id="rate_8" value="3">
+                                                                        <label for="rate_8"></label>
 
-                                                                    <input type="radio" name="value_rate" id="rate_8">
-                                                                    <label for="rate_8"></label>
+                                                                    </td>
 
-                                                                </td>
+                                                                    <td>
 
-                                                                <td>
+                                                                        <input type="radio" name="value_rate" id="rate_9" value="4">
+                                                                        <label for="rate_9"></label>
 
-                                                                    <input type="radio" name="value_rate" id="rate_9">
-                                                                    <label for="rate_9"></label>
+                                                                    </td>
 
-                                                                </td>
+                                                                    <td>
 
-                                                                <td>
+                                                                        <input type="radio" name="value_rate" id="rate_10" value="5">
+                                                                        <label for="rate_10"></label>
 
-                                                                    <input type="radio" name="value_rate" id="rate_10">
-                                                                    <label for="rate_10"></label>
+                                                                    </td>
 
-                                                                </td>
+                                                                </tr>
 
-                                                            </tr>
+                                                                <tr>
 
-                                                            <tr>
+                                                                    <td>Quality</td>
 
-                                                                <td>Quality</td>
+                                                                    <td>
 
-                                                                <td>
+                                                                        <input type="radio" name="quality_rate" id="rate_11" value="1">
+                                                                        <label for="rate_11"></label>
 
-                                                                    <input checked type="radio" name="quality_rate" id="rate_11">
-                                                                    <label for="rate_11"></label>
+                                                                    </td>
 
-                                                                </td>
+                                                                    <td>
 
-                                                                <td>
+                                                                        <input type="radio" name="quality_rate" id="rate_12" value="2">
+                                                                        <label for="rate_12"></label>
 
-                                                                    <input type="radio" name="quality_rate" id="rate_12">
-                                                                    <label for="rate_12"></label>
+                                                                    </td>
 
-                                                                </td>
+                                                                    <td>
 
-                                                                <td>
+                                                                        <input type="radio" name="quality_rate" id="rate_13" value="3">
+                                                                        <label for="rate_13"></label>
 
-                                                                    <input type="radio" name="quality_rate" id="rate_13">
-                                                                    <label for="rate_13"></label>
+                                                                    </td>
 
-                                                                </td>
+                                                                    <td>
 
-                                                                <td>
+                                                                        <input type="radio" name="quality_rate" id="rate_14" value="4">
+                                                                        <label for="rate_14"></label>
 
-                                                                    <input type="radio" name="quality_rate" id="rate_14">
-                                                                    <label for="rate_14"></label>
+                                                                    </td>
 
-                                                                </td>
+                                                                    <td>
 
-                                                                <td>
+                                                                        <input type="radio" name="quality_rate" id="rate_15" value="5">
+                                                                        <label for="rate_15"></label>
 
-                                                                    <input type="radio" name="quality_rate" id="rate_15">
-                                                                    <label for="rate_15"></label>
+                                                                    </td>
 
-                                                                </td>
+                                                                </tr>
 
-                                                            </tr>
+                                                            </tbody>
 
-                                                        </tbody>
-
-                                                    </table>
-
+                                                        </table>
+                                                    </form>
                                                 </div>
 
                                                 <!-- - - - - - - - - - - - - - End of rate the - - - - - - - - - - - - - - - - -->
@@ -500,48 +492,48 @@
                                                 <!-- - - - - - - - - - - - - - Review div - - - - - - - - - - - - - - - - -->
 
                                                 <div class="type_2">
+                                                    
+                                                        <ul>
 
-                                                    <ul>
+                                                            <li class="row">
 
-                                                        <li class="row">
+                                                                <div class="col-sm-6">
 
-                                                            <div class="col-sm-6">
+                                                                    <label for="summary">Summary of your review</label>
+                                                                    <input type="text" name="title" id="summary">
 
-                                                                <label for="summary">Summary of Your Review</label>
-                                                                <input type="text" id="summary">
+                                                                </div>
 
-                                                            </div>
+                                                            </li>
 
-                                                        </li>
+                                                            <li class="row">
 
-                                                        <li class="row">
+                                                                <div class="col-xs-12">
 
-                                                            <div class="col-xs-12">
+                                                                    <label for="review_message">Review</label>
 
-                                                                <label for="review_message">Review</label>
+                                                                    <textarea rows="5" name="content" id="review_message"></textarea>
 
-                                                                <textarea rows="5" id="review_message"></textarea>
+                                                                </div>
 
-                                                            </div>
+                                                            </li>
 
-                                                        </li>
+                                                            <li>
+                                                                <br>
+                                                            </li>
 
-                                                        <li>
-                                                            <br>
-                                                        </li>
+                                                            <li class="row">
 
-                                                        <li class="row">
+                                                                <div class="col-xs-12">
 
-                                                            <div class="col-xs-12">
+                                                                    <a id="sendRev" class="button_dark_grey middle_btn" href="javascript:;" onclick="icp.sendRev('${id}')">Submit Review</a>
 
-                                                                <button id="sendRev" class="button_dark_grey middle_btn">Submit Review</button>
+                                                                </div>
 
-                                                            </div>
+                                                            </li>
 
-                                                        </li>
-
-                                                    </ul>
-
+                                                        </ul>
+                                                    
                                                 </div>
 
                                                 <!-- - - - - - - - - - - - - - End of review div - - - - - - - - - - - - - - - - -->
@@ -712,7 +704,7 @@
         </div><!--/ [layout]-->
 
         <#include "social_feeds.shtml">
-        +
+        
         <!-- Include Plugins
         ============================================ -->
         <script src="js/jquery-2.1.1.min.js"></script>
@@ -731,5 +723,10 @@
         <script src="js/retina.min.js"></script>
         <script src="js/theme.plugins.js"></script>
         <script src="js/theme.core.js"></script>
+        <script src="js/script.js" type="text/javascript"></script>
+        <script src="js/product.js" type="text/javascript"></script>
+        <script>
+            icp.getReview("${id}");
+        </script>
     </body>
 </html>
