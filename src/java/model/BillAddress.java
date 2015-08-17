@@ -11,6 +11,9 @@ package model;
  */
 public class BillAddress {
     public int bill_id=-1;
+    public String bill_fname="";
+    public String bill_lname="";
+    public String bill_email="";
     public String bill_address="";
     public String bill_floor="";
     public String bill_unit="";
