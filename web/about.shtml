@@ -44,79 +44,83 @@
     <body>
 
         <!-- - - - - - - - - - - - - - Main Wrapper - - - - - - - - - - - - - - - - -->
+        <div class="wide_layout">
+            <#include "header.shtml">
 
-        <#include "header.shtml">
+            <!-- - - - - - - - - - - - - - Page Wrapper - - - - - - - - - - - - - - - - -->
 
-        <!-- - - - - - - - - - - - - - Page Wrapper - - - - - - - - - - - - - - - - -->
+            <div class="secondary_page_wrapper">
 
-        <div class="secondary_page_wrapper">
+                <div class="container">
 
-            <div class="container">
+                    <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
 
-                <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
+                    <ul class="breadcrumbs">
 
-                <ul class="breadcrumbs">
+                        <li><a href="index.shtml">Home</a></li>
+                        <li>About Us</li>
 
-                    <li><a href="index.shtml">Home</a></li>
-                    <li>About Us</li>
+                    </ul>
 
-                </ul>
+                    <div class="row">
 
-                <div class="row">
+                        <aside class="col-md-3 col-sm-4">
 
-                    <aside class="col-md-3 col-sm-4">
+                            <!-- - - - - - - - - - - - - - Information - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - Information - - - - - - - - - - - - - - - - -->
+                            <section class="section_offset">
 
-                        <section class="section_offset">
+                                <h3>Information</h3>
 
-                            <h3>Information</h3>
+                                <ul class="theme_menu">
 
-                            <ul class="theme_menu">
+                                    <li class="active current"><a href="#">About Us</a></li>
+                                    <li><a href="contact.shtml">Contact Us</a></li>
+                                    <li><a href="faq.shtml">FAQ</a></li>
 
-                                <li class="active current"><a href="#">About Us</a></li>
-                                <li><a href="contact.shtml">Contact Us</a></li>
-                                <li><a href="faq.shtml">FAQ</a></li>
+                                </ul>
 
-                            </ul>
+                            </section><!--/ .section_offset -->
 
-                        </section><!--/ .section_offset -->
+                            <!-- - - - - - - - - - - - - - End of information - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - End of information - - - - - - - - - - - - - - - - -->
+                        </aside><!--/ [col]-->
 
-                    </aside><!--/ [col]-->
+                        <main class="col-md-9 col-sm-8">
 
-                    <main class="col-md-9 col-sm-8">
+                            <h1>About Us</h1>
 
-                        <h1>About Us</h1>
+                            <div class="theme_box clearfix">
 
-                        <div class="theme_box clearfix">
+                                <img src="images/about_img_1.jpg" class="alignleft" width="310" alt="">
 
-                            <img src="images/about_img_1.jpg" class="alignleft" width="310" alt="">
+                                <p><strong>You are already beautiful. Our mission is to make you feel that way.</strong></p>
 
-                            <p><strong>You are already beautiful. Our mission is to make you feel that way.</strong></p>
+                                <p>Fashion is a form of expression. It is both inward and outward, allowing us to creatively identify ourselves in this world of endless beauty. All too often, fashion brands us, forcing us to assume its form, losing our creativity and identity in process. We are neither happy nor contented, caught in the pursuit of a form in which we are not.</p>
 
-                            <p>Fashion is a form of expression. It is both inward and outward, allowing us to creatively identify ourselves in this world of endless beauty. All too often, fashion brands us, forcing us to assume its form, losing our creativity and identity in process. We are neither happy nor contented, caught in the pursuit of a form in which we are not.</p>
+                                <p>Best Style Forever is changing it up. We seek to delight you with apparel that you love – flattering silhouettes, stylish designs at affordable prices, allowing you to shine through. We combine the intimacy of instant technology gratification and physical concept store - browsing and shopping at your own convenience.</p>
 
-                            <p>Best Style Forever is changing it up. We seek to delight you with apparel that you love – flattering silhouettes, stylish designs at affordable prices, allowing you to shine through. We combine the intimacy of instant technology gratification and physical concept store - browsing and shopping at your own convenience.</p>
+                                <p>Our personal touch of quality and value exists in design, sourcing and manufacturing. Trust is as important to us as it is to you. Our customer service team and personal stylists are always ready to ensure your shopping experience with us is smooth. Either way, we encourage you to be yourself and be expressive in your unique way.</p>
 
-                            <p>Our personal touch of quality and value exists in design, sourcing and manufacturing. Trust is as important to us as it is to you. Our customer service team and personal stylists are always ready to ensure your shopping experience with us is smooth. Either way, we encourage you to be yourself and be expressive in your unique way.</p>
+                                <p>May Best Style Forever Be With You!</p>
 
-                            <p>May Best Style Forever Be With You!</p>
+                            </div><!--/ .theme_box-->
 
-                        </div><!--/ .theme_box-->
+                        </main><!--/ [col]-->
 
-                    </main><!--/ [col]-->
+                    </div><!--/ .row-->
 
-                </div><!--/ .row-->
+                </div><!--/ .container-->
 
-            </div><!--/ .container-->
+            </div><!--/ .page_wrapper-->
 
-        </div><!--/ .page_wrapper-->
+            <!-- - - - - - - - - - - - - - End Page Wrapper - - - - - - - - - - - - - - - - -->
 
-        <!-- - - - - - - - - - - - - - End Page Wrapper - - - - - - - - - - - - - - - - -->
+            <#include "footer.shtml">   
 
-        <#include "footer.shtml">
+        </div><!--/ [layout]-->
+
+        <#include "social_feeds.shtml">
 
         <!-- Include Plugins
         ============================================ -->
@@ -130,6 +134,5 @@
         <script src="js/retina.min.js"></script>
         <script src="js/theme.plugins.js"></script>
         <script src="js/theme.core.js"></script>
-        <script src="js/header.js" type="text/javascript"></script>
     </body>
 </html>

@@ -33,15 +33,7 @@
     </servlet>
     <servlet>
         <servlet-name>WishListHandler</servlet-name>
-        <servlet-class>control.WishlistHandler</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>CartHandler</servlet-name>
-        <servlet-class>control.CartHandler</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>Order</servlet-name>
-        <servlet-class>control.Order</servlet-class>
+        <servlet-class>control.WishListHandler</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>get_item</servlet-name>
@@ -128,14 +120,6 @@
     <servlet-mapping>
         <servlet-name>WishListHandler</servlet-name>
         <url-pattern>/wish</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>CartHandler</servlet-name>
-        <url-pattern>/cart</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Order</servlet-name>
-        <url-pattern>/order</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

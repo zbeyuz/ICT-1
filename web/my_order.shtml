@@ -44,158 +44,162 @@
     <body>
 
         <!-- - - - - - - - - - - - - - Main Wrapper - - - - - - - - - - - - - - - - -->
+        <div class="wide_layout">
+            <#include "header.shtml">
 
-        <#include "header.shtml">
+            <!-- - - - - - - - - - - - - - Page Wrapper - - - - - - - - - - - - - - - - -->
 
-        <!-- - - - - - - - - - - - - - Page Wrapper - - - - - - - - - - - - - - - - -->
+            <div class="secondary_page_wrapper">
 
-        <div class="secondary_page_wrapper">
+                <div class="container">
 
-            <div class="container">
+                    <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
 
-                <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
+                    <ul class="breadcrumbs">
 
-                <ul class="breadcrumbs">
+                        <li><a href="index.shtml">Home</a></li>
+                        <li>Order History</li>
 
-                    <li><a href="index.shtml">Home</a></li>
-                    <li>Order History</li>
+                    </ul>
 
-                </ul>
+                    <!-- - - - - - - - - - - - - - End of breadcrumbs - - - - - - - - - - - - - - - - -->
 
-                <!-- - - - - - - - - - - - - - End of breadcrumbs - - - - - - - - - - - - - - - - -->
+                    <div class="row">
 
-                <div class="row">
+                        <aside class="col-md-3 col-sm-4">
 
-                    <aside class="col-md-3 col-sm-4">
+                            <!-- - - - - - - - - - - - - - Information - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - Information - - - - - - - - - - - - - - - - -->
+                            <section class="section_offset">
 
-                        <section class="section_offset">
+                                <h3>Order History</h3>
 
-                            <h3>Order History</h3>
+                                <ul class="theme_menu">
 
-                            <ul class="theme_menu">
+                                    <li><a href="my_account.shtml">Account Dashboard</a></li>
+                                    <li class="active current"><a href="#">Order History</a></li>
+                                    <li><a href="wishlist.shtml">Wish List</a></li>
 
-                                <li><a href="my_account.shtml">Account Dashboard</a></li>
-                                <li class="active current"><a href="#">Order History</a></li>
-                                <li><a href="wishlist.shtml">Wish List</a></li>
+                                </ul>
 
-                            </ul>
+                            </section><!--/ .section_offset -->
 
-                        </section><!--/ .section_offset -->
+                            <!-- - - - - - - - - - - - - - End of information - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - End of information - - - - - - - - - - - - - - - - -->
+                            <!-- - - - - - - - - - - - - - Banner - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - Banner - - - - - - - - - - - - - - - - -->
+                            <div class="section_offset">
 
-                        <div class="section_offset">
+                                <a href="#" class="banner">
 
-                            <a href="#" class="banner">
+                                    <img src="images/banner_img_10.png" alt="">
 
-                                <img src="images/banner_img_10.png" alt="">
+                                </a>
 
-                            </a>
+                            </div>
 
-                        </div>
+                            <!-- - - - - - - - - - - - - - End of banner - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - End of banner - - - - - - - - - - - - - - - - -->
+                        </aside><!--/ [col]-->
 
-                    </aside><!--/ [col]-->
+                        <main class="col-md-9 col-sm-8">
 
-                    <main class="col-md-9 col-sm-8">
+                            <h1>My Orders</h1>
 
-                        <h1>My Orders</h1>
+                            <div class="table_wrap">
 
-                        <div class="table_wrap">
+                                <table class="table_type_1 orders_table">
 
-                            <table class="table_type_1 orders_table">
+                                    <thead>
 
-                                <thead>
+                                        <tr>
 
-                                    <tr>
+                                            <th class="order_number_col">Order Number</th>
+                                            <th>Order Date</th>
+                                            <th class="ship_col">Ship To</th>
+                                            <th class="order_total_col">Total</th>
+                                            <th class="product_action_col">Action</th>
 
-                                        <th class="order_number_col">Order Number</th>
-                                        <th>Order Date</th>
-                                        <th class="ship_col">Ship To</th>
-                                        <th class="order_total_col">Total</th>
-                                        <th class="product_action_col">Action</th>
+                                        </tr>
 
-                                    </tr>
+                                    </thead>
 
-                                </thead>
+                                    <tbody>
 
-                                <tbody>
+                                        <tr>
 
-                                    <tr>
+                                            <td data-title="Order Number">145000007</td>
 
-                                        <td data-title="Order Number">145000007</td>
+                                            <td data-title="Order Date">9/5/2014</td>
 
-                                        <td data-title="Order Date">9/5/2014</td>
+                                            <td data-title="Ship To">John Doe</td>
 
-                                        <td data-title="Ship To">John Doe</td>
+                                            <td data-title="Total" class="total">$5.99</td>
 
-                                        <td data-title="Total" class="total">$5.99</td>
+                                            <td data-title="Action">
 
-                                        <td data-title="Action">
+                                                <ul class="buttons_col">
 
-                                            <ul class="buttons_col">
+                                                    <li>
 
-                                                <li>
+                                                        <a href="#" class="button_blue"
+                                                           data-modal-url="modals/view_order.html">View Order</a>
 
-                                                    <a href="#" class="button_blue"
-                                                       data-modal-url="modals/view_order.html">View Order</a>
+                                                    </li>
 
-                                                </li>
+                                                </ul>
 
-                                            </ul>
+                                            </td>
 
-                                        </td>
+                                        </tr>
 
-                                    </tr>
+                                        <tr>
 
-                                    <tr>
+                                            <td data-title="Order Number">145000007</td>
 
-                                        <td data-title="Order Number">145000007</td>
+                                            <td data-title="Order Date">9/5/2014</td>
 
-                                        <td data-title="Order Date">9/5/2014</td>
+                                            <td data-title="Ship To">John Doe</td>
 
-                                        <td data-title="Ship To">John Doe</td>
+                                            <td data-title="Total" class="total">$5.99</td>
 
-                                        <td data-title="Total" class="total">$5.99</td>
+                                            <td data-title="Action">
 
-                                        <td data-title="Action">
+                                                <ul class="buttons_col">
 
-                                            <ul class="buttons_col">
+                                                    <li>
 
-                                                <li>
+                                                        <a href="#" class="button_blue" data-modal-url="modals/view_order.html">View Order</a>
 
-                                                    <a href="#" class="button_blue" data-modal-url="modals/view_order.html">View Order</a>
+                                                    </li>
 
-                                                </li>
+                                                </ul>
 
-                                            </ul>
+                                            </td>
 
-                                        </td>
+                                        </tr>
 
-                                    </tr>
+                                    </tbody>
 
-                                </tbody>
+                                </table>
 
-                            </table>
+                            </div>
 
-                        </div>
+                        </main><!--/ [col]-->
 
-                    </main><!--/ [col]-->
+                    </div><!--/ .row-->
 
-                </div><!--/ .row-->
+                </div><!--/ .container-->
 
-            </div><!--/ .container-->
+            </div><!--/ .page_wrapper-->
 
-        </div><!--/ .page_wrapper-->
+            <!-- - - - - - - - - - - - - - End Page Wrapper - - - - - - - - - - - - - - - - -->			
 
-        <!-- - - - - - - - - - - - - - End Page Wrapper - - - - - - - - - - - - - - - - -->			
+            <#include "footer.shtml">   
 
-        <#include "footer.shtml">
+        </div><!--/ [layout]-->
+
+        <#include "social_feeds.shtml">
 
         <!-- Include Plugins
         ============================================ -->

@@ -44,103 +44,213 @@
     <body>
 
         <!-- - - - - - - - - - - - - - Main Wrapper - - - - - - - - - - - - - - - - -->
+        <div class="wide_layout">
+            <#include "header.shtml">
 
-        <#include "header.shtml">
+            <!-- - - - - - - - - - - - - - Page Wrapper - - - - - - - - - - - - - - - - -->
 
-        <!-- - - - - - - - - - - - - - Page Wrapper - - - - - - - - - - - - - - - - -->
+            <div class="secondary_page_wrapper">
 
-        <div class="secondary_page_wrapper">
+                <div class="container">
 
-            <div class="container">
+                    <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
 
-                <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
+                    <ul class="breadcrumbs">
 
-                <ul class="breadcrumbs">
+                        <li><a href="index.shtml">Home</a></li>
+                        <li>Wish List</li>
 
-                    <li><a href="index.shtml">Home</a></li>
-                    <li>Wish List</li>
+                    </ul>
 
-                </ul>
+                    <!-- - - - - - - - - - - - - - End of breadcrumbs - - - - - - - - - - - - - - - - -->
 
-                <!-- - - - - - - - - - - - - - End of breadcrumbs - - - - - - - - - - - - - - - - -->
+                    <div class="row">
 
-                <div class="row">
+                        <aside class="col-md-3 col-sm-4">
 
-                    <aside class="col-md-3 col-sm-4">
+                            <!-- - - - - - - - - - - - - - Information - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - Information - - - - - - - - - - - - - - - - -->
+                            <section class="section_offset">
 
-                        <section class="section_offset">
+                                <h3>Wish List</h3>
 
-                            <h3>Wish List</h3>
+                                <ul class="theme_menu">
 
-                            <ul class="theme_menu">
+                                    <li><a href="my_account.shtml">Account Dashboard</a></li>
+                                    <li><a href="my_order.shtml">Order History</a></li>
+                                    <li class="active current"><a href="#">Wish List</a></li>
 
-                                <li><a href="my_account.shtml">Account Dashboard</a></li>
-                                <li><a href="my_order.shtml">Order History</a></li>
-                                <li class="active current"><a href="#">Wish List</a></li>
+                                </ul>
 
-                            </ul>
+                            </section><!--/ .section_offset -->
 
-                        </section><!--/ .section_offset -->
+                            <!-- - - - - - - - - - - - - - End of information - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - End of information - - - - - - - - - - - - - - - - -->
+                            <!-- - - - - - - - - - - - - - Banner - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - Banner - - - - - - - - - - - - - - - - -->
+                            <div class="section_offset">
 
-                        <div class="section_offset">
+                                <a href="#" class="banner">
 
-                            <a href="#" class="banner">
+                                    <img src="images/banner_img_10.png" alt="">
 
-                                <img src="images/banner_img_10.png" alt="">
+                                </a>
 
-                            </a>
+                            </div>
 
-                        </div>
+                            <!-- - - - - - - - - - - - - - End of banner - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - End of banner - - - - - - - - - - - - - - - - -->
+                        </aside><!--/ [col]-->
 
-                    </aside><!--/ [col]-->
+                        <main class="col-md-9 col-sm-8">
 
-                    <main class="col-md-9 col-sm-8">
+                            <h1>My Wish List</h1>
 
-                        <h1>My Wish List</h1>
+                            <div class="table_wrap">
 
-                        <div class="table_wrap">
+                                <table class="table_type_1 wishlist_table">
 
-                            <table class="table_type_1 wishlist_table">
+                                    <thead>
 
-                                <thead>
+                                        <tr>
 
-                                    <tr>
+                                            <th class="product_image_col">Product Image</th>
+                                            <th class="product_title_col">Product Name and Category</th>
+                                            <th class="product_price_col">Price</th>
+                                            <th>Action</th>
 
-                                        <th class="product_image_col">Product Image</th>
-                                        <th class="product_title_col">Product Name and Category</th>
-                                        <th class="product_price_col">Price</th>
-                                        <th>Action</th>
+                                        </tr>
 
-                                    </tr>
+                                    </thead>
 
-                                </thead>
+                                    <tbody>
 
-                                <tbody id="wish_list">
-                                </tbody>
+                                        <tr>
 
-                            </table>
+                                            <!-- - - - - - - - - - - - - - Product image - - - - - - - - - - - - - - - - -->
 
-                        </div><!--/ .table_wrap -->
+                                            <td data-title="Product Image">
 
-                    </main><!--/ [col]-->
+                                                <img src="images/product_thumb_15.jpg" alt="">
 
-                </div><!--/ .row-->
+                                            </td>
 
-            </div><!--/ .container-->
+                                            <!-- - - - - - - - - - - - - - End of product image - - - - - - - - - - - - - - - - -->
 
-        </div><!--/ .page_wrapper-->
+                                            <!-- - - - - - - - - - - - - - Product name & category - - - - - - - - - - - - - - - - -->
 
-        <!-- - - - - - - - - - - - - - End Page Wrapper - - - - - - - - - - - - - - - - -->
+                                            <td data-title="Product Name and Category">
 
-        <#include "footer.shtml">
+                                                <a href="product.ftl" class="product_title">Sed in lacus ut enim adipiscing 30
+                                                    ea</a>
+                                                <br/>
+                                                <p><b>Bags</b></p>
+
+                                            </td>
+
+                                            <!-- - - - - - - - - - - - - - End of product name & category - - - - - - - - - - - - - - - - -->
+
+                                            <!-- - - - - - - - - - - - - - Product price - - - - - - - - - - - - - - - - -->
+
+                                            <td data-title="Price" class="total">$5.99</td>
+
+                                            <!-- - - - - - - - - - - - - - End of product price - - - - - - - - - - - - - - - - -->
+
+                                            <!-- - - - - - - - - - - - - - Product actions - - - - - - - - - - - - - - - - -->
+
+                                            <td data-title="Action">
+
+                                                <ul class="buttons_col">
+
+                                                    <li>
+                                                        <a href="#" class="button_blue">Add to Cart</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#" class="button_dark_grey">Remove</a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </td>
+
+                                            <!-- - - - - - - - - - - - - - End of product actions - - - - - - - - - - - - - - - - -->
+
+                                        </tr>
+
+                                        <tr>
+
+                                            <!-- - - - - - - - - - - - - - Product image - - - - - - - - - - - - - - - - -->
+
+                                            <td data-title="Product Image">
+
+                                                <img src="images/product_thumb_16.jpg" alt="">
+
+                                            </td>
+
+                                            <!-- - - - - - - - - - - - - - End of product image - - - - - - - - - - - - - - - - -->
+
+                                            <!-- - - - - - - - - - - - - - Product name & category - - - - - - - - - - - - - - - - -->
+
+                                            <td data-title="Product Name and Category">
+
+                                                <a href="product.ftl" class="product_title">Sed ut perspiciatis unde omnis iste natus error sit, Medium 2.5 fl oz</a>
+                                                <br/>
+                                                <p><b>T-Shirts &amp; Singlets</b></p>
+
+                                            </td>
+
+                                            <!-- - - - - - - - - - - - - - End of product name & category - - - - - - - - - - - - - - - - -->
+
+                                            <!-- - - - - - - - - - - - - - Product price - - - - - - - - - - - - - - - - -->
+
+                                            <td data-title="Price" class="total">$5.99</td>
+
+                                            <!-- - - - - - - - - - - - - - End of product price - - - - - - - - - - - - - - - - -->
+
+                                            <!-- - - - - - - - - - - - - - Product actions - - - - - - - - - - - - - - - - -->
+
+                                            <td data-title="Action">
+
+                                                <ul class="buttons_col">
+
+                                                    <li>
+                                                        <a href="#" class="button_blue">Add to Cart</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#" class="button_dark_grey">Remove</a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </td>
+
+                                            <!-- - - - - - - - - - - - - - End of product actions - - - - - - - - - - - - - - - - -->
+
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+
+                            </div><!--/ .table_wrap -->
+
+                        </main><!--/ [col]-->
+
+                    </div><!--/ .row-->
+
+                </div><!--/ .container-->
+
+            </div><!--/ .page_wrapper-->
+
+            <!-- - - - - - - - - - - - - - End Page Wrapper - - - - - - - - - - - - - - - - -->
+
+            <#include "footer.shtml">   
+
+        </div><!--/ [layout]-->
+
+        <#include "social_feeds.shtml">
 
         <!-- Include Plugins
         ============================================ -->
@@ -154,36 +264,6 @@
         <script src="js/retina.min.js"></script>
         <script src="js/theme.plugins.js"></script>
         <script src="js/theme.core.js"></script>
-        <script src="js/script.js" type="text/javascript"></script>
-        <script>
-$.get("wish", function (data) {
-    var items = JSON.parse(data);
-    var i = 0;
-    for (i = 0; i < items.length; i++) {
-        $("#wish_list").append('\
-<tr id="item'+items[i][0]+'">\
-  <td data-title="Product Image">\
-    <img src="'+items[i][3]+'" alt="">\
-  </td>\
-  <td data-title="Product Name and Category">\
-    <a href="product?id=' + items[i][0] + '" class="product_title"></a><br><p><b>' + items[i][1] + '</b></p>\
-  </td>\
-  <td data-title="Price" class="total">$' + items[i][2] + '</td>\
-  <td data-title="Action">\
-    <ul class="buttons_col">\
-      <li><a href="javascript:;" onclick="icp.cart.add('+items[i][0]+')" class="button_blue">Add to Cart</a></li>\
-      <li><a href="javascript:;" onclick="icp.rmwish('+items[i][0]+')" class="button_dark_grey">Remove</a></li>\
-    </ul>\
-  </td>\
-</tr>\
-'       );
-    }
-});
-icp.rmwish = function (item){
-    icp.wish(item);
-    $("#item"+item).remove();
-}
-        </script>
-    
-</body>
+        <script src="js/header.js" type="text/javascript"></script>
+    </body>
 </html>
