@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Aug 17, 2015 at 03:52 AM
+-- Generation Time: Aug 17, 2015 at 05:44 AM
 -- Server version: 5.6.25
 -- PHP Version: 5.6.11
 
@@ -62,6 +62,7 @@ CREATE TABLE IF NOT EXISTS `bill_address` (
 CREATE TABLE IF NOT EXISTS `bill_info` (
   `bill_id` int(11) NOT NULL,
   `item_id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
   `bill_quantity` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
@@ -121,6 +122,7 @@ CREATE TABLE IF NOT EXISTS `item_feature` (
 
 CREATE TABLE IF NOT EXISTS `item_info` (
   `item_id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
   `item_material` text COLLATE utf8_bin NOT NULL,
   `item_color` text COLLATE utf8_bin NOT NULL,
   `item_size` text COLLATE utf8_bin NOT NULL,
@@ -132,8 +134,10 @@ CREATE TABLE IF NOT EXISTS `item_info` (
 -- Dumping data for table `item_info`
 --
 
-INSERT INTO `item_info` (`item_id`, `item_material`, `item_color`, `item_size`, `item_sample_pic`, `item_quantity`) VALUES
-(123, 'gg', 'red', 'xxl', '', 12);
+INSERT INTO `item_info` (`item_id`, `product_id`, `item_material`, `item_color`, `item_size`, `item_sample_pic`, `item_quantity`) VALUES
+(123, 0, 'gg', 'red', 'xxl', '', 12),
+(122, 1, 'asd', 'red', 'xxl', '', 10),
+(122, 2, 'asd', 'red', 'xl', '', 10);
 
 -- --------------------------------------------------------
 
