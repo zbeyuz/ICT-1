@@ -203,7 +203,7 @@ INSERT INTO `item_pic` (`item_id`, `pic_num`, `pic_location`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `item_review` (
-`review_id` int(11) NOT NULL,
+  `review_id` int(11) NOT NULL,
   `item_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `review_title` text COLLATE utf8_bin NOT NULL,
@@ -295,7 +295,7 @@ ALTER TABLE `item_review`
 -- AUTO_INCREMENT for table `item_review`
 --
 ALTER TABLE `item_review`
-MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+  MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
