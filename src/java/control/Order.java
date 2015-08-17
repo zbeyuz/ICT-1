@@ -12,6 +12,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import model.BillAddress;
 
 /**
  *
@@ -48,17 +49,18 @@ public class Order extends HttpServlet {
         PrintWriter out = response.getWriter();
         HashMap cart=(HashMap)request.getSession().getAttribute("cart");
         if(cart!=null){
-            request.getParameter("blk");
-            request.getParameter("country");
-            request.getParameter("email");
-            request.getParameter("fName");
-            request.getParameter("floor");
-            request.getParameter("lName");
-            request.getParameter("phone");
-            request.getParameter("shipping");
-            request.getParameter("street");
-            request.getParameter("unit");
-            request.getParameter("zip");
+            BillAddress addr=new BillAddress();
+            addr.bill_country=request.getParameter("country");
+            addr.bill_email=request.getParameter("email");
+            addr.bill_fname=request.getParameter("fName");
+            addr.bill_floor=request.getParameter("floor");
+            addr.bill_lname=request.getParameter("lName");
+            addr.bill_tel=Integer.parseInt(request.getParameter("phone"));
+            String shipMethod=request.getParameter("shipping");
+            addr.bill_address=String.format("%s BLOCK %s",request.getParameter("street"),request.getParameter("blk"));
+            addr.bill_unit=request.getParameter("unit");
+            addr.bill_postcode=Integer.parseInt(request.getParameter("zip"));
+            
         }else{
             out.println("empty");
         }
