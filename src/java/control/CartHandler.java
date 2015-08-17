@@ -82,7 +82,7 @@ public class CartHandler extends HttpServlet {
             } else {
                 try {
                     int itemId = Integer.parseInt(request.getParameter("item"));
-                    Product item = model.ProductMgr.getProductById(itemId);
+                    Product item = model.ProductMgr.getProductByProductId(itemId);
                     cart.put(itemId,item);
                 } catch (Exception ex) {
                     Logger.getLogger(CartHandler.class.getName()).log(Level.SEVERE, null, ex);

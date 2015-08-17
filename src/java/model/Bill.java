@@ -11,7 +11,7 @@ package model;
  */
 public class Bill {
     public int bill_id=-1;
-    public int user_id=-1;
+    public User user = new User();
     public int bill_state=-1;
     public long bill_done_date;
     public String bill_shipping_type=""; //type of shipping
