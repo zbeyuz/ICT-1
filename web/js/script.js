@@ -37,6 +37,17 @@ icp.login = function () {
     });
 };
 
+icp.reg = function () {
+    var form = $("#regForm").serialize();
+    //$.post("reg", {}, function (data) {
+    //    var res = JSON.parse(data);
+    //    if (res[0] === "OK") {
+    //        $("#closeReg").trigger("click");
+    //    } else {
+    //        $("#regWarn").html(res[1]);
+    //    }
+    //});
+}
 icp.cart = {};
 
 icp.cart.add = function (item) {

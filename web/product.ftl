@@ -327,7 +327,7 @@
 
                                             <div class="col-lg-5 col-md-6">
 
-                                                <p>How do you rate this product? *</p>
+                                                <p>How do you rate this product? *</p><br>
 
                                                 <!-- - - - - - - - - - - - - - Rate the - - - - - - - - - - - - - - - - -->
 
