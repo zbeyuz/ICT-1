@@ -12,7 +12,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.UserInfo;
 
 /**
  *
@@ -49,17 +48,17 @@ public class Order extends HttpServlet {
         PrintWriter out = response.getWriter();
         HashMap cart=(HashMap)request.getSession().getAttribute("cart");
         if(cart!=null){
-            UserInfo ui= new UserInfo();
-            ui.address=String.format("%s block%s", request.getParameter("street"),request.getParameter("blk"));
-            ui.country=request.getParameter("country");
-            String email=request.getParameter("email");
-            String fName=request.getParameter("fName");
-            ui.floor=request.getParameter("floor");
-            String lName=request.getParameter("lName");
-            ui.tel=Integer.parseInt(request.getParameter("phone"));
-            String shipping=request.getParameter("shipping");
-            ui.unit=request.getParameter("unit");
-            ui.postcode=Integer.parseInt(request.getParameter("zip"));
+            request.getParameter("blk");
+            request.getParameter("country");
+            request.getParameter("email");
+            request.getParameter("fName");
+            request.getParameter("floor");
+            request.getParameter("lName");
+            request.getParameter("phone");
+            request.getParameter("shipping");
+            request.getParameter("street");
+            request.getParameter("unit");
+            request.getParameter("zip");
         }else{
             out.println("empty");
         }
