@@ -45,840 +45,844 @@
     <body>
 
         <!-- - - - - - - - - - - - - - Main Wrapper - - - - - - - - - - - - - - - - -->
+        <div class="wide_layout">
+            <#include "header.shtml">
 
-        <#include "header.shtml">
+            <!-- - - - - - - - - - - - - - Page Wrapper - - - - - - - - - - - - - - - - -->
 
-        <!-- - - - - - - - - - - - - - Page Wrapper - - - - - - - - - - - - - - - - -->
+            <div class="secondary_page_wrapper">
 
-        <div class="secondary_page_wrapper">
+                <div class="container">
 
-            <div class="container">
+                    <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
 
-                <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
+                    <ul class="breadcrumbs">
 
-                <ul class="breadcrumbs">
+                        <li><a href="index.shtml">Home</a></li>
+                        <li>T-Shirts &amp; Singlets</li>
 
-                    <li><a href="index.shtml">Home</a></li>
-                    <li>T-Shirts &amp; Singlets</li>
+                    </ul>
 
-                </ul>
+                    <div class="row">
 
-                <div class="row">
+                        <aside class="col-md-3 col-sm-4 has_mega_menu">
 
-                    <aside class="col-md-3 col-sm-4 has_mega_menu">
+                            <!-- - - - - - - - - - - - - - Categories - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - Categories - - - - - - - - - - - - - - - - -->
+                            <section class="section_offset">
 
-                        <section class="section_offset">
+                                <h3>Categories</h3>
 
-                            <h3>Categories</h3>
+                                <ul class="theme_menu cats">
 
-                            <ul class="theme_menu cats">
+                                    <li class="active current"><a href="#" class="all"><b>T-Shirts &amp; Singlets</b></a></li>
+                                    <li><a href="#" class="all"><b>Shirts &amp; Polos</b></a></li>
+                                    <li><a href="#" class="all"><b>Coats &amp; Jackets</b></a></li>
+                                    <li><a href="#" class="all"><b>Sweats &amp; Hoodies</b></a></li>                                    
+                                    <li><a href="#" class="all"><b>Sunglasses</b></a></li>
+                                    <li><a href="#" class="all"><b>Scarves &amp; Gloves</b></a></li>
+                                    <li><a href="#" class="all"><b>Bags</b></a></li>
+                                    <li><a href="#" class="all"><b>Wallets</b></a></li>
+                                    <li><a href="#" class="all"><b>Dresses</b></a></li>
+                                    <li><a href="#" class="all"><b>Tops</b></a></li>
+                                    <li><a href="#" class="all"><b>Skirts</b></a></li>
+                                    <li><a href="#" class="all"><b>Jewellery</b></a></li>
+                                    <li><a href="#" class="all"><b>Perfumes</b></a></li>
+                                    <li><a href="#" class="all"><b>Make-up</b></a></li>
+                                    <li><a href="#" class="all"><b>Hands &amp; Feet</b></a></li>
 
-                                <li class="active current"><a href="#" class="all"><b>T-Shirts &amp; Singlets</b></a></li>
-                                <li><a href="#" class="all"><b>Shirts &amp; Polos</b></a></li>
-                                <li><a href="#" class="all"><b>Coats &amp; Jackets</b></a></li>
-                                <li><a href="#" class="all"><b>Sweats &amp; Hoodies</b></a></li>                                    
-                                <li><a href="#" class="all"><b>Sunglasses</b></a></li>
-                                <li><a href="#" class="all"><b>Scarves &amp; Gloves</b></a></li>
-                                <li><a href="#" class="all"><b>Bags</b></a></li>
-                                <li><a href="#" class="all"><b>Wallets</b></a></li>
-                                <li><a href="#" class="all"><b>Dresses</b></a></li>
-                                <li><a href="#" class="all"><b>Tops</b></a></li>
-                                <li><a href="#" class="all"><b>Skirts</b></a></li>
-                                <li><a href="#" class="all"><b>Jewellery</b></a></li>
-                                <li><a href="#" class="all"><b>Perfumes</b></a></li>
-                                <li><a href="#" class="all"><b>Make-up</b></a></li>
-                                <li><a href="#" class="all"><b>Hands &amp; Feet</b></a></li>
+                                </ul>
 
-                            </ul>
+                            </section><!--/ .animated.transparent-->
 
-                        </section><!--/ .animated.transparent-->
+                            <!-- - - - - - - - - - - - - - End of categories - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - End of categories - - - - - - - - - - - - - - - - -->
+                            <!-- - - - - - - - - - - - - - Banner - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - Banner - - - - - - - - - - - - - - - - -->
+                            <div class="section_offset">
 
-                        <div class="section_offset">
+                                <a href="#" class="banner">
 
-                            <a href="#" class="banner">
+                                    <img src="images/banner_img_10.png" alt="">
 
-                                <img src="images/banner_img_10.png" alt="">
-
-                            </a>
-
-                        </div>
-
-                        <!-- - - - - - - - - - - - - - End of banner - - - - - - - - - - - - - - - - -->
-
-                    </aside>
-
-                    <main class="col-md-9 col-sm-8">
-
-                        <!-- - - - - - - - - - - - - - Today's deals - - - - - - - - - - - - - - - - -->
-
-                        <section class="section_offset">
-
-                            <h3 class="widget_title offset_title">Today's Deals</h3>
-
-                            <div class="owl_carousel widgets_carousel">
-
-                                <!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
-
-                                <div class="theme_box clearfix">
-
-                                    <!-- - - - - - - - - - - - - - Product image column - - - - - - - - - - - - - - - - -->
-
-                                    <div class="single_product">
-
-                                        <!-- - - - - - - - - - - - - - Image preview container - - - - - - - - - - - - - - - - -->
-
-                                        <div class="image_preview_container">
-
-                                            <img src="images/qv_img_1.jpg" alt="">
-
-                                            <!-- - - - - - - - - - - - - - Label - - - - - - - - - - - - - - - - -->
-
-                                            <div class="label_offer percentage">
-
-                                                <div>50%</div>OFF
-
-                                            </div>
-
-                                            <!-- - - - - - - - - - - - - - End label - - - - - - - - - - - - - - - - -->
-
-                                        </div><!--/ .image_preview_container-->
-
-                                        <!-- - - - - - - - - - - - - - End of image preview container - - - - - - - - - - - - - - - - -->
-
-                                        <!-- - - - - - - - - - - - - - Countdown - - - - - - - - - - - - - - - - -->
-
-                                        <div class="countdown" data-year="2016" data-month="11" data-day="6" data-hours="15" data-minutes="0" data-seconds="0"></div>
-
-                                        <!-- - - - - - - - - - - - - - End countdown - - - - - - - - - - - - - - - - -->
-
-                                    </div>
-
-                                    <!-- - - - - - - - - - - - - - End of product image column - - - - - - - - - - - - - - - - -->
-
-                                    <!-- - - - - - - - - - - - - - Product description column - - - - - - - - - - - - - - - - -->
-
-                                    <div class="single_product_description">
-
-                                        <h3 class="offset_title"><a href="#">Vestibulum ante, Original 24 fl oz</a></h3>
-
-                                        <div class="description_section v_centered">
-
-                                            <!-- - - - - - - - - - - - - - Product rating - - - - - - - - - - - - - - - - -->
-
-                                            <ul class="rating">
-
-                                                <li class="active"></li>
-                                                <li class="active"></li>
-                                                <li class="active"></li>
-                                                <li></li>
-                                                <li></li>
-
-                                            </ul>
-
-                                            <!-- - - - - - - - - - - - - - End of product rating - - - - - - - - - - - - - - - - -->
-
-                                            <!-- - - - - - - - - - - - - - Reviews menu - - - - - - - - - - - - - - - - -->
-
-                                            <ul class="topbar">
-
-                                                <li><p><b>3 Review(s)</b></p></li>
-
-                                            </ul>
-
-                                            <!-- - - - - - - - - - - - - - End of reviews menu - - - - - - - - - - - - - - - - -->
-
-                                        </div>
-
-                                        <div class="description_section">
-
-                                            <table class="product_info">
-
-                                                <tbody>
-
-                                                    <tr>
-
-                                                        <td><b>Manufacturer: </b></td>
-                                                        <td><a href="#">Chanel</a></td>
-
-                                                    </tr>
-
-                                                    <tr>
-
-                                                        <td><b>Availability: </b></td>
-                                                        <td><span class="in_stock">in stock</span> 20 item(s)</td>
-
-                                                    </tr>
-
-                                                    <tr>
-
-                                                        <td><b>Product Code: </b></td>
-                                                        <td>PS06</td>
-
-                                                    </tr>
-
-                                                </tbody>
-
-                                            </table>
-
-                                        </div>
-
-                                        <hr>
-
-                                        <div class="description_section">
-
-                                            <p>Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante. Donec sagittis euismod purus. Sed ut perspiciatis sit voluptatem accusantim doloremque laudantim.</p>
-
-                                        </div>
-
-                                        <div class="description_section">
-
-                                            <div class="table_wrap product_price_table">
-
-                                                <table>
-
-                                                    <tbody>
-
-                                                        <tr>
-
-                                                            <td class="special_price">
-
-                                                                Special Price:
-
-                                                                <div class="price">$5.99</div>
-
-                                                            </td>
-
-                                                            <td class="old_price">
-
-                                                                Old Price:
-
-                                                                <div class="price">$9.99</div>
-
-                                                            </td>
-
-                                                            <td class="save">
-
-                                                                You Save:
-
-                                                                <div class="price">$4.00</div>
-
-                                                            </td>
-
-                                                        </tr>
-
-                                                    </tbody>
-
-                                                </table>
-
-                                            </div>
-
-                                            <p class="hurry_message"><span>Hurry! Only 20 item(s) left!</span> 17 item(s) already purchased</p>
-
-                                        </div>
-
-                                        <!-- - - - - - - - - - - - - - Product actions - - - - - - - - - - - - - - - - -->
-
-                                        <div class="buttons_row">
-
-                                            <button class="button_blue middle_btn">Add to Cart</button>
-
-                                            <button class="button_dark_grey def_icon_btn middle_btn add_to_wishlist tooltip_container"><span class="tooltip top">Add to Wishlist</span></button>
-
-                                        </div>
-
-                                        <!-- - - - - - - - - - - - - - End of product actions - - - - - - - - - - - - - - - - -->
-
-                                    </div>
-
-                                    <!-- - - - - - - - - - - - - - End of product description column - - - - - - - - - - - - - - - - -->
-
-                                </div>
-
-                                <!-- - - - - - - - - - - - - - End of product - - - - - - - - - - - - - - - - -->
-
-                                <!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
-
-                                <div class="theme_box clearfix">
-
-                                    <!-- - - - - - - - - - - - - - Product image column - - - - - - - - - - - - - - - - -->
-
-                                    <div class="single_product">
-
-                                        <!-- - - - - - - - - - - - - - Image preview container - - - - - - - - - - - - - - - - -->
-
-                                        <div class="image_preview_container">
-
-                                            <img src="images/qv_img_2.jpg" alt="">
-
-                                            <!-- - - - - - - - - - - - - - Label - - - - - - - - - - - - - - - - -->
-
-                                            <div class="label_offer percentage">
-
-                                                <div>30%</div>OFF
-
-                                            </div>
-
-                                            <!-- - - - - - - - - - - - - - End label - - - - - - - - - - - - - - - - -->
-
-                                        </div><!--/ .image_preview_container-->
-
-                                        <!-- - - - - - - - - - - - - - End of image preview container - - - - - - - - - - - - - - - - -->
-
-                                        <!-- - - - - - - - - - - - - - Countdown - - - - - - - - - - - - - - - - -->
-
-                                        <div class="countdown" data-year="2016" data-month="11" data-day="6" data-hours="15" data-minutes="0" data-seconds="0"></div>
-
-                                        <!-- - - - - - - - - - - - - - End countdown - - - - - - - - - - - - - - - - -->
-
-                                    </div>
-
-                                    <!-- - - - - - - - - - - - - - End of product image column - - - - - - - - - - - - - - - - -->
-
-                                    <!-- - - - - - - - - - - - - - Product description column - - - - - - - - - - - - - - - - -->
-
-                                    <div class="single_product_description">
-
-                                        <h3 class="offset_title"><a href="#">Sed perspiciatis, Original 24 fl oz</a></h3>
-
-                                        <div class="description_section v_centered">
-
-                                            <!-- - - - - - - - - - - - - - Product rating - - - - - - - - - - - - - - - - -->
-
-                                            <ul class="rating">
-
-                                                <li class="active"></li>
-                                                <li class="active"></li>
-                                                <li class="active"></li>
-                                                <li></li>
-                                                <li></li>
-
-                                            </ul>
-
-                                            <!-- - - - - - - - - - - - - - End of product rating - - - - - - - - - - - - - - - - -->
-
-                                            <!-- - - - - - - - - - - - - - Reviews menu - - - - - - - - - - - - - - - - -->
-
-                                            <ul class="topbar">
-
-                                                <li><a href="#"><b>3 Review(s)</b></a></li>
-
-                                            </ul>
-
-                                            <!-- - - - - - - - - - - - - - End of reviews menu - - - - - - - - - - - - - - - - -->
-
-                                        </div>
-
-                                        <div class="description_section">
-
-                                            <table class="product_info">
-
-                                                <tbody>
-
-                                                    <tr>
-
-                                                        <td><b>Manufacturer: </b></td>
-                                                        <td><a href="#">Chanel</a></td>
-
-                                                    </tr>
-
-                                                    <tr>
-
-                                                        <td><b>Availability: </b></td>
-                                                        <td><span class="in_stock">in stock</span> 20 item(s)</td>
-
-                                                    </tr>
-
-                                                    <tr>
-
-                                                        <td><b>Product Code: </b></td>
-                                                        <td>PS06</td>
-
-                                                    </tr>
-
-                                                </tbody>
-
-                                            </table>
-
-                                        </div>
-
-                                        <hr>
-
-                                        <div class="description_section">
-
-                                            <p>Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis.</p>
-
-                                        </div>
-
-                                        <div class="description_section">
-
-                                            <div class="table_wrap product_price_table">
-
-                                                <table>
-
-                                                    <tbody>
-
-                                                        <tr>
-
-                                                            <td class="special_price">
-
-                                                                Special Price:
-
-                                                                <div class="price">$5.99</div>
-
-                                                            </td>
-
-                                                            <td class="old_price">
-
-                                                                Old Price:
-
-                                                                <div class="price">$9.99</div>
-
-                                                            </td>
-
-                                                            <td class="save">
-
-                                                                You Save:
-
-                                                                <div class="price">$4.00</div>
-
-                                                            </td>
-
-                                                        </tr>
-
-                                                    </tbody>
-
-                                                </table>
-
-                                            </div>
-
-                                            <p class="hurry_message"><span>Hurry! Only 10 item(s) left!</span> 7 item(s) already purchased</p>
-
-                                        </div>
-
-                                        <!-- - - - - - - - - - - - - - Product actions - - - - - - - - - - - - - - - - -->
-
-                                        <div class="buttons_row">
-
-                                            <button class="button_blue middle_btn">Add to Cart</button>
-
-                                            <button class="button_dark_grey def_icon_btn middle_btn add_to_wishlist tooltip_container"><span class="tooltip top">Add to Wishlist</span></button>
-
-                                        </div>
-
-                                        <!-- - - - - - - - - - - - - - End of product actions - - - - - - - - - - - - - - - - -->
-
-                                    </div>
-
-                                    <!-- - - - - - - - - - - - - - End of product description column - - - - - - - - - - - - - - - - -->
-
-                                </div>
-
-                                <!-- - - - - - - - - - - - - - End of product - - - - - - - - - - - - - - - - -->
+                                </a>
 
                             </div>
 
-                        </section>
+                            <!-- - - - - - - - - - - - - - End of banner - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - End of today's deals - - - - - - - - - - - - - - - - -->
+                        </aside>
 
-                        <section class="section_offset">
+                        <main class="col-md-9 col-sm-8">
 
-                            <h1>T-Shirts &amp; Singlets</h1>
+                            <!-- - - - - - - - - - - - - - Today's deals - - - - - - - - - - - - - - - - -->
 
-                            <p>T-Shirts for men printed on 100% premium cotton, available in guys crew neck, v-neck & organic t-shirts.</p>
+                            <section class="section_offset">
 
-                        </section>
+                                <h3 class="widget_title offset_title">Today's Deals</h3>
 
-                        <!-- - - - - - - - - - - - - - Products - - - - - - - - - - - - - - - - -->
+                                <div class="owl_carousel widgets_carousel">
 
-                        <div class="section_offset">
+                                    <!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
 
-                            <header class="top_box on_the_sides">
+                                    <div class="theme_box clearfix">
 
-                                <div class="right_side">
+                                        <!-- - - - - - - - - - - - - - Product image column - - - - - - - - - - - - - - - - -->
 
-                                    <!-- - - - - - - - - - - - - - Product layout type - - - - - - - - - - - - - - - - -->
+                                        <div class="single_product">
 
-                                    <div class="layout_type buttons_row" data-table-container="#products_container">
+                                            <!-- - - - - - - - - - - - - - Image preview container - - - - - - - - - - - - - - - - -->
 
-                                        <a href="#" data-table-layout="grid_view" class="button_grey middle_btn icon_btn active tooltip_container"><i class="icon-th"></i><span class="tooltip top">Grid View</span></a>
+                                            <div class="image_preview_container">
 
-                                        <a href="#" data-table-layout="list_view list_view_products" class="button_grey middle_btn icon_btn tooltip_container"><i class="icon-th-list"></i><span class="tooltip top">List View</span></a>
+                                                <img src="images/qv_img_1.jpg" alt="">
+
+                                                <!-- - - - - - - - - - - - - - Label - - - - - - - - - - - - - - - - -->
+
+                                                <div class="label_offer percentage">
+
+                                                    <div>50%</div>OFF
+
+                                                </div>
+
+                                                <!-- - - - - - - - - - - - - - End label - - - - - - - - - - - - - - - - -->
+
+                                            </div><!--/ .image_preview_container-->
+
+                                            <!-- - - - - - - - - - - - - - End of image preview container - - - - - - - - - - - - - - - - -->
+
+                                            <!-- - - - - - - - - - - - - - Countdown - - - - - - - - - - - - - - - - -->
+
+                                            <div class="countdown" data-year="2016" data-month="11" data-day="6" data-hours="15" data-minutes="0" data-seconds="0"></div>
+
+                                            <!-- - - - - - - - - - - - - - End countdown - - - - - - - - - - - - - - - - -->
+
+                                        </div>
+
+                                        <!-- - - - - - - - - - - - - - End of product image column - - - - - - - - - - - - - - - - -->
+
+                                        <!-- - - - - - - - - - - - - - Product description column - - - - - - - - - - - - - - - - -->
+
+                                        <div class="single_product_description">
+
+                                            <h3 class="offset_title"><a href="#">Vestibulum ante, Original 24 fl oz</a></h3>
+
+                                            <div class="description_section v_centered">
+
+                                                <!-- - - - - - - - - - - - - - Product rating - - - - - - - - - - - - - - - - -->
+
+                                                <ul class="rating">
+
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+
+                                                </ul>
+
+                                                <!-- - - - - - - - - - - - - - End of product rating - - - - - - - - - - - - - - - - -->
+
+                                                <!-- - - - - - - - - - - - - - Reviews menu - - - - - - - - - - - - - - - - -->
+
+                                                <ul class="topbar">
+
+                                                    <li><p><b>3 Review(s)</b></p></li>
+
+                                                </ul>
+
+                                                <!-- - - - - - - - - - - - - - End of reviews menu - - - - - - - - - - - - - - - - -->
+
+                                            </div>
+
+                                            <div class="description_section">
+
+                                                <table class="product_info">
+
+                                                    <tbody>
+
+                                                        <tr>
+
+                                                            <td><b>Manufacturer: </b></td>
+                                                            <td><a href="#">Chanel</a></td>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <td><b>Availability: </b></td>
+                                                            <td><span class="in_stock">in stock</span> 20 item(s)</td>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <td><b>Product Code: </b></td>
+                                                            <td>PS06</td>
+
+                                                        </tr>
+
+                                                    </tbody>
+
+                                                </table>
+
+                                            </div>
+
+                                            <hr>
+
+                                            <div class="description_section">
+
+                                                <p>Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante. Donec sagittis euismod purus. Sed ut perspiciatis sit voluptatem accusantim doloremque laudantim.</p>
+
+                                            </div>
+
+                                            <div class="description_section">
+
+                                                <div class="table_wrap product_price_table">
+
+                                                    <table>
+
+                                                        <tbody>
+
+                                                            <tr>
+
+                                                                <td class="special_price">
+
+                                                                    Special Price:
+
+                                                                    <div class="price">$5.99</div>
+
+                                                                </td>
+
+                                                                <td class="old_price">
+
+                                                                    Old Price:
+
+                                                                    <div class="price">$9.99</div>
+
+                                                                </td>
+
+                                                                <td class="save">
+
+                                                                    You Save:
+
+                                                                    <div class="price">$4.00</div>
+
+                                                                </td>
+
+                                                            </tr>
+
+                                                        </tbody>
+
+                                                    </table>
+
+                                                </div>
+
+                                                <p class="hurry_message"><span>Hurry! Only 20 item(s) left!</span> 17 item(s) already purchased</p>
+
+                                            </div>
+
+                                            <!-- - - - - - - - - - - - - - Product actions - - - - - - - - - - - - - - - - -->
+
+                                            <div class="buttons_row">
+
+                                                <button class="button_blue middle_btn">Add to Cart</button>
+
+                                                <button class="button_dark_grey def_icon_btn middle_btn add_to_wishlist tooltip_container"><span class="tooltip top">Add to Wishlist</span></button>
+
+                                            </div>
+
+                                            <!-- - - - - - - - - - - - - - End of product actions - - - - - - - - - - - - - - - - -->
+
+                                        </div>
+
+                                        <!-- - - - - - - - - - - - - - End of product description column - - - - - - - - - - - - - - - - -->
 
                                     </div>
 
-                                    <!-- - - - - - - - - - - - - - End of product layout type - - - - - - - - - - - - - - - - -->
+                                    <!-- - - - - - - - - - - - - - End of product - - - - - - - - - - - - - - - - -->
+
+                                    <!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
+
+                                    <div class="theme_box clearfix">
+
+                                        <!-- - - - - - - - - - - - - - Product image column - - - - - - - - - - - - - - - - -->
+
+                                        <div class="single_product">
+
+                                            <!-- - - - - - - - - - - - - - Image preview container - - - - - - - - - - - - - - - - -->
+
+                                            <div class="image_preview_container">
+
+                                                <img src="images/qv_img_2.jpg" alt="">
+
+                                                <!-- - - - - - - - - - - - - - Label - - - - - - - - - - - - - - - - -->
+
+                                                <div class="label_offer percentage">
+
+                                                    <div>30%</div>OFF
+
+                                                </div>
+
+                                                <!-- - - - - - - - - - - - - - End label - - - - - - - - - - - - - - - - -->
+
+                                            </div><!--/ .image_preview_container-->
+
+                                            <!-- - - - - - - - - - - - - - End of image preview container - - - - - - - - - - - - - - - - -->
+
+                                            <!-- - - - - - - - - - - - - - Countdown - - - - - - - - - - - - - - - - -->
+
+                                            <div class="countdown" data-year="2016" data-month="11" data-day="6" data-hours="15" data-minutes="0" data-seconds="0"></div>
+
+                                            <!-- - - - - - - - - - - - - - End countdown - - - - - - - - - - - - - - - - -->
+
+                                        </div>
+
+                                        <!-- - - - - - - - - - - - - - End of product image column - - - - - - - - - - - - - - - - -->
+
+                                        <!-- - - - - - - - - - - - - - Product description column - - - - - - - - - - - - - - - - -->
+
+                                        <div class="single_product_description">
+
+                                            <h3 class="offset_title"><a href="#">Sed perspiciatis, Original 24 fl oz</a></h3>
+
+                                            <div class="description_section v_centered">
+
+                                                <!-- - - - - - - - - - - - - - Product rating - - - - - - - - - - - - - - - - -->
+
+                                                <ul class="rating">
+
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+
+                                                </ul>
+
+                                                <!-- - - - - - - - - - - - - - End of product rating - - - - - - - - - - - - - - - - -->
+
+                                                <!-- - - - - - - - - - - - - - Reviews menu - - - - - - - - - - - - - - - - -->
+
+                                                <ul class="topbar">
+
+                                                    <li><a href="#"><b>3 Review(s)</b></a></li>
+
+                                                </ul>
+
+                                                <!-- - - - - - - - - - - - - - End of reviews menu - - - - - - - - - - - - - - - - -->
+
+                                            </div>
+
+                                            <div class="description_section">
+
+                                                <table class="product_info">
+
+                                                    <tbody>
+
+                                                        <tr>
+
+                                                            <td><b>Manufacturer: </b></td>
+                                                            <td><a href="#">Chanel</a></td>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <td><b>Availability: </b></td>
+                                                            <td><span class="in_stock">in stock</span> 20 item(s)</td>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <td><b>Product Code: </b></td>
+                                                            <td>PS06</td>
+
+                                                        </tr>
+
+                                                    </tbody>
+
+                                                </table>
+
+                                            </div>
+
+                                            <hr>
+
+                                            <div class="description_section">
+
+                                                <p>Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis.</p>
+
+                                            </div>
+
+                                            <div class="description_section">
+
+                                                <div class="table_wrap product_price_table">
+
+                                                    <table>
+
+                                                        <tbody>
+
+                                                            <tr>
+
+                                                                <td class="special_price">
+
+                                                                    Special Price:
+
+                                                                    <div class="price">$5.99</div>
+
+                                                                </td>
+
+                                                                <td class="old_price">
+
+                                                                    Old Price:
+
+                                                                    <div class="price">$9.99</div>
+
+                                                                </td>
+
+                                                                <td class="save">
+
+                                                                    You Save:
+
+                                                                    <div class="price">$4.00</div>
+
+                                                                </td>
+
+                                                            </tr>
+
+                                                        </tbody>
+
+                                                    </table>
+
+                                                </div>
+
+                                                <p class="hurry_message"><span>Hurry! Only 10 item(s) left!</span> 7 item(s) already purchased</p>
+
+                                            </div>
+
+                                            <!-- - - - - - - - - - - - - - Product actions - - - - - - - - - - - - - - - - -->
+
+                                            <div class="buttons_row">
+
+                                                <button class="button_blue middle_btn">Add to Cart</button>
+
+                                                <button class="button_dark_grey def_icon_btn middle_btn add_to_wishlist tooltip_container"><span class="tooltip top">Add to Wishlist</span></button>
+
+                                            </div>
+
+                                            <!-- - - - - - - - - - - - - - End of product actions - - - - - - - - - - - - - - - - -->
+
+                                        </div>
+
+                                        <!-- - - - - - - - - - - - - - End of product description column - - - - - - - - - - - - - - - - -->
+
+                                    </div>
+
+                                    <!-- - - - - - - - - - - - - - End of product - - - - - - - - - - - - - - - - -->
 
                                 </div>
 
-                            </header>
+                            </section>
 
-                            <div class="table_layout" id="products_container">
+                            <!-- - - - - - - - - - - - - - End of today's deals - - - - - - - - - - - - - - - - -->
 
-                                <div class="table_row">
+                            <section class="section_offset">
 
-                                    <!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
+                                <h1>T-Shirts &amp; Singlets</h1>
 
-                                    <div class="table_cell">
+                                <p>T-Shirts for men printed on 100% premium cotton, available in guys crew neck, v-neck & organic t-shirts.</p>
 
-                                        <div class="product_item">
+                            </section>
 
-                                            <!-- - - - - - - - - - - - - - Thumbmnail - - - - - - - - - - - - - - - - -->
+                            <!-- - - - - - - - - - - - - - Products - - - - - - - - - - - - - - - - -->
 
-                                            <div class="image_wrap">
+                            <div class="section_offset">
 
-                                                <img src="images/tabs_img_3.jpg" alt="">
+                                <header class="top_box on_the_sides">
 
-                                                <!-- - - - - - - - - - - - - - Product actions - - - - - - - - - - - - - - - - -->
+                                    <div class="right_side">
 
-                                                <div class="actions_wrap">
+                                        <!-- - - - - - - - - - - - - - Product layout type - - - - - - - - - - - - - - - - -->
 
-                                                    <div class="centered_buttons">
+                                        <div class="layout_type buttons_row" data-table-container="#products_container">
 
-                                                        <a href="#" class="button_dark_grey middle_btn quick_view" data-modal-url="modals/quick_view.html">Quick View</a>
+                                            <a href="#" data-table-layout="grid_view" class="button_grey middle_btn icon_btn active tooltip_container"><i class="icon-th"></i><span class="tooltip top">Grid View</span></a>
 
-                                                        <a href="#" class="button_blue middle_btn add_to_cart">Add to Cart</a>
+                                            <a href="#" data-table-layout="list_view list_view_products" class="button_grey middle_btn icon_btn tooltip_container"><i class="icon-th-list"></i><span class="tooltip top">List View</span></a>
 
-                                                    </div><!--/ .centered_buttons -->
+                                        </div>
 
-                                                </div><!--/ .actions_wrap-->
-
-                                                <!-- - - - - - - - - - - - - - End of product actions - - - - - - - - - - - - - - - - -->
-
-                                                <!-- - - - - - - - - - - - - - Label - - - - - - - - - - - - - - - - -->
-
-                                                <div class="label_new">New</div>
-
-                                                <!-- - - - - - - - - - - - - - End label - - - - - - - - - - - - - - - - -->
-
-                                            </div><!--/. image_wrap-->
-
-                                            <!-- - - - - - - - - - - - - - End thumbmnail - - - - - - - - - - - - - - - - -->
-
-                                            <!-- - - - - - - - - - - - - - Product title & price - - - - - - - - - - - - - - - - -->
-
-                                            <div class="description">
-
-                                                <a href="#">Iaculis lacinia est, 2.5 fl oz (75ml)</a>
-
-                                                <div class="clearfix product_info">
-
-                                                    <p class="product_price alignleft"><b>$24.99</b></p>
-
-                                                </div>
-
-                                            </div>
-
-                                            <!-- - - - - - - - - - - - - - End of product title & price - - - - - - - - - - - - - - - - -->
-
-                                            <!-- - - - - - - - - - - - - - Full description (only for list view) - - - - - - - - - - - - - - - - -->
-
-                                            <div class="full_description">
-
-                                                <a href="#" class="product_title">Vestibulum iaculis lacinia est, 2.5 fl oz (75ml)</a>
-
-                                                <div class="v_centered product_reviews">
-
-                                                    <!-- - - - - - - - - - - - - - Reviews menu - - - - - - - - - - - - - - - - -->
-
-                                                    <ul class="topbar">
-
-                                                        <li><b>0 Review(s)</b></li>
-
-                                                    </ul>
-
-                                                    <!-- - - - - - - - - - - - - - End of reviews menu - - - - - - - - - - - - - - - - -->
-
-                                                </div>
-
-                                                <p>Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula.</p>
-
-                                            </div>
-
-                                            <!-- - - - - - - - - - - - - - End of full description (only for list view) - - - - - - - - - - - - - - - - -->
-
-                                            <!-- - - - - - - - - - - - - - Product price & actions (only for list view) - - - - - - - - - - - - - - - - -->
-
-                                            <div class="actions">
-
-                                                <p class="product_price bold">$24.99</p>
-
-                                                <ul class="seller_stats">
-
-                                                    <li><b>Manufacturer:</b> Intel</li>
-                                                    <li><b>Availability:</b> <span class="in_stock">In stock</span></li>
-
-                                                </ul>
-
-                                                <ul class="buttons_col">
-
-                                                    <li><button class="button_blue middle_btn">Add to Cart</button></li>
-
-                                                </ul>
-
-                                            </div>
-
-                                            <!-- - - - - - - - - - - - - - Product price & actions (only for list view) - - - - - - - - - - - - - - - - -->
-
-                                        </div><!--/ .product_item-->
+                                        <!-- - - - - - - - - - - - - - End of product layout type - - - - - - - - - - - - - - - - -->
 
                                     </div>
 
-                                    <!-- - - - - - - - - - - - - - End of product - - - - - - - - - - - - - - - - -->
+                                </header>
 
-                                    <!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
+                                <div class="table_layout" id="products_container">
 
-                                    <div class="table_cell">
+                                    <div class="table_row">
 
-                                        <div class="product_item">
+                                        <!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
 
-                                            <!-- - - - - - - - - - - - - - Thumbmnail - - - - - - - - - - - - - - - - -->
+                                        <div class="table_cell">
 
-                                            <div class="image_wrap">
+                                            <div class="product_item">
 
-                                                <img src="images/tabs_img_3.jpg" alt="">
+                                                <!-- - - - - - - - - - - - - - Thumbmnail - - - - - - - - - - - - - - - - -->
 
-                                                <!-- - - - - - - - - - - - - - Product actions - - - - - - - - - - - - - - - - -->
+                                                <div class="image_wrap">
 
-                                                <div class="actions_wrap">
+                                                    <img src="images/tabs_img_3.jpg" alt="">
 
-                                                    <div class="centered_buttons">
+                                                    <!-- - - - - - - - - - - - - - Product actions - - - - - - - - - - - - - - - - -->
 
-                                                        <a href="#" class="button_dark_grey middle_btn quick_view" data-modal-url="modals/quick_view.html">Quick View</a>
+                                                    <div class="actions_wrap">
 
-                                                        <a href="#" class="button_blue middle_btn add_to_cart">Add to Cart</a>
+                                                        <div class="centered_buttons">
 
-                                                    </div><!--/ .centered_buttons -->
+                                                            <a href="#" class="button_dark_grey middle_btn quick_view" data-modal-url="modals/quick_view.html">Quick View</a>
 
-                                                </div><!--/ .actions_wrap-->
+                                                            <a href="#" class="button_blue middle_btn add_to_cart">Add to Cart</a>
 
-                                                <!-- - - - - - - - - - - - - - End of product actions - - - - - - - - - - - - - - - - -->
+                                                        </div><!--/ .centered_buttons -->
 
-                                                <!-- - - - - - - - - - - - - - Label - - - - - - - - - - - - - - - - -->
+                                                    </div><!--/ .actions_wrap-->
 
-                                                <div class="label_soldout">Sold Out</div>
+                                                    <!-- - - - - - - - - - - - - - End of product actions - - - - - - - - - - - - - - - - -->
 
-                                                <!-- - - - - - - - - - - - - - End label - - - - - - - - - - - - - - - - -->
+                                                    <!-- - - - - - - - - - - - - - Label - - - - - - - - - - - - - - - - -->
 
-                                            </div><!--/. image_wrap-->
+                                                    <div class="label_new">New</div>
 
-                                            <!-- - - - - - - - - - - - - - End thumbmnail - - - - - - - - - - - - - - - - -->
+                                                    <!-- - - - - - - - - - - - - - End label - - - - - - - - - - - - - - - - -->
 
-                                            <!-- - - - - - - - - - - - - - Product title & price - - - - - - - - - - - - - - - - -->
+                                                </div><!--/. image_wrap-->
 
-                                            <div class="description">
+                                                <!-- - - - - - - - - - - - - - End thumbmnail - - - - - - - - - - - - - - - - -->
 
-                                                <a href="#">Vestibulum iaculis lacinia est, 2.5 fl oz (75ml)</a>
+                                                <!-- - - - - - - - - - - - - - Product title & price - - - - - - - - - - - - - - - - -->
 
-                                                <div class="clearfix product_info">
+                                                <div class="description">
 
-                                                    <p class="product_price alignleft"><b>$44.99</b></p>
+                                                    <a href="#">Iaculis lacinia est, 2.5 fl oz (75ml)</a>
+
+                                                    <div class="clearfix product_info">
+
+                                                        <p class="product_price alignleft"><b>$24.99</b></p>
+
+                                                    </div>
 
                                                 </div>
 
-                                            </div>
+                                                <!-- - - - - - - - - - - - - - End of product title & price - - - - - - - - - - - - - - - - -->
 
-                                            <!-- - - - - - - - - - - - - - End of product title & price - - - - - - - - - - - - - - - - -->
+                                                <!-- - - - - - - - - - - - - - Full description (only for list view) - - - - - - - - - - - - - - - - -->
 
-                                            <!-- - - - - - - - - - - - - - Full description (only for list view) - - - - - - - - - - - - - - - - -->
+                                                <div class="full_description">
 
-                                            <div class="full_description">
+                                                    <a href="#" class="product_title">Vestibulum iaculis lacinia est, 2.5 fl oz (75ml)</a>
 
-                                                <a href="#" class="product_title">Vestibulum iaculis lacinia est, 2.5 fl oz (75ml)</a>
+                                                    <div class="v_centered product_reviews">
 
-                                                <div class="v_centered product_reviews">
+                                                        <!-- - - - - - - - - - - - - - Reviews menu - - - - - - - - - - - - - - - - -->
 
-                                                    <!-- - - - - - - - - - - - - - Reviews menu - - - - - - - - - - - - - - - - -->
+                                                        <ul class="topbar">
 
-                                                    <ul class="topbar">
+                                                            <li><b>0 Review(s)</b></li>
 
-                                                        <li><b>0 Review(s)</b></li>
+                                                        </ul>
+
+                                                        <!-- - - - - - - - - - - - - - End of reviews menu - - - - - - - - - - - - - - - - -->
+
+                                                    </div>
+
+                                                    <p>Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula.</p>
+
+                                                </div>
+
+                                                <!-- - - - - - - - - - - - - - End of full description (only for list view) - - - - - - - - - - - - - - - - -->
+
+                                                <!-- - - - - - - - - - - - - - Product price & actions (only for list view) - - - - - - - - - - - - - - - - -->
+
+                                                <div class="actions">
+
+                                                    <p class="product_price bold">$24.99</p>
+
+                                                    <ul class="seller_stats">
+
+                                                        <li><b>Manufacturer:</b> Intel</li>
+                                                        <li><b>Availability:</b> <span class="in_stock">In stock</span></li>
 
                                                     </ul>
 
-                                                    <!-- - - - - - - - - - - - - - End of reviews menu - - - - - - - - - - - - - - - - -->
+                                                    <ul class="buttons_col">
 
-                                                </div>
-
-                                                <p>Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula.</p>
-
-                                            </div>
-
-                                            <!-- - - - - - - - - - - - - - End of full description (only for list view) - - - - - - - - - - - - - - - - -->
-
-                                            <!-- - - - - - - - - - - - - - Product price & actions (only for list view) - - - - - - - - - - - - - - - - -->
-
-                                            <div class="actions">
-
-                                                <p class="product_price bold">$44.99</p>
-
-                                                <ul class="seller_stats">
-
-                                                    <li><b>Manufacturer:</b> AORUS</li>
-                                                    <li><b>Availability:</b> <span class="out_of_stock">Out of stock</span></li>
-
-                                                </ul>
-
-                                                <ul class="buttons_col">
-
-                                                    <li><button class="button_blue middle_btn">Add to Cart</button></li>
-
-                                                </ul>
-
-                                            </div>
-
-                                            <!-- - - - - - - - - - - - - - Product price & actions (only for list view) - - - - - - - - - - - - - - - - -->
-
-                                        </div><!--/ .product_item-->
-
-                                    </div>
-
-                                    <!-- - - - - - - - - - - - - - End of product - - - - - - - - - - - - - - - - -->
-
-                                    <!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
-
-                                    <div class="table_cell">
-
-                                        <div class="product_item">
-
-                                            <!-- - - - - - - - - - - - - - Thumbmnail - - - - - - - - - - - - - - - - -->
-
-                                            <div class="image_wrap">
-
-                                                <img src="images/tabs_img_3.jpg" alt="">
-
-                                                <!-- - - - - - - - - - - - - - Product actions - - - - - - - - - - - - - - - - -->
-
-                                                <div class="actions_wrap">
-
-                                                    <div class="centered_buttons">
-
-                                                        <a href="#" class="button_dark_grey middle_btn quick_view" data-modal-url="modals/quick_view.html">Quick View</a>
-
-                                                        <a href="#" class="button_blue middle_btn add_to_cart">Add to Cart</a>
-
-                                                    </div><!--/ .centered_buttons -->
-
-                                                </div><!--/ .actions_wrap-->
-
-                                                <!-- - - - - - - - - - - - - - End of product actions - - - - - - - - - - - - - - - - -->
-
-                                                <!-- - - - - - - - - - - - - - Label - - - - - - - - - - - - - - - - -->
-
-                                                <div class="label_hot">Hot</div>
-
-                                                <!-- - - - - - - - - - - - - - End label - - - - - - - - - - - - - - - - -->
-
-                                            </div><!--/. image_wrap-->
-
-                                            <!-- - - - - - - - - - - - - - End thumbmnail - - - - - - - - - - - - - - - - -->
-
-                                            <!-- - - - - - - - - - - - - - Product title & price - - - - - - - - - - - - - - - - -->
-
-                                            <div class="description">
-
-                                                <a href="#">Vestibulum iaculis lacinia est, 2.5 fl oz (75ml)</a>
-
-                                                <div class="clearfix product_info">
-
-                                                    <p class="product_price alignleft"><b>$44.99</b></p>
-
-                                                </div>
-
-                                            </div>
-
-                                            <!-- - - - - - - - - - - - - - End of product title & price - - - - - - - - - - - - - - - - -->
-
-                                            <!-- - - - - - - - - - - - - - Full description (only for list view) - - - - - - - - - - - - - - - - -->
-
-                                            <div class="full_description">
-
-                                                <a href="#" class="product_title">Vestibulum iaculis lacinia est, 2.5 fl oz (75ml)</a>
-
-                                                <div class="v_centered product_reviews">
-
-                                                    <!-- - - - - - - - - - - - - - Reviews menu - - - - - - - - - - - - - - - - -->
-
-                                                    <ul class="topbar">
-
-                                                        <li><b>5 Review(s)</b></li>
+                                                        <li><button class="button_blue middle_btn">Add to Cart</button></li>
 
                                                     </ul>
 
-                                                    <!-- - - - - - - - - - - - - - End of reviews menu - - - - - - - - - - - - - - - - -->
+                                                </div>
+
+                                                <!-- - - - - - - - - - - - - - Product price & actions (only for list view) - - - - - - - - - - - - - - - - -->
+
+                                            </div><!--/ .product_item-->
+
+                                        </div>
+
+                                        <!-- - - - - - - - - - - - - - End of product - - - - - - - - - - - - - - - - -->
+
+                                        <!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
+
+                                        <div class="table_cell">
+
+                                            <div class="product_item">
+
+                                                <!-- - - - - - - - - - - - - - Thumbmnail - - - - - - - - - - - - - - - - -->
+
+                                                <div class="image_wrap">
+
+                                                    <img src="images/tabs_img_3.jpg" alt="">
+
+                                                    <!-- - - - - - - - - - - - - - Product actions - - - - - - - - - - - - - - - - -->
+
+                                                    <div class="actions_wrap">
+
+                                                        <div class="centered_buttons">
+
+                                                            <a href="#" class="button_dark_grey middle_btn quick_view" data-modal-url="modals/quick_view.html">Quick View</a>
+
+                                                            <a href="#" class="button_blue middle_btn add_to_cart">Add to Cart</a>
+
+                                                        </div><!--/ .centered_buttons -->
+
+                                                    </div><!--/ .actions_wrap-->
+
+                                                    <!-- - - - - - - - - - - - - - End of product actions - - - - - - - - - - - - - - - - -->
+
+                                                    <!-- - - - - - - - - - - - - - Label - - - - - - - - - - - - - - - - -->
+
+                                                    <div class="label_soldout">Sold Out</div>
+
+                                                    <!-- - - - - - - - - - - - - - End label - - - - - - - - - - - - - - - - -->
+
+                                                </div><!--/. image_wrap-->
+
+                                                <!-- - - - - - - - - - - - - - End thumbmnail - - - - - - - - - - - - - - - - -->
+
+                                                <!-- - - - - - - - - - - - - - Product title & price - - - - - - - - - - - - - - - - -->
+
+                                                <div class="description">
+
+                                                    <a href="#">Vestibulum iaculis lacinia est, 2.5 fl oz (75ml)</a>
+
+                                                    <div class="clearfix product_info">
+
+                                                        <p class="product_price alignleft"><b>$44.99</b></p>
+
+                                                    </div>
 
                                                 </div>
 
-                                                <p>Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula.</p>
+                                                <!-- - - - - - - - - - - - - - End of product title & price - - - - - - - - - - - - - - - - -->
 
-                                            </div>
+                                                <!-- - - - - - - - - - - - - - Full description (only for list view) - - - - - - - - - - - - - - - - -->
 
-                                            <!-- - - - - - - - - - - - - - End of full description (only for list view) - - - - - - - - - - - - - - - - -->
+                                                <div class="full_description">
 
-                                            <!-- - - - - - - - - - - - - - Product price & actions (only for list view) - - - - - - - - - - - - - - - - -->
+                                                    <a href="#" class="product_title">Vestibulum iaculis lacinia est, 2.5 fl oz (75ml)</a>
 
-                                            <div class="actions">
+                                                    <div class="v_centered product_reviews">
 
-                                                <p class="product_price bold">$44.99</p>
+                                                        <!-- - - - - - - - - - - - - - Reviews menu - - - - - - - - - - - - - - - - -->
 
-                                                <ul class="seller_stats">
+                                                        <ul class="topbar">
 
-                                                    <li><b>Manufacturer:</b> Channel</li>
-                                                    <li><b>Availability:</b> <span class="success">In stock</span></li>
+                                                            <li><b>0 Review(s)</b></li>
 
-                                                </ul>
+                                                        </ul>
 
-                                                <ul class="buttons_col">
+                                                        <!-- - - - - - - - - - - - - - End of reviews menu - - - - - - - - - - - - - - - - -->
 
-                                                    <li><button class="button_blue middle_btn">Add to Cart</button></li>
+                                                    </div>
 
-                                                </ul>
+                                                    <p>Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula.</p>
 
-                                            </div>
+                                                </div>
 
-                                            <!-- - - - - - - - - - - - - - Product price & actions (only for list view) - - - - - - - - - - - - - - - - -->
+                                                <!-- - - - - - - - - - - - - - End of full description (only for list view) - - - - - - - - - - - - - - - - -->
 
-                                        </div><!--/ .product_item-->
+                                                <!-- - - - - - - - - - - - - - Product price & actions (only for list view) - - - - - - - - - - - - - - - - -->
+
+                                                <div class="actions">
+
+                                                    <p class="product_price bold">$44.99</p>
+
+                                                    <ul class="seller_stats">
+
+                                                        <li><b>Manufacturer:</b> AORUS</li>
+                                                        <li><b>Availability:</b> <span class="out_of_stock">Out of stock</span></li>
+
+                                                    </ul>
+
+                                                    <ul class="buttons_col">
+
+                                                        <li><button class="button_blue middle_btn">Add to Cart</button></li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                                <!-- - - - - - - - - - - - - - Product price & actions (only for list view) - - - - - - - - - - - - - - - - -->
+
+                                            </div><!--/ .product_item-->
+
+                                        </div>
+
+                                        <!-- - - - - - - - - - - - - - End of product - - - - - - - - - - - - - - - - -->
+
+                                        <!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
+
+                                        <div class="table_cell">
+
+                                            <div class="product_item">
+
+                                                <!-- - - - - - - - - - - - - - Thumbmnail - - - - - - - - - - - - - - - - -->
+
+                                                <div class="image_wrap">
+
+                                                    <img src="images/tabs_img_3.jpg" alt="">
+
+                                                    <!-- - - - - - - - - - - - - - Product actions - - - - - - - - - - - - - - - - -->
+
+                                                    <div class="actions_wrap">
+
+                                                        <div class="centered_buttons">
+
+                                                            <a href="#" class="button_dark_grey middle_btn quick_view" data-modal-url="modals/quick_view.html">Quick View</a>
+
+                                                            <a href="#" class="button_blue middle_btn add_to_cart">Add to Cart</a>
+
+                                                        </div><!--/ .centered_buttons -->
+
+                                                    </div><!--/ .actions_wrap-->
+
+                                                    <!-- - - - - - - - - - - - - - End of product actions - - - - - - - - - - - - - - - - -->
+
+                                                    <!-- - - - - - - - - - - - - - Label - - - - - - - - - - - - - - - - -->
+
+                                                    <div class="label_hot">Hot</div>
+
+                                                    <!-- - - - - - - - - - - - - - End label - - - - - - - - - - - - - - - - -->
+
+                                                </div><!--/. image_wrap-->
+
+                                                <!-- - - - - - - - - - - - - - End thumbmnail - - - - - - - - - - - - - - - - -->
+
+                                                <!-- - - - - - - - - - - - - - Product title & price - - - - - - - - - - - - - - - - -->
+
+                                                <div class="description">
+
+                                                    <a href="#">Vestibulum iaculis lacinia est, 2.5 fl oz (75ml)</a>
+
+                                                    <div class="clearfix product_info">
+
+                                                        <p class="product_price alignleft"><b>$44.99</b></p>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <!-- - - - - - - - - - - - - - End of product title & price - - - - - - - - - - - - - - - - -->
+
+                                                <!-- - - - - - - - - - - - - - Full description (only for list view) - - - - - - - - - - - - - - - - -->
+
+                                                <div class="full_description">
+
+                                                    <a href="#" class="product_title">Vestibulum iaculis lacinia est, 2.5 fl oz (75ml)</a>
+
+                                                    <div class="v_centered product_reviews">
+
+                                                        <!-- - - - - - - - - - - - - - Reviews menu - - - - - - - - - - - - - - - - -->
+
+                                                        <ul class="topbar">
+
+                                                            <li><b>5 Review(s)</b></li>
+
+                                                        </ul>
+
+                                                        <!-- - - - - - - - - - - - - - End of reviews menu - - - - - - - - - - - - - - - - -->
+
+                                                    </div>
+
+                                                    <p>Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula.</p>
+
+                                                </div>
+
+                                                <!-- - - - - - - - - - - - - - End of full description (only for list view) - - - - - - - - - - - - - - - - -->
+
+                                                <!-- - - - - - - - - - - - - - Product price & actions (only for list view) - - - - - - - - - - - - - - - - -->
+
+                                                <div class="actions">
+
+                                                    <p class="product_price bold">$44.99</p>
+
+                                                    <ul class="seller_stats">
+
+                                                        <li><b>Manufacturer:</b> Channel</li>
+                                                        <li><b>Availability:</b> <span class="success">In stock</span></li>
+
+                                                    </ul>
+
+                                                    <ul class="buttons_col">
+
+                                                        <li><button class="button_blue middle_btn">Add to Cart</button></li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                                <!-- - - - - - - - - - - - - - Product price & actions (only for list view) - - - - - - - - - - - - - - - - -->
+
+                                            </div><!--/ .product_item-->
+
+                                        </div>
+
+                                        <!-- - - - - - - - - - - - - - End of product - - - - - - - - - - - - - - - - -->
+
+                                    </div><!--/ .table_row -->
+
+                                </div><!--/ .table_layout -->
+
+                                <footer class="bottom_box on_the_sides">
+
+                                    <div class="right_side">
+
+                                        <p class="required">All products prices are included GST</p>
 
                                     </div>
 
-                                    <!-- - - - - - - - - - - - - - End of product - - - - - - - - - - - - - - - - -->
+                                </footer>
 
-                                </div><!--/ .table_row -->
+                            </div>
 
-                            </div><!--/ .table_layout -->
+                            <!-- - - - - - - - - - - - - - End of products - - - - - - - - - - - - - - - - -->
 
-                            <footer class="bottom_box on_the_sides">
+                        </main>
 
-                                <div class="right_side">
+                    </div><!--/ .row -->
 
-                                    <p class="required">All products prices are included GST</p>
+                </div><!--/ .container-->
 
-                                </div>
+            </div><!--/ .page_wrapper-->
 
-                            </footer>
+            <!-- - - - - - - - - - - - - - End Page Wrapper - - - - - - - - - - - - - - - - -->
 
-                        </div>
+            <#include "footer.shtml">   
 
-                        <!-- - - - - - - - - - - - - - End of products - - - - - - - - - - - - - - - - -->
+        </div><!--/ [layout]-->
 
-                    </main>
-
-                </div><!--/ .row -->
-
-            </div><!--/ .container-->
-
-        </div><!--/ .page_wrapper-->
-
-        <!-- - - - - - - - - - - - - - End Page Wrapper - - - - - - - - - - - - - - - - -->
-
-        <#include "footer.shtml">
+        <#include "social_feeds.shtml">
 
         <!-- Include Plugins
         ============================================ -->

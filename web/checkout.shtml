@@ -44,171 +44,171 @@
     <body>
 
         <!-- - - - - - - - - - - - - - Main Wrapper - - - - - - - - - - - - - - - - -->
+        <div class="wide_layout">
+            <#include "header.shtml">
 
-        <#include "header.shtml">
+            <!-- - - - - - - - - - - - - - Page Wrapper - - - - - - - - - - - - - - - - -->
 
-        <!-- - - - - - - - - - - - - - Page Wrapper - - - - - - - - - - - - - - - - -->
+            <div class="secondary_page_wrapper">
 
-        <div class="secondary_page_wrapper">
+                <div class="container">
 
-            <div class="container">
+                    <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
 
-                <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
+                    <ul class="breadcrumbs">
 
-                <ul class="breadcrumbs">
+                        <li><a href="index.shtml">Home</a></li>
+                        <li>Checkout</li>
 
-                    <li><a href="index.shtml">Home</a></li>
-                    <li>Checkout</li>
+                    </ul>
 
-                </ul>
+                    <h1 class="page_title">Checkout</h1>
 
-                <h1 class="page_title">Checkout</h1>
+                    <!-- - - - - - - - - - - - - - Shipping information - - - - - - - - - - - - - - - - -->
 
-                <!-- - - - - - - - - - - - - - Shipping information - - - - - - - - - - - - - - - - -->
+                    <section class="section_offset">
 
-                <section class="section_offset">
+                        <h3>1. Shipping Information</h3>
 
-                    <h3>1. Shipping Information</h3>
+                        <div class="theme_box">
 
-                    <div class="theme_box">
+                            <form class="type_2">
 
-                        <form id="addr" class="type_2">
+                                <ul>
 
-                            <ul>
+                                    <li class="row">
 
-                                <li class="row">
+                                        <div class="col-sm-6">
 
-                                    <div class="col-sm-6">
+                                            <label for="fName" class="required">First Name</label>
+                                            <input type="text" name="fName" id="fName">
 
-                                        <label for="fName" class="required">First Name</label>
-                                        <input type="text" name="fName" id="fName">
+                                        </div><!--/ [col] -->
 
-                                    </div><!--/ [col] -->
+                                        <div class="col-sm-6">
 
-                                    <div class="col-sm-6">
+                                            <label for="lName" class="required">Last Name</label>
+                                            <input type="text" name="lName" id="lName">
 
-                                        <label for="lName" class="required">Last Name</label>
-                                        <input type="text" name="lName" id="lName">
+                                        </div><!--/ [col] -->
 
-                                    </div><!--/ [col] -->
+                                    </li><!--/ .row -->
 
-                                </li><!--/ .row -->
+                                    <li class="row">
 
-                                <li class="row">
+                                        <div class="col-sm-6">
 
-                                    <div class="col-sm-6">
+                                            <label for="email" class="required">Email Address</label>
+                                            <input type="text" name="email" id="email">
 
-                                        <label for="email" class="required">Email Address</label>
-                                        <input type="text" name="email" id="email">
+                                        </div><!--/ [col] -->
 
-                                    </div><!--/ [col] -->
+                                        <div class="col-sm-6">
 
-                                    <div class="col-sm-6">
+                                            <label for="phone" class="required">Contact Number</label>
+                                            <input type="text" name="phone" id="phone">
 
-                                        <label for="phone" class="required">Contact Number</label>
-                                        <input type="text" name="phone" id="phone">
+                                        </div><!--/ [col] -->
 
-                                    </div><!--/ [col] -->
+                                    </li><!--/ .row -->
 
-                                </li><!--/ .row -->
+                                    <li class="row">
 
-                                <li class="row">
+                                        <div class="col-sm-6">
 
-                                    <div class="col-sm-6">
+                                            <label for="street" class="required">Street</label>
+                                            <input type="text" name="street" id="street">
 
-                                        <label for="street" class="required">Street</label>
-                                        <input type="text" name="street" id="street">
+                                        </div><!--/ [col] -->        
 
-                                    </div><!--/ [col] -->        
+                                        <div class="col-sm-2">
 
-                                    <div class="col-sm-2">
+                                            <label for="blk" class="required">Block/House No</label>
+                                            <input type="text" name="blk" id="blk">
 
-                                        <label for="blk" class="required">Block/House No</label>
-                                        <input type="text" name="blk" id="blk">
+                                        </div><!--/ [col] --> 
 
-                                    </div><!--/ [col] --> 
+                                        <div class="col-sm-2">
 
-                                    <div class="col-sm-2">
+                                            <label for="floor">Floor</label>
+                                            <input type="text" name="floor" id="floor">
 
-                                        <label for="floor">Floor</label>
-                                        <input type="text" name="floor" id="floor">
+                                        </div><!--/ [col] -->    
 
-                                    </div><!--/ [col] -->    
+                                        <div class="col-sm-2">
 
-                                    <div class="col-sm-2">
+                                            <label for="unit">Unit</label>
+                                            <input type="text" name="unit" id="unit">
 
-                                        <label for="unit">Unit</label>
-                                        <input type="text" name="unit" id="unit">
+                                        </div><!--/ [col] -->    
 
-                                    </div><!--/ [col] -->    
+                                    </li><!--/ .row -->
 
-                                </li><!--/ .row -->
+                                    <li class="row">
 
-                                <li class="row">
+                                        <div class="col-sm-6">
 
-                                    <div class="col-sm-6">
+                                            <label for="zip" class="required">Zip/Postal Code</label>
+                                            <input type="text" name="zip" id="zip">
 
-                                        <label for="zip" class="required">Zip/Postal Code</label>
-                                        <input type="text" name="zip" id="zip">
+                                        </div><!--/ [col] -->
 
-                                    </div><!--/ [col] -->
+                                        <div class="col-sm-6">
 
-                                    <div class="col-sm-6">
+                                            <label class="required">Country</label>
 
-                                        <label class="required">Country</label>
+                                            <div class="custom_select">
 
-                                        <div class="custom_select">
+                                                <select name="country">
 
-                                            <select name="country">
+                                                    <option value="Singapore">Singapore</option>
+                                                    <option value="Sweden">Sweden</option>
+                                                    <option value="USA">USA</option>
+                                                    <option value="Australia">Australia</option>
 
-                                                <option value="Singapore">Singapore</option>
-                                                <option value="Sweden">Sweden</option>
-                                                <option value="USA">USA</option>
-                                                <option value="Australia">Australia</option>
+                                                </select>
 
-                                            </select>
+                                            </div>
 
-                                        </div>
+                                        </div><!--/ [col] -->
 
-                                    </div><!--/ [col] -->
+                                    </li><!--/ .row -->
 
-                                </li><!--/ .row -->
+                                </ul>
 
-                            </ul>
-
-                        </form>
-
-                    </div>
-
-                    <footer class="bottom_box on_the_sides">
-
-                        <div class="right_side">
-
-                            <span class="prompt">Required Fields</span>
+                            </form>
 
                         </div>
 
-                    </footer>
+                        <footer class="bottom_box on_the_sides">
 
-                </section><!--/ .section_offset -->
+                            <div class="right_side">
 
-                <!-- - - - - - - - - - - - - - End of shipping information - - - - - - - - - - - - - - - - -->
+                                <span class="prompt">Required Fields</span>
 
-                <!-- - - - - - - - - - - - - - Shipping method - - - - - - - - - - - - - - - - -->
+                            </div>
 
-                <section class="section_offset">
+                        </footer>
 
-                    <h3>2. Shipping Method</h3>
+                    </section><!--/ .section_offset -->
 
-                    <div class="theme_box">
-                        <form id="ship_method">
+                    <!-- - - - - - - - - - - - - - End of shipping information - - - - - - - - - - - - - - - - -->
+
+                    <!-- - - - - - - - - - - - - - Shipping method - - - - - - - - - - - - - - - - -->
+
+                    <section class="section_offset">
+
+                        <h3>2. Shipping Method</h3>
+
+                        <div class="theme_box">
+
                             <ul class="shipping_method">
 
                                 <li>
 
                                     <p class="subcaption bold">Free Shipping</p>
 
-                                    <input type="radio" checked name="shipping" value="free" id="radio_button_1">
+                                    <input type="radio" checked name="radio_3" id="radio_button_1">
                                     <label for="radio_button_1">Free $0</label>
 
                                 </li>
@@ -217,224 +217,228 @@
 
                                     <p class="subcaption bold">DHL Shipping</p>
 
-                                    <input type="radio" name="shipping" value="std" id="radio_button_2">
+                                    <input type="radio" name="radio_3" id="radio_button_2">
                                     <label for="radio_button_2">Standard Shipping $5.00</label>                                                                       
 
                                 </li>
 
                                 <li>
 
-                                    <input type="radio" name="shipping" value="exp" id="radio_button_3">
+                                    <input type="radio" name="radio_3" id="radio_button_3">
                                     <label for="radio_button_3">Express Shipping $15.00</label>
 
                                 </li>
 
                             </ul>
-                        </form>
-                    </div>
-
-                </section>
-
-
-                <!-- - - - - - - - - - - - - - End of shipping method - - - - - - - - - - - - - - - - -->
-
-                <!-- - - - - - - - - - - - - - Payment information - - - - - - - - - - - - - - - - -->
-
-                <section class="section_offset">
-
-                    <h3>3. Payment Information</h3>
-
-                    <div class="theme_box">
-
-                        <p class="subcaption bold">Payment Method</p>
-
-                        <ul class="simple_vertical_list">
-
-                            <li>
-
-                                <input type="radio" checked name="radio_4" id="radio_button_4">
-                                <label for="radio_button_4">Cash on delivery</label>
-
-                            </li>
-
-                            <li>
-
-                                <input type="radio" name="radio_4" id="radio_button_5" disabled>
-                                <label for="radio_button_5">PayPal (Coming soon!)</label>
-
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </section>
-
-
-                <!-- - - - - - - - - - - - - - End of payment information - - - - - - - - - - - - - - - - -->
-
-                <!-- - - - - - - - - - - - - - Order review - - - - - - - - - - - - - - - - -->
-
-                <section class="section_offset">
-
-                    <h3>4. Order Review</h3>
-
-                    <div class="table_wrap">
-
-                        <table class="table_type_1 order_review">
-
-                            <thead>
-
-                                <tr>
-
-                                    <th class="product_title_col">Product Name</th>
-                                    <th class="product_sku_col">ID</th>
-                                    <th class="product_price_col">Price</th>
-                                    <th class="product_qty_col">Quantity</th>
-                                    <th class="product_total_col">Total</th>
-
-                                </tr>
-
-                            </thead>
-
-                            <tbody>
-
-                                <tr>
-
-                                    <td data-title="Product Name">
-
-                                        <a href="#" class="product_title">Adipiscing aliquet sed in lacus, Liqui-gels 24</a>
-
-                                        <ul class="sc_product_info">
-
-                                            <li><b>Size:</b> Large</li>
-                                            <li><b>Color:</b> Red</li>
-
-                                        </ul>
-
-                                    </td>
-
-                                    <td data-title="SKU">PS01</td>
-
-                                    <td data-title="Price" class="subtotal">$5.99</td>
-
-                                    <td data-title="Quantity">1</td>
-
-                                    <td data-title="Total" class="total">$5.99</td>
-
-                                </tr>
-
-                                <tr>
-
-                                    <td data-title="Product Name">
-
-                                        <a href="#" class="product_title">Sed in lacus ut enim adipiscing dictum elementum velit<br>Relief 4.25 fl oz (126ml)</a>
-
-                                        <ul class="sc_product_info">
-
-                                            <li><b>Size:</b> Small</li>
-                                            <li><b>Color:</b> Red</li>
-
-                                        </ul>
-
-                                    </td>
-
-                                    <td data-title="SKU">PS02</td>
-
-                                    <td data-title="Price" class="subtotal">$8.99</td>
-
-                                    <td data-title="Quantity">1</td>
-
-                                    <td data-title="Total" class="total">$8.99</td>
-
-                                </tr>
-
-                                <tr>
-
-                                    <td data-title="Product Name">
-
-                                        <a href="#" class="product_title">Donec porta diam eu massa quisque Mint 160 ea</a>
-
-                                        <ul class="sc_product_info">
-
-                                            <li><b>Size:</b> Medium</li>
-                                            <li><b>Color:</b> Blue</li>
-
-                                        </ul>
-
-                                    </td>
-
-                                    <td data-title="SKU">PS03</td>
-
-                                    <td data-title="Price" class="subtotal">$76.99</td>
-
-                                    <td data-title="Quantity">1</td>
-
-                                    <td data-title="Total" class="total">$76.99</td>
-
-                                </tr>
-
-                            </tbody>
-
-                            <tfoot>
-
-                                <tr>
-
-                                    <td colspan="4" class="bold">Subtotal</td>
-                                    <td class="total">$146.87</td>
-
-                                </tr>
-
-                                <tr>
-
-                                    <td colspan="4" class="bold">Shipping &amp; Handling</td>
-                                    <td class="total">$5.00</td>
-
-                                </tr>
-
-                                <tr>
-
-                                    <td colspan="4" class="grandtotal">Grand Total</td>
-                                    <td class="grandtotal">$151.87</td>
-
-                                </tr>
-
-                            </tfoot>
-
-                        </table>
-
-                    </div><!--/ .table_wrap -->
-
-                    <footer class="bottom_box on_the_sides">
-
-                        <div class="left_side v_centered">
-
-                            <span>Forgot an item?</span>
-
-                            <a href="cart.shtml" class="button_dark_grey middle_btn">Edit Your Cart</a>
 
                         </div>
 
-                        <div class="right_side">
+                    </section>
 
-                            <button onclick="icp.order.submit()" class="button_blue middle_btn">Place Order</button>
+
+                    <!-- - - - - - - - - - - - - - End of shipping method - - - - - - - - - - - - - - - - -->
+
+                    <!-- - - - - - - - - - - - - - Payment information - - - - - - - - - - - - - - - - -->
+
+                    <section class="section_offset">
+
+                        <h3>3. Payment Information</h3>
+
+                        <div class="theme_box">
+
+                            <p class="subcaption bold">Payment Method</p>
+
+                            <ul class="simple_vertical_list">
+
+                                <li>
+
+                                    <input type="radio" checked name="radio_4" id="radio_button_4">
+                                    <label for="radio_button_4">Cash on delivery</label>
+
+                                </li>
+
+                                <li>
+
+                                    <input type="radio" name="radio_4" id="radio_button_5" disabled>
+                                    <label for="radio_button_5">PayPal (Coming soon!)</label>
+
+                                </li>
+
+                            </ul>
 
                         </div>
 
-                    </footer>
+                    </section>
 
 
-                </section>
+                    <!-- - - - - - - - - - - - - - End of payment information - - - - - - - - - - - - - - - - -->
 
-                <!-- - - - - - - - - - - - - - End of order review - - - - - - - - - - - - - - - - -->
+                    <!-- - - - - - - - - - - - - - Order review - - - - - - - - - - - - - - - - -->
 
-            </div><!--/ .container-->
+                    <section class="section_offset">
 
-        </div><!--/ .page_wrapper-->
+                        <h3>4. Order Review</h3>
 
-        <!-- - - - - - - - - - - - - - End Page Wrapper - - - - - - - - - - - - - - - - -->
+                        <div class="table_wrap">
 
-        <#include "footer.shtml">
+                            <table class="table_type_1 order_review">
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th class="product_title_col">Product Name</th>
+                                        <th class="product_sku_col">ID</th>
+                                        <th class="product_price_col">Price</th>
+                                        <th class="product_qty_col">Quantity</th>
+                                        <th class="product_total_col">Total</th>
+
+                                    </tr>
+
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <td data-title="Product Name">
+
+                                            <a href="#" class="product_title">Adipiscing aliquet sed in lacus, Liqui-gels 24</a>
+
+                                            <ul class="sc_product_info">
+
+                                                <li><b>Size:</b> Large</li>
+                                                <li><b>Color:</b> Red</li>
+
+                                            </ul>
+
+                                        </td>
+
+                                        <td data-title="SKU">PS01</td>
+
+                                        <td data-title="Price" class="subtotal">$5.99</td>
+
+                                        <td data-title="Quantity">1</td>
+
+                                        <td data-title="Total" class="total">$5.99</td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td data-title="Product Name">
+
+                                            <a href="#" class="product_title">Sed in lacus ut enim adipiscing dictum elementum velit<br>Relief 4.25 fl oz (126ml)</a>
+
+                                            <ul class="sc_product_info">
+
+                                                <li><b>Size:</b> Small</li>
+                                                <li><b>Color:</b> Red</li>
+
+                                            </ul>
+
+                                        </td>
+
+                                        <td data-title="SKU">PS02</td>
+
+                                        <td data-title="Price" class="subtotal">$8.99</td>
+
+                                        <td data-title="Quantity">1</td>
+
+                                        <td data-title="Total" class="total">$8.99</td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td data-title="Product Name">
+
+                                            <a href="#" class="product_title">Donec porta diam eu massa quisque Mint 160 ea</a>
+
+                                            <ul class="sc_product_info">
+
+                                                <li><b>Size:</b> Medium</li>
+                                                <li><b>Color:</b> Blue</li>
+
+                                            </ul>
+
+                                        </td>
+
+                                        <td data-title="SKU">PS03</td>
+
+                                        <td data-title="Price" class="subtotal">$76.99</td>
+
+                                        <td data-title="Quantity">1</td>
+
+                                        <td data-title="Total" class="total">$76.99</td>
+
+                                    </tr>
+
+                                </tbody>
+
+                                <tfoot>
+
+                                    <tr>
+
+                                        <td colspan="4" class="bold">Subtotal</td>
+                                        <td class="total">$146.87</td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td colspan="4" class="bold">Shipping &amp; Handling</td>
+                                        <td class="total">$5.00</td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td colspan="4" class="grandtotal">Grand Total</td>
+                                        <td class="grandtotal">$151.87</td>
+
+                                    </tr>
+
+                                </tfoot>
+
+                            </table>
+
+                        </div><!--/ .table_wrap -->
+
+                        <footer class="bottom_box on_the_sides">
+
+                            <div class="left_side v_centered">
+
+                                <span>Forgot an item?</span>
+
+                                <a href="#" class="button_dark_grey middle_btn">Edit Your Cart</a>
+
+                            </div>
+
+                            <div class="right_side">
+
+                                <button class="button_blue middle_btn">Place Order</button>
+
+                            </div>
+
+                        </footer>
+
+
+                    </section>
+
+                    <!-- - - - - - - - - - - - - - End of order review - - - - - - - - - - - - - - - - -->
+
+                </div><!--/ .container-->
+
+            </div><!--/ .page_wrapper-->
+
+            <!-- - - - - - - - - - - - - - End Page Wrapper - - - - - - - - - - - - - - - - -->
+
+            <#include "footer.shtml">   
+
+        </div><!--/ [layout]-->
+
+        <#include "social_feeds.shtml">
 
         <!-- Include Plugins
         ============================================ -->
@@ -449,24 +453,6 @@
         <script src="js/retina.min.js"></script>
         <script src="js/theme.plugins.js"></script>
         <script src="js/theme.core.js"></script>
-        <script src="js/script.js" type="text/javascript"></script>
-        <script>
-            icp.order = {};
-            icp.order.get = function () {
-                var res = {};
-                var ra = $("#addr").serializeArray().concat($("#ship_method").serializeArray());
-                var i;
-                for (i = 0; i < ra.length; i += 1) {
-                    res[ra[i].name] = ra[i].value;
-                }
-                return res;
-            }
-            icp.order.submit = function () {
-                //console.log(icp.order.get());
-                $.post("order",icp.order.get(),function (data){
-                    console.log(data);
-                })
-            }
-        </script>
+
     </body>
 </html>
