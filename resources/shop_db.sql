@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.7.1
+-- version 4.4.12
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Aug 14, 2015 at 05:44 PM
--- Server version: 5.5.39
--- PHP Version: 5.4.31
+-- Host: localhost
+-- Generation Time: Aug 17, 2015 at 03:52 AM
+-- Server version: 5.6.25
+-- PHP Version: 5.6.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,7 +14,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `shop_db`
@@ -41,6 +41,9 @@ CREATE TABLE IF NOT EXISTS `admin_list` (
 
 CREATE TABLE IF NOT EXISTS `bill_address` (
   `bill_id` int(11) NOT NULL,
+  `bill_fname` text COLLATE utf8_bin NOT NULL,
+  `bill_lname` text COLLATE utf8_bin NOT NULL,
+  `bill_email` text COLLATE utf8_bin NOT NULL,
   `bill_address` text COLLATE utf8_bin NOT NULL,
   `bill_floor` text COLLATE utf8_bin NOT NULL,
   `bill_unit` text COLLATE utf8_bin NOT NULL,
@@ -200,7 +203,7 @@ INSERT INTO `item_pic` (`item_id`, `pic_num`, `pic_location`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `item_review` (
-`review_id` int(11) NOT NULL,
+  `review_id` int(11) NOT NULL,
   `item_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `review_title` text COLLATE utf8_bin NOT NULL,
@@ -209,7 +212,7 @@ CREATE TABLE IF NOT EXISTS `item_review` (
   `review_price` int(11) NOT NULL,
   `review_quality` int(11) NOT NULL,
   `review_text` text COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `item_review`
@@ -282,7 +285,7 @@ CREATE TABLE IF NOT EXISTS `wishlist` (
 -- Indexes for table `item_review`
 --
 ALTER TABLE `item_review`
- ADD PRIMARY KEY (`review_id`);
+  ADD PRIMARY KEY (`review_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -292,7 +295,7 @@ ALTER TABLE `item_review`
 -- AUTO_INCREMENT for table `item_review`
 --
 ALTER TABLE `item_review`
-MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+  MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

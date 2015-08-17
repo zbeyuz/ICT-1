@@ -18,13 +18,13 @@ import java.util.Calendar;
  */
 public class BillMgr {
     
-    public static void newBill(int user_id, int bill_shipping_price, String bill_shipping_type, ArrayList<Product> items, UserInfo info) throws Exception {
+    public static void newBill(int user_id, int bill_shipping_price, String bill_shipping_type, ArrayList<Product> items, BillInfo info) throws Exception {
         int billId=addBill(user_id,bill_shipping_price,bill_shipping_type);
         for(Product i:items){
             addBillItem(billId,i.id,1);
         }
         
-        addBillAddress(billId,info.address,info.floor, info.unit, info.road, info.country, info.postcode, info.tel);
+        addBillAddress(billId,info.fname,info.lname,info.email,info.address,info.floor, info.unit, info.road, info.country, info.postcode, info.tel);
     }
     
     
@@ -70,19 +70,22 @@ public class BillMgr {
         pstmt.executeUpdate();
     }
     
-    public static void addBillAddress(int bill_id, String bill_address, String bill_floor, String bill_unit, String bill_road, String bill_country, int bill_postcode, int bill_tel) throws SQLException, Exception {
+    public static void addBillAddress(int bill_id, String bill_fname, String bill_lname, String bill_email, String bill_address, String bill_floor, String bill_unit, String bill_road, String bill_country, int bill_postcode, int bill_tel) throws SQLException, Exception {
         Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
         
-        pstmt = conn.prepareStatement("insert into bill_address values(?,?,?,?,?,?,?,?)");
+        pstmt = conn.prepareStatement("insert into bill_address values(?,?,?,?,?,?,?,?,?,?,?)");
         pstmt.setInt(1, bill_id);
-        pstmt.setString(2, bill_address);
-        pstmt.setString(3, bill_floor);
-        pstmt.setString(4, bill_unit);
-        pstmt.setString(5, bill_road);
-        pstmt.setString(6, bill_country);
-        pstmt.setInt(7, bill_postcode);
-        pstmt.setInt(8, bill_tel);
+        pstmt.setString(2, bill_fname);
+        pstmt.setString(3, bill_lname);
+        pstmt.setString(4, bill_email);
+        pstmt.setString(5, bill_address);
+        pstmt.setString(6, bill_floor);
+        pstmt.setString(7, bill_unit);
+        pstmt.setString(8, bill_road);
+        pstmt.setString(9, bill_country);
+        pstmt.setInt(10, bill_postcode);
+        pstmt.setInt(11, bill_tel);
         pstmt.executeUpdate();   
     }
     
