@@ -34,7 +34,7 @@ public class ViewItem extends HttpServlet {
             throws ServletException, IOException {
         try {
             response.setContentType("text/html;charset=UTF-8");
-            Product p=ProductMgr.getProductById(Integer.parseInt(request.getParameter("id")));
+            Product p=ProductMgr.getProductByProductId(Integer.parseInt(request.getParameter("id")));
             request.setAttribute("id", p.id);
             if(p.discount==0){
                 request.setAttribute("price", String.format("<b class=\"theme_color\">$%d</b>",p.price));

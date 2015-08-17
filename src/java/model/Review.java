@@ -12,9 +12,8 @@ import java.sql.Date;
  * @author hy
  */
 public class Review {
-    public int item_id = -1;
-    public int user_id = -1;
-    public String user_mail = "";
+    public int product_id = -1;
+    public User user = new User();
     public String review_title="";
     public long review_time;
     public int review_value = -1;

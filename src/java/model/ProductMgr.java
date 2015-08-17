@@ -21,79 +21,184 @@ import java.util.Date;
  */
 public class ProductMgr {
     
-    //add new item
-    public static void addProduct(int item_id, String item_name, int item_price, int item_discount, String item_gender, String item_category, String item_manufacture, String item_info, String item_description) throws SQLException, Exception {
+    //add new product
+    public static void addProduct(int product_id, String product_name, int product_price, int product_discount, String product_gender, String product_category, String product_manufacture, String product_info, String product_description) throws SQLException, Exception {
         
         Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
         ResultSet rs = null;
-        String item_profile_pic = "";
+        String product_profile_pic = "";
         
-        pstmt = conn.prepareStatement("SELECT * FROM `item_list` where `item_id` = ?");
-        pstmt.setInt(1, item_id);
+        pstmt = conn.prepareStatement("SELECT * FROM `product_list` where `product_id` = ?");
+        pstmt.setInt(1, product_id);
         rs = pstmt.executeQuery();
-        int cg = 0; //use to check did item_id already have or not
+        int cg = 0; //use to check did product_id already have or not
         while (rs.next()) {
             cg++;
         }
         
-        pstmt = conn.prepareStatement("insert into item_list values(?,?,?,?,?,?,?,?,?,?)");
+        pstmt = conn.prepareStatement("insert into product_list values(?,?,?,?,?,?,?,?,?,?)");
         if (cg == 0) {
-            pstmt.setInt(1, item_id);
-            pstmt.setString(2, item_name);
-            pstmt.setInt(3, item_price);
-            pstmt.setInt(4, item_discount);
-            pstmt.setString(5, item_gender);
-            pstmt.setString(6, item_category);
-            pstmt.setString(7, item_manufacture);
-            pstmt.setString(8, item_info);
-            pstmt.setString(9, item_description);
-            pstmt.setString(10, item_profile_pic);
+            pstmt.setInt(1, product_id);
+            pstmt.setString(2, product_name);
+            pstmt.setInt(3, product_price);
+            pstmt.setInt(4, product_discount);
+            pstmt.setString(5, product_gender);
+            pstmt.setString(6, product_category);
+            pstmt.setString(7, product_manufacture);
+            pstmt.setString(8, product_info);
+            pstmt.setString(9, product_description);
+            pstmt.setString(10, product_profile_pic);
             pstmt.executeUpdate();
             //add done
         } else {
-            throw new Exception("Can not add same item id");
-            //add fail,already add item_id
+            throw new Exception("Can not add same product id");
+            //add fail,already add product_id
         }
         conn.close();
     }
     
- 
-    //add picture
-    public static void addPic(int item_id, String pic_location) throws SQLException, Exception {
+    public static void addItem(int product_id, String item_material, String item_color, String item_size, String item_sample_pic, int item_quantity) throws SQLException, Exception {
         
         Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
         ResultSet rs = null;
+        int item_id= 0;
         
-        
-        pstmt = conn.prepareStatement("SELECT * FROM `item_list` where `item_id` = ?");
-        pstmt.setInt(1, item_id);
+        pstmt = conn.prepareStatement("SELECT * FROM `product_list` where `product_id` = ?");
+        pstmt.setInt(1, product_id);
         rs = pstmt.executeQuery();
-        String ch = "can not found this item id"; //use to check that have item_id and location
+        int cg = 0; //use to check that have product_id or not
         while (rs.next()) {
-            ch = "ok";  //change to ok if find item in item_list
+            cg = 1;
         }
         
-        pstmt = conn.prepareStatement("SELECT * FROM `item_pic` where `item_id` = ?");
-        pstmt.setInt(1, item_id);
+        if (cg == 0) {
+            
+            pstmt = conn.prepareStatement("SELECT * FROM `item_info` where `product_id` = ?");
+            pstmt.setInt(1, product_id);
+            rs = pstmt.executeQuery();
+        
+            while (rs.next()) { //to get item_id
+                item_id = rs.getInt("item_id");
+            }
+            item_id++;
+        
+        pstmt = conn.prepareStatement("insert into item_info values(?,?,?,?,?,?,?)");
+        
+            pstmt.setInt(1, product_id);
+            pstmt.setInt(2, item_id);
+            pstmt.setString(3, item_material);
+            pstmt.setString(4, item_color);
+            pstmt.setString(5, item_size);
+            pstmt.setString(6, item_sample_pic);
+            pstmt.setInt(7, item_quantity);
+            pstmt.executeUpdate();
+            //add done
+        } else {
+            throw new Exception("Can not add same product id");
+            //add fail,already add product_id
+        }
+        conn.close();
+    }
+    
+    public static void updateItem(int product_id, int item_id, String item_material, String item_color, String item_size, String item_sample_pic, int item_quantity) throws SQLException, Exception {
+        
+        Connection conn=DBConn.getConn();
+        PreparedStatement pstmt = null;
+        
+
+        int cg = 0; 
+
+        
+        if (cg == 0) {
+        
+            pstmt = conn.prepareStatement("UPDATE `item_info` SET `item_material`=? ,`item_color`=?,`item_size`=?,`item_sample_pic`=?,`item_quantity`=? WHERE `product_id`=? AND `item_id`=?");
+            pstmt.setString(1, item_material);
+            pstmt.setString(2, item_color);
+            pstmt.setString(3, item_size);
+            pstmt.setString(4, item_sample_pic);
+            pstmt.setInt(5, item_quantity);
+            pstmt.setInt(6, product_id);
+            pstmt.setInt(7, item_id);
+            pstmt.executeUpdate();
+            //add done
+        } else {
+            throw new Exception("Can not add same product id");
+            //add fail,already add product_id
+        }
+        conn.close();
+    }
+        
+    public static void deleteItem(int product_id, int item_id) throws SQLException, Exception {
+        
+        Connection conn=DBConn.getConn();
+        PreparedStatement pstmt = null;
+        
+        pstmt = conn.prepareStatement("DELETE FROM `item_info` where `product_id` = ? and `item_id` = ?");
+        pstmt.setInt(1, product_id);
+        pstmt.setInt(2, item_id);
+        pstmt.executeUpdate();
+        
+    }
+        
+    public static void deleteProduct(int product_id) throws SQLException, Exception {
+        
+        Connection conn=DBConn.getConn();
+        PreparedStatement pstmt = null;
+        
+        pstmt = conn.prepareStatement("DELETE FROM `product_list` where `product_id` = ?");
+        pstmt.setInt(1, product_id);
+        pstmt.executeUpdate();
+        
+        pstmt = conn.prepareStatement("DELETE FROM `item_info` where `product_id` = ?");
+        pstmt.setInt(1, product_id);
+        pstmt.executeUpdate();
+       
+    }
+    
+    public static void deleteProductPic( int product_id, int pic_num) throws SQLException, Exception {
+        
+        Connection conn=DBConn.getConn();
+        PreparedStatement pstmt = null;
+        
+        pstmt = conn.prepareStatement("DELETE FROM `product_pic` where `product_id` = ? and `pic_num`= ?");
+        pstmt.setInt(1, product_id);
+        pstmt.setInt(2, pic_num);
+        pstmt.executeUpdate();
+       
+    }
+    
+ 
+    //add picture
+    public static void addProductPic(int product_id, String pic_location) throws SQLException, Exception {
+        
+        Connection conn=DBConn.getConn();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        int pic_num = 0;
+        
+        pstmt = conn.prepareStatement("SELECT * FROM `product_list` where `product_id` = ?");
+        pstmt.setInt(1, product_id);
         rs = pstmt.executeQuery();
-        int cg = 0; //use to check how many picture that item_id have
-        String location = "0";
+        String ch = "can not found this product id"; //use to check that have product_id and location
         while (rs.next()) {
-            cg++;     
-            location =  rs.getString("pic_location");
-            if( pic_location.equals(location)){
-                ch = "Can not add picture in same location";    //chang to state if location already been use
-            }   
+            ch = "ok";  //change to ok if find product in product_list
         }
         
-        
-        pstmt = conn.prepareStatement("insert into item_pic values(?,?,?)");
+        //get picture number
+        pstmt = conn.prepareStatement("SELECT * FROM `product_pic` where `product_id` = ?");
+        pstmt.setInt(1, product_id);
+        rs = pstmt.executeQuery();
+        while (rs.next()) {
+            pic_num = rs.getInt("pic_num");
+        }
+        //add picture to data base
+        pstmt = conn.prepareStatement("insert into product_pic values(?,?,?)");
         if (ch .equals("ok")) {
-            cg++;
-            pstmt.setInt(1, item_id);
-            pstmt.setInt(2, cg);
+            pic_num++;
+            pstmt.setInt(1, product_id);
+            pstmt.setInt(2, pic_num);
             pstmt.setString(3, pic_location);
             pstmt.executeUpdate();
             //add done
@@ -104,23 +209,22 @@ public class ProductMgr {
         conn.close();
     }
     
-    public static void itemUpdate(int item_id, String item_name , int item_price, int item_discount, String item_gender, String item_type, String item_manufacture, String item_info, String item_description, String item_profile_pic) throws SQLException, Exception{
+    public static void productUpdate(int product_id, String product_name , int product_price, int product_discount, String product_gender, String product_type, String product_manufacture, String product_info, String product_description, String product_profile_pic) throws SQLException, Exception{
         Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
-        ResultSet rs = null;
         
-        pstmt = conn.prepareStatement("UPDATE `item_list` SET `item_name`=?, `item_price`=?, `item_discount`=?, `item_gender`=?, `item_type`=?, `item_manufacture`=?, `item_info`=?, `item_description`=?, `item_profile_pic`=? WHERE = `item_id`=?");
-        pstmt.setString(1, item_name);
-        pstmt.setInt(2, item_price);
-        pstmt.setInt(3, item_discount);
-        pstmt.setString(4, item_gender);
-        pstmt.setString(5, item_type);
-        pstmt.setString(6, item_manufacture);
-        pstmt.setString(7, item_info);
-        pstmt.setString(8, item_description);
-        pstmt.setString(9, item_profile_pic);
-        pstmt.setInt(10, item_id);
-        rs = pstmt.executeQuery();
+        pstmt = conn.prepareStatement("UPDATE `product_list` SET `product_name`=?, `product_price`=?, `product_discount`=?, `product_gender`=?, `product_type`=?, `product_manufacture`=?, `product_info`=?, `product_description`=?, `product_profile_pic`=? WHERE  `product_id`=? ");
+        pstmt.setString(1, product_name);
+        pstmt.setInt(2, product_price);
+        pstmt.setInt(3, product_discount);
+        pstmt.setString(4, product_gender);
+        pstmt.setString(5, product_type);
+        pstmt.setString(6, product_manufacture);
+        pstmt.setString(7, product_info);
+        pstmt.setString(8, product_description);
+        pstmt.setString(9, product_profile_pic);
+        pstmt.setInt(10, product_id);
+        pstmt.executeUpdate();
         
         conn.close();
     }
@@ -130,69 +234,94 @@ public class ProductMgr {
         Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
         ResultSet rs = null;    
-        pstmt = conn.prepareStatement("SELECT * FROM `item_list`");
+        pstmt = conn.prepareStatement("SELECT * FROM `product_list`");
         rs = pstmt.executeQuery();
             
         ArrayList<Product> res= new ArrayList<Product>();
-
+      
         while (rs.next()) {
             Product i=new Product();
-            i.id = rs.getInt("item_id");
-            i.name = rs.getString("item_name");
-            i.price = rs.getInt("item_price");
-            i.discount = rs.getInt("item_discount");
-            i.gender = rs.getString("item_gender");
-            i.category = rs.getString("item_type");
-            i.manufacture = rs.getString("item_manufacture");
-            i.info = rs.getString("item_info");
-            i.description = rs.getString("item_description");
-            i.profile_pic = rs.getString("item_profile_pic");
+            i.id = rs.getInt("product_id");
+            i.name = rs.getString("product_name");
+            i.price = rs.getInt("product_price");
+            i.discount = rs.getInt("product_discount");
+            i.gender = rs.getString("product_gender");
+            i.category = rs.getString("product_type");
+            i.manufacture = rs.getString("product_manufacture");
+            i.info = rs.getString("product_info");
+            i.description = rs.getString("product_description");
+            i.profile_pic = rs.getString("product_profile_pic");
             res.add(i);
         }
         conn.close();
         return res;
     }
     
-    public static Product getProductById(int item_id) throws SQLException, Exception {
+    public static Product getProductByProductId(int product_id) throws SQLException, Exception {
         
         Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
         ResultSet rs = null;    
-        pstmt = conn.prepareStatement("SELECT * FROM `item_list` where item_id = ?");
-        pstmt.setInt(1, item_id);
+        pstmt = conn.prepareStatement("SELECT * FROM `product_list` WHERE product_id = ?");
+        pstmt.setInt(1, product_id);
         rs = pstmt.executeQuery();
             
         Product i=new Product();
 
-        
         while (rs.next()) {
-            i.id = rs.getInt("item_id");
-            i.name = rs.getString("item_name");
-            i.price = rs.getInt("item_price");
-            i.discount = rs.getInt("item_discount");
-            i.gender = rs.getString("item_gender");
-            i.category = rs.getString("item_type");
-            i.manufacture = rs.getString("item_manufacture");
-            i.info = rs.getString("item_info");
-            i.description = rs.getString("item_description");
-            i.profile_pic = rs.getString("item_profile_pic");
+            i.id = rs.getInt("product_id");
+            i.name = rs.getString("product_name");
+            i.price = rs.getInt("product_price");
+            i.discount = rs.getInt("product_discount");
+            i.gender = rs.getString("product_gender");
+            i.category = rs.getString("product_type");
+            i.manufacture = rs.getString("product_manufacture");
+            i.info = rs.getString("product_info");
+            i.description = rs.getString("product_description");
+            i.profile_pic = rs.getString("product_profile_pic");
         }
         conn.close();
-        return i;// get arreylist like get item but there are onty 1 item in list
+        return i;// get arreylist like get product but there are onty 1 product in list
     }
     
+    public static ArrayList<Item> getItemByProductId(int product_id) throws SQLException, Exception {
+        
+        Connection conn=DBConn.getConn();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;    
+        pstmt = conn.prepareStatement("SELECT * FROM `item_info` where product_id = ?");
+        pstmt.setInt(1, product_id);
+        rs = pstmt.executeQuery();
+            
+
+        ArrayList<Item> res = new ArrayList();
+        
+        while (rs.next()) {
+            Item i=new Item();
+            i.product_id = rs.getInt("product_id");
+            i.item_id = rs.getInt("item_id");
+            i.item_material = rs.getString("item_material");
+            i.item_color = rs.getString("item_color");
+            i.item_size = rs.getString("item_size");
+            i.item_sample_pic = rs.getString("item_sample_pic");
+            i.item_quantity = rs.getInt("item_quantity");
+            res.add(i);
+        }
+        conn.close();
+        return res;// get arreylist like get product but there are onty 1 product in list
+    }
     
-    public static String[] getPic(int item_id) throws SQLException, Exception {
+    public static String[] getProductPic(int product_id) throws SQLException, Exception {
         
         Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         
-        pstmt = conn.prepareStatement("SELECT * FROM `item_pic` where `item_id` = ?");
-        pstmt.setInt(1, item_id);
+        pstmt = conn.prepareStatement("SELECT * FROM `product_pic` where `product_id` = ?");
+        pstmt.setInt(1, product_id);
         rs = pstmt.executeQuery();
         
-        String[] pic = new String[15];//arrey that use to store picture location
+        String[] pic = new String[300];//arrey that use to store picture location
         int n ;//use to locate picture in order
             
             
@@ -206,21 +335,13 @@ public class ProductMgr {
     }
     
     
-    public static boolean addReview(int item_id, int user_id, String review_title, long review_time, int review_value, int review_price, int review_quality, String review_text) throws SQLException, Exception {
+    public static boolean addReview(int product_id, int user_id, String review_title, long review_time, int review_value, int review_price, int review_quality, String review_text) throws SQLException, Exception {
 
         Connection conn=DBConn.getConn();
-        String ch = "ok"; //user for check state of process        
-        /* user may change their idea :)
-        pstmt = conn.prepareStatement("SELECT * FROM `item_review` where `item_id` = ? ");
-        pstmt.setInt(1, user_id);
-        rs = pstmt.executeQuery();
-        while (rs.next()) {
-            ch = "user already review this item"; //change state if user already review
-        }
-        */
-        PreparedStatement pstmt = conn.prepareStatement("INSERT INTO `item_review` (`item_id`, `user_id`, `review_title`, `review_date`, `review_value`, `review_price`, `review_quality`, `review_text`) VALUES (?,?,?,FROM_UNIXTIME(?),?,?,?,?)");
+        String ch = "ok"; 
+        PreparedStatement pstmt = conn.prepareStatement("INSERT INTO `product_review` (`product_id`, `user_id`, `review_title`, `review_date`, `review_value`, `review_price`, `review_quality`, `review_text`) VALUES (?,?,?,FROM_UNIXTIME(?),?,?,?,?)");
         if (ch.equals("ok")) {
-            pstmt.setInt(1, item_id);
+            pstmt.setInt(1, product_id);
             pstmt.setInt(2, user_id);
             pstmt.setString(3, review_title);
             pstmt.setLong(4, review_time); 
@@ -230,32 +351,31 @@ public class ProductMgr {
             pstmt.setString(8, review_text);
             pstmt.executeUpdate();
             conn.close();
-            return true;
-            //register done
+            return true; 
         } else {
             conn.close();
             return false;
-            //register fail
         }
     }
 
-    public static ArrayList<Review> getReview(int item_id) throws SQLException, Exception {
+    public static ArrayList<Review> getReview(int product_id) throws SQLException, Exception {
 
         Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
         ResultSet rs = null;
-        pstmt = conn.prepareStatement("SELECT * FROM `item_review`,`user_list`"+
-                " WHERE `item_review`.`item_id`=? and `item_review`.`user_id`=`user_list`.`user_id`");
-        pstmt.setInt(1,item_id);
+        pstmt = conn.prepareStatement("SELECT * FROM `product_review`,`user_list` WHERE `product_review`.`product_id`=? and `product_review`.`user_id`=`user_list`.`user_id`");
+        pstmt.setInt(1,product_id);
         rs = pstmt.executeQuery();
 
         ArrayList<Review> res = new ArrayList();
 
         while (rs.next()) {
             Review i = new Review();
-            i.item_id = rs.getInt("item_id");
-            i.user_id = rs.getInt("user_id");
-            i.user_mail = rs.getString("user_email");
+            i.product_id = rs.getInt("product_id");
+            i.user.id = rs.getInt("user_id");
+            i.user.email = rs.getString("user_email");
+            i.user.fName= rs.getString("user_fname");
+            i.user.lName = rs.getString("user_lname");
             i.review_time = rs.getTimestamp("review_date").getTime();
             i.review_title = rs.getString("review_title");
             i.review_value = rs.getInt("review_value");

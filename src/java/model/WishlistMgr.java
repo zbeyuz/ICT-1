@@ -17,7 +17,7 @@ import java.util.ArrayList;
  */
 public class WishlistMgr {
 
-    public static boolean add_item(int user_id, int item_id) throws SQLException, Exception {
+    public static boolean addProduct(int user_id, int product_id) throws SQLException, Exception {
         Connection conn=DBConn.getConn();
         
         PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM `wishlist` where `user_id` = ?");
@@ -26,16 +26,16 @@ public class WishlistMgr {
         
         boolean isexist=false;
         while (rs.next()) {
-            if( rs.getInt("item_id") == item_id){
+            if( rs.getInt("product_id") == product_id){
                 isexist=true;
             }
         }
         
         if(!isexist){
             
-            pstmt = conn.prepareStatement("insert into wishlist (`user_id`, `item_id`) values(?,?)");
+            pstmt = conn.prepareStatement("insert into wishlist (`user_id`, `product_id`) values(?,?)");
             pstmt.setInt(1, user_id);
-            pstmt.setInt(2, item_id);
+            pstmt.setInt(2, product_id);
             pstmt.executeUpdate();
             conn.close();
             return true;
@@ -47,12 +47,12 @@ public class WishlistMgr {
         
     }
     
-    public static void delete_item(int user_id, int item_id) throws SQLException, Exception {
+    public static void deleteProduct(int user_id, int product_id) throws SQLException, Exception {
         Connection conn=DBConn.getConn();
         
-        PreparedStatement  pstmt = conn.prepareStatement("DELETE FROM `wishlist` where `user_id` = ? and `item_id` = ?");
+        PreparedStatement  pstmt = conn.prepareStatement("DELETE FROM `wishlist` where `user_id` = ? and `product_id` = ?");
         pstmt.setInt(1, user_id);
-        pstmt.setInt(2, item_id);
+        pstmt.setInt(2, product_id);
         pstmt.executeUpdate();       
     }
     
@@ -60,7 +60,7 @@ public class WishlistMgr {
 
         Connection conn=DBConn.getConn();
         
-        PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM `item_list` WHERE `item_id` IN (SELECT `item_id` FROM `wishlist` WHERE `user_id` = ?)");
+        PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM `product_list` WHERE `product_id` IN (SELECT `product_id` FROM `wishlist` WHERE `user_id` = ?)");
         pstmt.setInt(1,user_id);
         ResultSet rs = pstmt.executeQuery();
 
@@ -68,16 +68,16 @@ public class WishlistMgr {
 
         while (rs.next()) {
             Product i = new Product();
-            i.id = rs.getInt("item_id");
-            i.name = rs.getString("item_name");
-            i.price = rs.getInt("item_price");
-            i.discount = rs.getInt("item_discount");
-            i.gender = rs.getString("item_gender");
-            i.category = rs.getString("item_type");
-            i.manufacture = rs.getString("item_manufacture");
-            i.info = rs.getString("item_info");
-            i.description = rs.getString("item_description");
-            i.profile_pic = rs.getString("item_profile_pic");
+            i.id = rs.getInt("product_id");
+            i.name = rs.getString("product_name");
+            i.price = rs.getInt("product_price");
+            i.discount = rs.getInt("product_discount");
+            i.gender = rs.getString("product_gender");
+            i.category = rs.getString("product_type");
+            i.manufacture = rs.getString("product_manufacture");
+            i.info = rs.getString("product_info");
+            i.description = rs.getString("product_description");
+            i.profile_pic = rs.getString("product_profile_pic");
             res.add(i);
         }
         conn.close();

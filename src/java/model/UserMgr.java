@@ -95,17 +95,30 @@ public class UserMgr {
         }
     }
     
-     public static void userUpdateMain(int user_id,String user_var ,String user_update) throws SQLException, Exception {
+     public static void userUpdateMain(int user_id,String user_email_update ,String user_fname_update ,String user_lname_update) throws SQLException, Exception {
 
         Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
-        ResultSet rs = null;
         
-        pstmt = conn.prepareStatement("UPDATE `user_list` SET ?=? WHERE = `user_id`=?");
-        pstmt.setString(1, user_var);
-        pstmt.setString(2, user_update);
-        pstmt.setInt(3, user_id);
-        rs = pstmt.executeQuery();
+        pstmt = conn.prepareStatement("UPDATE `user_list` SET `user_email`=?, `user_fname`=?, `user_lname`=?  WHERE  `user_id`=?");
+        pstmt.setString(1, user_email_update);
+        pstmt.setString(2, user_fname_update);
+        pstmt.setString(3, user_lname_update);
+        pstmt.setInt(4, user_id);
+        pstmt.executeUpdate();
+        
+        conn.close();
+    }
+     
+     public static void userUpdatePassword(int user_id,String user_password_update) throws SQLException, Exception {
+
+        Connection conn=DBConn.getConn();
+        PreparedStatement pstmt = null;
+        
+        pstmt = conn.prepareStatement("UPDATE `user_list` SET `user_password`=? WHERE  `user_id`=?");
+        pstmt.setString(1, user_password_update);
+        pstmt.setInt(2, user_id);
+        pstmt.executeUpdate();
         
         conn.close();
     }
@@ -125,24 +138,22 @@ public class UserMgr {
         pstmt.setInt(7, user_tel);
         pstmt.setString(8, user_pic);
         pstmt.setInt(9, user_id);
-        pstmt.executeQuery();
+        pstmt.executeUpdate();
         
         conn.close();
     }
     
-    public static ArrayList<UserInfo> getUserInfo(int user_id) throws SQLException, Exception {
+    public static UserInfo getUserInfoByUserId(int user_id) throws SQLException, Exception {
 
         Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
         ResultSet rs = null;
-        pstmt = conn.prepareStatement("SELECT * FROM `user_info` WHERE ``user_id`=?");
+        pstmt = conn.prepareStatement("SELECT * FROM `user_info` WHERE `user_id`=?");
         pstmt.setInt(1,user_id);
         rs = pstmt.executeQuery();
 
-        ArrayList<UserInfo> res = new ArrayList();
-
-        while (rs.next()) {
-            UserInfo i = new UserInfo();
+        UserInfo i = new UserInfo();
+        while (rs.next()) { 
             i.id = rs.getInt("user_id");
             i.address = rs.getString("user_address");
             i.floor = rs.getString("user_floor");
@@ -152,9 +163,8 @@ public class UserMgr {
             i.postcode= rs.getInt("user_postcode");
             i.tel = rs.getInt("user_tel");
             i.pic= rs.getString("user_pic");
-            res.add(i);
         }
         conn.close();
-        return res;
+        return i;
     }
 }

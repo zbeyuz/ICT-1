@@ -1,8 +1,8 @@
-$.get("wish", function (data) {
+$.get("wishlist", function (data) {
     var items = JSON.parse(data);
     var i = 0;
     for (i = 0; i < items.length; i++) {
-        $("#wish_list").append('\
+        $("#wishlist").append('\
 <tr id="item' + items[i][0] + '">\
   <td data-title="Product Image">\
     <img src="' + items[i][3] + '" alt="">\

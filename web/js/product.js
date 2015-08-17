@@ -6,52 +6,56 @@
 
 
 icp.revArray = function () {
-    return $("#rating").serializeArray().concat($("#revForm").serializeArray());
+    return $("#rating").serializeArray();
 }
-icp.revObj = function () {
+icp.revObj = function (id) {
     var res = {};
     var ra = icp.revArray();
     var i;
     for (i = 0; i < ra.length; i += 1) {
         res[ra[i].name] = ra[i].value;
     }
-    res["item"] = "${id}";
+    res["item"] = id;
+    res["title"] = $("#summary").val();
+    res["content"] = $("#review_message").val();
     return res;
 }
-icp.sendRev = function () {
-    $.post("review", icp.revObj(), function (data) {
+icp.sendRev = function (id) {
+    $.post("review", icp.revObj(id), function (data) {
         if (data === "invuser") {
             alert("Please login or register to review.");
-        }
-        if (data === "invrate") {
+        } else if (data === "invrate") {
             alert("Please rate the product :)");
-        }
-        if (data === "invtext") {
+        } else if (data === "invtext") {
             alert("Please tell us your feedback :)");
-        }
-        if (data === "invtitle") {
+        } else if (data === "invtitle") {
             alert("Please write a title.");
+        } else {
+            icp.getReview(id);
         }
-        icp.getReview();
     });
 }
 String.prototype.repeat = function (num) {
     return new Array(num + 1).join(this);
 }
 //var icp = {};
+
 icp.rate = function (rate) {
     return "<li class=\"active\"></li>".repeat(rate) + "<li></li>".repeat(5 - rate);
 }
+icp.avgRate=0;
 icp.getReview = function (id) {
     $.get("review?item=" + id, function (data) {
         //console.log(data);
         var items = JSON.parse(data);
         $(".reviews").html("");
+        icp.avgRate = 0;
         for (i = 0; i < items.length; i++) {
             //console.log(items[i]);
             var price = items[i][4];
             var value = items[i][5];
             var quality = items[i][6];
+            icp.avgRate += (price + value + quality) / 3;
             $(".reviews").append("\
             <li>\
                 <article class=\"review\">\
@@ -87,6 +91,9 @@ icp.getReview = function (id) {
 
                     );
         }
+        icp.avgRate = Math.round(icp.avgRate / items.length);
+        $("#avgRate").html(icp.rate(icp.avgRate));
+        $(".reviewNum").html(items.length);
     });
-}
-icp.getReview();
+};
+
