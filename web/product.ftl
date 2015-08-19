@@ -204,29 +204,26 @@
 
                                 <p class="product_price">${price}</p>
 
-                                <!-- - - - - - - - - - - - - - Product size - - - - - - - - - - - - - - - - -->
-
-                                <div class="description_section_2 v_centered">
-
-                                    <span class="title">Size:</span>
-
-                                    <div class="custom_select min">
-
-                                        <select>
-
-                                            <option value="XL">XL</option>
-                                            <option value="L">L</option>
-                                            <option value="M">M</option>
-                                            <option value="S">S</option>
-
-                                        </select>
+                                <div>
+                                    <div class="title">Material:</div>
+                                    <div id="material">
 
                                     </div>
-
                                 </div>
+                                
+                                <div>
+                                    <div class="title">Color:</div>
+                                    <div id="color">
 
-                                <!-- - - - - - - - - - - - - - End of product size - - - - - - - - - - - - - - - - -->
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <div class="title">Size:</div>
+                                    <div id="size">
 
+                                    </div>
+                                </div>
                                 <!-- - - - - - - - - - - - - - Quantity - - - - - - - - - - - - - - - - -->
 
                                 <div class="description_section_3 v_centered">
@@ -492,48 +489,48 @@
                                                 <!-- - - - - - - - - - - - - - Review div - - - - - - - - - - - - - - - - -->
 
                                                 <div class="type_2">
-                                                    
-                                                        <ul>
 
-                                                            <li class="row">
+                                                    <ul>
 
-                                                                <div class="col-sm-6">
+                                                        <li class="row">
 
-                                                                    <label for="summary">Summary of your review</label>
-                                                                    <input type="text" name="title" id="summary">
+                                                            <div class="col-sm-6">
 
-                                                                </div>
+                                                                <label for="summary">Summary of your review</label>
+                                                                <input type="text" name="title" id="summary">
 
-                                                            </li>
+                                                            </div>
 
-                                                            <li class="row">
+                                                        </li>
 
-                                                                <div class="col-xs-12">
+                                                        <li class="row">
 
-                                                                    <label for="review_message">Review</label>
+                                                            <div class="col-xs-12">
 
-                                                                    <textarea rows="5" name="content" id="review_message"></textarea>
+                                                                <label for="review_message">Review</label>
 
-                                                                </div>
+                                                                <textarea rows="5" name="content" id="review_message"></textarea>
 
-                                                            </li>
+                                                            </div>
 
-                                                            <li>
-                                                                <br>
-                                                            </li>
+                                                        </li>
 
-                                                            <li class="row">
+                                                        <li>
+                                                            <br>
+                                                        </li>
 
-                                                                <div class="col-xs-12">
+                                                        <li class="row">
 
-                                                                    <a id="sendRev" class="button_dark_grey middle_btn" href="javascript:;" onclick="icp.sendRev('${id}')">Submit Review</a>
+                                                            <div class="col-xs-12">
 
-                                                                </div>
+                                                                <a id="sendRev" class="button_dark_grey middle_btn" href="javascript:;" onclick="icp.sendRev('${id}')">Submit Review</a>
 
-                                                            </li>
+                                                            </div>
 
-                                                        </ul>
-                                                    
+                                                        </li>
+
+                                                    </ul>
+
                                                 </div>
 
                                                 <!-- - - - - - - - - - - - - - End of review div - - - - - - - - - - - - - - - - -->
@@ -704,7 +701,7 @@
         </div><!--/ [layout]-->
 
         <#include "social_feeds.shtml">
-        
+
         <!-- Include Plugins
         ============================================ -->
         <script src="js/jquery-2.1.1.min.js"></script>

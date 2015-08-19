@@ -43,7 +43,7 @@ public class Register extends HttpServlet {
             UserMgr.register(user_email, user_password, user_fname, user_lname);
             response.sendRedirect(request.getHeader("Referer"));
         } catch (Exception e) {
-            out.print("Error:" + e);
+            out.print("Err" + e);
         }
 
         out.close();

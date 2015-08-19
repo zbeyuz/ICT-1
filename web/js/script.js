@@ -94,3 +94,20 @@ icp.wish = function (item) {
 }
 $.get("login", icp.account);
 icp.cart.get();
+var sel = {};
+sel.btnOff = 'button_dark_grey small_btn';
+sel.btnOn = "button_blue small_btn";
+sel.constHTML = function (val) {
+    var i = 0;
+    var str = '';
+    for (i = 0; i < val.length; i += 1) {
+        str += '<button style="margin:5px" class="' + sel.btnOff + '" value="'+val[i]+'">' + val[i] + '</button>';
+    }
+    var e=$(str);
+    e.click(function (event) {
+        e.attr("class",sel.btnOff);
+        $(event.target).attr("class",sel.btnOn);
+        console.log($(event.target).attr("value"));
+    });
+    return e;
+};

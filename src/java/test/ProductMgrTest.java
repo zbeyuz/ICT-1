@@ -84,11 +84,11 @@ public class ProductMgrTest {
     */
    
     //getItemByProductId test
-    /*
+    
     ArrayList<Item> item = new ArrayList();
-    item = model.ProductMgr.getItemByProductId(pdid);
+    item = model.ProductMgr.getItemByProductId(222);
     System.out.println(item.size()); 
-    */
+    
      
 //review
     //addReview test
