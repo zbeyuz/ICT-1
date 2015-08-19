@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import model.Product;
 import model.User;
-import model.WishlistMgr;
+import database.WishlistMgr;
 
 
 /**

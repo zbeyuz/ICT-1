@@ -5,7 +5,7 @@
     </welcome-file-list>
     <servlet>
         <servlet-name>get_item</servlet-name>
-        <servlet-class>control.GetItem</servlet-class>
+        <servlet-class>control.GetProduct</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>add_item</servlet-name>
@@ -38,6 +38,10 @@
     <servlet>
         <servlet-name>wish</servlet-name>
         <servlet-class>control.WishlistHandler</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetItem</servlet-name>
+        <servlet-class>control.GetItem</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>get_item</servlet-name>
@@ -128,6 +132,10 @@
     <servlet-mapping>
         <servlet-name>wish</servlet-name>
         <url-pattern>/wishlist</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetItem</servlet-name>
+        <url-pattern>/item</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -6,20 +6,21 @@
 package control;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import database.ProductMgr;
 import model.Product;
 
 /**
  *
  * @author hy
  */
-public class ViewItem extends HttpServlet {
+public class GetProduct extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,27 +33,29 @@ public class ViewItem extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        try {
-            response.setContentType("text/html;charset=UTF-8");
-            Product p=ProductMgr.getProductByProductId(Integer.parseInt(request.getParameter("id")));
-            request.setAttribute("id", p.id);
-            if(p.discount==0){
-                request.setAttribute("price", String.format("<b class=\"theme_color\">$%d</b>",p.price));
-            }else{
-                request.setAttribute("price", String.format("<s>$%d</s> <b class=\"theme_color\">$%d</b>",p.price,p.price*(100-p.discount)/100));
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            ArrayList<Product> items;
+            try {
+                items = database.ProductMgr.getProduct();
+                out.print("\u005B");
+                String s = "";
+                for (Product i : items) {
+                    out.print(s);
+                    if (i.profile_pic.replace(" ", "").equals("")) {
+                        i.profile_pic = "images/product_img_27.jpg";
+                    }
+                    out.printf("\u005B%d,\"%s\",%d,\"%s\"\u005D",
+                            i.id, i.name, i.price, i.profile_pic);
+                    s = ",";
+                }
+                out.print("\u005D");
+            } catch (Exception e) {
+                Logger.getLogger(AddPic.class.getName()).log(Level.SEVERE, null, e);
+                out.println("\u005B\u005D");
             }
-            request.setAttribute("manufacture", p.manufacture);
-            request.setAttribute("name", p.name);
-            if(request.getServletPath().equals("/view")){
-                request.getRequestDispatcher("/modals/quick_view.ftl").forward(request, response);
-            }else{
-                request.setAttribute("info", p.info);
-                request.getRequestDispatcher("/product.ftl").forward(request, response);
-            }
-        } catch (Exception ex) {
-            Logger.getLogger(ViewItem.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

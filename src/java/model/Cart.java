@@ -5,6 +5,7 @@
  */
 package model;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -15,21 +16,21 @@ import java.util.HashMap;
 public class Cart {
     
     private HashMap<Integer,Item> items;
-    private HashMap<Integer,Product> products;
+    private HashMap<Integer,Integer> qty;
     
     public Cart(){
         items=new HashMap();
-        products=new HashMap();
+        qty=new HashMap();
     }
     
     public Cart(HashMap items,HashMap products){
         this.items=items;
-        this.products=products;
+        this.qty=products;
     }
     
-    public void add(Item item, Product product){
+    public void add(Item item, int qty){
         items.put(item.item_id, item);
-        products.put(item.item_id, product);
+        this.qty.put(item.item_id, qty);
     }
     
     public void remove(int id){
@@ -40,4 +41,10 @@ public class Cart {
     public void remove(Item item){
         remove(item.item_id);
     }
+
+    public ArrayList<Item> items() {
+        return new ArrayList(items.values());
+    }
+    
+    
 }

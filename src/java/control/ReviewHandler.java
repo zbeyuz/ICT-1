@@ -33,7 +33,7 @@ public class ReviewHandler extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             ArrayList<Review> items;
             try {
-                items = model.ProductMgr.getReview(Integer.parseInt(request.getParameter("item")));
+                items = database.ProductMgr.getReview(Integer.parseInt(request.getParameter("item")));
                 out.print("\u005B");
                 String s = "";
                 for (Review i : items) {
@@ -91,7 +91,7 @@ public class ReviewHandler extends HttpServlet {
                 out.print("invtitle");
                 return;
             }
-            model.ProductMgr.addReview(item_id, user_id, review_title, review_time, review_value, review_price, review_quality, review_text);
+            database.ProductMgr.addReview(item_id, user_id, review_title, review_time, review_value, review_price, review_quality, review_text);
         } catch (Exception ex) {
             Logger.getLogger(ReviewHandler.class.getName()).log(Level.SEVERE, null, ex);
         }

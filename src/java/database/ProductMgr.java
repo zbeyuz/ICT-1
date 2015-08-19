@@ -4,15 +4,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model;
+package database;
+
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
+import model.Item;
+import model.Product;
+import model.Review;
 
 
 /**
@@ -386,6 +387,30 @@ public class ProductMgr {
         }
         conn.close();
         return res;
+    }
+
+    public static Item getItemByItemId(int item_id) throws SQLException, Exception {
+        Connection conn=DBConn.getConn();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;    
+        pstmt = conn.prepareStatement("SELECT * FROM `item_info` where item_id = ?");
+        pstmt.setInt(1, item_id);
+        rs = pstmt.executeQuery();
+            
+
+        Item i=new Item();
+        
+        if (rs.next()) {
+            i.product_id = rs.getInt("product_id");
+            i.item_id = rs.getInt("item_id");
+            i.item_material = rs.getString("item_material");
+            i.item_color = rs.getString("item_color");
+            i.item_size = rs.getString("item_size");
+            i.item_sample_pic = rs.getString("item_sample_pic");
+            i.item_quantity = rs.getInt("item_quantity");
+        }
+        conn.close();
+        return i;
     }
         
         

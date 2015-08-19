@@ -14,7 +14,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.Product;
+import model.Item;
 
 /**
  *
@@ -22,38 +22,38 @@ import model.Product;
  */
 public class GetItem extends HttpServlet {
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            ArrayList<Product> items;
-            try {
-                items = model.ProductMgr.getProduct();
-                out.print("\u005B");
-                String s = "";
-                for (Product i : items) {
-                    out.print(s);
-                    if (i.profile_pic.replace(" ", "").equals("")) {
-                        i.profile_pic = "images/product_img_27.jpg";
+            ArrayList<Item> items;
+            if (request.getParameter("product") != null) {
+                try {
+                    int productId = Integer.parseInt(request.getParameter("product"));
+                    items = database.ProductMgr.getItemByProductId(productId);
+                    out.print("\u005B");
+                    String s = "";
+                    for (Item i : items) {
+                        out.print(s);
+                        out.printf("\u005B%d,\"%s\",\"%s\",\"%s\",\"%s\"\u005D",
+                                i.item_id, i.item_color, i.item_material, i.item_quantity, i.item_size);
+                        s = ",";
                     }
-                    out.printf("\u005B%d,\"%s\",%d,\"%s\"\u005D",
-                            i.id, i.name, i.price, i.profile_pic);
-                    s = ",";
+                    out.print("\u005D");
+                } catch (Exception e) {
+                    Logger.getLogger(AddPic.class.getName()).log(Level.SEVERE, null, e);
+                    out.println("\u005B\u005D");
                 }
-                out.print("\u005D");
-            } catch (Exception e) {
-                Logger.getLogger(AddPic.class.getName()).log(Level.SEVERE, null, e);
-                out.println("\u005B\u005D");
+            } else {
+                int itemId = Integer.parseInt(request.getParameter("item"));
+                try {
+                    Item i = database.ProductMgr.getItemByItemId(itemId);
+                    out.printf("\u005B%d,\"%s\",\"%s\",\"%s\",\"%s\"\u005D",
+                                i.item_id, i.item_color, i.item_material, i.item_quantity, i.item_size);
+                } catch (Exception ex) {
+                    Logger.getLogger(GetItem.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         }
     }
