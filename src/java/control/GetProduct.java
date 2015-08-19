@@ -37,25 +37,40 @@ public class GetProduct extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             ArrayList<Product> items;
-            try {
-                items = database.ProductMgr.getProduct();
-                out.print("\u005B");
-                String s = "";
-                for (Product i : items) {
-                    out.print(s);
-                    if (i.profile_pic.replace(" ", "").equals("")) {
-                        i.profile_pic = "images/product_img_27.jpg";
-                    }
-                    out.printf("\u005B%d,\"%s\",%d,\"%s\"\u005D",
-                            i.id, i.name, i.price, i.profile_pic);
-                    s = ",";
+            String category = request.getParameter("category");
+            if (category == null) {
+                try {
+                    items = database.ProductMgr.getProduct();
+                    printProductJSON(items,out);
+                } catch (Exception e) {
+                    Logger.getLogger(AddPic.class.getName()).log(Level.SEVERE, null, e);
+                    out.println("\u005B\u005D");
                 }
-                out.print("\u005D");
-            } catch (Exception e) {
-                Logger.getLogger(AddPic.class.getName()).log(Level.SEVERE, null, e);
-                out.println("\u005B\u005D");
+            } else {
+                try {
+                    items = database.ProductMgr.getProductByCategory(category);
+                    printProductJSON(items,out);
+                } catch (Exception e) {
+                    Logger.getLogger(AddPic.class.getName()).log(Level.SEVERE, null, e);
+                    out.println("\u005B\u005D");
+                }
             }
         }
+    }
+
+    static void printProductJSON(ArrayList<Product> items, PrintWriter out) {
+        out.print("\u005B");
+        String s = "";
+        for (Product i : items) {
+            out.print(s);
+            if (i.profile_pic.replace(" ", "").equals("")) {
+                i.profile_pic = "images/product_img_27.jpg";
+            }
+            out.printf("\u005B%d,\"%s\",%d,\"%s\"\u005D",
+                    i.id, i.name, i.price, i.profile_pic);
+            s = ",";
+        }
+        out.print("\u005D");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
