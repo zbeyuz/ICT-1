@@ -5,7 +5,7 @@
  */
 package test;
 
-import model.ProductMgr;
+import database.ProductMgr;
 
 /**
  *

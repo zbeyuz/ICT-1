@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import model.Cart;
 import model.Item;
 import model.Product;
-import model.ProductMgr;
+import database.ProductMgr;
 
 /**
  *

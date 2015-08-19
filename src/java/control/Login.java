@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import model.Cart;
 import model.User;
-import model.UserMgr;
+import database.UserMgr;
 
 /**
  *
