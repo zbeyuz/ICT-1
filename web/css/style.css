@@ -85,7 +85,7 @@
 
 /* ------------------------------------------------
 
-		2. General classes
+		2. General styles
 
 ------------------------------------------------ */
 
@@ -1677,6 +1677,25 @@
 			border: 1px solid #eaeaea;	
 			border-radius: 3px;
 		}
+                
+                .table_wrap_reviews{
+			border-radius: 3px;
+			border: 1px solid #eaeaea;			
+		}
+                
+                .table_wrap_reviews th {
+		font-size: 13px;
+		height: 25px;
+		vertical-align: middle;
+		padding: 5px 10px;
+                text-align: center;
+                }
+                
+                .table_wrap_reviews td:not(:first-child){ text-align: center; }
+                
+                .table_wrap_reviews th{ text-align: center; }
+                
+                .table_wrap_reviews :not(:last-child){ border-radius: 3px 3px 0 0; }
 
 		.table_wrap:not(:last-child){ border-radius: 3px 3px 0 0; }
 
@@ -5431,7 +5450,7 @@ transition-duration:0.1s;
 		max-width: 175px;
 	}
 
-	.social_feeds { top:50px; }
+	.social_feeds { top:170px; }
 
 	.seller_info .wrapper{
 		white-space: nowrap;
@@ -6418,11 +6437,21 @@ flex-direction: column;
 		padding-right: 2px;
 		text-align: center;
 	}
+        
+        .table_wrap_reviews thead th:first-child{ width: 60px; }
+        
+        .table_wrap_reviews th,
+        .table_wrap_reviews td{
+                font-size: 10px;
+		padding-left: 4px;
+		padding-right: 4px;
+		text-align: center;
+	}
 
 }
 @media only screen and (max-height:900px){
 
-	.social_feeds{ top:38px; }
+	.social_feeds{ top:140px; }
 
 	.social_feeds > li{ position: static; }
 

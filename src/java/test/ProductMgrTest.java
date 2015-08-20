@@ -18,7 +18,14 @@ public class ProductMgrTest {
     public static void main(String[] args) throws Exception{
     int pdid = 122, usid = 5;
     String tt = "kk", gg = "ii";
+<<<<<<< HEAD
 //product        
+=======
+//product  
+    //getProductByCategory
+    database.ProductMgr.getProductByCategory("abc");
+    
+>>>>>>> upstream/master
     //addProduct test
     /*
     model.ProductMgr.addProduct(pdid, "yasd", 23, 2, tt, tt, tt, tt, tt);
@@ -86,7 +93,11 @@ public class ProductMgrTest {
     //getItemByProductId test
     /*
     ArrayList<Item> item = new ArrayList();
+<<<<<<< HEAD
     item = model.ProductMgr.getItemByProductId(pdid);
+=======
+    item = database.ProductMgr.getItemByProductId(222);
+>>>>>>> upstream/master
     System.out.println(item.size()); 
     */
      

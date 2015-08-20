@@ -44,161 +44,165 @@
     <body>
 
         <!-- - - - - - - - - - - - - - Main Wrapper - - - - - - - - - - - - - - - - -->
+        <div class="wide_layout">
+            <#include "header.shtml">
 
-        <#include "header.shtml">
+            <!-- - - - - - - - - - - - - - Page Wrapper - - - - - - - - - - - - - - - - -->
 
-        <!-- - - - - - - - - - - - - - Page Wrapper - - - - - - - - - - - - - - - - -->
+            <div class="secondary_page_wrapper">
 
-        <div class="secondary_page_wrapper">
+                <div class="container">
 
-            <div class="container">
+                    <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
 
-                <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
+                    <ul class="breadcrumbs">
 
-                <ul class="breadcrumbs">
+                        <li><a href="index.shtml">Home</a></li>
+                        <li>Login &AMP; Register</li>
 
-                    <li><a href="index.shtml">Home</a></li>
-                    <li>Login &AMP; Register</li>
+                    </ul>
 
-                </ul>
+                    <h1 class="page_title">Login &AMP; Register</h1>
 
-                <h1 class="page_title">Login &AMP; Register</h1>
+                    <!-- - - - - - - - - - - - - - Login & Register - - - - - - - - - - - - - - - - -->
 
-                <!-- - - - - - - - - - - - - - Login & Register - - - - - - - - - - - - - - - - -->
+                    <section class="section_offset">
 
-                <section class="section_offset">
+                        <div class="relative">
 
-                    <div class="relative">
+                            <div class="table_layout">
 
-                        <div class="table_layout">
+                                <div class="table_row">
 
-                            <div class="table_row">
+                                    <div class="table_cell">
 
-                                <div class="table_cell">
+                                        <section>
 
-                                    <section>
+                                            <h4>Login</h4>
 
-                                        <h4>Login</h4>
+                                            <p class="subcaption">Already registered? Please log in below:</p>
 
-                                        <p class="subcaption">Already registered? Please log in below:</p>
+                                            <form id="login_form" class="type_2">
 
-                                        <form id="login_form" class="type_2">
+                                                <ul>
 
-                                            <ul>
+                                                    <li class="row">
 
-                                                <li class="row">
+                                                        <div class="col-xs-12">
 
-                                                    <div class="col-xs-12">
+                                                            <label for="user_email" class="required">Email address</label>
+                                                            <input type="email" name="" id="user_email">
 
-                                                        <label for="user_email" class="required">Email address</label>
-                                                        <input type="email" name="" id="user_email">
+                                                        </div>
 
-                                                    </div>
+                                                    </li>
 
-                                                </li>
+                                                    <li class="row">
 
-                                                <li class="row">
+                                                        <div class="col-xs-12">
 
-                                                    <div class="col-xs-12">
+                                                            <label for="user_password" class="required">Password</label>
+                                                            <input type="password" name="" id="user_password">
 
-                                                        <label for="user_password" class="required">Password</label>
-                                                        <input type="password" name="" id="user_password">
+                                                        </div>
 
-                                                    </div>
+                                                    </li>
 
-                                                </li>
+                                                    <li class="row">
 
-                                                <li class="row">
+                                                        <div class="col-xs-12">
 
-                                                    <div class="col-xs-12">
+                                                            <div class="on_the_sides">
 
-                                                        <div class="on_the_sides">
+                                                                <div class="right_side">
 
-                                                            <div class="right_side">
+                                                                    <span class="prompt">Required Fields</span>
 
-                                                                <span class="prompt">Required Fields</span>
+                                                                </div>
 
                                                             </div>
 
                                                         </div>
 
-                                                    </div>
+                                                    </li>
 
-                                                </li>
+                                                </ul>
+
+                                            </form>
+
+                                        </section>
+
+                                    </div><!--/ .table_cell -->
+
+                                    <div class="table_cell">
+
+                                        <section>
+
+                                            <h4>Register</h4>
+
+                                            <h5 class="sub bold">Register and save time!</h5>
+
+                                            <p class="subcaption">Register with us for future convenience:</p>
+
+                                            <ul class="list_type_7">
+
+                                                <li>Fast and easy check out</li>
+                                                <li>Easy access to your order history</li>
+                                                <li>Access your wish list at a fingertip</li>
+                                                <li>Enable multiple shipping addresses</li>
+                                                <li>Allow you to write reviews for your favorite items</li>
 
                                             </ul>
 
-                                        </form>
+                                        </section>
 
-                                    </section>
+                                    </div><!--/ .table_cell -->
 
-                                </div><!--/ .table_cell -->
+                                </div><!--/ .table_row -->
 
-                                <div class="table_cell">
+                                <div class="table_row">
 
-                                    <section>
+                                    <div class="table_cell">
 
-                                        <h4>Register</h4>
+                                        <a href="#" class="button_blue middle_btn">Login</a>
 
-                                        <h5 class="sub bold">Register and save time!</h5>
+                                    </div><!--/ .table_cell -->
 
-                                        <p class="subcaption">Register with us for future convenience:</p>
+                                    <div class="table_cell">
 
-                                        <ul class="list_type_7">
+                                        <div class="on_the_sides login_with">
 
-                                            <li>Fast and easy check out</li>
-                                            <li>Easy access to your order history</li>
-                                            <li>Access your wish list at a fingertip</li>
-                                            <li>Enable multiple shipping addresses</li>
-                                            <li>Allow you to write reviews for your favorite items</li>
+                                            <div class="left_side">
 
-                                        </ul>
+                                                <button type="submit" form="login_form" class="button_blue middle_btn" data-modal-url="modals/register.html">Register</button>
 
-                                    </section>
-
-                                </div><!--/ .table_cell -->
-
-                            </div><!--/ .table_row -->
-
-                            <div class="table_row">
-
-                                <div class="table_cell">
-
-                                    <a href="#" class="button_blue middle_btn">Login</a>
-
-                                </div><!--/ .table_cell -->
-
-                                <div class="table_cell">
-
-                                    <div class="on_the_sides login_with">
-
-                                        <div class="left_side">
-
-                                            <button type="submit" form="login_form" class="button_blue middle_btn" data-modal-url="modals/register.html">Register</button>
+                                            </div>
 
                                         </div>
 
-                                    </div>
+                                    </div><!--/ .table_cell -->
 
-                                </div><!--/ .table_cell -->
+                                </div><!--/ .table_row -->
 
-                            </div><!--/ .table_row -->
+                            </div><!--/ .table_layout -->
 
-                        </div><!--/ .table_layout -->
+                        </div><!--/ .relative -->
 
-                    </div><!--/ .relative -->
+                    </section><!--/ .section_offset -->
 
-                </section><!--/ .section_offset -->
+                    <!-- - - - - - - - - - - - - - End of login - - - - - - - - - - - - - - - - -->
 
-                <!-- - - - - - - - - - - - - - End of login - - - - - - - - - - - - - - - - -->
+                </div><!--/ .container-->
 
-            </div><!--/ .container-->
+            </div><!--/ .page_wrapper-->
 
-        </div><!--/ .page_wrapper-->
+            <!-- - - - - - - - - - - - - - End Page Wrapper - - - - - - - - - - - - - - - - -->
 
-        <!-- - - - - - - - - - - - - - End Page Wrapper - - - - - - - - - - - - - - - - -->
+            <#include "footer.shtml">   
 
-        <#include "footer.shtml">
+        </div><!--/ [layout]-->
+
+        <#include "social_feeds.shtml">
 
         <!-- Include Plugins
         ============================================ -->

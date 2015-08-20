@@ -33,13 +33,13 @@ public class ReviewHandler extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             ArrayList<Review> items;
             try {
-                items = model.ProductMgr.getReview(Integer.parseInt(request.getParameter("item")));
+                items = database.ProductMgr.getReview(Integer.parseInt(request.getParameter("item")));
                 out.print("\u005B");
                 String s = "";
                 for (Review i : items) {
                     out.print(s);
                     out.printf("\u005B%d,\"%s\",\"%s\",\"%s\",%d,%d,%d,\"%s\"\u005D",
-                            i.item_id, i.user_mail, i.review_title, new SimpleDateFormat("yyyy-MM-dd HH:mm").format(new Date(i.review_time)),
+                            i.product_id, i.user.email, i.review_title, new SimpleDateFormat("yyyy-MM-dd HH:mm").format(new Date(i.review_time)),
                             i.review_price, i.review_value, i.review_quality,
                             i.review_text.replace("\r", "").replace("\n", "<br />"));
                     s = ",";
@@ -91,7 +91,7 @@ public class ReviewHandler extends HttpServlet {
                 out.print("invtitle");
                 return;
             }
-            model.ProductMgr.addReview(item_id, user_id, review_title, review_time, review_value, review_price, review_quality, review_text);
+            database.ProductMgr.addReview(item_id, user_id, review_title, review_time, review_value, review_price, review_quality, review_text);
         } catch (Exception ex) {
             Logger.getLogger(ReviewHandler.class.getName()).log(Level.SEVERE, null, ex);
         }

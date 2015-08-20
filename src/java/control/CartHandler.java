@@ -15,7 +15,10 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import model.Cart;
+import model.Item;
 import model.Product;
+import database.ProductMgr;
 
 /**
  *
@@ -36,12 +39,20 @@ public class CartHandler extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        HashMap<Integer,Product> cart = (HashMap) request.getSession().getAttribute("cart");
+        
+        Cart cart = null;//(Cart) request.getSession().getAttribute("cart");
         if (cart != null) {
             out.print("\u005B");
             String s = "";
-            for (Product i : cart.values()) {
+            for (Item a : cart.items()) {
                 out.print(s);
+                Product i;
+                try {
+                    i = ProductMgr.getProductByProductId(a.product_id);
+                } catch (Exception ex) {
+                    Logger.getLogger(CartHandler.class.getName()).log(Level.SEVERE, null, ex);
+                    break;
+                }
                 if (i.profile_pic.replace(" ", "").equals("")) {
                     i.profile_pic = "images/product_img_27.jpg";
                 }
@@ -66,9 +77,10 @@ public class CartHandler extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        /*
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        HashMap<Integer,Product> cart = (HashMap) request.getSession().getAttribute("cart");
+        Cart cart = (Cart) request.getSession().getAttribute("cart");
         if (cart != null) {
             String act = request.getParameter("act");
             if (act != null && act.equals("rm")) {
@@ -82,8 +94,9 @@ public class CartHandler extends HttpServlet {
             } else {
                 try {
                     int itemId = Integer.parseInt(request.getParameter("item"));
-                    Product item = model.ProductMgr.getProductById(itemId);
-                    cart.put(itemId,item);
+                    int qty = Integer.parseInt(request.getParameter("qty"));
+                    Item item = model.ProductMgr.getItemByReq(itemId);
+                    cart.add(item,qty);
                 } catch (Exception ex) {
                     Logger.getLogger(CartHandler.class.getName()).log(Level.SEVERE, null, ex);
                     out.println("invparam");
@@ -92,6 +105,7 @@ public class CartHandler extends HttpServlet {
         } else {
             out.println("invuser");
         }
+        */
     }
 
     /**

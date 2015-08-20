@@ -5,7 +5,7 @@
     </welcome-file-list>
     <servlet>
         <servlet-name>get_item</servlet-name>
-        <servlet-class>control.GetItem</servlet-class>
+        <servlet-class>control.GetProduct</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>add_item</servlet-name>
@@ -32,16 +32,16 @@
         <servlet-class>control.ReviewHandler</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>WishListHandler</servlet-name>
-        <servlet-class>control.WishlistHandler</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>CartHandler</servlet-name>
+        <servlet-name>cart</servlet-name>
         <servlet-class>control.CartHandler</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Order</servlet-name>
-        <servlet-class>control.Order</servlet-class>
+        <servlet-name>wish</servlet-name>
+        <servlet-class>control.WishlistHandler</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetItem</servlet-name>
+        <servlet-class>control.GetItem</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>get_item</servlet-name>
@@ -126,16 +126,16 @@
         <url-pattern>/review</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>WishListHandler</servlet-name>
-        <url-pattern>/wish</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>CartHandler</servlet-name>
+        <servlet-name>cart</servlet-name>
         <url-pattern>/cart</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Order</servlet-name>
-        <url-pattern>/order</url-pattern>
+        <servlet-name>wish</servlet-name>
+        <url-pattern>/wishlist</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetItem</servlet-name>
+        <url-pattern>/item</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

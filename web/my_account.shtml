@@ -44,170 +44,174 @@
     <body>
 
         <!-- - - - - - - - - - - - - - Main Wrapper - - - - - - - - - - - - - - - - -->
+        <div class="wide_layout">
+            <#include "header.shtml">
 
-        <#include "header.shtml">
+            <!-- - - - - - - - - - - - - - Page Wrapper - - - - - - - - - - - - - - - - -->
 
-        <!-- - - - - - - - - - - - - - Page Wrapper - - - - - - - - - - - - - - - - -->
+            <div class="secondary_page_wrapper">
 
-        <div class="secondary_page_wrapper">
+                <div class="container">
 
-            <div class="container">
+                    <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
 
-                <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
+                    <ul class="breadcrumbs">
 
-                <ul class="breadcrumbs">
+                        <li><a href="index.shtml">Home</a></li>
+                        <li>My Account</li>
 
-                    <li><a href="index.shtml">Home</a></li>
-                    <li>My Account</li>
+                    </ul>
 
-                </ul>
+                    <!-- - - - - - - - - - - - - - End of breadcrumbs - - - - - - - - - - - - - - - - -->
 
-                <!-- - - - - - - - - - - - - - End of breadcrumbs - - - - - - - - - - - - - - - - -->
+                    <div class="row">
 
-                <div class="row">
+                        <aside class="col-md-3 col-sm-4">
 
-                    <aside class="col-md-3 col-sm-4">
+                            <!-- - - - - - - - - - - - - - Information - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - Information - - - - - - - - - - - - - - - - -->
+                            <section class="section_offset">
 
-                        <section class="section_offset">
+                                <h3>My Account</h3>
 
-                            <h3>My Account</h3>
+                                <ul class="theme_menu">
 
-                            <ul class="theme_menu">
+                                    <li class="active current"><a href="#">Account Dashboard</a></li>
+                                    <li><a href="my_order.shtml">Order History</a></li>
+                                    <li><a href="wishlist.shtml">Wish List</a></li>
 
-                                <li class="active current"><a href="#">Account Dashboard</a></li>
-                                <li><a href="my_order.shtml">Order History</a></li>
-                                <li><a href="wishlist.shtml">Wish List</a></li>
+                                </ul>
 
-                            </ul>
+                            </section><!--/ .section_offset -->
 
-                        </section><!--/ .section_offset -->
+                            <!-- - - - - - - - - - - - - - End of information - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - End of information - - - - - - - - - - - - - - - - -->
+                            <!-- - - - - - - - - - - - - - Banner - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - Banner - - - - - - - - - - - - - - - - -->
+                            <div class="section_offset">
 
-                        <div class="section_offset">
+                                <a href="#" class="banner">
 
-                            <a href="#" class="banner">
+                                    <img src="images/banner_img_10.png" alt="">
 
-                                <img src="images/banner_img_10.png" alt="">
-
-                            </a>
-
-                        </div>
-
-                        <!-- - - - - - - - - - - - - - End of banner - - - - - - - - - - - - - - - - -->
-
-                    </aside><!--/ [col]-->
-
-                    <main class="col-md-9 col-sm-8">
-
-                        <h1>My Dashboard</h1>
-
-                        <section class="theme_box">
-
-                            <h4>Hello, John Doe!</h4>
-
-                            <p>From your My Account Dashboard you have the ability to view a snapshot of your recent account activity and update your account information. Select a link below to view or edit information.</p>
-
-                        </section><!--/ .theme_box -->
-
-                        <!-- - - - - - - - - - - - - - Contact information - - - - - - - - - - - - - - - - -->
-
-                        <section class="theme_box">
-
-                            <h4>Contact Information</h4>
-
-                            <p><b>First Name:</b><br>
-                                John
-                            </p>
-
-                            <p><b>Last Name:</b><br>
-                                Doe
-                            </p>
-
-                            <p><b>Email Address:</b><br>
-                                john.doe@gmail.com
-                            </p>
-
-                            <br>
-                            <div class="buttons_row">
-
-                                <a href="#" class="button_grey middle_btn" data-modal-url="modals/update_acc.html">Edit Account Information</a>
-
-                                <a href="#" class="button_grey middle_btn" data-modal-url="modals/update_pwd.html">Change Password</a>
+                                </a>
 
                             </div>
 
-                        </section><!--/ .theme_box -->
+                            <!-- - - - - - - - - - - - - - End of banner - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - End of contact information - - - - - - - - - - - - - - - - -->
+                        </aside><!--/ [col]-->
 
-                        <div class="table_layout">
+                        <main class="col-md-9 col-sm-8">
 
-                            <div class="table_row">
+                            <h1>My Dashboard</h1>
 
-                                <div class="table_cell">
+                            <section class="theme_box">
 
-                                    <!-- - - - - - - - - - - - - - Default shipping address - - - - - - - - - - - - - - - - -->
+                                <h4>Hello, John Doe!</h4>
 
-                                    <section>
+                                <p>From your My Account Dashboard you have the ability to view a snapshot of your recent account activity and update your account information. Select a link below to view or edit information.</p>
 
-                                        <h4>Default Shipping Address</h4>
+                            </section><!--/ .theme_box -->
 
-                                        <p><b>Street:</b><br>
-                                            Ang Mo Kio Avenue 10
-                                        </p>
+                            <!-- - - - - - - - - - - - - - Contact information - - - - - - - - - - - - - - - - -->
 
-                                        <p><b>Block/House No:</b><br>
-                                            462
-                                        </p>
+                            <section class="theme_box">
 
-                                        <p><b>Floor:</b><br>
-                                            10
-                                        </p>
+                                <h4>Contact Information</h4>
 
-                                        <p><b>Unit:</b><br>
-                                            123
-                                        </p>
+                                <p><b>First Name:</b><br>
+                                    John
+                                </p>
 
-                                        <p><b>Zip/Postal Code:</b><br>
-                                            398752
-                                        </p>
+                                <p><b>Last Name:</b><br>
+                                    Doe
+                                </p>
 
-                                        <p><b>Contact Number:</b><br>
-                                            91224784
-                                        </p>
+                                <p><b>Email Address:</b><br>
+                                    john.doe@gmail.com
+                                </p>
 
-                                        <p><b>Country:</b><br>
-                                            Singapore
-                                        </p>
+                                <br>
+                                <div class="buttons_row">
 
-                                        <a href="#" class="button_grey middle_btn" data-modal-url="modals/update_ship_add.html">Edit Address</a>
+                                    <a href="#" class="button_grey middle_btn" data-modal-url="modals/update_acc.html">Edit Account Information</a>
 
-                                    </section>
+                                    <a href="#" class="button_grey middle_btn" data-modal-url="modals/update_pwd.html">Change Password</a>
 
-                                    <!-- - - - - - - - - - - - - - End of default shipping address - - - - - - - - - - - - - - - - -->
+                                </div>
 
-                                </div><!--/ .table_cell -->
+                            </section><!--/ .theme_box -->
 
-                            </div><!--/ .table_row -->
+                            <!-- - - - - - - - - - - - - - End of contact information - - - - - - - - - - - - - - - - -->
 
-                        </div><!--/ .table_layout -->
+                            <div class="table_layout">
 
-                    </main><!--/ [col]-->
+                                <div class="table_row">
 
-                </div><!--/ .row-->
+                                    <div class="table_cell">
 
-            </div><!--/ .container-->
+                                        <!-- - - - - - - - - - - - - - Default shipping address - - - - - - - - - - - - - - - - -->
 
-        </div><!--/ .page_wrapper-->
+                                        <section>
 
-        <!-- - - - - - - - - - - - - - End Page Wrapper - - - - - - - - - - - - - - - - -->
+                                            <h4>Default Shipping Address</h4>
 
-        <#include "footer.shtml">
+                                            <p><b>Street:</b><br>
+                                                Ang Mo Kio Avenue 10
+                                            </p>
+
+                                            <p><b>Block/House No:</b><br>
+                                                462
+                                            </p>
+
+                                            <p><b>Floor:</b><br>
+                                                10
+                                            </p>
+
+                                            <p><b>Unit:</b><br>
+                                                123
+                                            </p>
+
+                                            <p><b>Zip/Postal Code:</b><br>
+                                                398752
+                                            </p>
+
+                                            <p><b>Contact Number:</b><br>
+                                                91224784
+                                            </p>
+
+                                            <p><b>Country:</b><br>
+                                                Singapore
+                                            </p>
+
+                                            <a href="#" class="button_grey middle_btn" data-modal-url="modals/update_ship_add.html">Edit Address</a>
+
+                                        </section>
+
+                                        <!-- - - - - - - - - - - - - - End of default shipping address - - - - - - - - - - - - - - - - -->
+
+                                    </div><!--/ .table_cell -->
+
+                                </div><!--/ .table_row -->
+
+                            </div><!--/ .table_layout -->
+
+                        </main><!--/ [col]-->
+
+                    </div><!--/ .row-->
+
+                </div><!--/ .container-->
+
+            </div><!--/ .page_wrapper-->
+
+            <!-- - - - - - - - - - - - - - End Page Wrapper - - - - - - - - - - - - - - - - -->
+
+            <#include "footer.shtml">   
+
+        </div><!--/ [layout]-->
+
+        <#include "social_feeds.shtml">
 
         <!-- Include Plugins
         ============================================ -->
@@ -221,7 +225,5 @@
         <script src="js/retina.min.js"></script>
         <script src="js/theme.plugins.js"></script>
         <script src="js/theme.core.js"></script>
-        <script src="js/header.js" type="text/javascript"></script>
-
     </body>
 </html>
