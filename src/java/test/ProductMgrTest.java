@@ -20,8 +20,10 @@ public class ProductMgrTest {
     String tt = "kk", gg = "ii";
 //product  
     //getProductByCategory
-    database.ProductMgr.getProductByCategory("abc");
+    //database.ProductMgr.getProductByCategory("abc");
     
+    //get categorys
+    //System.out.println(database.ProductMgr.getCategory());
     //addProduct test
     /*
     model.ProductMgr.addProduct(pdid, "yasd", 23, 2, tt, tt, tt, tt, tt);
