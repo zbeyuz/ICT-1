@@ -17,7 +17,7 @@ icp.logout = function () {
 };
 
 icp.onlogin = function () {
-    
+
 };
 
 icp.login = function () {
@@ -53,7 +53,7 @@ icp.cart = {};
 icp.cart.add = function (item) {
     $.post("cart", {"item": item}, function (data) {
         console.log(data);
-        if(data==="invuser"){
+        if (data === "invuser") {
             alert("Please login or register!");
         }
         $("#cart").html("");
@@ -61,37 +61,36 @@ icp.cart.add = function (item) {
     });
 };
 
-
-
 icp.cart.get = function () {
     $.get("cart", function (data) {
         var items = JSON.parse(data);
         var i = 0;
         for (i = 0; i < items.length; i++) {
-        $("#cart").append(' \
+            $("#cart").append(' \
             <div class="animated_item"><div class="clearfix sc_product"> \
               <a href="product?id=' + items[i][0] + '" class="product_thumb"><img height="50" width="50" src="' + items[i][3] + '" alt=""></a> \
               <a href="product?id=' + items[i][0] + '" class="product_name">' + items[i][1] + '</a> \
-              <p>'+items[i][2]+'</p>\
+              <p>' + items[i][2] + '</p>\
               <button onclick="icp.cart.rm(' + items[i][0] + ')" class="close"></button> \
             </div></div>\
             ');
-    
+
         }
     });
 };
 
 icp.cart.rm = function (item) {
-    var req={"act":"rm"};
-    req["item"]=item;
-    $.post("cart",req);
+    var req = {"act": "rm"};
+    req["item"] = item;
+    $.post("cart", req);
 };
 
 icp.wish = function (item) {
     var i = {};
     i.item = item;
     $.post("wishlist", i);
-}
+};
+
 $.get("login", icp.account);
 icp.cart.get();
 var sel = {};
@@ -101,13 +100,22 @@ sel.constHTML = function (val) {
     var i = 0;
     var str = '';
     for (i = 0; i < val.length; i += 1) {
-        str += '<button style="margin:5px" class="' + sel.btnOff + '" value="'+val[i]+'">' + val[i] + '</button>';
+        str += '<button style="margin:5px" class="' + sel.btnOff + '" value="' + val[i] + '">' + val[i] + '</button>';
     }
-    var e=$(str);
+    var e = $(str);
     e.click(function (event) {
-        e.attr("class",sel.btnOff);
-        $(event.target).attr("class",sel.btnOn);
+        e.attr("class", sel.btnOff);
+        $(event.target).attr("class", sel.btnOn);
         console.log($(event.target).attr("value"));
     });
     return e;
 };
+icp.catList = $('#allcats');
+
+$.get("category", function (data) {
+    var c = JSON.parse(data);
+    var i = 0;
+    for (i = 0; i < c.length; i += 1) {
+        icp.catList.append('<li><a href="category.shtml#' + c[i] + '" class="all"><b>' + c[i] + '</b></li>');
+    }
+});

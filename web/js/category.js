@@ -4,6 +4,34 @@
  * and open the template in the editor.
  */
 var pdt={};
+pdt.list=[];
+pdt.handler = function (li, dir) {
+    return function (){
+        $('.category').attr("class","");
+        li.attr("class","category active current");
+        pdt.get(dir);
+    };
+    
+};
+
+
+pdt.category = function () {
+    $.get("category", function (data){
+        var c = JSON.parse(data);
+        var i = 0;
+        for (i = 0; i < c.length; i += 1){
+            var li = $('<li class="cli"></li>');
+            if (location.hash.replace('#','')===c[i]){
+                li.attr("class","category active current");
+            }
+            var a = $('<a href="#'+c[i]+'" class="all"><b>'+c[i]+'</b>');
+            li.append(a);
+            a.click(pdt.handler(li, c[i]));
+            $('#catagories').append(li);
+        }
+    });
+};
+
 
 pdt.row = function () {
     var row = $('<div class="table_row"></div>');
@@ -14,13 +42,14 @@ pdt.row = function () {
 
 pdt.get = function (tag) {
     $.get("getitem?category="+tag, function (data) {
-        var list=JSON.parse(data);
-        var i = 0;
-        pdt.printCell(list);
+        pdt.list=JSON.parse(data);
+        pdt.printCell(pdt.list);
+        
     });
 };
 
 pdt.printCell = function (list) {
+    $('#products_container').html('');
     var i = 0;
     var row;
     while(i < list.length){
@@ -31,7 +60,9 @@ pdt.printCell = function (list) {
         i += 1;
     }
     return row;
+    
 };
+
 
 
 pdt.formatHTML = function (id, name, price, profile_pic) {
@@ -51,7 +82,7 @@ pdt.formatHTML = function (id, name, price, profile_pic) {
     <div class="description">\
       <a href="#">'+name+'</a>\
       <div class="clearfix product_info">\
-        <p class="product_price alignleft"><b>$24.99</b></p>\
+        <p class="product_price alignleft"><b>$'+price+'</b></p>\
       </div>\
     </div>\
     <div class="full_description">\
@@ -64,7 +95,7 @@ pdt.formatHTML = function (id, name, price, profile_pic) {
       <p>Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula.</p>\
     </div>\
     <div class="actions">\
-      <p class="product_price bold">'+price+'</p>\
+      <p class="product_price bold">$'+price+'</p>\
       <ul class="seller_stats">\
         <li><b>Manufacturer:</b> Intel</li>\
         <li><b>Availability:</b> <span class="in_stock">In stock</span></li>\
@@ -80,3 +111,5 @@ pdt.formatHTML = function (id, name, price, profile_pic) {
 
 
 
+pdt.get(location.hash.replace('#',''));
+pdt.category();
