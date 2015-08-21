@@ -119,3 +119,36 @@ $.get("category", function (data) {
         icp.catList.append('<li><a href="category.shtml#' + c[i] + '" class="all"><b>' + c[i] + '</b></li>');
     }
 });
+
+icp.item = {};
+icp.item.list = [];
+
+icp.item.getDistint = function (a, index) {
+    var res = [];
+    var i = 0;
+    for (i = 0; i < a.length; i += 1) {
+        if (res.indexOf(a[i][index]) === -1) {
+            res.push(a[i][index]);
+        }
+    }
+    return res;
+}
+
+icp.item.get = function (id) {
+    $.get("item?product=" + id, function (data) {
+        icp.item.list = JSON.parse(data);
+        var materials = icp.item.getDistint(icp.item.list, 2);
+        console.log(icp.item.filter(icp.item.list, materials[0], 2));
+    });
+};
+
+icp.item.filter = function (a, name, index) {
+    var res = [];
+    var i = 0;
+    for (i = 0; i < a.length; i += 1) {
+        if (a[i][index] === name) {
+            res.push(a[i]);
+        }
+    }
+    return res;
+};
