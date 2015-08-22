@@ -16,35 +16,70 @@ import java.util.HashMap;
 public class Cart {
     
     private HashMap<Integer,Item> items;
+    private HashMap<Integer,Product> products;
     private HashMap<Integer,Integer> qty;
     
     public Cart(){
         items=new HashMap();
         qty=new HashMap();
+        products=new HashMap();
     }
     
-    public Cart(HashMap items,HashMap products){
+    public Cart(HashMap items,HashMap qty, HashMap products){
         this.items=items;
-        this.qty=products;
+        this.qty=qty;
+        this.products=products;
     }
     
-    public void add(Item item, int qty){
-        items.put(item.item_id, item);
-        this.qty.put(item.item_id, qty);
+    public boolean add(Item item, Product product, int qty){
+        if (item.item_id>=0&&item.product_id==product.id){
+            items.put(item.item_id, item);
+            products.put(item.item_id, product);
+            this.qty.put(item.item_id, qty);
+            return true;
+        }
+        return false;
     }
     
     public void remove(int id){
         items.remove(id);
+        products.remove(id);
         items.remove(id);
     }
     
     public void remove(Item item){
         remove(item.item_id);
     }
-
     public ArrayList<Item> items() {
         return new ArrayList(items.values());
     }
     
+    public ArrayList<Integer> itemId() {
+        return new ArrayList(items.keySet());
+    }
+    
+    public int qty(int id) {
+        return qty.get(id);
+    }
+    
+    public int price(int id) {
+        return product(id).price;
+    }
+    
+    public Product product(int id) {
+        return products.get(id);
+    }
+    
+    public Item item(int id) {
+        return items.get(id);
+    }
+    
+    public double total(){
+        double res=0;
+        for(int i:itemId()){
+            res += price(i);
+        }
+        return res;
+    }
     
 }

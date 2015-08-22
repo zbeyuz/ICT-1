@@ -50,8 +50,8 @@ icp.reg = function () {
 }
 icp.cart = {};
 
-icp.cart.add = function (item) {
-    $.post("cart", {"item": item}, function (data) {
+icp.cart.add = function (item, qty) {
+    $.post("cart", {"item": item, "qty":qty}, function (data) {
         console.log(data);
         if (data === "invuser") {
             alert("Please login or register!");
@@ -96,6 +96,11 @@ icp.cart.get();
 var sel = {};
 sel.btnOff = 'button_dark_grey small_btn';
 sel.btnOn = "button_blue small_btn";
+sel.getNum = function (num) {
+    return function () {
+        return num;
+    };
+}
 sel.constHTML = function (val) {
     var i = 0;
     var str = '';
@@ -106,7 +111,7 @@ sel.constHTML = function (val) {
     e.click(function (event) {
         e.attr("class", sel.btnOff);
         $(event.target).attr("class", sel.btnOn);
-        console.log($(event.target).attr("value"));
+        //console.log($(event.target).attr("value"));
     });
     return e;
 };
@@ -118,10 +123,15 @@ $.get("category", function (data) {
     for (i = 0; i < c.length; i += 1) {
         icp.catList.append('<li><a href="category.shtml#' + c[i] + '" class="all"><b>' + c[i] + '</b></li>');
     }
+
 });
 
 icp.item = {};
+
 icp.item.list = [];
+
+icp.item.id=0;
+
 
 icp.item.getDistint = function (a, index) {
     var res = [];
@@ -134,12 +144,49 @@ icp.item.getDistint = function (a, index) {
     return res;
 }
 
+
 icp.item.get = function (id) {
     $.get("item?product=" + id, function (data) {
         icp.item.list = JSON.parse(data);
         var materials = icp.item.getDistint(icp.item.list, 2);
-        console.log(icp.item.filter(icp.item.list, materials[0], 2));
+        //console.log(icp.item.filter(icp.item.list, materials[0], 2));
+        var mBtn=sel.constHTML(materials).click(function (e) {
+            var val = $(e.target).attr("value");
+            icp.item.getColor(icp.item.list, val);
+        });
+        $(mBtn[0]).trigger('click');
+        $('#material').append(mBtn);
     });
+};
+
+icp.item.getColor = function (data, m) {
+    var items=icp.item.filter(data, m, 2);
+    var colors = icp.item.getDistint(items, 1);
+    var mBtn=sel.constHTML(colors).click(function (e) {
+        var c = $(e.target).attr("value");
+        icp.item.getSize(items, c);
+    });
+    $('#color').html('');
+    $(mBtn[0]).trigger('click');
+    $('#color').append(mBtn);
+
+};
+
+icp.item.getSize = function (data, val) {
+    var itm = icp.item.filter(data, val, 1);
+    var size = icp.item.getDistint(itm, 4);
+    var mBtn=sel.constHTML(size).click(function (e) {
+        var s = $(e.target).attr("value");
+        var i;
+        for (i = 0; i < itm.length; i += 1){
+            if (s === itm[i][4]) {
+                icp.item.id=itm[i][0];
+            }
+        }
+    });
+    $('#size').html('');
+    $(mBtn[0]).trigger('click');
+    $('#size').append(mBtn);
 };
 
 icp.item.filter = function (a, name, index) {

@@ -103,5 +103,4 @@ icp.getReview = function (id) {
     });
 };
 
-//$('#material').append(sel.constHTML(['a', 'b', 'c']))
 
