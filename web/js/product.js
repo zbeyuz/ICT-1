@@ -199,6 +199,7 @@ icp.getReview = function (id) {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 icp.item.get = function (id) {
     $.get("item?product="+id, function (data){
        console.log(data); 
@@ -206,6 +207,8 @@ icp.item.get = function (id) {
 };
 
 $('#material').append(sel.constHTML(['a','b','c']))
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 =======
 >>>>>>> upstream/master

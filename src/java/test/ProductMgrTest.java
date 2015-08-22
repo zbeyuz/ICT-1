@@ -26,6 +26,11 @@ public class ProductMgrTest {
     //database.ProductMgr.getProductByCategory("abc");
     
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+    //get categorys
+    //System.out.println(database.ProductMgr.getCategory());
 >>>>>>> upstream/master
 =======
     //get categorys
