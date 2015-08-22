@@ -724,6 +724,7 @@
         <script src="js/product.js" type="text/javascript"></script>
         <script>
             icp.getReview("${id}");
+            icp.item.get("${id}");
         </script>
     </body>
 </html>

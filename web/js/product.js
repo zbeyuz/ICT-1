@@ -103,12 +103,4 @@ icp.getReview = function (id) {
     });
 };
 
-icp.item = {};
 
-icp.item.get = function (id) {
-    $.get("item?product="+id, function (data){
-       console.log(data); 
-    });
-};
-
-$('#material').append(sel.constHTML(['a','b','c']))
