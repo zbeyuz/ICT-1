@@ -38,7 +38,7 @@ public class CartHandler extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
-        Cart cart = null;//(Cart) request.getSession().getAttribute("cart");
+        Cart cart = (Cart) request.getSession().getAttribute("cart");
         if (cart != null) {
             out.print("\u005B");
             String s = "";
@@ -80,6 +80,7 @@ public class CartHandler extends HttpServlet {
         Cart cart = (Cart) request.getSession().getAttribute("cart");
         if (cart == null) {
             cart = new Cart();
+            request.getSession().setAttribute("cart", cart);
         }
         
         String act = request.getParameter("act");
@@ -95,10 +96,14 @@ public class CartHandler extends HttpServlet {
             try {
                 int itemId = Integer.parseInt(request.getParameter("item"));
                 int qty = Integer.parseInt(request.getParameter("qty"));
-                out.printf("id%d qty%d", itemId,qty);
-                //Item item = database.ProductMgr.getItemByItemId(itemId);
-                //Product product = database.ProductMgr.getProductByProductId(item.product_id);
-                //cart.add(item, product, qty);
+                Item item = database.ProductMgr.getItemByItemId(itemId);
+                Product product = database.ProductMgr.getProductByProductId(item.product_id);
+                if(!cart.add(item, product, qty)){
+                    out.println("invalid product");
+                }
+                //Logger.getLogger(CartHandler.class.getName()).info(String.format("param: %d %d", itemId, qty));
+                //Logger.getLogger(CartHandler.class.getName()).info(String.format("size: %d", cart.size()));
+                //Logger.getLogger(CartHandler.class.getName()).info(String.format("cart: %b", cart.product(itemId).equals(product)));
             } catch (Exception ex) {
                 Logger.getLogger(CartHandler.class.getName()).log(Level.SEVERE, null, ex);
                 out.println("invparam");

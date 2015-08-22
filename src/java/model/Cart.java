@@ -82,4 +82,7 @@ public class Cart {
         return res;
     }
     
+    public int size() {
+        return items.size();
+    }
 }
