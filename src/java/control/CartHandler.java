@@ -7,8 +7,6 @@ package control;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
@@ -39,7 +37,7 @@ public class CartHandler extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        
+
         Cart cart = null;//(Cart) request.getSession().getAttribute("cart");
         if (cart != null) {
             out.print("\u005B");
@@ -77,35 +75,36 @@ public class CartHandler extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        /*
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         Cart cart = (Cart) request.getSession().getAttribute("cart");
-        if (cart != null) {
-            String act = request.getParameter("act");
-            if (act != null && act.equals("rm")) {
-                try {
-                    int itemId = Integer.parseInt(request.getParameter("item"));
-                    cart.remove(itemId);
-                } catch (Exception ex) {
-                    Logger.getLogger(CartHandler.class.getName()).log(Level.SEVERE, null, ex);
-                    out.println("invparam");
-                }
-            } else {
-                try {
-                    int itemId = Integer.parseInt(request.getParameter("item"));
-                    int qty = Integer.parseInt(request.getParameter("qty"));
-                    Item item = model.ProductMgr.getItemByReq(itemId);
-                    cart.add(item,qty);
-                } catch (Exception ex) {
-                    Logger.getLogger(CartHandler.class.getName()).log(Level.SEVERE, null, ex);
-                    out.println("invparam");
-                }
+        if (cart == null) {
+            cart = new Cart();
+        }
+        
+        String act = request.getParameter("act");
+        if (act != null && act.equals("rm")) {
+            try {
+                int itemId = Integer.parseInt(request.getParameter("item"));
+                cart.remove(itemId);
+            } catch (Exception ex) {
+                Logger.getLogger(CartHandler.class.getName()).log(Level.SEVERE, null, ex);
+                out.println("invparam");
             }
         } else {
-            out.println("invuser");
+            try {
+                int itemId = Integer.parseInt(request.getParameter("item"));
+                int qty = Integer.parseInt(request.getParameter("qty"));
+                out.printf("id%d qty%d", itemId,qty);
+                //Item item = database.ProductMgr.getItemByItemId(itemId);
+                //Product product = database.ProductMgr.getProductByProductId(item.product_id);
+                //cart.add(item, product, qty);
+            } catch (Exception ex) {
+                Logger.getLogger(CartHandler.class.getName()).log(Level.SEVERE, null, ex);
+                out.println("invparam");
+            }
         }
-        */
+
     }
 
     /**

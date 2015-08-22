@@ -238,6 +238,37 @@ public class ProductMgr {
         return res;
     }
     
+    public static ArrayList<String> getCategory() throws SQLException, Exception {
+
+        Connection conn = DBConn.getConn();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        pstmt = conn.prepareStatement("SELECT DISTINCT `product_type` FROM `product_list`");
+        rs = pstmt.executeQuery();
+        ArrayList<String> res = new ArrayList();
+        while (rs.next()) {
+            res.add(rs.getString("product_type"));
+        }
+        conn.close();
+        return res;
+    }
+    
+    public static ArrayList<String> getCategoryByGender(String gender) throws SQLException, Exception {
+
+        Connection conn = DBConn.getConn();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        pstmt = conn.prepareStatement("SELECT DISTINCT `product_type` FROM `product_list` WHERE `product_gender`=?");
+        pstmt.setString(1, gender);
+        rs = pstmt.executeQuery();
+        ArrayList<String> res = new ArrayList();
+        while (rs.next()) {
+            res.add(rs.getString("product_type"));
+        }
+        conn.close();
+        return res;
+    }
+    
     public static ArrayList<Product> getProductByCategory(String category) throws SQLException, Exception {
 
         Connection conn = DBConn.getConn();

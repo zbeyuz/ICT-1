@@ -43,6 +43,10 @@
         <servlet-name>GetItem</servlet-name>
         <servlet-class>control.GetItem</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>getCategory</servlet-name>
+        <servlet-class>control.getCategory</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>get_item</servlet-name>
         <url-pattern>/getitem</url-pattern>
@@ -136,6 +140,10 @@
     <servlet-mapping>
         <servlet-name>GetItem</servlet-name>
         <url-pattern>/item</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>getCategory</servlet-name>
+        <url-pattern>/category</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -23,8 +23,13 @@ public class ProductMgrTest {
 =======
 //product  
     //getProductByCategory
-    database.ProductMgr.getProductByCategory("abc");
+    //database.ProductMgr.getProductByCategory("abc");
     
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+    //get categorys
+    //System.out.println(database.ProductMgr.getCategory());
 >>>>>>> upstream/master
     //addProduct test
     /*

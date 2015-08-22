@@ -66,7 +66,7 @@ public class Login extends HttpServlet {
         String act = request.getParameter("act");
         if (user != null) {
             if (act != null && act.equals("logout")) {
-                session.invalidate();
+                session.removeAttribute("user");
                 //response.sendRedirect(request.getHeader("Referer"));
             } else {
                 out.print(user.fName + " " + user.lName);
