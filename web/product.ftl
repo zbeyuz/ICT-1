@@ -233,7 +233,7 @@
                                     <div class="qty min clearfix">
 
                                         <button class="theme_button" data-direction="minus">&#45;</button>
-                                        <input type="text" name="" value="1">
+                                        <input type="text" id="qty" value="1">
                                         <button class="theme_button" data-direction="plus">&#43;</button>
 
                                     </div>
@@ -248,7 +248,7 @@
 
                                     <div class="buttons_row">
 
-                                        <button class="button_blue middle_btn">Add to Cart</button>
+                                        <button onclick="icp.cart.submit()" class="button_blue middle_btn">Add to Cart</button>
 
                                         <button class="button_dark_grey def_icon_btn middle_btn add_to_wishlist tooltip_container">
                                             <span class="tooltip top">Add to Wishlist</span></button>

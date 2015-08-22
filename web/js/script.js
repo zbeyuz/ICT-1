@@ -51,7 +51,7 @@ icp.reg = function () {
 icp.cart = {};
 
 icp.cart.add = function (item, qty) {
-    $.post("cart", {"item": item, "qty":qty}, function (data) {
+    $.post("cart", {"item": item, "qty": qty}, function (data) {
         console.log(data);
         if (data === "invuser") {
             alert("Please login or register!");
@@ -79,14 +79,9 @@ icp.cart.get = function () {
     });
 };
 
-icp.cart.rm = function (item) {
-    var req = {"act": "rm"};
-    req["item"] = item;
-    $.post("cart", req);
-};
-
 icp.wish = function (item) {
     var i = {};
+    
     i.item = item;
     $.post("wishlist", i);
 };
@@ -130,7 +125,7 @@ icp.item = {};
 
 icp.item.list = [];
 
-icp.item.id=0;
+icp.item.id = 0;
 
 
 icp.item.getDistint = function (a, index) {
@@ -150,7 +145,7 @@ icp.item.get = function (id) {
         icp.item.list = JSON.parse(data);
         var materials = icp.item.getDistint(icp.item.list, 2);
         //console.log(icp.item.filter(icp.item.list, materials[0], 2));
-        var mBtn=sel.constHTML(materials).click(function (e) {
+        var mBtn = sel.constHTML(materials).click(function (e) {
             var val = $(e.target).attr("value");
             icp.item.getColor(icp.item.list, val);
         });
@@ -160,9 +155,9 @@ icp.item.get = function (id) {
 };
 
 icp.item.getColor = function (data, m) {
-    var items=icp.item.filter(data, m, 2);
+    var items = icp.item.filter(data, m, 2);
     var colors = icp.item.getDistint(items, 1);
-    var mBtn=sel.constHTML(colors).click(function (e) {
+    var mBtn = sel.constHTML(colors).click(function (e) {
         var c = $(e.target).attr("value");
         icp.item.getSize(items, c);
     });
@@ -175,12 +170,12 @@ icp.item.getColor = function (data, m) {
 icp.item.getSize = function (data, val) {
     var itm = icp.item.filter(data, val, 1);
     var size = icp.item.getDistint(itm, 4);
-    var mBtn=sel.constHTML(size).click(function (e) {
+    var mBtn = sel.constHTML(size).click(function (e) {
         var s = $(e.target).attr("value");
         var i;
-        for (i = 0; i < itm.length; i += 1){
+        for (i = 0; i < itm.length; i += 1) {
             if (s === itm[i][4]) {
-                icp.item.id=itm[i][0];
+                icp.item.id = itm[i][0];
             }
         }
     });
@@ -198,4 +193,10 @@ icp.item.filter = function (a, name, index) {
         }
     }
     return res;
+};
+
+icp.cart.submit = function () {
+    var item = icp.item.id;
+    var qty = $('#qty').val();
+    icp.cart.add(item,qty);
 };
