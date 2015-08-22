@@ -16,7 +16,6 @@ import javax.servlet.http.HttpServletResponse;
 import model.Cart;
 import model.Item;
 import model.Product;
-import database.ProductMgr;
 
 /**
  *
@@ -37,28 +36,14 @@ public class CartHandler extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-
         Cart cart = (Cart) request.getSession().getAttribute("cart");
         if (cart != null) {
-            out.print("\u005B");
-            String s = "";
-            for (Item a : cart.items()) {
-                out.print(s);
-                Product i;
-                try {
-                    i = ProductMgr.getProductByProductId(a.product_id);
-                } catch (Exception ex) {
-                    Logger.getLogger(CartHandler.class.getName()).log(Level.SEVERE, null, ex);
-                    break;
-                }
-                if (i.profile_pic.replace(" ", "").equals("")) {
-                    i.profile_pic = "images/product_img_27.jpg";
-                }
-                out.printf("\u005B%d,\"%s\",%d,\"%s\"\u005D",
-                        i.id, i.name, i.price, i.profile_pic);
-                s = ",";
+            String act = request.getParameter("act");
+            if (act != null && act.equals("view")) {
+                printAll(out, cart);
+            } else {
+                printProducts(out, cart);
             }
-            out.print("\u005D");
         } else {
             out.println("\u005B\u005D");
         }
@@ -82,7 +67,7 @@ public class CartHandler extends HttpServlet {
             cart = new Cart();
             request.getSession().setAttribute("cart", cart);
         }
-        
+
         String act = request.getParameter("act");
         if (act != null && act.equals("rm")) {
             try {
@@ -98,7 +83,7 @@ public class CartHandler extends HttpServlet {
                 int qty = Integer.parseInt(request.getParameter("qty"));
                 Item item = database.ProductMgr.getItemByItemId(itemId);
                 Product product = database.ProductMgr.getProductByProductId(item.product_id);
-                if(!cart.add(item, product, qty)){
+                if (!cart.add(item, product, qty)) {
                     out.println("invalid product");
                 }
                 //Logger.getLogger(CartHandler.class.getName()).info(String.format("param: %d %d", itemId, qty));
@@ -122,4 +107,33 @@ public class CartHandler extends HttpServlet {
         return "Short description";
     }
 
+    private void printProducts(PrintWriter out, Cart cart) {
+        out.print("\u005B");
+        String s = "";
+        for (Product i : cart.ProductList()) {
+            out.print(s);
+            if (i.profile_pic.replace(" ", "").equals("")) {
+                i.profile_pic = "images/product_img_27.jpg";
+            }
+            out.printf("\u005B%d,\"%s\",%d,\"%s\"\u005D", i.id, i.name, i.price, i.profile_pic);
+            s = ",";
+        }
+        out.print("\u005D");
+    }
+    
+    private void printAll(PrintWriter out, Cart cart) {
+        out.print("\u005B");
+        String s = "";
+        for (Integer i : cart.itemId()) {
+            out.print(s);
+            Product product=cart.product(i);
+            Item item=cart.item(i);
+            out.printf("\u005B%d,\"%s\",\"%s\",\"%s\",\"%s\",%d,%d,\"%s\",%d\u005D",
+                    item.item_id, item.item_material,item.item_color,item.item_size,
+                    product.name,product.id,product.price,product.profile_pic,
+                    cart.qty(i));
+            s = ",";
+        }
+        out.print("\u005D");
+    }
 }
