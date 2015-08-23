@@ -1,4 +1,3 @@
-
 /* 
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -7,7 +6,7 @@
 
 
 icp.revArray = function () {
-    return $("#rating").serializeArray().concat($("#revForm").serializeArray());
+    return $("#rating").serializeArray();
 }
 icp.revObj = function () {
     var res = {};
@@ -91,13 +90,6 @@ icp.getReview = function (id) {
     });
 }
 icp.getReview();
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 
 icp.revArray = function () {
     return $("#rating").serializeArray();
@@ -197,12 +189,7 @@ icp.getReview = function (id) {
     });
 };
 
-
-icp.item.get = function (id) {
-    $.get("item?product="+id, function (data){
-       console.log(data); 
-    });
+icp.submitCart = function () {
+    var id = icp.item.id;
+    var qty = $('#qty').val();
 };
-
-$('#material').append(sel.constHTML(['a','b','c']))
-
