@@ -54,11 +54,11 @@ public class UserMgr {
 
         String email = "0"; //use to store email from database
         String ch = "ok"; //user for check that email already been use or not
-        int id = 0; //use to store lastest user id
+        int id = 1; //use to store lastest user id
 
         while (rs.next()) {
             email = rs.getString("user_email");
-            id = rs.getInt("user_id");  //
+            id++;  //
             if (email.equals(user_email)) {
                 ch = "This email already been used"; //change state if email already been used
             }
@@ -67,7 +67,6 @@ public class UserMgr {
         pstmt = conn.prepareStatement("insert into user_list values(?,?,?,?,?)");
         pstmt2 = conn.prepareStatement("insert into user_info values(?,?,?,?,?,?,?,?,?)");
         if (ch.equals("ok")) {
-            id++;
             pstmt.setInt(1, id);
             pstmt.setString(2, user_email);
             pstmt.setString(3, user_password);

@@ -36,6 +36,34 @@ icp.login = function () {
         }
     });
 };
+icp.regis= function () {
+    if ($("#pwd").val() === $("#rpwd").val()){
+        var form ={
+        "user_email":$("#email").val(),
+        "user_password":$("#pwd").val(),
+        "user_fname":$("#fName").val(),
+        "user_lname":$("#lName").val()    
+        }
+        console.log(form);
+        $.post("Register", form, function (data) {    
+        //console.log(data);
+        $('#closeReg').trigger("click");
+        $.post("login", form, function (data) {
+        var res = JSON.parse(data);
+        console.log(res);
+            icp.account(res[1]);
+            icp.onlogin();
+        });
+        });
+        
+        
+        
+        
+    }else{
+        alert("information is incorrect");
+    
+    }
+}
 
 icp.reg = function () {
     var form = $("#regForm").serialize();

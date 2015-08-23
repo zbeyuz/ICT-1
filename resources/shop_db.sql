@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Aug 17, 2015 at 04:10 PM
+-- Generation Time: Aug 23, 2015 at 11:02 AM
 -- Server version: 5.6.25
 -- PHP Version: 5.6.11
 
@@ -268,7 +268,11 @@ CREATE TABLE IF NOT EXISTS `user_info` (
 
 INSERT INTO `user_info` (`user_id`, `user_address`, `user_floor`, `user_unit`, `user_road`, `user_country`, `user_postcode`, `user_tel`, `user_pic`) VALUES
 (5, 'ok', 'ok', 'ok', 'ok', 'ok', 123, 123, 'ok'),
-(6, 'ok', 'ok', 'ok', 'ok', 'ok', 1234, 1234, 'ok');
+(6, 'ok', 'ok', 'ok', 'ok', 'ok', 1234, 1234, 'ok'),
+(1, 'ok', 'ok', 'ok', 'ok', 'ok', 123, 12312, 'ok'),
+(2, 'ok', 'ok', 'ok', 'ok', 'ok', 123, 12312, 'ok'),
+(3, 'ok', 'ok', 'ok', 'ok', 'ok', 123, 12312, 'ok'),
+(4, 'ok', 'ok', 'ok', 'ok', 'ok', 123, 12312, 'ok');
 
 -- --------------------------------------------------------
 
@@ -289,8 +293,12 @@ CREATE TABLE IF NOT EXISTS `user_list` (
 --
 
 INSERT INTO `user_list` (`user_id`, `user_email`, `user_password`, `user_fname`, `user_lname`) VALUES
-(5, 'p@a', '123', 'jkas', 'qwe'),
-(6, 'pl@pp', '122', 'jkas', 'qwe');
+(5, 'a@a', '12', 'jkas', 'qwe'),
+(6, 'pl@pp', '122', 'jkas', 'qwe'),
+(1, 'q@q', '123', 'asd', 'asd'),
+(2, 'w@w', '123', 'asd', 'asd'),
+(3, 'r@r', '123', 'qaza', 'qaza'),
+(4, 'e@e', '123', 'qaza', 'qaza');
 
 -- --------------------------------------------------------
 
