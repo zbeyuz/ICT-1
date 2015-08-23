@@ -20,7 +20,7 @@ import model.ProductNew;
  *
  * @author Fu
  */
-public class ProductHighlight {
+public class ProductHighlightMgr {
     public static ArrayList<ProductBest> getProductBest() throws SQLException, Exception {
 
         Connection conn = DBConn.getConn();

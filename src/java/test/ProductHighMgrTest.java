@@ -19,7 +19,7 @@ import model.ProductFeature;
 public class ProductHighMgrTest {
     public static void main(String[] args) throws Exception{
         ArrayList<ProductFeature> res =  new ArrayList();
-        res = database.ProductHighlight.getProductFeature();
+        res = database.ProductHighlightMgr.getProductFeature();
         System.out.println(res.size());
     }
 }
