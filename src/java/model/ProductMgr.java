@@ -5,6 +5,7 @@
  * and open the template in the editor.
  */
 package model;
+import database.DBConn;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
