@@ -4,9 +4,22 @@
  * and open the template in the editor.
  */
 var cart = {};
+cart.items = [];
+cart.total = function () {
+    var i = 0;
+    var total = 0;
+    for (i = 0; i < cart.items.length; i += 1) {
+        total += cart.items[i][9];
+    }
+    return total;
+};
+
 cart.get = function () {
     $.get('cart?act=view', function (data) {
         var items = JSON.parse(data);
+        cart.items = items;
+        $('#subtotal').html('$'+cart.total());
+        $('#total').html('$'+cart.total());
         $('#clict').html('');
         var i = 0;
         for (i = 0; i < items.length; i += 1) {
