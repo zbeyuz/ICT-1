@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 icp.order = {};
 icp.order.get = function () {
     var res = {};
@@ -15,7 +15,7 @@ icp.order.submit = function () {
         console.log(data);
     });
 };
-=======
+
 icp.order = {};
 icp.order.get = function () {
     var res = {};
@@ -32,4 +32,4 @@ icp.order.submit = function () {
         console.log(data);
     });
 };
->>>>>>> upstream/master
+

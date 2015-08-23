@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* 
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -91,7 +91,7 @@ icp.getReview = function (id) {
     });
 }
 icp.getReview();
-=======
+
 /* 
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -198,8 +198,6 @@ icp.getReview = function (id) {
 };
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 icp.item.get = function (id) {
     $.get("item?product="+id, function (data){
        console.log(data); 
@@ -207,8 +205,4 @@ icp.item.get = function (id) {
 };
 
 $('#material').append(sel.constHTML(['a','b','c']))
->>>>>>> upstream/master
-=======
->>>>>>> upstream/master
-=======
->>>>>>> upstream/master
+

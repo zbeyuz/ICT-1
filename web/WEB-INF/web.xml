@@ -48,17 +48,18 @@
         <servlet-class>control.getCategory</servlet-class>
     </servlet>
     <servlet>
-<<<<<<< HEAD
+
         <servlet-name>updatepwd</servlet-name>
         <servlet-class>control.UpdatePassword</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>updateacc</servlet-name>
         <servlet-class>control.UpdateEmail</servlet-class>
-=======
+    </servlet>
+    <servlet>
         <servlet-name>SearchHandler</servlet-name>
         <servlet-class>control.SearchHandler</servlet-class>
->>>>>>> upstream/master
+
     </servlet>
     <servlet-mapping>
         <servlet-name>get_item</servlet-name>
@@ -159,17 +160,17 @@
         <url-pattern>/category</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-<<<<<<< HEAD
         <servlet-name>updatepwd</servlet-name>
         <url-pattern>/UpdatePassword</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>updateacc</servlet-name>
         <url-pattern>/UpdateEmail</url-pattern>
-=======
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>SearchHandler</servlet-name>
         <url-pattern>/search</url-pattern>
->>>>>>> upstream/master
+
     </servlet-mapping>
     <session-config>
         <session-timeout>

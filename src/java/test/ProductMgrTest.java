@@ -23,14 +23,14 @@ public class ProductMgrTest {
     public static void main(String[] args) throws Exception{
     int pdid = 122, usid = 5;
     String tt = "kk", gg = "ii";
-<<<<<<< HEAD
 
-=======
+
+
     ArrayList<Product> a=ProductMgr.getProductByKeyword("s");
     for (Product i:a){
         System.out.println(i.name);
     }
->>>>>>> upstream/master
+
 //product  
     //getProductByCategory
     //database.ProductMgr.getProductByCategory("abc");
