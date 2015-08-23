@@ -20,7 +20,7 @@ cart.get = function () {
         cart.items = items;
         $('#subtotal').html('$'+cart.total());
         $('#total').html('$'+cart.total());
-        $('#clict').html('');
+        $('#clict').empty();
         var i = 0;
         for (i = 0; i < items.length; i += 1) {
             $('#clist').append('\
@@ -46,16 +46,18 @@ cart.get = function () {
   </div>\
   </td>\
   <td class="total" data-title="Total">$'+items[i][9]+'</td>\
-  <td data-title="Action"><a href="#" onclick="cart.remove('+items[i][0]+')" class="button_dark_grey middle_btn">Delete</a></td>\
+  <td data-title="Action"><a href="javascript:;" onclick="cart.remove('+items[i][0]+')" class="button_dark_grey middle_btn">Delete</a></td>\
 </tr>\
             ');
         }
     });
 };
 
+
 cart.remove = function (item) {
-    $.post("cart", {"item": item, "qty": 0});
-    document.getElementById('clist').innerHTML='';
-    $('#r'+item).remove();
+    $.post("cart", {"item": item, "qty": 0}, function (){
+        document.getElementById('r'+item).innerHTML='';
+        cart.get();
+    });
 };
 cart.get()
