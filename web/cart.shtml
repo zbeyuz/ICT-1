@@ -130,14 +130,14 @@
                                             <tr>
 
                                                 <td>Subtotal</td>
-                                                <td>$146.78</td>
+                                                <td id="subtotal"></td>
 
                                             </tr>
 
                                             <tr class="total">
 
                                                 <td>Total</td>
-                                                <td>$146.78</td>
+                                                <td id="total"></td>
 
                                             </tr>
 

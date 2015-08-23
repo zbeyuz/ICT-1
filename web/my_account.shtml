@@ -145,13 +145,13 @@
 
                             <!-- - - - - - - - - - - - - - End of contact information - - - - - - - - - - - - - - - - -->
 
-                            <div class="table_layout">
+<!--                            <div class="table_layout">
 
                                 <div class="table_row">
 
                                     <div class="table_cell">
 
-                                        <!-- - - - - - - - - - - - - - Default shipping address - - - - - - - - - - - - - - - - -->
+                                         - - - - - - - - - - - - - Default shipping address - - - - - - - - - - - - - - - - 
 
                                         <section>
 
@@ -189,13 +189,13 @@
 
                                         </section>
 
-                                        <!-- - - - - - - - - - - - - - End of default shipping address - - - - - - - - - - - - - - - - -->
+                                         - - - - - - - - - - - - - End of default shipping address - - - - - - - - - - - - - - - - 
 
-                                    </div><!--/ .table_cell -->
+                                    </div>/ .table_cell 
 
-                                </div><!--/ .table_row -->
+                                </div>/ .table_row 
 
-                            </div><!--/ .table_layout -->
+                            </div>/ .table_layout -->
 
                         </main><!--/ [col]-->
 

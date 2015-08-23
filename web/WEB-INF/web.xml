@@ -61,6 +61,10 @@
         <servlet-class>control.SearchHandler</servlet-class>
 
     </servlet>
+    <servlet>
+        <servlet-name>CheckOutHandler</servlet-name>
+        <servlet-class>control.CheckOutHandler</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>get_item</servlet-name>
         <url-pattern>/getitem</url-pattern>
@@ -171,6 +175,10 @@
         <servlet-name>SearchHandler</servlet-name>
         <url-pattern>/search</url-pattern>
 
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CheckOutHandler</servlet-name>
+        <url-pattern>/checkout</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
