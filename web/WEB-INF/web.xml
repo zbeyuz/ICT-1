@@ -174,7 +174,6 @@
     <servlet-mapping>
         <servlet-name>SearchHandler</servlet-name>
         <url-pattern>/search</url-pattern>
-
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>CheckOutHandler</servlet-name>
