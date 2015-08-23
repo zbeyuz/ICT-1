@@ -20,7 +20,7 @@ import model.Product;
  *
  * @author hy
  */
-public class GetProduct extends HttpServlet {
+public class SearchHandler extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,25 +35,18 @@ public class GetProduct extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            ArrayList<Product> items;
-            String category = request.getParameter("category");
-            if (category == null) {
+            ArrayList<Product> result;
+            String keyWord = request.getParameter("keyword");
+            if (keyWord != null) {
                 try {
-                    items = database.ProductMgr.getProduct();
-                    JSONPrinter.printProductJSON(items,out);
+                    result = database.ProductMgr.getProductByKeyword(keyWord);
+                    JSONPrinter.printProductJSON(result,out);
                 } catch (Exception e) {
                     Logger.getLogger(AddPic.class.getName()).log(Level.SEVERE, null, e);
                     out.println("\u005B\u005D");
                 }
             } else {
-                try {
-                    items = database.ProductMgr.getProductByCategory(category);
-                    JSONPrinter.printProductJSON(items,out);
-                } catch (Exception e) {
-                    Logger.getLogger(AddPic.class.getName()).log(Level.SEVERE, null, e);
-                    out.println("\u005B\u005D");
-                }
+                out.println("\u005B\u005D");
             }
         }
     }
