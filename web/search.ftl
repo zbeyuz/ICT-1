@@ -80,49 +80,7 @@
 
                             <section class="theme_box">
 
-                                <div class="description">
-
-                                    <div class="clearfix product_info">
-                                        <div class="col-md-2">
-                                        
-                                        <img src="images/qv_thumb_1.jpg" alt="">
-                                        
-                                        </div>
-                                        
-                                        <div class="col-md-10">
-                                            
-                                        <a href="product.shtml">Ipsum Dolor Sit Amet Adipiscing Elit, Allergy &amp; Sinus 4.25 fl oz(126 ml)</a>
-
-                                        <p class="product_price"><b>Price: $8.99</b></p>    
-                                        
-                                        </div>
-
-                                    </div>                                   
-
-                                </div>
-                                
-                                <hr class="big">      
-                                
-                                <div class="description">
-
-                                    <div class="clearfix product_info">
-                                        <div class="col-md-2">
-                                        
-                                        <img src="images/qv_thumb_1.jpg" alt="">
-                                        
-                                        </div>
-                                        
-                                        <div class="col-md-10">
-                                            
-                                        <a href="product.shtml">Ipsum Dolor Sit Amet Adipiscing Elit, Allergy &amp; Sinus 4.25 fl oz(126 ml)</a>
-
-                                        <p class="product_price"><b>Price: $8.99</b></p>    
-                                        
-                                        </div>
-
-                                    </div>                                   
-
-                                </div>                                
+                                ${products!}                              
 
                             </section><!--/ .theme_box -->
 

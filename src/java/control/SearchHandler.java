@@ -31,27 +31,6 @@ public class SearchHandler extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            ArrayList<Product> result;
-            String keyWord = request.getParameter("keyword");
-            if (keyWord != null) {
-                try {
-                    result = database.ProductMgr.getProductByKeyword(keyWord);
-                    JSONPrinter.printProductJSON(result,out);
-                } catch (Exception e) {
-                    Logger.getLogger(AddPic.class.getName()).log(Level.SEVERE, null, e);
-                    out.println("\u005B\u005D");
-                }
-            } else {
-                out.println("\u005B\u005D");
-            }
-        }
-    }
-
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
      *
@@ -63,7 +42,40 @@ public class SearchHandler extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            ArrayList<Product> result;
+            String keyWord = request.getParameter("keyword");
+            StringBuilder res = new StringBuilder();
+            if (keyWord != null) {
+                try {
+                    result = database.ProductMgr.getProductByKeyword(keyWord);
+                    boolean isFirst = true;
+                    for(Product i:result){
+                        if (isFirst){
+                            isFirst = false;
+                        }else{
+                            res.append("<hr class=\"big\">");
+                        }
+                        res.append("<div class=\"description\">"
+                                + "  <div class=\"clearfix product_info\">"
+                                + "    <div class=\"col-md-2\"><img src=\""+i.profile_pic+"\" alt=\"\"></div>"
+                                + "    <div class=\"col-md-10\">"
+                                + "      <a href=\"product.shtml\">"+i.name+"</a>"
+                                + "      <p class=\"product_price\"><b>Price: $"+i.price+"</b></p>"
+                                + "    </div>"
+                                + "  </div>"
+                                + "</div>");
+                    }
+                } catch (Exception e) {
+                    
+                }
+            } else {
+                
+            }
+            request.setAttribute("products", res.toString());
+            request.getRequestDispatcher("/search.ftl").forward(request, response);
+        }
     }
 
     /**
@@ -77,7 +89,22 @@ public class SearchHandler extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            ArrayList<Product> result;
+            String keyWord = request.getParameter("keyword");
+            if (keyWord != null) {
+                try {
+                    result = database.ProductMgr.getProductByKeyword(keyWord);
+                    JSONPrinter.printProductJSON(result, out);
+                } catch (Exception e) {
+                    Logger.getLogger(AddPic.class.getName()).log(Level.SEVERE, null, e);
+                    out.println("\u005B\u005D");
+                }
+            } else {
+                out.println("\u005B\u005D");
+            }
+        }
     }
 
     /**
@@ -88,6 +115,6 @@ public class SearchHandler extends HttpServlet {
     @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
+    }
 
 }

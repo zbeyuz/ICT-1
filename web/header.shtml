@@ -34,7 +34,7 @@
 
                             <!-- - - - - - - - - - - - - - Language change (Add more in the future) - - - - - - - - - - - - - - - - -->
 
-                            <div class="alignright site_settings">
+                            <div class="alignright sitettings">
 
                                 <span><img src="images/flag_en.png" alt="">English</span>
 
@@ -136,22 +136,17 @@
 
                             <!-- - - - - - - - - - - - - - Search form - - - - - - - - - - - - - - - - -->
 
-                            <form class="clearfix search">
+                            <form class="clearfix search" action="search">
 
-                                <input type="text" name="" tabindex="1" placeholder="Search..." class="alignleft">
+                                <input type="text" name="keyword" tabindex="1" placeholder="Search..." class="alignleft">
 
                                 <!-- - - - - - - - - - - - - - Categories - - - - - - - - - - - - - - - - -->
 
                                 <div class="search_category alignleft">
 
-                                    <div class="open_categories">All Categories</div>
+                                    <div class="open_categories">All items</div>
 
-                                    <ul class="categories_list dropdown">
-
-                                        <li class="animated_item"><a href="#">Men</a></li>
-                                        <li class="animated_item"><a href="#">Women</a></li>
-
-                                    </ul>
+                                   
 
                                 </div><!--/ .search_category.alignleft-->
 
