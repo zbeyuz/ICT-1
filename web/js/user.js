@@ -21,13 +21,17 @@ icp.updatepw = function () {
 }
 
 icp.updateem = function () {
-    var form = {
+    if ($("#nEmail").val() === $("#nEmail2").val()) {
+        var form = {
         "user_email": $("#nEmail").val()
-    };
+        };
 
-    $.post("UpdateEmail", form, function (data) {
+        $.post("UpdateEmail", form, function (data) {
         console.log(data);
         $('#closeacc').trigger("click");
         });
-
+    }else{
+        alert("emal and retype email is not match");
+    
+    }
 }
