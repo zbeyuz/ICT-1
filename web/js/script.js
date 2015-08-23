@@ -61,6 +61,10 @@ icp.cart.add = function (item, qty) {
     });
 };
 
+icp.cart.rm = function (item) {
+    icp.cart.add(item, 0);
+}
+
 icp.cart.get = function () {
     $.get("cart", function (data) {
         var items = JSON.parse(data);
@@ -71,7 +75,7 @@ icp.cart.get = function () {
               <a href="product?id=' + items[i][0] + '" class="product_thumb"><img height="50" width="50" src="' + items[i][3] + '" alt=""></a> \
               <a href="product?id=' + items[i][0] + '" class="product_name">' + items[i][1] + '</a> \
               <p>' + items[i][2] + '</p>\
-              <button onclick="icp.cart.rm(' + items[i][0] + ')" class="close"></button> \
+              <button onclick="icp.cart.rm(' + items[i][4] + ')" class="close"></button> \
             </div></div>\
             ');
 

@@ -73,6 +73,10 @@ public class Cart {
     public int price(int id) {
         return product(id).price;
     }
+    
+    public int total(int id) {
+        return price(id)*qty(id);
+    }
 
     public Product product(int id) {
         return products.get(id);

@@ -110,12 +110,12 @@ public class CartHandler extends HttpServlet {
     private void printProducts(PrintWriter out, Cart cart) {
         out.print("\u005B");
         String s = "";
-        for (Product i : cart.ProductList()) {
+        for (Integer i : cart.itemId()) {
             out.print(s);
-            if (i.profile_pic.replace(" ", "").equals("")) {
-                i.profile_pic = "images/product_img_27.jpg";
-            }
-            out.printf("\u005B%d,\"%s\",%d,\"%s\"\u005D", i.id, i.name, i.price, i.profile_pic);
+            Product product=cart.product(i);
+            out.printf("\u005B%d,\"%s\",%d,\"%s\",%d\u005D",
+                    product.id,product.name,product.price,product.profile_pic,
+                    i);
             s = ",";
         }
         out.print("\u005D");
@@ -128,10 +128,10 @@ public class CartHandler extends HttpServlet {
             out.print(s);
             Product product=cart.product(i);
             Item item=cart.item(i);
-            out.printf("\u005B%d,\"%s\",\"%s\",\"%s\",\"%s\",%d,%d,\"%s\",%d\u005D",
+            out.printf("\u005B%d,\"%s\",\"%s\",\"%s\",\"%s\",%d,%d,\"%s\",%d,%d\u005D",
                     item.item_id, item.item_material,item.item_color,item.item_size,
                     product.name,product.id,product.price,product.profile_pic,
-                    cart.qty(i));
+                    cart.qty(i),cart.total(i));
             s = ",";
         }
         out.print("\u005D");
