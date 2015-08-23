@@ -48,8 +48,18 @@
         <servlet-class>control.getCategory</servlet-class>
     </servlet>
     <servlet>
+
+        <servlet-name>updatepwd</servlet-name>
+        <servlet-class>control.UpdatePassword</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>updateacc</servlet-name>
+        <servlet-class>control.UpdateEmail</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>SearchHandler</servlet-name>
         <servlet-class>control.SearchHandler</servlet-class>
+
     </servlet>
     <servlet>
         <servlet-name>CheckOutHandler</servlet-name>
@@ -152,6 +162,14 @@
     <servlet-mapping>
         <servlet-name>getCategory</servlet-name>
         <url-pattern>/category</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>updatepwd</servlet-name>
+        <url-pattern>/UpdatePassword</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>updateacc</servlet-name>
+        <url-pattern>/UpdateEmail</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>SearchHandler</servlet-name>

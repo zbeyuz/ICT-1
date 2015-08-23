@@ -453,6 +453,7 @@
         <script src="js/retina.min.js"></script>
         <script src="js/theme.plugins.js"></script>
         <script src="js/theme.core.js"></script>
+        <script src="js/script.js"></script>
 
     </body>
 </html>
