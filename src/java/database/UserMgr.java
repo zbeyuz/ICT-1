@@ -96,16 +96,14 @@ public class UserMgr {
         }
     }
     
-     public static void userUpdateMain(int user_id,String user_email_update ,String user_fname_update ,String user_lname_update) throws SQLException, Exception {
+     public static void userUpdateEmail(int user_id, String user_email_update) throws SQLException, Exception {
 
         Connection conn=DBConn.getConn();
         PreparedStatement pstmt = null;
         
-        pstmt = conn.prepareStatement("UPDATE `user_list` SET `user_email`=?, `user_fname`=?, `user_lname`=?  WHERE  `user_id`=?");
+        pstmt = conn.prepareStatement("UPDATE `user_list` SET `user_email`=? WHERE  `user_id`=?");
         pstmt.setString(1, user_email_update);
-        pstmt.setString(2, user_fname_update);
-        pstmt.setString(3, user_lname_update);
-        pstmt.setInt(4, user_id);
+        pstmt.setInt(2, user_id);
         pstmt.executeUpdate();
         
         conn.close();
