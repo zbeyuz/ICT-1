@@ -4,7 +4,7 @@
 
 <div id="update_pwd_mw" class="modal_window">
 
-    <button class="close arcticmodal-close"></button>
+    <button id="closepwd" class="close arcticmodal-close"></button>
 
     <header class="on_the_sides">
 
@@ -22,16 +22,16 @@
 
             <li>
                 <label for="nPwd">New Password</label>
-                <input type="password" name="nPwd" id="nPwd">
+                <input type="password" name="Pwd" id="Pwd">
             </li>
 
             <li>
                 <label for="re-nPwd">Retype New Password</label>
-                <input type="password" name="re-nPwd" id="re-nPwd">
+                <input type="password" name="rPwd" id="rPwd">
             </li>
 
             <li class="v_centered">
-                <button class="button_blue middle_btn">Change Password</button>
+                <a href="javascript:;" onclick="icp.updatepw()" class="button_blue middle_btn">Change Password</a>
             </li>
 
         </ul>
