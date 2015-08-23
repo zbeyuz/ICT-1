@@ -31,7 +31,7 @@ icp.updateem = function () {
         $('#closeacc').trigger("click");
         });
     }else{
-        alert("emal and retype email is not match");
+        alert("email and retype email is not match");
     
     }
 }

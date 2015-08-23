@@ -15,6 +15,7 @@ import javax.servlet.http.HttpSession;
 import model.Cart;
 import model.User;
 import database.UserMgr;
+import java.util.logging.Logger;
 
 /**
  *
@@ -39,7 +40,8 @@ public class Login extends HttpServlet {
 
         String user_email = request.getParameter("user_email");
         String user_password = request.getParameter("user_password");
-
+        Logger.getLogger(Login.class.getName()).info(user_email);
+        
         try {
             User user = UserMgr.login(user_email, user_password);
             if (user.isValid()) {
