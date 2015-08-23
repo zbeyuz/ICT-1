@@ -256,11 +256,9 @@ public class ProductMgr {
     public static ArrayList<String> getCategoryByGender(String gender) throws SQLException, Exception {
 
         Connection conn = DBConn.getConn();
-        PreparedStatement pstmt = null;
-        ResultSet rs = null;
-        pstmt = conn.prepareStatement("SELECT DISTINCT `product_type` FROM `product_list` WHERE `product_gender`=?");
+        PreparedStatement pstmt = conn.prepareStatement("SELECT DISTINCT `product_type` FROM `product_list` WHERE `product_gender`=?");
         pstmt.setString(1, gender);
-        rs = pstmt.executeQuery();
+        ResultSet rs = pstmt.executeQuery();
         ArrayList<String> res = new ArrayList();
         while (rs.next()) {
             res.add(rs.getString("product_type"));
@@ -296,6 +294,17 @@ public class ProductMgr {
         }
         conn.close();
         return i;// get arreylist like get product but there are onty 1 product in list
+    }
+    
+    public static ArrayList<Product> getProductByKeyword(String key) throws SQLException, Exception {
+
+        Connection conn = DBConn.getConn();
+        PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM `product_list` WHERE `product_name` like ?");
+        pstmt.setString(1, "%" + key + "%");
+        ResultSet rs = pstmt.executeQuery();
+        ArrayList<Product> res = productListFromRs(rs);
+        conn.close();
+        return res;
     }
 
     public static ArrayList<Item> getItemByProductId(int product_id) throws SQLException, Exception {

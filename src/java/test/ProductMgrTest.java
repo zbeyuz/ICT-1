@@ -5,6 +5,11 @@
  */
 package test;
 
+import database.DBConn;
+import database.ProductMgr;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.ArrayList;
 import model.Item;
 import model.Product;
@@ -18,6 +23,10 @@ public class ProductMgrTest {
     public static void main(String[] args) throws Exception{
     int pdid = 122, usid = 5;
     String tt = "kk", gg = "ii";
+    ArrayList<Product> a=ProductMgr.getProductByKeyword("s");
+    for (Product i:a){
+        System.out.println(i.name);
+    }
 //product  
     //getProductByCategory
     //database.ProductMgr.getProductByCategory("abc");
