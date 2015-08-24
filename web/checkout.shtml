@@ -72,7 +72,7 @@
 
                         <div class="theme_box">
 
-                            <form class="type_2">
+                            <form id="form1" class="type_2">
 
                                 <ul>
 
@@ -208,7 +208,7 @@
 
                                     <p class="subcaption bold">Free Shipping</p>
 
-                                    <input type="radio" checked name="radio_3" id="radio_button_1">
+                                    <input type="radio" checked name="shipping" value="free" id="radio_button_1">
                                     <label for="radio_button_1">Free $0</label>
 
                                 </li>
@@ -217,14 +217,14 @@
 
                                     <p class="subcaption bold">DHL Shipping</p>
 
-                                    <input type="radio" name="radio_3" id="radio_button_2">
+                                    <input type="radio" name="shipping" value="std" id="radio_button_2">
                                     <label for="radio_button_2">Standard Shipping $5.00</label>                                                                       
 
                                 </li>
 
                                 <li>
 
-                                    <input type="radio" name="radio_3" id="radio_button_3">
+                                    <input type="radio" name="shipping" value="express" id="radio_button_3">
                                     <label for="radio_button_3">Express Shipping $15.00</label>
 
                                 </li>
@@ -252,14 +252,14 @@
 
                                 <li>
 
-                                    <input type="radio" checked name="radio_4" id="radio_button_4">
+                                    <input type="radio" checked name="payment" value="cash" id="radio_button_4">
                                     <label for="radio_button_4">Cash on delivery</label>
 
                                 </li>
 
                                 <li>
 
-                                    <input type="radio" name="radio_4" id="radio_button_5" disabled>
+                                    <input type="radio" name="payment" value="paypal" id="radio_button_5" disabled>
                                     <label for="radio_button_5">PayPal (Coming soon!)</label>
 
                                 </li>
@@ -417,7 +417,7 @@
 
                             <div class="right_side">
 
-                                <button class="button_blue middle_btn">Place Order</button>
+                                <button onclick="co.submit()" class="button_blue middle_btn">Place Order</button>
 
                             </div>
 
@@ -454,6 +454,20 @@
         <script src="js/theme.plugins.js"></script>
         <script src="js/theme.core.js"></script>
         <script src="js/script.js"></script>
-
+        <script>
+            var co = {};
+            co.submit = function () {
+                var form=$('<form action="checkout" method="post"></form>');
+                form.append($('#form1 input'));
+                form.append($('#form1 select'));
+                form.append($('#radio_button_1'));
+                form.append($('#radio_button_2'));
+                form.append($('#radio_button_3'));
+                form.append($('#radio_button_4'));
+                form.append($('#radio_button_5'));
+                console.log(form);
+                form.submit();
+            };
+        </script>
     </body>
 </html>

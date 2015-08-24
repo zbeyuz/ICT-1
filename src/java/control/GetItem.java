@@ -31,7 +31,7 @@ public class GetItem extends HttpServlet {
             if (request.getParameter("product") != null) {
                 try {
                     int productId = Integer.parseInt(request.getParameter("product"));
-                    items = database.ProductMgr.getItemByProductId(productId);
+                    items = database.ItemMgr.getItemByProductId(productId);
                     out.print("\u005B");
                     String s = "";
                     for (Item i : items) {
@@ -48,7 +48,7 @@ public class GetItem extends HttpServlet {
             } else {
                 int itemId = Integer.parseInt(request.getParameter("item"));
                 try {
-                    Item i = database.ProductMgr.getItemByItemId(itemId);
+                    Item i = database.ItemMgr.getItemByItemId(itemId);
                     out.printf("\u005B%d,\"%s\",\"%s\",\"%s\",\"%s\"\u005D",
                                 i.item_id, i.item_color, i.item_material, i.item_quantity, i.item_size);
                 } catch (Exception ex) {

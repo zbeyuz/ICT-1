@@ -5,12 +5,17 @@
  */
 package control;
 
+import database.BillMgr;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.logging.Level;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import model.BillAddress;
+import model.Cart;
+import org.jboss.logging.Logger;
 
 /**
  *
@@ -18,24 +23,6 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class CheckOutHandler extends HttpServlet {
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            
-        }
-    }
-
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
      *
@@ -47,7 +34,7 @@ public class CheckOutHandler extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        
     }
 
     /**
@@ -61,7 +48,39 @@ public class CheckOutHandler extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            Cart cart = (Cart) request.getSession().getAttribute("cart");
+            if (cart == null) {
+                out.println("empty cart");
+                return;
+            }
+            BillAddress address = new BillAddress();
+            address.bill_fname = ParamUtil.getString(request, "fName");
+            address.bill_lname = ParamUtil.getString(request, "lName");
+            address.bill_email = ParamUtil.getString(request, "email");
+            address.bill_tel = ParamUtil.getInteger(request, "phone", 0);
+            address.bill_address = String.format("%s BLOCK %s", ParamUtil.getString(request, "street"), ParamUtil.getString(request, "blk"));
+            address.bill_floor = ParamUtil.getString(request, "floor");
+            address.bill_unit = ParamUtil.getString(request, "unit");
+            address.bill_postcode = ParamUtil.getInteger(request, "zip", 0);
+            address.bill_country = ParamUtil.getString(request, "country");
+            String shipping = ParamUtil.getString(request, "shipping");
+            int shippingPrice = 0;
+            switch (shipping) {
+                case "std":
+                    shippingPrice = 5;
+                    break;
+                case "express":
+                    shippingPrice = 15;
+                    break;
+            }
+            
+            BillMgr.newBill(shippingPrice, shippingPrice, shipping, cart.itemList(), address);
+
+        } catch (Exception ex) {
+            java.util.logging.Logger.getLogger(CheckOutHandler.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
@@ -72,6 +91,6 @@ public class CheckOutHandler extends HttpServlet {
     @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
-
+    }
+    
 }

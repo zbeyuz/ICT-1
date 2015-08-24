@@ -81,7 +81,7 @@ public class CartHandler extends HttpServlet {
             try {
                 int itemId = Integer.parseInt(request.getParameter("item"));
                 int qty = Integer.parseInt(request.getParameter("qty"));
-                Item item = database.ProductMgr.getItemByItemId(itemId);
+                Item item = database.ItemMgr.getItemByItemId(itemId);
                 Product product = database.ProductMgr.getProductByProductId(item.product_id);
                 if (!cart.add(item, product, qty)) {
                     out.println("invalid product");
