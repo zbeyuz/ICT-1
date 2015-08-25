@@ -5,10 +5,9 @@
  */
 package test;
 
+import database.BillMgr;
 import java.util.ArrayList;
-import model.Bill;
-import model.BillAddress;
-import model.BillInfo;
+import model.BillSummery;
 import model.User;
 
 /**
@@ -19,6 +18,13 @@ public class BillMgrTest {
     public static void main(String[] args) throws Exception{
         int kk = 10 , n = 2;
         String uu ="ok";
+        
+        User i = new User();
+        i.id=5;
+        ArrayList<BillSummery> j=BillMgr.getBillSummeries(i);
+        for(BillSummery k:j){
+            System.out.println(k.total);
+        }
         //newBill test
         
         //addBill tes
