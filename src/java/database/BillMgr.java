@@ -14,6 +14,7 @@ import java.util.Calendar;
 import model.Bill;
 import model.BillAddress;
 import model.BillInfo;
+import model.BillSummery;
 import model.Item;
 import model.User;
 
@@ -227,5 +228,26 @@ public class BillMgr {
         conn.close();
         return res;    
 
+    }
+    
+    public static ArrayList<BillSummery> getBillSummeries(User user) throws SQLException, Exception {
+        ArrayList<BillSummery> res = new ArrayList();
+        Connection conn=DBConn.getConn();
+        PreparedStatement pstmt = conn.prepareStatement("SELECT bill_info.`bill_id` as bill_id, SUM(product_list.product_price*bill_info.bill_quantity) AS total, CONCAT_WS(' ',bill_address.bill_fname,bill_address.bill_lname) as name, bill_list.bill_shipping_type AS shipping_type, bill_list.bill_done_date AS date FROM `bill_info`,product_list,bill_address,bill_list WHERE product_list.product_id=bill_info.product_id and bill_address.bill_id=bill_info.bill_id and bill_list.bill_id=bill_info.bill_id and bill_list.user_id=? GROUP BY bill_info.`bill_id`");
+        pstmt.setInt(1, user.id);
+        
+        ResultSet rs = pstmt.executeQuery();
+        
+        while (rs.next()) {
+            BillSummery i=new BillSummery();
+            i.billId=rs.getInt("bill_id");
+            i.total=rs.getInt("total");
+            i.name=rs.getString("name");
+            i.shipping_type=rs.getString("shipping_type");
+            i.date=rs.getTimestamp("date").getTime();
+            res.add(i);
+        }
+        conn.close();
+        return res;
     }
 }

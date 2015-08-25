@@ -126,59 +126,6 @@
 
                                     <tbody>
 
-                                        <tr>
-
-                                            <td data-title="Order Number">145000007</td>
-
-                                            <td data-title="Order Date">9/5/2014</td>
-
-                                            <td data-title="Ship To">John Doe</td>
-
-                                            <td data-title="Total" class="total">$5.99</td>
-
-                                            <td data-title="Action">
-
-                                                <ul class="buttons_col">
-
-                                                    <li>
-
-                                                        <a href="#" class="button_blue"
-                                                           data-modal-url="modals/view_order.html">View Order</a>
-
-                                                    </li>
-
-                                                </ul>
-
-                                            </td>
-
-                                        </tr>
-
-                                        <tr>
-
-                                            <td data-title="Order Number">145000007</td>
-
-                                            <td data-title="Order Date">9/5/2014</td>
-
-                                            <td data-title="Ship To">John Doe</td>
-
-                                            <td data-title="Total" class="total">$5.99</td>
-
-                                            <td data-title="Action">
-
-                                                <ul class="buttons_col">
-
-                                                    <li>
-
-                                                        <a href="#" class="button_blue" data-modal-url="modals/view_order.html">View Order</a>
-
-                                                    </li>
-
-                                                </ul>
-
-                                            </td>
-
-                                        </tr>
-
                                     </tbody>
 
                                 </table>

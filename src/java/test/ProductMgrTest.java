@@ -24,12 +24,14 @@ public class ProductMgrTest {
     int pdid = 122, usid = 5;
     String tt = "kk", gg = "ii";
 
-
+/*
 
     ArrayList<Product> a=ProductMgr.getProductByKeyword("s");
     for (Product i:a){
         System.out.println(i.name);
-    }
+    }*/
+    ArrayList<Review> items = database.ReviewMgr.getReview(122);
+    System.out.println(items.size());
 
 //product  
     //getProductByCategory

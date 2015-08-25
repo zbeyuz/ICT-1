@@ -67,6 +67,14 @@
         <servlet-name>regis</servlet-name>
         <servlet-class>control.Register</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GetHistories</servlet-name>
+        <servlet-class>control.GetHistories</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>testFm</servlet-name>
+        <servlet-class>test.ViewItem</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>get_item</servlet-name>
         <url-pattern>/getitem</url-pattern>
@@ -184,6 +192,14 @@
     <servlet-mapping>
         <servlet-name>regis</servlet-name>
         <url-pattern>/Regis</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetHistories</servlet-name>
+        <url-pattern>/histories</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>testFm</servlet-name>
+        <url-pattern>/test</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
