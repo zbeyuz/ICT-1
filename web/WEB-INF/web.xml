@@ -75,6 +75,10 @@
         <servlet-name>testFm</servlet-name>
         <servlet-class>test.ViewItem</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Index</servlet-name>
+        <servlet-class>control.Index</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>get_item</servlet-name>
         <url-pattern>/getitem</url-pattern>
@@ -200,6 +204,11 @@
     <servlet-mapping>
         <servlet-name>testFm</servlet-name>
         <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Index</servlet-name>
+        <url-pattern>/index</url-pattern>
+        <url-pattern>/index.shtml</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
