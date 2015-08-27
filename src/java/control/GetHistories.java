@@ -8,7 +8,9 @@ package control;
 import database.BillMgr;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
@@ -39,13 +41,13 @@ public class GetHistories extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             User user = (User) request.getSession().getAttribute("user");
             if (user == null) {
-                out.println("guest");
+                out.println("\u005B\u005D");
             } else {
                 ArrayList<BillSummery> list = BillMgr.getBillSummeries(user);
                 out.print("\u005B");
                 String s = "";
                 for (BillSummery i : list) {
-                    out.printf("\u005B%d, %d, \"%s\", %d\u005D", i.billId, i.date, i.name, i.total);
+                    out.printf("\u005B%d, \"%s\", \"%s\", %d\u005D", i.billId, new SimpleDateFormat("yyyy-MM-dd").format(new Date(i.date)), i.name, i.total);
                 }
                 out.print("\u005D");
             }
