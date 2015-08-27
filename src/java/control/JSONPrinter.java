@@ -19,9 +19,7 @@ public class JSONPrinter {
         String s = "";
         for (Product i : items) {
             out.print(s);
-            if (i.profile_pic.replace(" ", "").equals("")) {
-                i.profile_pic = "images/product_img_27.jpg";
-            }
+            i.defaultPic();
             out.printf("\u005B%d,\"%s\",%d,\"%s\"\u005D",
                     i.id, i.name, i.price, i.profile_pic);
             s = ",";

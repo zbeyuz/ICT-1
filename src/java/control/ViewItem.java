@@ -13,7 +13,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import database.ProductMgr;
+import java.util.ArrayList;
 import model.Product;
+import model.ProductPic;
 
 /**
  *
@@ -34,25 +36,44 @@ public class ViewItem extends HttpServlet {
             throws ServletException, IOException {
         try {
             response.setContentType("text/html;charset=UTF-8");
-            Product p=ProductMgr.getProductByProductId(Integer.parseInt(request.getParameter("id")));
+            Product p = ProductMgr.getProductByProductId(Integer.parseInt(request.getParameter("id")));
             request.setAttribute("id", p.id);
-            if(p.discount==0){
-                request.setAttribute("price", String.format("<b class=\"theme_color\">$%d</b>",p.price));
-            }else{
-                request.setAttribute("price", String.format("<s>$%d</s> <b class=\"theme_color\">$%d</b>",p.price,p.price*(100-p.discount)/100));
+            if (p.discount == 0) {
+                request.setAttribute("price", String.format("<b class=\"theme_color\">$%d</b>", p.price));
+            } else {
+                request.setAttribute("price", String.format("<s>$%d</s> <b class=\"theme_color\">$%d</b>", p.price, p.price * (100 - p.discount) / 100));
             }
             request.setAttribute("manufacture", p.manufacture);
             request.setAttribute("name", p.name);
-            if(request.getServletPath().equals("/view")){
+            request.setAttribute("info", p.info);
+            ArrayList<ProductPic> productPic = ProductMgr.getProductPic(p.id);
+            request.setAttribute("flarge", productPic.get(0).largePic);
+            request.setAttribute("fsmall", productPic.get(0).smallPic);
+            //Logger.getLogger(ViewItem.class.getName()).info(imgHtml.toString());
+            if (request.getServletPath().equals("/view")) {
+                StringBuilder imgHtml = new StringBuilder();
+                for (ProductPic i : productPic) {
+                    imgHtml.append(
+                            "<img src=\""+i.largePic+"\" data-large-image=\""+i.smallPic+"\" alt=\"\">");
+                }
+                request.setAttribute("img", imgHtml.toString());
                 request.getRequestDispatcher("/modals/quick_view.ftl").forward(request, response);
-            }else{
-                request.setAttribute("info", p.info);
+            } else {
+                //request.setAttribute("info", p.info);
+                StringBuilder imgHtml = new StringBuilder();
+                for (ProductPic i : productPic) {
+                    imgHtml.append(
+                            "<a href=\"#\" data-image=\"" + i.smallPic + "\" data-zoom-image=\"" + i.largePic + "\">\n"
+                            + "  <img src=\"" + i.smallPic + "\" data-large-image=\"" + i.largePic + "\" alt=\"\">\n"
+                            + "</a>");
+                }
+                request.setAttribute("img", imgHtml.toString());
                 request.getRequestDispatcher("/product.ftl").forward(request, response);
             }
         } catch (Exception ex) {
             Logger.getLogger(ViewItem.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

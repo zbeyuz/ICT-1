@@ -13,7 +13,6 @@ $.get("wishlist", function (data) {
   <td data-title="Price" class="total">$' + items[i][2] + '</td>\
   <td data-title="Action">\
     <ul class="buttons_col">\
-      <li><a href="javascript:;" onclick="icp.cart.add(' + items[i][0] + ')" class="button_blue">Add to Cart</a></li>\
       <li><a href="javascript:;" onclick="icp.rmwish(' + items[i][0] + ')" class="button_dark_grey">Remove</a></li>\
     </ul>\
   </td>\
@@ -22,6 +21,6 @@ $.get("wishlist", function (data) {
     }
 });
 icp.rmwish = function (item) {
-    icp.wish(item);
+    $.post('wishlist',{item:item, act:'rm'})
     $("#item" + item).remove();
 };

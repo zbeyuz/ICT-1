@@ -36,32 +36,29 @@ icp.login = function () {
         }
     });
 };
-icp.regis= function () {
-    if ($("#pwd").val() === $("#rpwd").val()){
-        var form ={
-        "user_email":$("#email").val(),
-        "user_password":$("#pwd").val(),
-        "user_fname":$("#fName").val(),
-        "user_lname":$("#lName").val()    
+icp.regis = function () {
+    if ($("#pwd").val() === $("#rpwd").val()) {
+        var form = {
+            "user_email": $("#email").val(),
+            "user_password": $("#pwd").val(),
+            "user_fname": $("#fName").val(),
+            "user_lname": $("#lName").val()
         }
         console.log(form);
-        $.post("Register", form, function (data) {    
-        //console.log(data);
-        $('#closeReg').trigger("click");
-        $.post("login", form, function (data) {
-        var res = JSON.parse(data);
-        console.log(res);
-            icp.account(res[1]);
-            icp.onlogin();
+        $.post("Register", form, function (data) {
+            //console.log(data);
+            $('#closeReg').trigger("click");
+            $.post("login", form, function (data1) {
+                var res = JSON.parse(data1);
+                console.log(res);
+                icp.account(res[1]);
+                icp.onlogin();
+            });
         });
-        });
-        
-        
-        
-        
-    }else{
+
+    } else {
         alert("information is incorrect");
-    
+
     }
 }
 
@@ -113,9 +110,13 @@ icp.cart.get = function () {
 
 icp.wish = function (item) {
     var i = {};
-    
+
     i.item = item;
-    $.post("wishlist", i);
+    $.post("wishlist", i, function (data) {
+        if(data==='invuser') {
+            alert('Please login or register to addd this item to wishlist!');
+        }
+    });
 };
 
 $.get("login", icp.account);
@@ -230,5 +231,5 @@ icp.item.filter = function (a, name, index) {
 icp.cart.submit = function () {
     var item = icp.item.id;
     var qty = $('#qty').val();
-    icp.cart.add(item,qty);
+    icp.cart.add(item, qty);
 };

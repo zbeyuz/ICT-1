@@ -79,6 +79,14 @@
         <servlet-name>Index</servlet-name>
         <servlet-class>control.Index</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ViewHistory</servlet-name>
+        <servlet-class>control.ViewHistory</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AccountHandler</servlet-name>
+        <servlet-class>control.AccountHandler</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>get_item</servlet-name>
         <url-pattern>/getitem</url-pattern>
@@ -209,6 +217,15 @@
         <servlet-name>Index</servlet-name>
         <url-pattern>/index</url-pattern>
         <url-pattern>/index.shtml</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewHistory</servlet-name>
+        <url-pattern>/viewHistory</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AccountHandler</servlet-name>
+        <url-pattern>/account</url-pattern>
+        <url-pattern>/my_account.shtml</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

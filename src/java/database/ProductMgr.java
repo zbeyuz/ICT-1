@@ -12,6 +12,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import model.Product;
+import model.ProductPic;
 import model.Review;
 
 /**
@@ -225,25 +226,38 @@ public class ProductMgr {
     }
 
 
-    public static String[] getProductPic(int product_id) throws SQLException, Exception {
+    public static ArrayList<ProductPic> getProductPic(int product_id) throws SQLException, Exception {
 
         Connection conn = DBConn.getConn();
         PreparedStatement pstmt = null;
         ResultSet rs = null;
 
-        pstmt = conn.prepareStatement("SELECT * FROM `product_pic` where `product_id` = ?");
+        pstmt = conn.prepareStatement("SELECT * FROM `product_pic`where `product_id` = ? ORDER BY `product_pic`.`product_id` ASC");
         pstmt.setInt(1, product_id);
         rs = pstmt.executeQuery();
 
         String[] pic = new String[300];//arrey that use to store picture location
-        int n;//use to locate picture in order
+        int n = 1;//use to locate picture in order
 
         while (rs.next()) {
-            n = rs.getInt("pic_num"); //get picture number alway start from 1
             pic[n] = rs.getString("pic_location");
+            n++;
+            
         }
+        
+        n--;
+        n = n/2;
+        
+        ArrayList<ProductPic> res =  new ArrayList<ProductPic>();
+        for(int k= 1; k <= n ; k++){
+            ProductPic i = new ProductPic();
+            i.smallPic = pic[k];
+            i.largePic = pic[(k+n)];
+            res.add(i);
+        }
+        
         conn.close();
-        return pic;
+        return res;
     }
 
 
