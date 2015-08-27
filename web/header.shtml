@@ -100,7 +100,7 @@
 
                                 <li class="has_megamenu animated_item">
 
-                                    <a href="#">ALL GENDER</a>
+                                    <a href="#">Men</a>
 
                                     <!-- - - - - - - - - - - - - - Mega menu - - - - - - - - - - - - - - - - -->
 
@@ -111,7 +111,31 @@
 
                                         <div class="mega_menu_item">
 
-                                            <ul id="allcats" class="list_of_links">
+                                            <ul id="mens" class="list_of_links">
+                                            </ul>
+
+                                        </div><!--/ .mega_menu_item-->
+
+                                    </div><!--/ .mega_menu-->
+
+                                    <!-- - - - - - - - - - - - - - End of mega menu - - - - - - - - - - - - - - - - -->
+
+                                </li>
+                                
+                                <li class="has_megamenu animated_item">
+
+                                    <a href="#">Women</a>
+
+                                    <!-- - - - - - - - - - - - - - Mega menu - - - - - - - - - - - - - - - - -->
+
+                                    <div class="mega_menu type_2 clearfix">
+
+
+                                        <!-- - - - - - - - - - - - - - Mega menu item - - - - - - - - - - - - - - - - -->
+
+                                        <div class="mega_menu_item">
+
+                                            <ul id="womens" class="list_of_links">
                                             </ul>
 
                                         </div><!--/ .mega_menu_item-->

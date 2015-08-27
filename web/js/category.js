@@ -110,6 +110,6 @@ pdt.formatHTML = function (id, name, price, profile_pic) {
 };
 
 
-
 pdt.get(location.hash.replace('#',''));
+
 pdt.category();

@@ -86,7 +86,7 @@ public class ProductHighlightMgr {
         ArrayList<ProductNew> res =  new ArrayList();
         while (rs.next()) {
             ProductNew i = new ProductNew(); 
-
+            getProductRs(i.productnew,rs);
             res.add(i);
         }
         conn.close();

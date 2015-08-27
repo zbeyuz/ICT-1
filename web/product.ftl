@@ -83,7 +83,7 @@
 
                                 <div class="image_preview_container">
 
-                                    <img id="img_zoom" data-zoom-image="images/qv_large_1.JPG" src="images/qv_img_1.jpg" alt="">
+                                    <img id="img_zoom" data-zoom-image="${flarge}" src="${fsmall}" alt="">
 
                                     <button class="button_grey_2 icon_btn middle_btn open_qv"><i class="icon-resize-full-6"></i></button>
 
@@ -96,31 +96,7 @@
                                 <div class="product_preview">
 
                                     <div class="owl_carousel" id="thumbnails">
-
-                                        <a href="#" data-image="images/qv_img_1.jpg" data-zoom-image="images/qv_large_1.JPG">
-
-                                            <img src="images/qv_thumb_1.jpg" data-large-image="images/qv_img_1.jpg" alt="">
-
-                                        </a>
-
-                                        <a href="#" data-image="images/qv_img_2.jpg" data-zoom-image="images/qv_large_2.jpg">
-
-                                            <img src="images/qv_thumb_2.jpg" data-large-image="images/qv_img_2.jpg" alt="">
-
-                                        </a>
-
-                                        <a href="#" data-image="images/qv_img_3.jpg" data-zoom-image="images/qv_large_3.jpg">
-
-                                            <img src="images/qv_thumb_3.jpg" data-large-image="images/qv_img_3.jpg" alt="">
-
-                                        </a>
-
-                                        <a href="#" data-image="images/qv_img_4.jpg" data-zoom-image="images/qv_large_4.JPG">
-
-                                            <img src="images/qv_thumb_4.jpg" data-large-image="images/qv_img_4.jpg" alt="">
-
-                                        </a>
-
+                                        ${img!}
                                     </div><!--/ .owl-carousel-->
 
                                 </div><!--/ .product_preview-->

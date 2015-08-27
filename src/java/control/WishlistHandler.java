@@ -18,7 +18,6 @@ import model.Product;
 import model.User;
 import database.WishlistMgr;
 
-
 /**
  *
  * @author hy
@@ -38,24 +37,22 @@ public class WishlistHandler extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        User user=(User) request.getSession().getAttribute("user");
-        if (user==null){
+        User user = (User) request.getSession().getAttribute("user");
+        if (user == null) {
             out.println("\u005B\u005D");
             return;
         }
         try {
             
-            ArrayList<Product> wishList=WishlistMgr.getWishlist(user.id);
+            ArrayList<Product> wishList = WishlistMgr.getWishlist(user.id);
             out.print("\u005B");
-            String s="";
-            for (Product i:wishList){
+            String s = "";
+            for (Product i : wishList) {
                 out.print(s);
-                if (i.profile_pic.replace(" ", "").equals("")) {
-                        i.profile_pic = "images/product_img_27.jpg";
-                    }
+                i.defaultPic();
                 out.printf("\u005B%d,\"%s\",%d,\"%s\"\u005D",
-                        i.id,i.name,i.price,i.profile_pic);
-                s=",";
+                        i.id, i.name, i.price, i.profile_pic);
+                s = ",";
             }
             out.print("\u005D");
         } catch (Exception e) {
@@ -76,17 +73,22 @@ public class WishlistHandler extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        User user=(User) request.getSession().getAttribute("user");
-        if (user==null){
+        User user = (User) request.getSession().getAttribute("user");
+        if (user == null) {
             out.println("invuser");
             return;
         }
-        try{
-            int item_id=Integer.parseInt(request.getParameter("item"));
-            if(!WishlistMgr.addProduct(user.id, item_id)){
+        
+        try {
+            int item_id = Integer.parseInt(request.getParameter("item"));
+            
+            String act = request.getParameter("act");
+            if (act != null && act.equals("rm")) {
                 WishlistMgr.deleteProduct(user.id, item_id);
+            } else {
+                WishlistMgr.addProduct(user.id, item_id);
             }
-        }catch(Exception e){
+        } catch (Exception e) {
             out.print("err");
             Logger.getLogger(AddPic.class.getName()).log(Level.SEVERE, null, e);
         }
@@ -101,5 +103,5 @@ public class WishlistHandler extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }
-
+    
 }
