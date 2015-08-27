@@ -5,12 +5,16 @@
  */
 package control;
 
+import database.BillMgr;
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import model.BillInfo;
 
 /**
  *
@@ -29,9 +33,30 @@ public class ViewHistory extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            
+        try {
+            response.setContentType("text/html;charset=UTF-8");
+            ArrayList<BillInfo> info = BillMgr.getBillInfo(Integer.parseInt(request.getParameter("id")));
+            StringBuilder res = new StringBuilder();
+            for (BillInfo i : info) {
+                res.append("<tr>\n"
+                        + "<td data-title=\"Product Name\">\n"
+                        + "<p class=\"product_title\">" + i.product.name + "</p>\n"
+                        + "<ul class=\"sc_product_info\">\n"
+                        + "<li><b>Size:</b> " + i.item.item_size + "</li>\n"
+                        + "<li><b>Color:</b> " + i.item.item_color + "</li>\n"
+                        + "<li><b>Material:</b> " + i.item.item_material + "</li>\n"
+                        + "</ul>\n"
+                        + "</td>\n"
+                        + "<td data-title=\"SKU\">"+i.item.item_id+"</td>\n"
+                        + "<td data-title=\"Price\" class=\"subtotal\">$"+i.product.price+"</td>\n"
+                        + "<td data-title=\"Quantity\">"+i.item.item_quantity+"</td>\n"
+                        + "<td data-title=\"Total\" class=\"total\">$"+i.product.price*i.item.item_quantity+"</td>\n"
+                        + "</tr>");
+            }
+            request.setAttribute("row", res.toString());
+            request.getRequestDispatcher("/modals/view_order.ftl").forward(request, response);
+        } catch (Exception ex) {
+            Logger.getLogger(ViewHistory.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

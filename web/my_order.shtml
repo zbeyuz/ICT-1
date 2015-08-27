@@ -175,7 +175,7 @@
                                         <td data-title="Action">\
                                         <ul class="buttons_col">\
                                         <li>\
-                                        <a href="#" class="button_blue" data-modal-url="modals/view_order.html">View Order</a>\
+                                        <a href="#" class="button_blue" data-modal-url="viewHistory?id='+res[i][0]+'">View Order</a>\
                                         </li>\
                                         </ul>\
                                         </td>\
