@@ -14,6 +14,7 @@ $.get("wishlist", function (data) {
   <td data-title="Action">\
     <ul class="buttons_col">\
       <li><a href="javascript:;" onclick="icp.rmwish(' + items[i][0] + ')" class="button_dark_grey">Remove</a></li>\
+      <li><a href="product?id='+items[i][0]+'" class="button_blue middle_btn">More Details</a></li>\
     </ul>\
   </td>\
 </tr>\

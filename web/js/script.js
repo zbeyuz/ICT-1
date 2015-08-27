@@ -143,13 +143,20 @@ sel.constHTML = function (val) {
     });
     return e;
 };
-icp.catList = $('#allcats');
 
-$.get("category", function (data) {
+$.get("category?gender=Men", function (data) {
     var c = JSON.parse(data);
     var i = 0;
     for (i = 0; i < c.length; i += 1) {
-        icp.catList.append('<li><a href="category.shtml#' + c[i] + '" class="all"><b>' + c[i] + '</b></li>');
+        $('#mens').append('<li><a onclick="location.reload()" href="category.shtml#Men_' + c[i] + '" class="all cat"><b>' + c[i] + '</b></li>');
+    }
+
+});
+$.get("category?gender=Women", function (data) {
+    var c = JSON.parse(data);
+    var i = 0;
+    for (i = 0; i < c.length; i += 1) {
+        $('#womens').append('<li><a onclick="location.reload()" href="category.shtml#Women_' + c[i] + '" class="all cat"><b>' + c[i] + '</b></li>');
     }
 
 });

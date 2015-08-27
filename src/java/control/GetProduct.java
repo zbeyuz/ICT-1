@@ -48,7 +48,12 @@ public class GetProduct extends HttpServlet {
                 }
             } else {
                 try {
-                    items = database.ProductMgr.getProductByCategory(category);
+                    String[] categoryInGender=category.split("_");
+                    if(categoryInGender.length>1){
+                        items = database.ProductMgr.getProductByCategory(categoryInGender[0],categoryInGender[1]);
+                    }else{
+                        items = database.ProductMgr.getProductByCategory(category);
+                    }
                     JSONPrinter.printProductJSON(items,out);
                 } catch (Exception e) {
                     Logger.getLogger(AddPic.class.getName()).log(Level.SEVERE, null, e);

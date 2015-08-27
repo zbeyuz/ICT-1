@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author hy
  */
-public class getCategory extends HttpServlet {
+public class GetCategory extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,7 +34,13 @@ public class getCategory extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            ArrayList<String> res = database.ProductMgr.getCategory();
+            String gender = request.getParameter("gender");
+            ArrayList<String> res;
+            if (gender != null) {
+                res = database.ProductMgr.getCategoryByGender(gender);
+            } else {
+                res = database.ProductMgr.getCategory();
+            }
             out.print("\u005B");
             String s = "";
             for (String i : res) {
@@ -44,7 +50,7 @@ public class getCategory extends HttpServlet {
             }
             out.print("\u005D");
         } catch (Exception ex) {
-            Logger.getLogger(getCategory.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(GetCategory.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

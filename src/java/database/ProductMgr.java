@@ -195,6 +195,18 @@ public class ProductMgr {
         conn.close();
         return res;
     }
+    
+    public static ArrayList<Product> getProductByCategory(String gender, String category) throws SQLException, Exception {
+
+        Connection conn = DBConn.getConn();
+        PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM `product_list` WHERE `product_gender`=? AND product_type = ?");
+        pstmt.setString(1, gender);
+        pstmt.setString(2, category);
+        ResultSet rs = pstmt.executeQuery();
+        ArrayList<Product> res = productListFromRs(rs);
+        conn.close();
+        return res;
+    }
 
     public static Product getProductByProductId(int product_id) throws SQLException, Exception {
 
