@@ -17,6 +17,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import model.Bill;
 import model.BillSummery;
 import model.User;
 
@@ -41,13 +42,16 @@ public class GetHistories extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             User user = (User) request.getSession().getAttribute("user");
             if (user == null) {
-                out.println("\u005B\u005D");
+                out.println("guest");
             } else {
+                //out.println(user.email);
                 ArrayList<BillSummery> list = BillMgr.getBillSummeries(user);
                 out.print("\u005B");
                 String s = "";
                 for (BillSummery i : list) {
+                    out.print(s);
                     out.printf("\u005B%d, \"%s\", \"%s\", %d\u005D", i.billId, new SimpleDateFormat("yyyy-MM-dd").format(new Date(i.date)), i.name, i.total);
+                    s = ",";
                 }
                 out.print("\u005D");
             }

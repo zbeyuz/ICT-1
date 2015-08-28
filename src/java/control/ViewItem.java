@@ -47,8 +47,9 @@ public class ViewItem extends HttpServlet {
             request.setAttribute("name", p.name);
             request.setAttribute("info", p.info);
             ArrayList<ProductPic> productPic = ProductMgr.getProductPic(p.id);
-            request.setAttribute("flarge", productPic.get(0).largePic);
-            request.setAttribute("fsmall", productPic.get(0).smallPic);
+            //size check
+                request.setAttribute("flarge", productPic.get(0).largePic);
+                request.setAttribute("fsmall", productPic.get(0).smallPic);
             //Logger.getLogger(ViewItem.class.getName()).info(imgHtml.toString());
             if (request.getServletPath().equals("/view")) {
                 StringBuilder imgHtml = new StringBuilder();
