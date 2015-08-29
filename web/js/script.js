@@ -94,6 +94,7 @@ icp.cart.get = function () {
     $.get("cart", function (data) {
         var items = JSON.parse(data);
         var i = 0;
+        var total = 0;
         for (i = 0; i < items.length; i++) {
             $("#cart").append(' \
             <div class="animated_item"><div class="clearfix sc_product"> \
@@ -103,8 +104,11 @@ icp.cart.get = function () {
               <button onclick="icp.cart.rm(' + items[i][4] + ')" class="close"></button> \
             </div></div>\
             ');
+            total += items[i][2];
 
         }
+        $('.total_price').html('$' + total);
+        $('#open_shopping_cart').attr('data-amount', i)
     });
 };
 
