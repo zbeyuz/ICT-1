@@ -37,6 +37,7 @@ public class ViewHistory extends HttpServlet {
             response.setContentType("text/html;charset=UTF-8");
             ArrayList<BillInfo> info = BillMgr.getBillInfo(Integer.parseInt(request.getParameter("id")));
             StringBuilder res = new StringBuilder();
+            int subtotal=0;
             for (BillInfo i : info) {
                 res.append("<tr>\n"
                         + "<td data-title=\"Product Name\">\n"
@@ -52,8 +53,11 @@ public class ViewHistory extends HttpServlet {
                         + "<td data-title=\"Quantity\">"+i.item.item_quantity+"</td>\n"
                         + "<td data-title=\"Total\" class=\"total\">$"+i.product.price*i.item.item_quantity+"</td>\n"
                         + "</tr>");
+                subtotal+=i.product.price*i.item.item_quantity;
             }
             request.setAttribute("row", res.toString());
+            request.setAttribute("subtotal", String.format("$%d", subtotal));
+            request.setAttribute("total", String.format("$%d", subtotal));
             request.getRequestDispatcher("/modals/view_order.ftl").forward(request, response);
         } catch (Exception ex) {
             Logger.getLogger(ViewHistory.class.getName()).log(Level.SEVERE, null, ex);

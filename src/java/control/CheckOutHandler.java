@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import model.BillAddress;
 import model.Cart;
+import model.User;
 import org.jboss.logging.Logger;
 
 /**
@@ -51,8 +52,13 @@ public class CheckOutHandler extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             Cart cart = (Cart) request.getSession().getAttribute("cart");
+            User user = (User) request.getSession().getAttribute("user");
             if (cart == null) {
                 out.println("empty cart");
+                return;
+            }
+            if (user == null) {
+                out.println("please login or register");
                 return;
             }
             BillAddress address = new BillAddress();
@@ -75,8 +81,10 @@ public class CheckOutHandler extends HttpServlet {
                     shippingPrice = 15;
                     break;
             }
+            //out.print("success");
+            java.util.logging.Logger.getLogger(CheckOutHandler.class.getName()).info(String.format("%d",cart.itemList().size()));
+            BillMgr.newBill(user.id, shippingPrice, shipping, cart.itemList(), address);
             
-            BillMgr.newBill(shippingPrice, shippingPrice, shipping, cart.itemList(), address);
 
         } catch (Exception ex) {
             java.util.logging.Logger.getLogger(CheckOutHandler.class.getName()).log(Level.SEVERE, null, ex);

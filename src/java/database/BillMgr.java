@@ -168,7 +168,7 @@ public class BillMgr {
             i.item.item_color = rs.getString("item_color");
             i.item.item_size = rs.getString("item_size");
             i.item.item_sample_pic = rs.getString("item_sample_pic");
-            i.item.item_quantity = rs.getInt("item_quantity");
+            i.item.item_quantity = rs.getInt("bill_quantity");
             i.bill_quantity = rs.getInt("bill_quantity");
             res.add(i);
         }

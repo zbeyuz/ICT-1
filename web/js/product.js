@@ -8,14 +8,14 @@
 icp.revArray = function () {
     return $("#rating").serializeArray();
 }
-icp.revObj = function () {
+icp.revObj = function (id) {
     var res = {};
     var ra = icp.revArray();
     var i;
     for (i = 0; i < ra.length; i += 1) {
         res[ra[i].name] = ra[i].value;
     }
-    res["item"] = "${id}";
+    res["item"] = id;
     return res;
 }
 icp.sendRev = function () {
@@ -187,9 +187,4 @@ icp.getReview = function (id) {
             $(".reviewNum").html(0);
         }
     });
-};
-
-icp.submitCart = function () {
-    var id = icp.item.id;
-    var qty = $('#qty').val();
 };

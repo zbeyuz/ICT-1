@@ -43,21 +43,21 @@
                 <tr>
 
                     <td colspan="4" class="bold">Subtotal</td>
-                    <td class="total">$146.87</td>
+                    <td class="total">${subtotal!}</td>
 
                 </tr>
 
                 <tr>
 
                     <td colspan="4" class="bold">Shipping &amp; Handling</td>
-                    <td class="total">$5.00</td>
+                    <td class="total">$0.00</td>
 
                 </tr>
 
                 <tr>
 
                     <td colspan="4" class="grandtotal">Grand Total</td>
-                    <td class="grandtotal">$151.87</td>
+                    <td class="grandtotal">${total!}</td>
 
                 </tr>
 

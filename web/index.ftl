@@ -371,6 +371,72 @@
                                 <img src="images/brands_img_8.jpg" alt="">
                             </a>
                             <!--End brand-->
+                            
+                            <!--Brand-->
+                            <a href="#">
+                                <img src="images/brands_img_9.jpg" alt="">
+                            </a>
+                            <!--End brand-->
+                            
+                            <!--Brand-->
+                            <a href="#">
+                                <img src="images/brands_img_10.jpg" alt="">
+                            </a>
+                            <!--End brand-->
+                            
+                            <!--Brand-->
+                            <a href="#">
+                                <img src="images/brands_img_11.jpg" alt="">
+                            </a>
+                            <!--End brand-->
+                            
+                            <!--Brand-->
+                            <a href="#">
+                                <img src="images/brands_img_12.jpg" alt="">
+                            </a>
+                            <!--End brand-->
+                            
+                            <!--Brand-->
+                            <a href="#">
+                                <img src="images/brands_img_13.jpg" alt="">
+                            </a>
+                            <!--End brand-->
+                            
+                            <!--Brand-->
+                            <a href="#">
+                                <img src="images/brands_img_14.jpg" alt="">
+                            </a>
+                            <!--End brand-->
+                            
+                            <!--Brand-->
+                            <a href="#">
+                                <img src="images/brands_img_15.jpg" alt="">
+                            </a>
+                            <!--End brand-->
+                            
+                            <!--Brand-->
+                            <a href="#">
+                                <img src="images/brands_img_16.jpg" alt="">
+                            </a>
+                            <!--End brand-->
+                            
+                            <!--Brand-->
+                            <a href="#">
+                                <img src="images/brands_img_17.jpg" alt="">
+                            </a>
+                            <!--End brand-->
+                            
+                            <!--Brand-->
+                            <a href="#">
+                                <img src="images/brands_img_18.jpg" alt="">
+                            </a>
+                            <!--End brand-->
+                            
+                            <!--Brand-->
+                            <a href="#">
+                                <img src="images/brands_img_19.jpg" alt="">
+                            </a>
+                            <!--End brand-->
 
                         </div><!--/ .owl_carousel-->
 
