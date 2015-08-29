@@ -89,7 +89,7 @@ public class WishlistMgr {
 
         Connection conn=DBConn.getConn();
         
-        PreparedStatement pstmt = conn.prepareStatement("SELECT COUNT(`product_id`) AS COUNT FROM `wishlist` WHERE `user_id`=1");
+        PreparedStatement pstmt = conn.prepareStatement("SELECT COUNT(`product_id`) AS COUNT FROM `wishlist` WHERE `user_id`=?");
         pstmt.setInt(1,user_id);
         ResultSet rs = pstmt.executeQuery();
 

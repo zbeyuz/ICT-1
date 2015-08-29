@@ -116,6 +116,7 @@ icp.wish = function (item) {
         if(data==='invuser') {
             alert('Please login or register to addd this item to wishlist!');
         }
+        icp.wishNum();
     });
 };
 
@@ -240,3 +241,12 @@ icp.cart.submit = function () {
     var qty = $('#qty').val();
     icp.cart.add(item, qty);
 };
+
+icp.wishNum = function () {
+    $.get('info', function (data) {
+        var info=JSON.parse(data);
+        $('.wishlist_button').attr('data-amount', info['wishlist']);
+    });
+};
+
+icp.wishNum();

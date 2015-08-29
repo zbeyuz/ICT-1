@@ -24,4 +24,5 @@ $.get("wishlist", function (data) {
 icp.rmwish = function (item) {
     $.post('wishlist',{item:item, act:'rm'})
     $("#item" + item).remove();
+    $('.wishlist_button').attr('data-amount',$('.wishlist_button').attr('data-amount') - 1);
 };

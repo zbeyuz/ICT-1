@@ -5,10 +5,14 @@
  */
 package test;
 
+import database.WishlistMgr;
+
 /**
  *
  * @author hy
  */
 public class NewClass {
-    
+    public static void main(String[] args) throws Exception {
+        System.out.println(WishlistMgr.getWishlistCount(1));
+    }
 }
