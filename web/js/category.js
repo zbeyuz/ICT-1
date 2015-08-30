@@ -56,7 +56,7 @@ pdt.printCell = function (list) {
         if (i % 3 === 0){
             row = pdt.row();
         }
-        row.append(pdt.formatHTML(list[i][0], list[i][1], list[i][2], list[i][3]));
+        row.append(pdt.formatHTML(list[i][0], list[i][1], list[i][2], list[i][3], list[i][4], list[i][5]));
         i += 1;
     }
     return row;
@@ -65,7 +65,7 @@ pdt.printCell = function (list) {
 
 
 
-pdt.formatHTML = function (id, name, price, profile_pic,manufacturer) {
+pdt.formatHTML = function (id, name, price, profile_pic,manufacturer,info) {
     return '\
 <div class="table_cell">\
   <div class="product_item">\
@@ -87,12 +87,7 @@ pdt.formatHTML = function (id, name, price, profile_pic,manufacturer) {
     </div>\
     <div class="full_description">\
       <a href="product?id='+id+'" class="product_title">'+name+'</a>\
-      <div class="v_centered product_reviews">\
-        <ul class="topbar">\
-          <li><b>0 Review(s)</b></li>\
-        </ul>\
-      </div>\
-      <p>Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula.</p>\
+      <p>'+info+'</p>\
     </div>\
     <div class="actions">\
       <p class="product_price bold">$'+price+'</p>\

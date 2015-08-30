@@ -110,7 +110,7 @@
 
                                 <a href="#" class="banner animated transparent" data-animation="fadeInDown">
 
-                                    <img src="images/banner_img_7.jpg" alt="">
+                                    <img src="images/banner_img_1.jpg" alt="">
 
                                 </a>
 
@@ -120,7 +120,7 @@
 
                                 <a href="#" class="banner animated transparent" data-animation="fadeInDown" data-animation-delay="150">
 
-                                    <img src="images/banner_img_8.jpg" alt="">
+                                    <img src="images/banner_img_2.jpg" alt="">
 
                                 </a>
 
@@ -130,7 +130,7 @@
 
                                 <a href="#" class="banner animated transparent" data-animation="fadeInDown" data-animation-delay="300">
 
-                                    <img src="images/banner_img_9.jpg" alt="">
+                                    <img src="images/banner_img_3.jpg" alt="">
 
                                 </a>
 

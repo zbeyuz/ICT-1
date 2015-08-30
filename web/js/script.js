@@ -6,7 +6,7 @@
 var icp = {};
 icp.account = function (data) {
     if (data !== "") {
-        $("#account").html("Welcome " + data + '!<br /><a href="javascript:;" onclick="icp.logout()"> logout </a>')
+        $("#account").html("Welcome " + data + '!<br /><a href="javascript:;" onclick="icp.logout()"> Logout </a>')
     } else {
         $("#account").html('Welcome visitor <a href="#" data-modal-url="modals/login.html">Login</a> or <a href="#" data-modal-url="modals/register.html">Register</a>');
     }
@@ -32,7 +32,7 @@ icp.login = function () {
             $("#closeLogin").trigger("click");
             icp.onlogin();
         } else {
-            $("#logWarn").html("<b>Notice:</b> Email or password incorrect");
+            $("#logWarn").html("<b>Notice:</b> Email or password is incorrect");
         }
     });
 };
@@ -57,7 +57,7 @@ icp.regis = function () {
         });
 
     } else {
-        alert("information is incorrect");
+        alert("The information is incorrect");
 
     }
 }
@@ -83,7 +83,7 @@ icp.cart.add = function (item, qty) {
         }
         $("#cart").html("");
         icp.cart.get();
-        alert('success!');
+        alert('Your item has been added to cart successfully!');
     });
 };
 
@@ -131,9 +131,9 @@ icp.wish = function (item) {
     i.item = item;
     $.post("wishlist", i, function (data) {
         if(data==='invuser') {
-            alert('Please login or register to addd this item to wishlist!');
+            alert('Please login or register to addd this item to wish list!');
         }else{
-            alert('success!');
+            alert('Your item has been added to wish list successfully!');
         }
         icp.wishNum();
         
