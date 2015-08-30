@@ -50,7 +50,7 @@ public class GetHistories extends HttpServlet {
                 String s = "";
                 for (BillSummery i : list) {
                     out.print(s);
-                    out.printf("\u005B%d, \"%s\", \"%s\", %d\u005D", i.billId, new SimpleDateFormat("yyyy-MM-dd").format(new Date(i.date)), i.name, i.total);
+                    out.printf("\u005B%d, \"%s\", \"%s\", %d, \"%s\"\u005D", i.billId, new SimpleDateFormat("yyyy-MM-dd").format(new Date(i.date)), i.name, i.total, i.shipping_type);
                     s = ",";
                 }
                 out.print("\u005D");
