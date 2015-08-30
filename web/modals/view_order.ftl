@@ -50,7 +50,7 @@
                 <tr>
 
                     <td colspan="4" class="bold">Shipping &amp; Handling</td>
-                    <td class="total">$0.00</td>
+                    <td class="total">${shipping!}</td>
 
                 </tr>
 

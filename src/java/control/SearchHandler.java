@@ -61,7 +61,7 @@ public class SearchHandler extends HttpServlet {
                                 + "  <div class=\"clearfix product_info\">"
                                 + "    <div class=\"col-md-2\"><img src=\""+i.profile_pic+"\" alt=\"\"></div>"
                                 + "    <div class=\"col-md-10\">"
-                                + "      <a href=\"product.shtml\">"+i.name+"</a>"
+                                + "      <a href=\"product?id="+i.id+"\">"+i.name+"</a>"
                                 + "      <p class=\"product_price\"><b>Price: $"+i.price+"</b></p>"
                                 + "    </div>"
                                 + "  </div>"

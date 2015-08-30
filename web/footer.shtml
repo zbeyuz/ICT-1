@@ -180,9 +180,9 @@
 
                 <ul class="bottombar">
 
-                    <li><a href="#">Clothing</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Beauty</a></li>
+                    <li><a href="category.shtml#Men_T-Shirt">Clothing</a></li>
+                    <li><a href="category.shtml#Women_Jewellery">Accessories</a></li>
+                    <li><a href="category.shtml#Women_Make-Up">Beauty</a></li>
 
                 </ul>
 

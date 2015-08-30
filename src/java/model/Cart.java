@@ -93,6 +93,13 @@ public class Cart {
         }
         return res;
     }
+    
+    
+    
+    public void clear() {
+        items.clear();
+        products.clear();
+    }
 
     public int size() {
         return items.size();

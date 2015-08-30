@@ -65,7 +65,7 @@ pdt.printCell = function (list) {
 
 
 
-pdt.formatHTML = function (id, name, price, profile_pic) {
+pdt.formatHTML = function (id, name, price, profile_pic,manufacturer) {
     return '\
 <div class="table_cell">\
   <div class="product_item">\
@@ -97,7 +97,7 @@ pdt.formatHTML = function (id, name, price, profile_pic) {
     <div class="actions">\
       <p class="product_price bold">$'+price+'</p>\
       <ul class="seller_stats">\
-        <li><b>Manufacturer:</b> Intel</li>\
+        <li><b>Manufacturer:</b> '+manufacturer+'</li>\
         <li><b>Availability:</b> <span class="in_stock">In stock</span></li>\
       </ul>\
       <ul class="buttons_col">\

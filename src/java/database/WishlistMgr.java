@@ -84,4 +84,21 @@ public class WishlistMgr {
         conn.close();
         return res;
     }
+    
+    public static int getWishlistCount(int user_id) throws SQLException, Exception {
+
+        Connection conn=DBConn.getConn();
+        
+        PreparedStatement pstmt = conn.prepareStatement("SELECT COUNT(`product_id`) AS COUNT FROM `wishlist` WHERE `user_id`=?");
+        pstmt.setInt(1,user_id);
+        ResultSet rs = pstmt.executeQuery();
+
+        int res = 0;
+
+        while (rs.next()) {
+            res=rs.getInt("COUNT");
+        }
+        conn.close();
+        return res;
+    }
 }

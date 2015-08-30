@@ -36,8 +36,16 @@ public class ViewHistory extends HttpServlet {
         try {
             response.setContentType("text/html;charset=UTF-8");
             ArrayList<BillInfo> info = BillMgr.getBillInfo(Integer.parseInt(request.getParameter("id")));
+            String type = request.getParameter("type");
+            int shippingPrice = 0;
+            if (type.equals("std")) {
+                shippingPrice = 5;
+            } else if (type.equals("express")) {
+                shippingPrice = 10;
+            }
+            Logger.getLogger(ViewHistory.class.getName()).info(String.format("%s %d", type ,shippingPrice));
             StringBuilder res = new StringBuilder();
-            int subtotal=0;
+            int subtotal = 0;
             for (BillInfo i : info) {
                 res.append("<tr>\n"
                         + "<td data-title=\"Product Name\">\n"
@@ -48,16 +56,17 @@ public class ViewHistory extends HttpServlet {
                         + "<li><b>Material:</b> " + i.item.item_material + "</li>\n"
                         + "</ul>\n"
                         + "</td>\n"
-                        + "<td data-title=\"SKU\">"+i.item.item_id+"</td>\n"
-                        + "<td data-title=\"Price\" class=\"subtotal\">$"+i.product.price+"</td>\n"
-                        + "<td data-title=\"Quantity\">"+i.item.item_quantity+"</td>\n"
-                        + "<td data-title=\"Total\" class=\"total\">$"+i.product.price*i.item.item_quantity+"</td>\n"
+                        + "<td data-title=\"SKU\">" + i.item.item_id + "</td>\n"
+                        + "<td data-title=\"Price\" class=\"subtotal\">$" + i.product.price + "</td>\n"
+                        + "<td data-title=\"Quantity\">" + i.item.item_quantity + "</td>\n"
+                        + "<td data-title=\"Total\" class=\"total\">$" + i.product.price * i.item.item_quantity + "</td>\n"
                         + "</tr>");
-                subtotal+=i.product.price*i.item.item_quantity;
+                subtotal += i.product.price * i.item.item_quantity;
             }
             request.setAttribute("row", res.toString());
             request.setAttribute("subtotal", String.format("$%d", subtotal));
-            request.setAttribute("total", String.format("$%d", subtotal));
+            request.setAttribute("shipping", String.format("$%d", shippingPrice));
+            request.setAttribute("total", String.format("$%d", subtotal+shippingPrice));
             request.getRequestDispatcher("/modals/view_order.ftl").forward(request, response);
         } catch (Exception ex) {
             Logger.getLogger(ViewHistory.class.getName()).log(Level.SEVERE, null, ex);

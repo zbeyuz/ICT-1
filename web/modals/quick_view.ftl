@@ -99,7 +99,7 @@
 
                 <a href="product?id=${id}" class="button_blue middle_btn">More Details</a>
 
-                <button class="button_dark_grey def_icon_btn middle_btn add_to_wishlist tooltip_container"><span class="tooltip top">Add to Wishlist</span></button>
+                <button onclick="icp.wish(${id})" class="button_dark_grey def_icon_btn middle_btn add_to_wishlist tooltip_container"><span class="tooltip top">Add to Wishlist</span></button>
 
             </div>
 

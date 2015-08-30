@@ -411,7 +411,7 @@
 
                                 <span>Forgot an item?</span>
 
-                                <a href="#" class="button_dark_grey middle_btn">Edit Your Cart</a>
+                                <a href="cart.shtml" class="button_dark_grey middle_btn">Edit Your Cart</a>
 
                             </div>
 

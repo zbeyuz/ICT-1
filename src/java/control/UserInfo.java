@@ -5,21 +5,48 @@
  */
 package control;
 
+import database.WishlistMgr;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.HashMap;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.BillAddress;
+import model.User;
 
 /**
  *
  * @author hy
  */
-public class Order extends HttpServlet {
+public class UserInfo extends HttpServlet {
 
+    /**
+     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
+     * methods.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            User user = (User) request.getSession().getAttribute("user");
+            int wishlistNum = 0;
+            if (user != null) {
+                wishlistNum = WishlistMgr.getWishlistCount(user.id);
+            }
+            out.printf("\u007B\"wishlist\":%d\u007D",wishlistNum);
+        } catch (Exception ex) {
+            Logger.getLogger(UserInfo.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
      *
@@ -31,7 +58,7 @@ public class Order extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //order history
+        processRequest(request, response);
     }
 
     /**
@@ -45,25 +72,7 @@ public class Order extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html");
-        PrintWriter out = response.getWriter();
-        HashMap cart=(HashMap)request.getSession().getAttribute("cart");
-        if(cart!=null){
-            BillAddress addr=new BillAddress();
-            addr.bill_country=request.getParameter("country");
-            addr.bill_email=request.getParameter("email");
-            addr.bill_fname=request.getParameter("fName");
-            addr.bill_floor=request.getParameter("floor");
-            addr.bill_lname=request.getParameter("lName");
-            addr.bill_tel=Integer.parseInt(request.getParameter("phone"));
-            String shipMethod=request.getParameter("shipping");
-            addr.bill_address=String.format("%s BLOCK %s",request.getParameter("street"),request.getParameter("blk"));
-            addr.bill_unit=request.getParameter("unit");
-            addr.bill_postcode=Integer.parseInt(request.getParameter("zip"));
-            
-        }else{
-            out.println("empty");
-        }
+        processRequest(request, response);
     }
 
     /**
@@ -74,6 +83,6 @@ public class Order extends HttpServlet {
     @Override
     public String getServletInfo() {
         return "Short description";
-    }
+    }// </editor-fold>
 
 }

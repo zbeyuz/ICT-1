@@ -6,7 +6,7 @@
 var icp = {};
 icp.account = function (data) {
     if (data !== "") {
-        $("#account").html("Welcome " + data + '!<br /><a href="javascript:;" onclick="icp.logout()"> logout </a>')
+        $("#account").html("Welcome " + data + '!<br /><a href="javascript:;" onclick="icp.logout()"> Logout </a>')
     } else {
         $("#account").html('Welcome visitor <a href="#" data-modal-url="modals/login.html">Login</a> or <a href="#" data-modal-url="modals/register.html">Register</a>');
     }
@@ -32,7 +32,7 @@ icp.login = function () {
             $("#closeLogin").trigger("click");
             icp.onlogin();
         } else {
-            $("#logWarn").html("<b>Notice:</b> Email or password incorrect");
+            $("#logWarn").html("<b>Notice:</b> Email or password is incorrect");
         }
     });
 };
@@ -57,7 +57,7 @@ icp.regis = function () {
         });
 
     } else {
-        alert("information is incorrect");
+        alert("The information is incorrect");
 
     }
 }
@@ -83,6 +83,7 @@ icp.cart.add = function (item, qty) {
         }
         $("#cart").html("");
         icp.cart.get();
+        alert('Your item has been added to cart successfully!');
     });
 };
 
@@ -90,22 +91,38 @@ icp.cart.rm = function (item) {
     icp.cart.add(item, 0);
 }
 
+
 icp.cart.get = function () {
     $.get("cart", function (data) {
+        
         var items = JSON.parse(data);
+        
+        var total = 0;
+        var discount = 0;
         var i = 0;
         for (i = 0; i < items.length; i++) {
             $("#cart").append(' \
             <div class="animated_item"><div class="clearfix sc_product"> \
               <a href="product?id=' + items[i][0] + '" class="product_thumb"><img height="50" width="50" src="' + items[i][3] + '" alt=""></a> \
               <a href="product?id=' + items[i][0] + '" class="product_name">' + items[i][1] + '</a> \
-              <p>' + items[i][2] + '</p>\
+              <p>$' + items[i][2] + '</p>\
               <button onclick="icp.cart.rm(' + items[i][4] + ')" class="close"></button> \
             </div></div>\
             ');
+            total += items[i][2] * items[i][6];
+            discount += items[i][2] * items[i][5] / 100 * items[i][6];
 
         }
+        $('#discount').html('$'+discount)
+        $('.total_price').html('$' + total);
+        $('#open_shopping_cart').attr('data-amount', i)
     });
+};
+
+icp.cart.clear = function () {
+    $.post('cart', {act:'clear'});
+    icp.cart.get()
+    
 };
 
 icp.wish = function (item) {
@@ -114,8 +131,12 @@ icp.wish = function (item) {
     i.item = item;
     $.post("wishlist", i, function (data) {
         if(data==='invuser') {
-            alert('Please login or register to addd this item to wishlist!');
+            alert('Please login or register to addd this item to wish list!');
+        }else{
+            alert('Your item has been added to wish list successfully!');
         }
+        icp.wishNum();
+        
     });
 };
 
@@ -240,3 +261,12 @@ icp.cart.submit = function () {
     var qty = $('#qty').val();
     icp.cart.add(item, qty);
 };
+
+icp.wishNum = function () {
+    $.get('info', function (data) {
+        var info=JSON.parse(data);
+        $('.wishlist_button').attr('data-amount', info['wishlist']);
+    });
+};
+
+icp.wishNum();

@@ -20,10 +20,10 @@ cart.get = function () {
         cart.items = items;
         $('#subtotal').html('$'+cart.total());
         $('#total').html('$'+cart.total());
-        $('#clict').empty();
         var i = 0;
+        var out = '';
         for (i = 0; i < items.length; i += 1) {
-            $('#clist').append('\
+            out += '\
 <tr id="r'+items[i][0]+'">\
   <td class="product_image_col" data-title="Product Image">\
     <a href="#"><img src="'+items[i][7]+'" alt=""></a>\
@@ -48,8 +48,9 @@ cart.get = function () {
   <td class="total" data-title="Total">$'+items[i][9]+'</td>\
   <td data-title="Action"><a href="javascript:;" onclick="cart.remove('+items[i][0]+')" class="button_dark_grey middle_btn">Delete</a></td>\
 </tr>\
-            ');
+            ';
         }
+        $('#clist').html(out);
     });
 };
 

@@ -92,7 +92,7 @@
 
                                 <a href="#" class="banner">
 
-                                    <img src="images/banner_img_10.png" alt="">
+                                    <img src="images/banner_img_4.png" alt="">
 
                                 </a>
 

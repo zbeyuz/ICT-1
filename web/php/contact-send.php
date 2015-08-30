@@ -8,7 +8,7 @@
 		$name = htmlspecialchars($cf_name);
 		$email = htmlspecialchars($cf_email);
 		$message = htmlspecialchars($cf_message);
-		$subject = isset($cf_subject) ? htmlspecialchars($cf_subject) : "ShopMe. Contact form";
+		$subject = isset($cf_subject) ? htmlspecialchars($cf_subject) : "Best Style Forever. Contact form";
 		$cf_order_number = !empty($cf_order_number) ? 'Order number: ' . htmlspecialchars($cf_order_number) . "\n" : '';
 	
 
@@ -26,8 +26,8 @@
 
 		try{
 
-			$headers .= 'From: shopme@example.com' . "\r\n" .
-		   			 	'Reply-To: shopme@example.com' . "\r\n";
+			$headers .= 'From: Best Style Forever' . "\r\n" .
+		   			 	'Reply-To: Best Style Forever' . "\r\n";
 		   	$msg = "Name: $name\n$cf_order_number" . "Email address: $email\nMessage: $message";
 
 			if(mail($user_email, $subject, $msg, $headers)) throw new Exception("Your message has been successfully sent!");

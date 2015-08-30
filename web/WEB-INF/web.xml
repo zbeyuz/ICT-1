@@ -87,6 +87,10 @@
         <servlet-name>AccountHandler</servlet-name>
         <servlet-class>control.AccountHandler</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>UserInfo</servlet-name>
+        <servlet-class>control.UserInfo</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>get_item</servlet-name>
         <url-pattern>/getitem</url-pattern>
@@ -226,6 +230,10 @@
         <servlet-name>AccountHandler</servlet-name>
         <url-pattern>/account</url-pattern>
         <url-pattern>/my_account.shtml</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserInfo</servlet-name>
+        <url-pattern>/info</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
