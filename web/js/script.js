@@ -83,6 +83,7 @@ icp.cart.add = function (item, qty) {
         }
         $("#cart").html("");
         icp.cart.get();
+        alert('success!');
     });
 };
 
@@ -104,7 +105,7 @@ icp.cart.get = function () {
             <div class="animated_item"><div class="clearfix sc_product"> \
               <a href="product?id=' + items[i][0] + '" class="product_thumb"><img height="50" width="50" src="' + items[i][3] + '" alt=""></a> \
               <a href="product?id=' + items[i][0] + '" class="product_name">' + items[i][1] + '</a> \
-              <p>' + items[i][2] + '</p>\
+              <p>$' + items[i][2] + '</p>\
               <button onclick="icp.cart.rm(' + items[i][4] + ')" class="close"></button> \
             </div></div>\
             ');
@@ -133,6 +134,7 @@ icp.wish = function (item) {
             alert('Please login or register to addd this item to wishlist!');
         }
         icp.wishNum();
+        alert('success!');
     });
 };
 
