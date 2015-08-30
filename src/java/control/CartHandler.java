@@ -69,10 +69,10 @@ public class CartHandler extends HttpServlet {
         }
 
         String act = request.getParameter("act");
-        if (act != null && act.equals("rm")) {
+        if (act != null && act.equals("clear")) {
             try {
-                int itemId = Integer.parseInt(request.getParameter("item"));
-                cart.remove(itemId);
+                cart.clear();
+                Logger.getLogger(CartHandler.class.getName()).info(act);
             } catch (Exception ex) {
                 Logger.getLogger(CartHandler.class.getName()).log(Level.SEVERE, null, ex);
                 out.println("invparam");
@@ -113,9 +113,9 @@ public class CartHandler extends HttpServlet {
         for (Integer i : cart.itemId()) {
             out.print(s);
             Product product=cart.product(i);
-            out.printf("\u005B%d,\"%s\",%d,\"%s\",%d, %d\u005D",
+            out.printf("\u005B%d,\"%s\",%d,\"%s\",%d, %d, %d\u005D",
                     product.id,product.name,product.price,product.profile_pic,
-                    i,product.discount);
+                    i,product.discount,cart.qty(i));
             s = ",";
         }
         out.print("\u005D");

@@ -20,7 +20,6 @@ cart.get = function () {
         cart.items = items;
         $('#subtotal').html('$'+cart.total());
         $('#total').html('$'+cart.total());
-        $('#clict').empty();
         var i = 0;
         for (i = 0; i < items.length; i += 1) {
             $('#clist').append('\

@@ -108,14 +108,20 @@ icp.cart.get = function () {
               <button onclick="icp.cart.rm(' + items[i][4] + ')" class="close"></button> \
             </div></div>\
             ');
-            total += items[i][2];
-            discount += items[i][2] * items[i][5] / 100;
+            total += items[i][2] * items[i][6];
+            discount += items[i][2] * items[i][5] / 100 * items[i][6];
 
         }
         $('#discount').html('$'+discount)
         $('.total_price').html('$' + total);
         $('#open_shopping_cart').attr('data-amount', i)
     });
+};
+
+icp.cart.clear = function () {
+    $.post('cart', {act:'clear'});
+    icp.cart.get()
+    
 };
 
 icp.wish = function (item) {

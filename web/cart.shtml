@@ -103,7 +103,7 @@
 
                             <div class="right_side">
 
-                                <a href="#" class="btn btn-danger middle_btn">Clear Shopping Cart</a>
+                                <a href="#" onclick="icp.cart.clear()" class="btn btn-danger middle_btn">Clear Shopping Cart</a>
 
                             </div>
 
