@@ -84,7 +84,7 @@ public class CheckOutHandler extends HttpServlet {
             //out.print("success");
             java.util.logging.Logger.getLogger(CheckOutHandler.class.getName()).info(String.format("%d",cart.itemList().size()));
             BillMgr.newBill(user.id, shippingPrice, shipping, cart.itemList(), address);
-            
+            response.sendRedirect("my_order.shtml");
 
         } catch (Exception ex) {
             java.util.logging.Logger.getLogger(CheckOutHandler.class.getName()).log(Level.SEVERE, null, ex);
