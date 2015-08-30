@@ -40,12 +40,12 @@ cart.get = function () {
   <td class="subtotal" data-title="Price">$'+items[i][6]+'</td>\
   <td data-title="Quantity">\
     <div class="qty min clearfix">\
-      <button class="theme_button" data-direction="minus">&#45;</button>\
-      <input type="text" name="" value="'+items[i][8]+'">\
-      <button class="theme_button" data-direction="plus">&#43;</button>\
+      <button class="theme_button" data-direction="minus" onclick="cart.add('+items[i][0]+','+i+',-1)">&#45;</button>\
+      <input id="qty'+items[i][0]+'" type="text" name="" value="'+items[i][8]+'">\
+      <button class="theme_button" data-direction="plus" onclick="cart.add('+items[i][0]+','+i+',1)">&#43;</button>\
   </div>\
   </td>\
-  <td class="total" data-title="Total">$'+items[i][9]+'</td>\
+  <td class="total" data-title="Total" id="total'+items[i][0]+'">$'+items[i][9]+'</td>\
   <td data-title="Action"><a href="javascript:;" onclick="cart.remove('+items[i][0]+')" class="button_dark_grey middle_btn">Delete</a></td>\
 </tr>\
             ';
@@ -61,4 +61,16 @@ cart.remove = function (item) {
         cart.get();
     });
 };
-cart.get()
+cart.get();
+
+cart.add = function (item,i,sign) {
+    var qty=parseInt($('#qty'+item).val())+sign;
+    icp.cart.add(item, qty);
+    cart.items[i][9]=cart.items[i][6] * qty;
+    $('#subtotal').html('$'+cart.total());
+    $('#total').html('$'+cart.total());
+    $('#total'+item).html('$'+cart.items[i][9]);
+    if(qty === 0) {
+        $('#r'+item).remove();
+    }
+};
