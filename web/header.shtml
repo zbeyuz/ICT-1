@@ -214,7 +214,7 @@
 
                             <button id="open_shopping_cart" class="open_button" data-amount="2">
                                 <b class="title">My Cart</b>
-                                <b class="total_price">$999.00</b>
+                                <b class="total_price"></b>
                             </button>
 
                             <!-- - - - - - - - - - - - - - Products list - - - - - - - - - - - - - - - - -->
@@ -230,9 +230,9 @@
 
                                     <ul class="total_info">
 
-                                        <li><span class="price">Discount:</span> $37.00</li>
+                                        <li><span class="price">Discount:</span> <span id="discount"></span></li>
 
-                                        <li class="total"><b><span class="price">Total:</span> $999.00</b></li>
+                                        <li class="total"><b><span class="price">Total:</span> <span class="total_price"></span></b></li>
 
                                     </ul>
 

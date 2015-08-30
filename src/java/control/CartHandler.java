@@ -113,9 +113,9 @@ public class CartHandler extends HttpServlet {
         for (Integer i : cart.itemId()) {
             out.print(s);
             Product product=cart.product(i);
-            out.printf("\u005B%d,\"%s\",%d,\"%s\",%d\u005D",
+            out.printf("\u005B%d,\"%s\",%d,\"%s\",%d, %d\u005D",
                     product.id,product.name,product.price,product.profile_pic,
-                    i);
+                    i,product.discount);
             s = ",";
         }
         out.print("\u005D");

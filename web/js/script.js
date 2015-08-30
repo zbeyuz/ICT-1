@@ -90,11 +90,15 @@ icp.cart.rm = function (item) {
     icp.cart.add(item, 0);
 }
 
+
 icp.cart.get = function () {
     $.get("cart", function (data) {
+        
         var items = JSON.parse(data);
-        var i = 0;
+        
         var total = 0;
+        var discount = 0;
+        var i = 0;
         for (i = 0; i < items.length; i++) {
             $("#cart").append(' \
             <div class="animated_item"><div class="clearfix sc_product"> \
@@ -105,8 +109,10 @@ icp.cart.get = function () {
             </div></div>\
             ');
             total += items[i][2];
+            discount += items[i][2] * items[i][5] / 100;
 
         }
+        $('#discount').html('$'+discount)
         $('.total_price').html('$' + total);
         $('#open_shopping_cart').attr('data-amount', i)
     });
