@@ -132,9 +132,11 @@ icp.wish = function (item) {
     $.post("wishlist", i, function (data) {
         if(data==='invuser') {
             alert('Please login or register to addd this item to wishlist!');
+        }else{
+            alert('success!');
         }
         icp.wishNum();
-        alert('success!');
+        
     });
 };
 

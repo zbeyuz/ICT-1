@@ -75,7 +75,7 @@ public class WishlistHandler extends HttpServlet {
         PrintWriter out = response.getWriter();
         User user = (User) request.getSession().getAttribute("user");
         if (user == null) {
-            out.println("invuser");
+            out.printf("invuser");
             return;
         }
         
