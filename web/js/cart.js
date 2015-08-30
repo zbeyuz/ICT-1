@@ -36,7 +36,7 @@ cart.get = function () {
       <li><b>Material:</b> '+items[i][1]+'</li>\
     </ul>\
   </td>\
-  <td data-title="SKU">'+items[i][5]+'</td>\
+  <td data-title="ID">'+items[i][5]+'</td>\
   <td class="subtotal" data-title="Price">$'+items[i][6]+'</td>\
   <td data-title="Quantity">\
     <div class="qty min clearfix">\

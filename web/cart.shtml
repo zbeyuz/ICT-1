@@ -77,7 +77,7 @@
                                     <tr>
                                         <th class="product_image_col">Product Image</th>
                                         <th class="product_title_col_2">Product Name</th>
-                                        <th>ID</th>
+                                        <th class="product_price_col_2">ID</th>
                                         <th class="product_price_col_2">Price</th>
                                         <th class="product_qty_col_2">Quantity</th>
                                         <th class="product_price_col_2">Total</th>
