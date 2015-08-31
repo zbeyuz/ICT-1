@@ -129,7 +129,7 @@
                                 </p>
 
                                 <p><b>Email Address:</b><br>
-                                    ${email}
+                                    <span id="mail">${email}</span>
                                 </p>
 
                                 <br>
