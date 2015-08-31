@@ -29,6 +29,7 @@ icp.updateem = function () {
         $.post("UpdateEmail", form, function (data) {
         console.log(data);
         $('#closeacc').trigger("click");
+        $('#mail').html(form['user_email']);
         });
     }else{
         alert("email and retype email is not match");

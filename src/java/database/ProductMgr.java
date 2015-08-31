@@ -229,7 +229,7 @@ public class ProductMgr {
     public static ArrayList<Product> getProductByKeyword(String key) throws SQLException, Exception {
 
         Connection conn = DBConn.getConn();
-        PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM `product_list` WHERE `product_name` like ?");
+        PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM `product_list` WHERE LOWER(`product_name`) like LOWER(?)");
         pstmt.setString(1, "%" + key + "%");
         ResultSet rs = pstmt.executeQuery();
         ArrayList<Product> res = productListFromRs(rs);
