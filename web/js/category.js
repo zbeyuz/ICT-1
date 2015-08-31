@@ -44,7 +44,8 @@ pdt.get = function (tag) {
     $.get("getitem?category="+tag, function (data) {
         pdt.list=JSON.parse(data);
         pdt.printCell(pdt.list);
-        $('#title').html(tag);
+        $('#title').html(tag.replace('_',' '));
+        $('#categoryName').html(tag.replace('_',' / '));
     });
 };
 

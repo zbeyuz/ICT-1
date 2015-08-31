@@ -60,9 +60,8 @@
                     <ul class="breadcrumbs">
 
                         <li><a href="index.shtml">Home</a></li>
-                        <li><a href="#">Man</a></li>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">${gender!}</a></li>
+                        <li><a href="#">${category!}</a></li>
                         <li>${name}</li>
 
                     </ul>
