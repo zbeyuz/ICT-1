@@ -20,8 +20,8 @@ public class JSONPrinter {
         for (Product i : items) {
             out.print(s);
             i.defaultPic();
-            out.printf("\u005B%d,\"%s\",%d,\"%s\"\u005D",
-                    i.id, i.name, i.price, i.profile_pic);
+            out.printf("\u005B%d,\"%s\",%d,\"%s\",\"%s\",\"%s\"\u005D",
+                    i.id, i.name, i.price, i.profile_pic, i.manufacture, i.description);
             s = ",";
         }
         out.print("\u005D");

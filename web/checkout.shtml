@@ -208,7 +208,7 @@
 
                                     <p class="subcaption bold">Free Shipping</p>
 
-                                    <input type="radio" checked name="shipping" value="free" id="radio_button_1">
+                                    <input type="radio" checked name="shipping" value="free" id="radio_button_1" onclick="changeShipMethod(0)">
                                     <label for="radio_button_1">Free $0</label>
 
                                 </li>
@@ -217,14 +217,14 @@
 
                                     <p class="subcaption bold">DHL Shipping</p>
 
-                                    <input type="radio" name="shipping" value="std" id="radio_button_2">
+                                    <input type="radio" name="shipping" value="std" id="radio_button_2" onclick="changeShipMethod(5)">
                                     <label for="radio_button_2">Standard Shipping $5.00</label>                                                                       
 
                                 </li>
 
                                 <li>
 
-                                    <input type="radio" name="shipping" value="express" id="radio_button_3">
+                                    <input type="radio" name="shipping" value="express" id="radio_button_3" onclick="changeShipMethod(15)">
                                     <label for="radio_button_3">Express Shipping $15.00</label>
 
                                 </li>
@@ -297,82 +297,9 @@
 
                                 </thead>
 
-                                <tbody>
+                                <tbody id="cartRow">
 
-                                    <tr>
-
-                                        <td data-title="Product Name">
-
-                                            <a href="#" class="product_title">Adipiscing aliquet sed in lacus, Liqui-gels 24</a>
-
-                                            <ul class="sc_product_info">
-
-                                                <li><b>Size:</b> Large</li>
-                                                <li><b>Color:</b> Red</li>
-
-                                            </ul>
-
-                                        </td>
-
-                                        <td data-title="SKU">PS01</td>
-
-                                        <td data-title="Price" class="subtotal">$5.99</td>
-
-                                        <td data-title="Quantity">1</td>
-
-                                        <td data-title="Total" class="total">$5.99</td>
-
-                                    </tr>
-
-                                    <tr>
-
-                                        <td data-title="Product Name">
-
-                                            <a href="#" class="product_title">Sed in lacus ut enim adipiscing dictum elementum velit<br>Relief 4.25 fl oz (126ml)</a>
-
-                                            <ul class="sc_product_info">
-
-                                                <li><b>Size:</b> Small</li>
-                                                <li><b>Color:</b> Red</li>
-
-                                            </ul>
-
-                                        </td>
-
-                                        <td data-title="SKU">PS02</td>
-
-                                        <td data-title="Price" class="subtotal">$8.99</td>
-
-                                        <td data-title="Quantity">1</td>
-
-                                        <td data-title="Total" class="total">$8.99</td>
-
-                                    </tr>
-
-                                    <tr>
-
-                                        <td data-title="Product Name">
-
-                                            <a href="#" class="product_title">Donec porta diam eu massa quisque Mint 160 ea</a>
-
-                                            <ul class="sc_product_info">
-
-                                                <li><b>Size:</b> Medium</li>
-                                                <li><b>Color:</b> Blue</li>
-
-                                            </ul>
-
-                                        </td>
-
-                                        <td data-title="SKU">PS03</td>
-
-                                        <td data-title="Price" class="subtotal">$76.99</td>
-
-                                        <td data-title="Quantity">1</td>
-
-                                        <td data-title="Total" class="total">$76.99</td>
-
-                                    </tr>
+                                    
 
                                 </tbody>
 
@@ -381,21 +308,21 @@
                                     <tr>
 
                                         <td colspan="4" class="bold">Subtotal</td>
-                                        <td class="total">$146.87</td>
+                                        <td class="total" id="subtotalval">$0</td>
 
                                     </tr>
 
                                     <tr>
 
                                         <td colspan="4" class="bold">Shipping &amp; Handling</td>
-                                        <td class="total">$5.00</td>
+                                        <td class="total" id="shippingVal">$0</td>
 
                                     </tr>
 
                                     <tr>
 
                                         <td colspan="4" class="grandtotal">Grand Total</td>
-                                        <td class="grandtotal">$151.87</td>
+                                        <td class="grandtotal" id="totalval">$0</td>
 
                                     </tr>
 
@@ -456,6 +383,7 @@
         <script src="js/script.js"></script>
         <script>
             var co = {};
+            co.total = 0;
             co.submit = function () {
                 var form=$('<form action="checkout" method="post"></form>');
                 form.append($('#form1 input'));
@@ -468,6 +396,39 @@
                 console.log(form);
                 form.submit();
             };
+            $.get('cart?act=view', function (data) {
+                var items = JSON.parse(data);
+                var row = '';
+                var i = 0;
+                var subtotal = 0;
+                for (i = 0; i < items.length; i += 1){
+                    row += '<tr>\
+                            <td data-title="Product Name">\
+                            <a href="#" class="product_title">'+items[i][4]+'</a>\
+                            <ul class="sc_product_info">\
+                            <li><b>Size:</b> '+items[i][3]+'</li>\
+                            <li><b>Color:</b> '+items[i][2]+'</li>\
+                            <li><b>Material:</b> '+items[i][1]+'</li>\
+                            </ul>\
+                            </td>\
+                            <td data-title="SKU">'+items[i][5]+'</td>\
+                            <td data-title="Price" class="subtotal">$'+items[i][6]+'</td>\
+                            <td data-title="Quantity">'+items[i][8]+'</td>\
+                            <td data-title="Total" class="total">$'+items[i][9]+'</td>\
+                            </tr>';
+                    subtotal += items[i][9];
+                }
+        
+                $('#cartRow').html(row);
+                $('#subtotalval').html('$'+subtotal);
+                $('#totalval').html('$'+subtotal);
+                co.total = subtotal;
+            });
+            function changeShipMethod(val) {
+                $('#shippingVal').html('$'+val);
+                var total=val+co.total;
+                $('#totalval').html('$'+ total);
+            }
         </script>
     </body>
 </html>

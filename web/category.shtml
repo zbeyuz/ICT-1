@@ -59,7 +59,7 @@
                     <ul class="breadcrumbs">
 
                         <li><a href="index.shtml">Home</a></li>
-                        <li>T-Shirts &amp; Singlets</li>
+                        <li id="categoryName"></li>
 
                     </ul>
 

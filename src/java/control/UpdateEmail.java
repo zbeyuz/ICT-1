@@ -34,12 +34,12 @@ public class UpdateEmail extends HttpServlet {
         HttpSession session = request.getSession();
         
         User user = (User) session.getAttribute("user");
-        //Logger.getLogger(GetItem.class.getName()).info(String.format("%b", user==null));
         int i = user.id;
-        
         try {
             UserMgr.userUpdateEmail(i, user_email);
+            user.email=user_email;
         } catch (Exception e) {
+            
              Logger.getLogger(UpdateEmail.class.getName()).log(Level.SEVERE, null, e);
         }
 

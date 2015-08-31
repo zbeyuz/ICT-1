@@ -46,6 +46,8 @@ public class ViewItem extends HttpServlet {
             request.setAttribute("manufacture", p.manufacture);
             request.setAttribute("name", p.name);
             request.setAttribute("info", p.info);
+            request.setAttribute("gender", p.gender);
+            request.setAttribute("category", p.category);
             ArrayList<ProductPic> productPic = ProductMgr.getProductPic(p.id);
             //size check
                 request.setAttribute("flarge", productPic.get(0).largePic);
